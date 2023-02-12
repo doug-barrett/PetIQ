@@ -1,0 +1,265 @@
+steps:
+  S_HOSTRETAILER_CLINICLOCATION_MROC_PAYMENTSTRUCTURE_HISTORY-200003870:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019592
+              stepCounter: "200003870"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_HOSTRETAILER_CLINICLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019593
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019594
+              stepCounter: "200003870"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019595
+              stepCounter: "200003870"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019596
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019597
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019598
+              stepCounter: "200003870"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019599
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_METRIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019600
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MINIMUM_PET_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019601
+              stepCounter: "200003870"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019602
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FIXED_AMOUNT_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019603
+              stepCounter: "200003870"
+            dataType: NUMBER(4,2)
+            defaultValue: ""
+            description: ""
+            name: PERCENTAGE_OF_NET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019604
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MINIMUM_VACCERT_TALLY_TOTAL_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019605
+              stepCounter: "200003870"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019606
+              stepCounter: "200003870"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019607
+              stepCounter: "200003870"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019608
+              stepCounter: "200003870"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019609
+              stepCounter: "200003870"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019610
+              stepCounter: "200003870"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019611
+              stepCounter: "200003870"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                LEAD(DSS_START_DATE, 1,\
+                  \ '9999-12-31') OVER(PARTITION BY HK_L_HOSTRETAILER_CLINICLOCATION\
+                  \ ORDER BY DSS_START_DATE)                             "
+          - columnReference:
+              columnCounter: 2000019612
+              stepCounter: "200003870"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                CASE WHEN LEAD(DSS_START_DATE,\
+                  \ 1, NULL) OVER(PARTITION BY HK_L_HOSTRETAILER_CLINICLOCATION ORDER\
+                  \ BY DSS_START_DATE) IS NULL THEN 'Y' ELSE 'N' END             \
+                  \                "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_HOSTRETAILER_CLINICLOCATION_MROC_PAYMENTSTRUCTURE_HISTORY
+            noLinkRefs: []
+      name: S_HOSTRETAILER_CLINICLOCATION_MROC_PAYMENTSTRUCTURE_HISTORY
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003870"

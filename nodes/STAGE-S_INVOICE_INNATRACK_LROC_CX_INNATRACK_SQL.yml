@@ -1,0 +1,190 @@
+steps:
+  S_INVOICE_INNATRACK_LROC_CX_INNATRACK_SQL-200000604:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000009145
+              stepCounter: "200000604"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009146
+              stepCounter: "200000604"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVMINVNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009147
+              stepCounter: "200000604"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMLOADKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009148
+              stepCounter: "200000604"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMSHIPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009149
+              stepCounter: "200000604"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009150
+              stepCounter: "200000604"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: INVMCUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009151
+              stepCounter: "200000604"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: INVMEFFDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009152
+              stepCounter: "200000604"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: INVMCUSTPO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009153
+              stepCounter: "200000604"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009154
+              stepCounter: "200000604"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009155
+              stepCounter: "200000604"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009156
+              stepCounter: "200000604"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009157
+              stepCounter: "200000604"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009158
+              stepCounter: "200000604"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL: "200000595"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL')
+                }} STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL
+            name: S_INVOICE_INNATRACK_LROC_CX_INNATRACK_SQL
+            noLinkRefs: []
+      name: S_INVOICE_INNATRACK_LROC_CX_INNATRACK_SQL
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200000604"

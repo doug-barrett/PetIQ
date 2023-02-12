@@ -1,0 +1,232 @@
+steps:
+  S_OFFICE_TYPE_LROC_INFO_PIT-200003342:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000017873
+              stepCounter: "200003342"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OFFICE_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017874
+              stepCounter: "200003342"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017875
+              stepCounter: "200003342"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CODE_MINIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017876
+              stepCounter: "200003342"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CODE_MAXIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017877
+              stepCounter: "200003342"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017878
+              stepCounter: "200003342"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017879
+              stepCounter: "200003342"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017880
+              stepCounter: "200003342"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017881
+              stepCounter: "200003342"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017882
+              stepCounter: "200003342"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_WELLNESS_CENTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017883
+              stepCounter: "200003342"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017884
+              stepCounter: "200003342"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017885
+              stepCounter: "200003342"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017886
+              stepCounter: "200003342"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017890
+              stepCounter: "200003342"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "LEAD(DSS_START_DATE, 1, '9999-12-31') OVER (PARTITION\
+                  \ BY HK_H_OFFICE_TYPE                                          \
+                  \    ORDER BY DSS_START_DATE)                    "
+          - columnReference:
+              columnCounter: 2000017889
+              stepCounter: "200003342"
+            dataType: TGT_VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE      WHEN LEAD(DSS_START_DATE, 1, NULL) OVER(PARTITION\
+                  \ BY HK_H_OFFICE_TYPE                                          \
+                  \    ORDER BY DSS_START_DATE) IS NULL     THEN 'Y'     ELSE 'N'\
+                  \  END        "
+          - columnReference:
+              columnCounter: 2000017887
+              stepCounter: "200003342"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017888
+              stepCounter: "200003342"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: S_OFFICE_TYPE_LROC_INFO_PIT
+            noLinkRefs: []
+      name: S_OFFICE_TYPE_LROC_INFO_PIT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003342"

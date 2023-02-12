@@ -1,0 +1,210 @@
+steps:
+  S_HOSTRETAILER_CLINICLOCATION_MROC_INFO_HISTORY-200003868:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019557
+              stepCounter: "200003868"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_HOSTRETAILER_CLINICLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019558
+              stepCounter: "200003868"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019559
+              stepCounter: "200003868"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019560
+              stepCounter: "200003868"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019561
+              stepCounter: "200003868"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019562
+              stepCounter: "200003868"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019563
+              stepCounter: "200003868"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019564
+              stepCounter: "200003868"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_METRIC_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019565
+              stepCounter: "200003868"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019566
+              stepCounter: "200003868"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019567
+              stepCounter: "200003868"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019568
+              stepCounter: "200003868"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019569
+              stepCounter: "200003868"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019570
+              stepCounter: "200003868"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019571
+              stepCounter: "200003868"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                LEAD(DSS_START_DATE, 1,\
+                  \ '9999-12-31') OVER(PARTITION BY HK_L_HOSTRETAILER_CLINICLOCATION\
+                  \ ORDER BY DSS_START_DATE)                             "
+          - columnReference:
+              columnCounter: 2000019572
+              stepCounter: "200003868"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                CASE WHEN LEAD(DSS_START_DATE,\
+                  \ 1, NULL) OVER(PARTITION BY HK_L_HOSTRETAILER_CLINICLOCATION ORDER\
+                  \ BY DSS_START_DATE) IS NULL THEN 'Y' ELSE 'N' END             \
+                  \                "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_HOSTRETAILER_CLINICLOCATION_MROC_INFO_HISTORY
+            noLinkRefs: []
+      name: S_HOSTRETAILER_CLINICLOCATION_MROC_INFO_HISTORY
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003868"

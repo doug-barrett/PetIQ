@@ -1,0 +1,211 @@
+steps:
+  S_LOCATION_MROC_ADDRESS-200003954:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000035677
+              stepCounter: "200003954"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035678
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035679
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035680
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035681
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035682
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035683
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035684
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_COUNTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035685
+              stepCounter: "200003954"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035686
+              stepCounter: "200003954"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035687
+              stepCounter: "200003954"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035688
+              stepCounter: "200003954"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035689
+              stepCounter: "200003954"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035690
+              stepCounter: "200003954"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035691
+              stepCounter: "200003954"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035692
+              stepCounter: "200003954"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_LOCATION: "200003941"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_LOCATION
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_LOCATION') }} STAGE_LOCATION
+            name: S_LOCATION_MROC_ADDRESS
+            noLinkRefs: []
+      name: S_LOCATION_MROC_ADDRESS
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003954"

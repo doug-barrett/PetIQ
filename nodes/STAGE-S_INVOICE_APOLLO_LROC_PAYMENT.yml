@@ -1,0 +1,410 @@
+steps:
+  S_INVOICE_APOLLO_LROC_PAYMENT-200002278:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033542
+              stepCounter: "200002278"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033543
+              stepCounter: "200002278"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033544
+              stepCounter: "200002278"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033545
+              stepCounter: "200002278"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033546
+              stepCounter: "200002278"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033547
+              stepCounter: "200002278"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033548
+              stepCounter: "200002278"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033549
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_METHOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033550
+              stepCounter: "200002278"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033551
+              stepCounter: "200002278"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033552
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CHECK_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033553
+              stepCounter: "200002278"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_REFUNDED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033554
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUPON_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033555
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUPON_DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033556
+              stepCounter: "200002278"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033557
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUPON_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033558
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUPON_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033559
+              stepCounter: "200002278"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CANCELLATION_REASON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033560
+              stepCounter: "200002278"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VACCERT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033561
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTION_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033562
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LAST_FOUR_DIGITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033563
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033564
+              stepCounter: "200002278"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COUPON_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033565
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MEMO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033566
+              stepCounter: "200002278"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033567
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXPIRATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033568
+              stepCounter: "200002278"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: ASTA_CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033569
+              stepCounter: "200002278"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: ASTA_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033570
+              stepCounter: "200002278"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033571
+              stepCounter: "200002278"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033572
+              stepCounter: "200002278"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033573
+              stepCounter: "200002278"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033574
+              stepCounter: "200002278"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033575
+              stepCounter: "200002278"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA_1: "200002412"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA_1
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA_1')
+                }} STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA_1
+            name: S_INVOICE_APOLLO_LROC_PAYMENT
+            noLinkRefs: []
+      name: S_INVOICE_APOLLO_LROC_PAYMENT
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002278"

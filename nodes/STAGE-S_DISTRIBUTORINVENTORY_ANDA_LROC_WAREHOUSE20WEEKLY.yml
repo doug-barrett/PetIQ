@@ -1,0 +1,179 @@
+steps:
+  S_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE20WEEKLY-200001821:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024357
+              stepCounter: "200001821"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_DISTRIBUTORINVENTORY_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024358
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20M2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024359
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20M1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024360
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20M0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024361
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20AVAILABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024362
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20RESERVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024363
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20ONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024370
+              stepCounter: "200001821"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024371
+              stepCounter: "200001821"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024372
+              stepCounter: "200001821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024373
+              stepCounter: "200001821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024374
+              stepCounter: "200001821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024375
+              stepCounter: "200001821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA: "200001814"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA')
+                }} STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA
+            name: S_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE20WEEKLY
+            noLinkRefs: []
+      name: S_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE20WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001821"

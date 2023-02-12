@@ -1,0 +1,232 @@
+steps:
+  S_PET_LROC_MICROCHIPS_PIT-200003040:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000015630
+              stepCounter: "200003040"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015631
+              stepCounter: "200003040"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015632
+              stepCounter: "200003040"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015633
+              stepCounter: "200003040"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015634
+              stepCounter: "200003040"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015635
+              stepCounter: "200003040"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015636
+              stepCounter: "200003040"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MICROCHIP_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015637
+              stepCounter: "200003040"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_MICROCHIP_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015638
+              stepCounter: "200003040"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015639
+              stepCounter: "200003040"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: EXPORTED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015640
+              stepCounter: "200003040"
+            dataType: TGT_CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015641
+              stepCounter: "200003040"
+            dataType: TGT_VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015642
+              stepCounter: "200003040"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015643
+              stepCounter: "200003040"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015644
+              stepCounter: "200003040"
+            dataType: TGT_INTEGER
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015645
+              stepCounter: "200003040"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015646
+              stepCounter: "200003040"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "LEAD(DSS_START_DATE, 1, '9999-12-31') OVER (PARTITION\
+                  \ BY HK_H_PET                                             ORDER\
+                  \ BY DSS_START_DATE)                         "
+          - columnReference:
+              columnCounter: 2000015647
+              stepCounter: "200003040"
+            dataType: TGT_VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE     WHEN LEAD(DSS_START_DATE, 1, NULL) OVER(PARTITION\
+                  \ BY HK_H_PET                                             ORDER\
+                  \ BY DSS_START_DATE) IS NULL    THEN 'Y'    ELSE 'N' END       \
+                  \                  "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_PET_LROC_MICROCHIPS_PIT
+            noLinkRefs: []
+      name: S_PET_LROC_MICROCHIPS_PIT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003040"

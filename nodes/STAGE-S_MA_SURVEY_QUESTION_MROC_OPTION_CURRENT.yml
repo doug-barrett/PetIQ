@@ -1,0 +1,149 @@
+steps:
+  S_MA_SURVEY_QUESTION_MROC_OPTION_CURRENT-200004132:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020682
+              stepCounter: "200004132"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020683
+              stepCounter: "200004132"
+            dataType: VARCHAR(512)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_TEXT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020831
+              stepCounter: "200004132"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_POSITION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020832
+              stepCounter: "200004132"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_VISIBLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020684
+              stepCounter: "200004132"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020685
+              stepCounter: "200004132"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020686
+              stepCounter: "200004132"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020687
+              stepCounter: "200004132"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020688
+              stepCounter: "200004132"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020689
+              stepCounter: "200004132"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020681
+              stepCounter: "200004132"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_SURVEY_QUESTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_MA_SURVEY_QUESTION_MROC_OPTION_CURRENT
+            noLinkRefs: []
+      name: S_MA_SURVEY_QUESTION_MROC_OPTION_CURRENT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004132"

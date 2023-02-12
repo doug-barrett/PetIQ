@@ -1,0 +1,575 @@
+steps:
+  S_INVOICELINE_INNATRACK_LROC_INFO-200001900:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028134
+              stepCounter: "200001900"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICELINE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028135
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHLINHLINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028136
+              stepCounter: "200001900"
+            dataType: CHAR(4)
+            defaultValue: ""
+            description: ""
+            name: LINHDTLTYP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028137
+              stepCounter: "200001900"
+            dataType: CHAR(3)
+            defaultValue: ""
+            description: ""
+            name: LINHLOC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028138
+              stepCounter: "200001900"
+            dataType: CHAR(20)
+            defaultValue: ""
+            description: ""
+            name: LINHPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028139
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028140
+              stepCounter: "200001900"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: LINHQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028141
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHFREEQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028142
+              stepCounter: "200001900"
+            dataType: NUMBER(11,4)
+            defaultValue: ""
+            description: ""
+            name: LINHLSTPRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028143
+              stepCounter: "200001900"
+            dataType: NUMBER(11,4)
+            defaultValue: ""
+            description: ""
+            name: LINHCMDPRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028144
+              stepCounter: "200001900"
+            dataType: NUMBER(11,4)
+            defaultValue: ""
+            description: ""
+            name: LINHNETPRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028145
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHPROMO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028146
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHACCRUAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028147
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHOTHER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028148
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHTAXAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028149
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHCOMMAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028150
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHGRSAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028151
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHNETAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028152
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHCASHDISC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028153
+              stepCounter: "200001900"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: LINHNETWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028154
+              stepCounter: "200001900"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: LINHGRSWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028155
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHUOMW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028156
+              stepCounter: "200001900"
+            dataType: NUMBER(7,1)
+            defaultValue: ""
+            description: ""
+            name: LINHCUBE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028157
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHUOMV
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028158
+              stepCounter: "200001900"
+            dataType: NUMBER(11,4)
+            defaultValue: ""
+            description: ""
+            name: LINHSNETPRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028159
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHPRCKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028160
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHHANDLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028161
+              stepCounter: "200001900"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: LINHPROMPROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028162
+              stepCounter: "200001900"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: LINHPULLMSG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028163
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHCSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028164
+              stepCounter: "200001900"
+            dataType: NUMBER(13,6)
+            defaultValue: ""
+            description: ""
+            name: LINHCOST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028165
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHCOSTCUCD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028166
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHPRCUOM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028167
+              stepCounter: "200001900"
+            dataType: CHAR(20)
+            defaultValue: ""
+            description: ""
+            name: LINHSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028168
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHTERM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028169
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHOUTBDFRT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028170
+              stepCounter: "200001900"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: LINHBILLFRT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028171
+              stepCounter: "200001900"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHCUCD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028172
+              stepCounter: "200001900"
+            dataType: NUMBER(14,7)
+            defaultValue: ""
+            description: ""
+            name: LINHCUCDRATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028173
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028174
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHLINENO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028175
+              stepCounter: "200001900"
+            dataType: CHAR(77)
+            defaultValue: ""
+            description: ""
+            name: LINHDATA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028176
+              stepCounter: "200001900"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: LINHGIVEAWAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028177
+              stepCounter: "200001900"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028178
+              stepCounter: "200001900"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028179
+              stepCounter: "200001900"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028180
+              stepCounter: "200001900"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028181
+              stepCounter: "200001900"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028182
+              stepCounter: "200001900"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICELINE_INNATRACK: "200001882"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICELINE_INNATRACK
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_INVOICELINE_INNATRACK') }}
+                STAGE_INVOICELINE_INNATRACK
+            name: S_INVOICELINE_INNATRACK_LROC_INFO
+            noLinkRefs: []
+      name: S_INVOICELINE_INNATRACK_LROC_INFO
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001900"

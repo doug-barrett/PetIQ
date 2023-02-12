@@ -1,0 +1,157 @@
+steps:
+  S_OWNER_LROC_DEMOGRAPHICS_BY_ZIP-200003932:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000035313
+              stepCounter: "200003932"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035314
+              stepCounter: "200003932"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035315
+              stepCounter: "200003932"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: HH_MEDIAN_INCOME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035316
+              stepCounter: "200003932"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: POPULATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035317
+              stepCounter: "200003932"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: PERCAPITA_INCOME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035318
+              stepCounter: "200003932"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MEDIAN_AGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035319
+              stepCounter: "200003932"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035320
+              stepCounter: "200003932"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035323
+              stepCounter: "200003932"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035322
+              stepCounter: "200003932"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035321
+              stepCounter: "200003932"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_OWNER_DEMOGRAPHICS_BY_ZIP: "200003891"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_OWNER_DEMOGRAPHICS_BY_ZIP
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_OWNER_DEMOGRAPHICS_BY_ZIP')\
+                \ }} STAGE_OWNER_DEMOGRAPHICS_BY_ZIP    "
+            name: S_OWNER_LROC_DEMOGRAPHICS_BY_ZIP
+            noLinkRefs: []
+      name: S_OWNER_LROC_DEMOGRAPHICS_BY_ZIP
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003932"

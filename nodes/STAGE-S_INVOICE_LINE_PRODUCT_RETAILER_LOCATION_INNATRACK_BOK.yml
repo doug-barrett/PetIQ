@@ -1,0 +1,146 @@
+steps:
+  S_INVOICE_LINE_PRODUCT_RETAILER_LOCATION_INNATRACK_BOK-200000606:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000009216
+              stepCounter: "200000606"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_INVOICE_LINE_PRODUCT_RETAILER_LOCATION_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009217
+              stepCounter: "200000606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SADTINVMKEY_INOICELINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009218
+              stepCounter: "200000606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SADTCHGID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009219
+              stepCounter: "200000606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SADTLINHLINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009220
+              stepCounter: "200000606"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009221
+              stepCounter: "200000606"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009222
+              stepCounter: "200000606"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009223
+              stepCounter: "200000606"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009224
+              stepCounter: "200000606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000009225
+              stepCounter: "200000606"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICELINE_PROD_RETAILER_LOC_INNATRACK: "200000598"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICELINE_PROD_RETAILER_LOC_INNATRACK
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_INVOICELINE_PROD_RETAILER_LOC_INNATRACK')
+                }} STAGE_INVOICELINE_PROD_RETAILER_LOC_INNATRACK
+            name: S_INVOICE_LINE_PRODUCT_RETAILER_LOCATION_INNATRACK_BOK
+            noLinkRefs: []
+      name: S_INVOICE_LINE_PRODUCT_RETAILER_LOCATION_INNATRACK_BOK
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200000606"

@@ -1,0 +1,135 @@
+steps:
+  S_PET_METRICS-200003727:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032982
+              stepCounter: "200003727"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032983
+              stepCounter: "200003727"
+            dataType: NUMERIC(6,2)
+            defaultValue: ""
+            description: ""
+            name: WEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032984
+              stepCounter: "200003727"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SPECIES_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032985
+              stepCounter: "200003727"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032986
+              stepCounter: "200003727"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032987
+              stepCounter: "200003727"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032990
+              stepCounter: "200003727"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032989
+              stepCounter: "200003727"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032988
+              stepCounter: "200003727"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_PET_METRICS: "200003632"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_PET_METRICS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_PET_METRICS') }} STAGE_PET_METRICS\
+                \    "
+            name: S_PET_METRICS
+            noLinkRefs: []
+      name: S_PET_METRICS
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003727"

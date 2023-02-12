@@ -1,0 +1,201 @@
+steps:
+  S_DISTRIBUTORPRODUCT_ANDA_LROC_SALESPRODUCT-200001823:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024398
+              stepCounter: "200001823"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTORPRODUCT_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024399
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BRAND_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024400
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024401
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FORM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024402
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEM_GENERIC_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024403
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NDC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024404
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MFG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024405
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTINDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024406
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INVCLASS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024407
+              stepCounter: "200001823"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024408
+              stepCounter: "200001823"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024409
+              stepCounter: "200001823"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024410
+              stepCounter: "200001823"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024411
+              stepCounter: "200001823"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024412
+              stepCounter: "200001823"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA_1: "200001817"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA_1
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA_1')
+                }} STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA_1
+            name: S_DISTRIBUTORPRODUCT_ANDA_LROC_SALESPRODUCT
+            noLinkRefs: []
+      name: S_DISTRIBUTORPRODUCT_ANDA_LROC_SALESPRODUCT
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001823"

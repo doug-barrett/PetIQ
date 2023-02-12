@@ -1,0 +1,355 @@
+steps:
+  S_INVOICE_APOLLO_LROC_INFO-200002277:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033511
+              stepCounter: "200002277"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033512
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033513
+              stepCounter: "200002277"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SALE_DATE_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033514
+              stepCounter: "200002277"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033515
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033516
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033517
+              stepCounter: "200002277"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033518
+              stepCounter: "200002277"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033519
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033521
+              stepCounter: "200002277"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_CANCELED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033522
+              stepCounter: "200002277"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: EXTERNALLY_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033523
+              stepCounter: "200002277"
+            dataType: HSTORE(255)
+            defaultValue: ""
+            description: ""
+            name: ASTA_META
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033524
+              stepCounter: "200002277"
+            dataType: NUMBER(28,6)
+            defaultValue: ""
+            description: ""
+            name: SUB_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033525
+              stepCounter: "200002277"
+            dataType: NUMBER(28,6)
+            defaultValue: ""
+            description: ""
+            name: TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033526
+              stepCounter: "200002277"
+            dataType: NUMBER(28,6)
+            defaultValue: ""
+            description: ""
+            name: TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033527
+              stepCounter: "200002277"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_PAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033529
+              stepCounter: "200002277"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: EMAIL_RECEIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033530
+              stepCounter: "200002277"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: TIME_PAYMENT_COMPLETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033531
+              stepCounter: "200002277"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: TIME_VET_COMPLETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033532
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CANCELED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033533
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ADMINISTRATOR_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033534
+              stepCounter: "200002277"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: DECISION_MADE_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033535
+              stepCounter: "200002277"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CANCELLATION_APPROVED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033536
+              stepCounter: "200002277"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033537
+              stepCounter: "200002277"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033538
+              stepCounter: "200002277"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033539
+              stepCounter: "200002277"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033540
+              stepCounter: "200002277"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033541
+              stepCounter: "200002277"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA: "200002411"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA')\
+                \ }} STAGE_INVOICE_APOLLO_APOLLO_READ_REPLICA  "
+            name: S_INVOICE_APOLLO_LROC_INFO
+            noLinkRefs: []
+      name: S_INVOICE_APOLLO_LROC_INFO
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002277"

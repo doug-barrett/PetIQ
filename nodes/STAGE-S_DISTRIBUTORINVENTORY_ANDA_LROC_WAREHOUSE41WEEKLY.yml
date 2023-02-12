@@ -1,0 +1,179 @@
+steps:
+  S_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE41WEEKLY-200001843:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024451
+              stepCounter: "200001843"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_DISTRIBUTORINVENTORY_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024452
+              stepCounter: "200001843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41M2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024453
+              stepCounter: "200001843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41M1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024454
+              stepCounter: "200001843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41M0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024455
+              stepCounter: "200001843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41AVAILABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024456
+              stepCounter: "200001843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41RESERVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024457
+              stepCounter: "200001843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41ONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024458
+              stepCounter: "200001843"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE41WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024459
+              stepCounter: "200001843"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024460
+              stepCounter: "200001843"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024463
+              stepCounter: "200001843"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024462
+              stepCounter: "200001843"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024461
+              stepCounter: "200001843"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA: "200001814"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA')\
+                \ }} STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA  "
+            name: S_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE41WEEKLY
+            noLinkRefs: []
+      name: S_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE41WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001843"

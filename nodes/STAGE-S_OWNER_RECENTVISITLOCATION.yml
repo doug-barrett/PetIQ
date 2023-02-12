@@ -1,0 +1,157 @@
+steps:
+  S_OWNER_RECENTVISITLOCATION-200003810:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034362
+              stepCounter: "200003810"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034363
+              stepCounter: "200003810"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034364
+              stepCounter: "200003810"
+            dataType: FLOAT8
+            defaultValue: ""
+            description: ""
+            name: OWNER_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034365
+              stepCounter: "200003810"
+            dataType: FLOAT8
+            defaultValue: ""
+            description: ""
+            name: OWNER_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034366
+              stepCounter: "200003810"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034367
+              stepCounter: "200003810"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034368
+              stepCounter: "200003810"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: OWNER_CLINIC_DISTANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034369
+              stepCounter: "200003810"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034372
+              stepCounter: "200003810"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034371
+              stepCounter: "200003810"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034370
+              stepCounter: "200003810"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_OWNER_RECENTVISITLOCATION: "200003807"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_OWNER_RECENTVISITLOCATION
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_OWNER_RECENTVISITLOCATION')\
+                \ }} STAGE_OWNER_RECENTVISITLOCATION  "
+            name: S_OWNER_RECENTVISITLOCATION
+            noLinkRefs: []
+      name: S_OWNER_RECENTVISITLOCATION
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003810"
