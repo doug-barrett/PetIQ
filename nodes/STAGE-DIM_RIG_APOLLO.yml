@@ -1,0 +1,226 @@
+steps:
+  DIM_RIG_APOLLO-200002999:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000012396
+              stepCounter: "200002999"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012398
+              stepCounter: "200002999"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012399
+              stepCounter: "200002999"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012400
+              stepCounter: "200002999"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012401
+              stepCounter: "200002999"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012402
+              stepCounter: "200002999"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012403
+              stepCounter: "200002999"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012404
+              stepCounter: "200002999"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: RETIRED_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012405
+              stepCounter: "200002999"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012406
+              stepCounter: "200002999"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_BE_BID_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012407
+              stepCounter: "200002999"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012408
+              stepCounter: "200002999"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CARD_CONNECT_TERMINAL_SERIAL_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012409
+              stepCounter: "200002999"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012410
+              stepCounter: "200002999"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012411
+              stepCounter: "200002999"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012412
+              stepCounter: "200002999"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012413
+              stepCounter: "200002999"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012414
+              stepCounter: "200002999"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_RIG_APOLLO
+            noLinkRefs: []
+      name: DIM_RIG_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200002999"

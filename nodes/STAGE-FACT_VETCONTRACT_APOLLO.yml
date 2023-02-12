@@ -1,0 +1,149 @@
+steps:
+  FACT_VETCONTRACT_APOLLO-200003631:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000018261
+              stepCounter: "200003631"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VETCONTRACT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018244
+              stepCounter: "200003631"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019399
+              stepCounter: "200003631"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018248
+              stepCounter: "200003631"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ENGAGEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018245
+              stepCounter: "200003631"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WORK_ON_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018246
+              stepCounter: "200003631"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018247
+              stepCounter: "200003631"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019727
+              stepCounter: "200003631"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019728
+              stepCounter: "200003631"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018256
+              stepCounter: "200003631"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018263
+              stepCounter: "200003631"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_VETCONTRACT_APOLLO
+            noLinkRefs: []
+      name: FACT_VETCONTRACT_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003631"

@@ -1,0 +1,171 @@
+steps:
+  FACT_SURVEY_RECIPIENT-200004140:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020861
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020838
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COLLECTOR_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020839
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RECIPIENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020858
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020840
+              stepCounter: "200004140"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020841
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020842
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: IP_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020843
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020844
+              stepCounter: "200004140"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COLLECTION_MODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020845
+              stepCounter: "200004140"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020846
+              stepCounter: "200004140"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020847
+              stepCounter: "200004140"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020850
+              stepCounter: "200004140"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_SURVEY_RECIPIENT
+            noLinkRefs: []
+      name: FACT_SURVEY_RECIPIENT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004140"

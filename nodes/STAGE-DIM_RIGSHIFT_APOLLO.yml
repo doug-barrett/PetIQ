@@ -1,0 +1,127 @@
+steps:
+  DIM_RIGSHIFT_APOLLO-200003928:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019746
+              stepCounter: "200003928"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_RUN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019731
+              stepCounter: "200003928"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_CODE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019737
+              stepCounter: "200003928"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: LEAVE_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019738
+              stepCounter: "200003928"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: RETURN_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019739
+              stepCounter: "200003928"
+            dataType: VARCHAR(1000)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019732
+              stepCounter: "200003928"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019733
+              stepCounter: "200003928"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019741
+              stepCounter: "200003928"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019742
+              stepCounter: "200003928"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_RIGSHIFT_APOLLO
+            noLinkRefs: []
+      name: DIM_RIGSHIFT_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003928"

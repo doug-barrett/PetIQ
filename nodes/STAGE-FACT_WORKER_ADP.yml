@@ -1,0 +1,193 @@
+steps:
+  FACT_WORKER_ADP-200004059:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020451
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020433
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSOCIATE_OID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020434
+              stepCounter: "200004059"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_HIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020435
+              stepCounter: "200004059"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: REHIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020436
+              stepCounter: "200004059"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ADJUSTED_SERVICE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020437
+              stepCounter: "200004059"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020438
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020439
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ARPA_TERMINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020440
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: POSITION_BUDGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020441
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ROLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020442
+              stepCounter: "200004059"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PLANNER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020443
+              stepCounter: "200004059"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020444
+              stepCounter: "200004059"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020446
+              stepCounter: "200004059"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020447
+              stepCounter: "200004059"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_WORKER_ADP
+            noLinkRefs: []
+      name: FACT_WORKER_ADP
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004059"

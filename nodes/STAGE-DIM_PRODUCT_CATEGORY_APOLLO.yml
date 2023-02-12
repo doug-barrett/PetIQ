@@ -1,0 +1,204 @@
+steps:
+  DIM_PRODUCT_CATEGORY_APOLLO-200002984:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000011881
+              stepCounter: "200002984"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTCATEGORY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011883
+              stepCounter: "200002984"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011882
+              stepCounter: "200002984"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011884
+              stepCounter: "200002984"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SORT_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011885
+              stepCounter: "200002984"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011886
+              stepCounter: "200002984"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011887
+              stepCounter: "200002984"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011888
+              stepCounter: "200002984"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011889
+              stepCounter: "200002984"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011890
+              stepCounter: "200002984"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011891
+              stepCounter: "200002984"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011892
+              stepCounter: "200002984"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011893
+              stepCounter: "200002984"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011894
+              stepCounter: "200002984"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011895
+              stepCounter: "200002984"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011896
+              stepCounter: "200002984"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_PRODUCT_CATEGORY_APOLLO
+            noLinkRefs: []
+      name: DIM_PRODUCT_CATEGORY_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200002984"

@@ -1,0 +1,94 @@
+steps:
+  DIM_PETPARENT_PET_APOLLO-200003276:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000017498
+              stepCounter: "200003276"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PETPARENT_PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017491
+              stepCounter: "200003276"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PETPARENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017496
+              stepCounter: "200003276"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017493
+              stepCounter: "200003276"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017494
+              stepCounter: "200003276"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017495
+              stepCounter: "200003276"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_PETPARENT_PET_APOLLO
+            noLinkRefs: []
+      name: DIM_PETPARENT_PET_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003276"

@@ -1,0 +1,160 @@
+steps:
+  DIM_HOSTRETAILER_PAYMENTSTRUCTURE-200003886:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019421
+              stepCounter: "200003886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019403
+              stepCounter: "200003886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019409
+              stepCounter: "200003886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_METRIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019410
+              stepCounter: "200003886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MINIMUM_PET_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019411
+              stepCounter: "200003886"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019412
+              stepCounter: "200003886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FIXED_AMOUNT_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019413
+              stepCounter: "200003886"
+            dataType: NUMBER(4,2)
+            defaultValue: ""
+            description: ""
+            name: PERCENTAGE_OF_NET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019414
+              stepCounter: "200003886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MINIMUM_VACCERT_TALLY_TOTAL_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019404
+              stepCounter: "200003886"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019405
+              stepCounter: "200003886"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019416
+              stepCounter: "200003886"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019417
+              stepCounter: "200003886"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_HOSTRETAILER_PAYMENTSTRUCTURE
+            noLinkRefs: []
+      name: DIM_HOSTRETAILER_PAYMENTSTRUCTURE
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003886"

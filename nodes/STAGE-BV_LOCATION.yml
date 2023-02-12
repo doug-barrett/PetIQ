@@ -1,0 +1,579 @@
+steps:
+  BV_LOCATION-200000237:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: helper view for Location Dimension of Type 2
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000000258
+              stepCounter: "200000237"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000257
+              stepCounter: "200000237"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: LOCATIONID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000259
+              stepCounter: "200000237"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000260
+              stepCounter: "200000237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDTICK_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000261
+              stepCounter: "200000237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BPATYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000262
+              stepCounter: "200000237"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BPADES_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000263
+              stepCounter: "200000237"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BPABID_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000264
+              stepCounter: "200000237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BPAADDFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000265
+              stepCounter: "200000237"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: The street address for the Location
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: S_LOCATION_MROC.BPAADDLIG_0 || ' ' || S_LOCATION_MROC.BPAADDLIG_1
+                  || ' ' || S_LOCATION_MROC.BPAADDLIG_2
+          - columnReference:
+              columnCounter: 2000000266
+              stepCounter: "200000237"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPAADDLIG_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000267
+              stepCounter: "200000237"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPAADDLIG_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000268
+              stepCounter: "200000237"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: POSCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000269
+              stepCounter: "200000237"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: CTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000270
+              stepCounter: "200000237"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: CODSEE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000271
+              stepCounter: "200000237"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: SAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000272
+              stepCounter: "200000237"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: CRY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000273
+              stepCounter: "200000237"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: CRYNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000274
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TEL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000275
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TEL_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000276
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TEL_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000277
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TEL_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000278
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TEL_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000279
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: FAX_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000280
+              stepCounter: "200000237"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: MOB_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000281
+              stepCounter: "200000237"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: WEB_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000282
+              stepCounter: "200000237"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: WEB_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000283
+              stepCounter: "200000237"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: WEB_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000284
+              stepCounter: "200000237"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: WEB_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000285
+              stepCounter: "200000237"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: WEB_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000286
+              stepCounter: "200000237"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: FCYWEB_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000287
+              stepCounter: "200000237"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: EXTNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000288
+              stepCounter: "200000237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EXPNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000289
+              stepCounter: "200000237"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CREUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000290
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000291
+              stepCounter: "200000237"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: UPDUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000292
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000293
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000294
+              stepCounter: "200000237"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: YLICTTL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000295
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000296
+              stepCounter: "200000237"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: YLICNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000297
+              stepCounter: "200000237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ADRVAL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000298
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: YLICEXP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000299
+              stepCounter: "200000237"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: YLICNUM1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000300
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: YLICEXP1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000301
+              stepCounter: "200000237"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: YLICNUM2_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000302
+              stepCounter: "200000237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: YLICEXP2_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000303
+              stepCounter: "200000237"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: ZBOLSI1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000304
+              stepCounter: "200000237"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: ZAHI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000305
+              stepCounter: "200000237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROWID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000309
+              stepCounter: "200000237"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: BV_LOCATION
+            noLinkRefs: []
+      name: BV_LOCATION
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200000237"

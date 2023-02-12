@@ -1,0 +1,149 @@
+steps:
+  DIM_RIGRUN_APOLLO-200003732:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019046
+              stepCounter: "200003732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_RUN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018819
+              stepCounter: "200003732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_CODE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018820
+              stepCounter: "200003732"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018821
+              stepCounter: "200003732"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018822
+              stepCounter: "200003732"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018826
+              stepCounter: "200003732"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018827
+              stepCounter: "200003732"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018828
+              stepCounter: "200003732"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: RUN_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018829
+              stepCounter: "200003732"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CONTRACT_IT_NOW_RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018831
+              stepCounter: "200003732"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018832
+              stepCounter: "200003732"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_RIGRUN_APOLLO
+            noLinkRefs: []
+      name: DIM_RIGRUN_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003732"

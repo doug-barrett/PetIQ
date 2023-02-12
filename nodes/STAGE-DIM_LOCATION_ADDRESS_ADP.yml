@@ -1,0 +1,160 @@
+steps:
+  DIM_LOCATION_ADDRESS_ADP-200004038:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020126
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020075
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020076
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020077
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020078
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020079
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020080
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020081
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_COUNTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020082
+              stepCounter: "200004038"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020083
+              stepCounter: "200004038"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020085
+              stepCounter: "200004038"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020086
+              stepCounter: "200004038"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_LOCATION_ADDRESS_ADP
+            noLinkRefs: []
+      name: DIM_LOCATION_ADDRESS_ADP
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004038"

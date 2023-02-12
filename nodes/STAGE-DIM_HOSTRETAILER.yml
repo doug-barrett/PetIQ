@@ -1,0 +1,226 @@
+steps:
+  DIM_HOSTRETAILER-200003873:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019401
+              stepCounter: "200003873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019176
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019177
+              stepCounter: "200003873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PARENT_HOST_ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019178
+              stepCounter: "200003873"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019179
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019180
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019181
+              stepCounter: "200003873"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019182
+              stepCounter: "200003873"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019183
+              stepCounter: "200003873"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019184
+              stepCounter: "200003873"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019188
+              stepCounter: "200003873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_PAYMENT_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019189
+              stepCounter: "200003873"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_TYPE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019190
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ATTENTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019191
+              stepCounter: "200003873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_METRIC_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019192
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OWNER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019193
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RECIPIENT_EMAILS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019195
+              stepCounter: "200003873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019196
+              stepCounter: "200003873"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_HOSTRETAILER
+            noLinkRefs: []
+      name: DIM_HOSTRETAILER
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003873"

@@ -1,0 +1,94 @@
+steps:
+  DIM_PET_RECENT_VACCINE-200003594:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000018093
+              stepCounter: "200003594"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018094
+              stepCounter: "200003594"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_VISIT_VET_OWNER_PET_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018095
+              stepCounter: "200003594"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018096
+              stepCounter: "200003594"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_VISIT_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018097
+              stepCounter: "200003594"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_CATEGORY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018098
+              stepCounter: "200003594"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_TYPE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_PET_RECENT_VACCINE
+            noLinkRefs: []
+      name: DIM_PET_RECENT_VACCINE
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003594"

@@ -1,0 +1,204 @@
+steps:
+  FACT_HOSTRETAILER_TRANSACTIONS-200003919:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019726
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019724
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019700
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019701
+              stepCounter: "200003919"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019702
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: AMOUNT_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019703
+              stepCounter: "200003919"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019704
+              stepCounter: "200003919"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019705
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019706
+              stepCounter: "200003919"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAYOUT_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019707
+              stepCounter: "200003919"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAID_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019708
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PARENT_TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019714
+              stepCounter: "200003919"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DEBIT_TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019709
+              stepCounter: "200003919"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019710
+              stepCounter: "200003919"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019716
+              stepCounter: "200003919"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019717
+              stepCounter: "200003919"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_HOSTRETAILER_TRANSACTIONS
+            noLinkRefs: []
+      name: FACT_HOSTRETAILER_TRANSACTIONS
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003919"

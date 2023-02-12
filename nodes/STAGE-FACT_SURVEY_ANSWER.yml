@@ -1,0 +1,171 @@
+steps:
+  FACT_SURVEY_ANSWER-200004139:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020826
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020827
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020828
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SUB_QUESTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020812
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020813
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_PAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020814
+              stepCounter: "200004139"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: INDEX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020815
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: OTHER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020816
+              stepCounter: "200004139"
+            dataType: VARCHAR(16384)
+            defaultValue: ""
+            description: ""
+            name: ANSWER_TEXT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020817
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DOWNLOAD_URL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020818
+              stepCounter: "200004139"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020819
+              stepCounter: "200004139"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020821
+              stepCounter: "200004139"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020823
+              stepCounter: "200004139"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_SURVEY_ANSWER
+            noLinkRefs: []
+      name: FACT_SURVEY_ANSWER
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004139"

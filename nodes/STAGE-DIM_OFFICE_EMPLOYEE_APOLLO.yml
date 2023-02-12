@@ -1,0 +1,237 @@
+steps:
+  DIM_OFFICE_EMPLOYEE_APOLLO-200004178:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021055
+              stepCounter: "200004178"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021058
+              stepCounter: "200004178"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021033
+              stepCounter: "200004178"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ROSTER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021034
+              stepCounter: "200004178"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_SCHEDULE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021035
+              stepCounter: "200004178"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021036
+              stepCounter: "200004178"
+            dataType: VARCHAR(1000)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021037
+              stepCounter: "200004178"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021038
+              stepCounter: "200004178"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021039
+              stepCounter: "200004178"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: TYPE_OF_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021040
+              stepCounter: "200004178"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021041
+              stepCounter: "200004178"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: START_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021042
+              stepCounter: "200004178"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: END_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021043
+              stepCounter: "200004178"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021044
+              stepCounter: "200004178"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021045
+              stepCounter: "200004178"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021046
+              stepCounter: "200004178"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021047
+              stepCounter: "200004178"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021049
+              stepCounter: "200004178"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021050
+              stepCounter: "200004178"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_OFFICE_EMPLOYEE_APOLLO
+            noLinkRefs: []
+      name: DIM_OFFICE_EMPLOYEE_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004178"

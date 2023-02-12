@@ -1,0 +1,116 @@
+steps:
+  DIM_DEPARTMENT_ADP-200004039:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020127
+              stepCounter: "200004039"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020091
+              stepCounter: "200004039"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020092
+              stepCounter: "200004039"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020093
+              stepCounter: "200004039"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020094
+              stepCounter: "200004039"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020095
+              stepCounter: "200004039"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020097
+              stepCounter: "200004039"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020098
+              stepCounter: "200004039"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_DEPARTMENT_ADP
+            noLinkRefs: []
+      name: DIM_DEPARTMENT_ADP
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004039"

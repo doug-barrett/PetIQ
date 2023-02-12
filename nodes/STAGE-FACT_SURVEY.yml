@@ -1,0 +1,182 @@
+steps:
+  FACT_SURVEY-200004138:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020810
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020792
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020793
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NICKNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020794
+              stepCounter: "200004138"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: FOOTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020795
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CATEGORY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020796
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CATEGORY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020797
+              stepCounter: "200004138"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020798
+              stepCounter: "200004138"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020799
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020800
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_PAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020801
+              stepCounter: "200004138"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_PAGE_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020802
+              stepCounter: "200004138"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020805
+              stepCounter: "200004138"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020807
+              stepCounter: "200004138"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_SURVEY
+            noLinkRefs: []
+      name: FACT_SURVEY
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004138"

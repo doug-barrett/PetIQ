@@ -1,0 +1,116 @@
+steps:
+  FACT_CLINIC_EMPLOYEE-200003812:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019003
+              stepCounter: "200003812"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019002
+              stepCounter: "200003812"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019337
+              stepCounter: "200003812"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019338
+              stepCounter: "200003812"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: TYPE_OF_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019422
+              stepCounter: "200003812"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019423
+              stepCounter: "200003812"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019340
+              stepCounter: "200003812"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019341
+              stepCounter: "200003812"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: FACT_CLINIC_EMPLOYEE
+            noLinkRefs: []
+      name: FACT_CLINIC_EMPLOYEE
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003812"

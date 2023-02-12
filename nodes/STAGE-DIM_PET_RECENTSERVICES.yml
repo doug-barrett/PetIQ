@@ -1,0 +1,94 @@
+steps:
+  DIM_PET_RECENTSERVICES-200003801:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000018978
+              stepCounter: "200003801"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018979
+              stepCounter: "200003801"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: FECAL_MOST_RECENT_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018980
+              stepCounter: "200003801"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: FLEA_TICK_MOST_RECENT_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018981
+              stepCounter: "200003801"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: HEARTWORM_MOST_RECENT_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018982
+              stepCounter: "200003801"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: RABIES_MOST_RECENT_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000018983
+              stepCounter: "200003801"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: RABIES_EXPIRATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_PET_RECENTSERVICES
+            noLinkRefs: []
+      name: DIM_PET_RECENTSERVICES
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003801"

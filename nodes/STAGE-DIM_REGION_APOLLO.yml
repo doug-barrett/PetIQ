@@ -1,0 +1,193 @@
+steps:
+  DIM_REGION_APOLLO-200003000:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000012415
+              stepCounter: "200003000"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REGION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012417
+              stepCounter: "200003000"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012418
+              stepCounter: "200003000"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REGIONAL_MANAGER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012419
+              stepCounter: "200003000"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012420
+              stepCounter: "200003000"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012421
+              stepCounter: "200003000"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012423
+              stepCounter: "200003000"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012424
+              stepCounter: "200003000"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012422
+              stepCounter: "200003000"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012425
+              stepCounter: "200003000"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012426
+              stepCounter: "200003000"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012427
+              stepCounter: "200003000"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012428
+              stepCounter: "200003000"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012429
+              stepCounter: "200003000"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000012430
+              stepCounter: "200003000"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_REGION_APOLLO
+            noLinkRefs: []
+      name: DIM_REGION_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003000"

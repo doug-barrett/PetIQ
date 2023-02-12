@@ -1,0 +1,204 @@
+steps:
+  DIM_OFFICE_TYPE_APOLLO-200003344:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000017912
+              stepCounter: "200003344"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017914
+              stepCounter: "200003344"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017915
+              stepCounter: "200003344"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CODE_MINIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017916
+              stepCounter: "200003344"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CODE_MAXIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017917
+              stepCounter: "200003344"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017918
+              stepCounter: "200003344"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017919
+              stepCounter: "200003344"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017920
+              stepCounter: "200003344"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017921
+              stepCounter: "200003344"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017922
+              stepCounter: "200003344"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_WELLNESS_CENTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017923
+              stepCounter: "200003344"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017924
+              stepCounter: "200003344"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017925
+              stepCounter: "200003344"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017926
+              stepCounter: "200003344"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017927
+              stepCounter: "200003344"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017928
+              stepCounter: "200003344"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: DIM_OFFICE_TYPE_APOLLO
+            noLinkRefs: []
+      name: DIM_OFFICE_TYPE_APOLLO
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003344"
