@@ -1,0 +1,243 @@
+steps:
+  S_SURVEY_QUESTION_RESPONSE_MROC_INFO_HISTORY-200004135:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020719
+              stepCounter: "200004135"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_SURVEY_QUESTION_RESPONSE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020720
+              stepCounter: "200004135"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COLLECTOR_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020721
+              stepCounter: "200004135"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RECIPIENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020722
+              stepCounter: "200004135"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020723
+              stepCounter: "200004135"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020724
+              stepCounter: "200004135"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: IP_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020725
+              stepCounter: "200004135"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020726
+              stepCounter: "200004135"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COLLECTION_MODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020727
+              stepCounter: "200004135"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020728
+              stepCounter: "200004135"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020729
+              stepCounter: "200004135"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020731
+              stepCounter: "200004135"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020732
+              stepCounter: "200004135"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020733
+              stepCounter: "200004135"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020734
+              stepCounter: "200004135"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020735
+              stepCounter: "200004135"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020736
+              stepCounter: "200004135"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020737
+              stepCounter: "200004135"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                LEAD(DSS_START_DATE, 1,\
+                  \ '9999-12-31') OVER(PARTITION BY HK_L_SURVEY_QUESTION_RESPONSE\
+                  \ ORDER BY DSS_START_DATE)                             "
+          - columnReference:
+              columnCounter: 2000020738
+              stepCounter: "200004135"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                CASE WHEN LEAD(DSS_START_DATE,\
+                  \ 1, NULL) OVER(PARTITION BY HK_L_SURVEY_QUESTION_RESPONSE ORDER\
+                  \ BY DSS_START_DATE) IS NULL THEN 'Y' ELSE 'N' END             \
+                  \                "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_SURVEY_QUESTION_RESPONSE_MROC_INFO_HISTORY
+            noLinkRefs: []
+      name: S_SURVEY_QUESTION_RESPONSE_MROC_INFO_HISTORY
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004135"

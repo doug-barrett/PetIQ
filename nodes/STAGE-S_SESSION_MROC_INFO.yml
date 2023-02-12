@@ -1,0 +1,212 @@
+steps:
+  S_SESSION_MROC_INFO-200003537:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032597
+              stepCounter: "200003537"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_SESSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032598
+              stepCounter: "200003537"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: VISITORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032599
+              stepCounter: "200003537"
+            dataType: TEXT(9)
+            defaultValue: ""
+            description: ""
+            name: TABLEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032600
+              stepCounter: "200003537"
+            dataType: TEXT(21)
+            defaultValue: ""
+            description: ""
+            name: SITENAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032601
+              stepCounter: "200003537"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: VISITNUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032602
+              stepCounter: "200003537"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: VISITSTARTTIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032603
+              stepCounter: "200003537"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032604
+              stepCounter: "200003537"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: CUSTOMDIMENSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032605
+              stepCounter: "200003537"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: CHANNELGROUPING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032606
+              stepCounter: "200003537"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: SOCIALENGAGEMENTTYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032607
+              stepCounter: "200003537"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032608
+              stepCounter: "200003537"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032609
+              stepCounter: "200003537"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032610
+              stepCounter: "200003537"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032611
+              stepCounter: "200003537"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032612
+              stepCounter: "200003537"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_SESSION_CX_SNOWFLAKE_GA: "200003525"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_SESSION_CX_SNOWFLAKE_GA
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_SESSION_CX_SNOWFLAKE_GA')
+                }} STAGE_SESSION_CX_SNOWFLAKE_GA
+            name: S_SESSION_MROC_INFO
+            noLinkRefs: []
+      name: S_SESSION_MROC_INFO
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003537"

@@ -1,0 +1,628 @@
+steps:
+  S_USER_APOLLO_LROC_INFO_PIT-200003050:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000015998
+              stepCounter: "200003050"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_USER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000015999
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EMAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016000
+              stepCounter: "200003050"
+            dataType: VARCHAR(128)
+            defaultValue: ""
+            description: ""
+            name: ENCRYPTED_PASSWORD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016001
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CONFIRMATION_TOKEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016002
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: CONFIRMED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016003
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: CONFIRMATION_SENT_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016004
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RESET_PASSWORD_TOKEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016005
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REMEMBER_TOKEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016006
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: REMEMBER_CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016007
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: SIGN_IN_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016008
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: CURRENT_SIGN_IN_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016009
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: LAST_SIGN_IN_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016010
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CURRENT_SIGN_IN_IP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016011
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LAST_SIGN_IN_IP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016012
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016013
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016014
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: ROLES_MASK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016015
+              stepCounter: "200003050"
+            dataType: BOOL
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016016
+              stepCounter: "200003050"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: FIRST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016017
+              stepCounter: "200003050"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: LAST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016018
+              stepCounter: "200003050"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016019
+              stepCounter: "200003050"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: MOBILE_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016020
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: MOBILE_CARRIER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016021
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016022
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016023
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TIME_ZONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016024
+              stepCounter: "200003050"
+            dataType: BOOL
+            defaultValue: ""
+            description: ""
+            name: IS_PASSWORD_CHANGE_REQUIRED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016025
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016026
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016027
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016028
+              stepCounter: "200003050"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016029
+              stepCounter: "200003050"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016030
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016031
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_CLINIC_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016032
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_OFFICE_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016033
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_PICKUP_LOCATION_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016034
+              stepCounter: "200003050"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016035
+              stepCounter: "200003050"
+            dataType: FLOAT8
+            defaultValue: ""
+            description: ""
+            name: LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016036
+              stepCounter: "200003050"
+            dataType: FLOAT8
+            defaultValue: ""
+            description: ""
+            name: LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016037
+              stepCounter: "200003050"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: EMERGENCY_CONTACT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016038
+              stepCounter: "200003050"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: EMERGENCY_CONTACT_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016039
+              stepCounter: "200003050"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: HOME_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016040
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: RESET_PASSWORD_SENT_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016041
+              stepCounter: "200003050"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PASSCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016042
+              stepCounter: "200003050"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016043
+              stepCounter: "200003050"
+            dataType: TIMESTAMP(26,6)
+            defaultValue: ""
+            description: ""
+            name: PASSWORD_CHANGED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016044
+              stepCounter: "200003050"
+            dataType: TGT_CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016045
+              stepCounter: "200003050"
+            dataType: TGT_VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016046
+              stepCounter: "200003050"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016047
+              stepCounter: "200003050"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016048
+              stepCounter: "200003050"
+            dataType: TGT_INTEGER
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016049
+              stepCounter: "200003050"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000016050
+              stepCounter: "200003050"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "LEAD(DSS_START_DATE, 1, '9999-12-31') OVER (PARTITION\
+                  \ BY HK_H_USER_APOLLO                                          \
+                  \   ORDER BY DSS_START_DATE)                         "
+          - columnReference:
+              columnCounter: 2000016051
+              stepCounter: "200003050"
+            dataType: TGT_VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE     WHEN LEAD(DSS_START_DATE, 1, NULL) OVER(PARTITION\
+                  \ BY HK_H_USER_APOLLO                                          \
+                  \   ORDER BY DSS_START_DATE) IS NULL    THEN 'Y'    ELSE 'N' END\
+                  \                         "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_USER_APOLLO_LROC_INFO_PIT
+            noLinkRefs: []
+      name: S_USER_APOLLO_LROC_INFO_PIT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003050"

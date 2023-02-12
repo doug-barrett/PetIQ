@@ -1,0 +1,245 @@
+steps:
+  S_SESSION_MROC_TOTALS-200003538:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032613
+              stepCounter: "200003538"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_SESSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032614
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_BOUNCES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032615
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_NEWVISITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032616
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_PAGEVIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032617
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_SCREENVIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032618
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_SESSIONQUALITYDIM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032619
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_TIMEONSCREEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032620
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_TIMEONSITE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032621
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_TOTALTRANSACTIONREVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032622
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_TRANSACTIONREVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032623
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_TRANSACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032624
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_UNIQUESCREENVIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032625
+              stepCounter: "200003538"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TOTALS_VISITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032626
+              stepCounter: "200003538"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032627
+              stepCounter: "200003538"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032628
+              stepCounter: "200003538"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032629
+              stepCounter: "200003538"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032630
+              stepCounter: "200003538"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032631
+              stepCounter: "200003538"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_SESSION_CX_SNOWFLAKE_GA_1: "200003526"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_SESSION_CX_SNOWFLAKE_GA_1
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_SESSION_CX_SNOWFLAKE_GA_1')
+                }} STAGE_SESSION_CX_SNOWFLAKE_GA_1
+            name: S_SESSION_MROC_TOTALS
+            noLinkRefs: []
+      name: S_SESSION_MROC_TOTALS
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003538"
