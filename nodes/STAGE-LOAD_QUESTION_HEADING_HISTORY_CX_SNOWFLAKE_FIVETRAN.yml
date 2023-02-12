@@ -1,0 +1,198 @@
+steps:
+  LOAD_QUESTION_HEADING_HISTORY_CX_SNOWFLAKE_FIVETRAN-200004060:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032224
+              stepCounter: "200004060"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: INDEX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032225
+              stepCounter: "200004060"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032226
+              stepCounter: "200004060"
+            dataType: VARCHAR(1024)
+            defaultValue: ""
+            description: ""
+            name: HEADING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032227
+              stepCounter: "200004060"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032228
+              stepCounter: "200004060"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: IMAGE_URL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032229
+              stepCounter: "200004060"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: RANDOM_ASSIGNMENT_PERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032230
+              stepCounter: "200004060"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: RANDOM_ASSIGNMENT_POSITION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032231
+              stepCounter: "200004060"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RANDOM_ASSIGNMENT_VARIABLE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032232
+              stepCounter: "200004060"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RANDOM_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032233
+              stepCounter: "200004060"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000032234
+              stepCounter: "200004060"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_START
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_START)
+          - columnReference:
+              columnCounter: 2000032235
+              stepCounter: "200004060"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_END
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_END)
+          - columnReference:
+              columnCounter: 2000032236
+              stepCounter: "200004060"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032237
+              stepCounter: "200004060"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.SURVEY_MONKEY.QUESTION_HEADING_HISTORY'"
+          - columnReference:
+              columnCounter: 2000032238
+              stepCounter: "200004060"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_QUESTION_HEADING_HISTORY_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_QUESTION_HEADING_HISTORY_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004060"

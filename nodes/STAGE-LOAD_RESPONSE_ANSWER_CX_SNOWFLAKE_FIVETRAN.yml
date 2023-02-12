@@ -1,0 +1,187 @@
+steps:
+  LOAD_RESPONSE_ANSWER_CX_SNOWFLAKE_FIVETRAN-200004063:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032278
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032279
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032280
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RESPONSE_PAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032281
+              stepCounter: "200004063"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: INDEX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032282
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CHOICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032283
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ROW_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032284
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COL_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032285
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: OTHER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032286
+              stepCounter: "200004063"
+            dataType: VARCHAR(16384)
+            defaultValue: ""
+            description: ""
+            name: TEXT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032287
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DOWNLOAD_URL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032288
+              stepCounter: "200004063"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032289
+              stepCounter: "200004063"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000032290
+              stepCounter: "200004063"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.SURVEY_MONKEY.RESPONSE_ANSWER'"
+          - columnReference:
+              columnCounter: 2000032291
+              stepCounter: "200004063"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_RESPONSE_ANSWER_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_RESPONSE_ANSWER_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004063"

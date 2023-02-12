@@ -1,0 +1,220 @@
+steps:
+  LOAD_IVPUPC_REC_CX_INNATRACK-200001874:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024130
+              stepCounter: "200001874"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PUPCPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024131
+              stepCounter: "200001874"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PUPCSELLUNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024132
+              stepCounter: "200001874"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PUPCINNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024133
+              stepCounter: "200001874"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PUPCUPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024134
+              stepCounter: "200001874"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: PUPCPALLPAT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024135
+              stepCounter: "200001874"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PUPCUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024136
+              stepCounter: "200001874"
+            dataType: NUMBER(10,3)
+            defaultValue: ""
+            description: ""
+            name: PUPCEQIVQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024137
+              stepCounter: "200001874"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: PUPCPACKSIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024138
+              stepCounter: "200001874"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: PUPCGWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024139
+              stepCounter: "200001874"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: PUPCNWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024140
+              stepCounter: "200001874"
+            dataType: NUMBER(13,7)
+            defaultValue: ""
+            description: ""
+            name: PUPCCUBE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024141
+              stepCounter: "200001874"
+            dataType: NUMBER(11,5)
+            defaultValue: ""
+            description: ""
+            name: PUPCHEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024142
+              stepCounter: "200001874"
+            dataType: NUMBER(11,5)
+            defaultValue: ""
+            description: ""
+            name: PUPCWIDTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024143
+              stepCounter: "200001874"
+            dataType: NUMBER(11,5)
+            defaultValue: ""
+            description: ""
+            name: PUPCDEPTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024144
+              stepCounter: "200001874"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: PUPCUSERDEF
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024145
+              stepCounter: "200001874"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_INNATRACK.DBO.IVPUPC_REC'"
+          - columnReference:
+              columnCounter: 2000024146
+              stepCounter: "200001874"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_IVPUPC_REC_CX_INNATRACK
+            noLinkRefs: []
+      name: LOAD_IVPUPC_REC_CX_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001874"

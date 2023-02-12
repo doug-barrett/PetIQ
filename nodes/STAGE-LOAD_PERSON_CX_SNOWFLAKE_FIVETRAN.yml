@@ -1,0 +1,3025 @@
+steps:
+  LOAD_PERSON_CX_SNOWFLAKE_FIVETRAN-200004206:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033295
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033296
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033297
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: DECEASED_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033298
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: TOBACCO_USER_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033299
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: DISABILITY_IDENTIFICATION_DECLINED_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033300
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: DISABLED_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033301
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: STUDENT_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033302
+              stepCounter: "200004206"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: DISABILITY_PERCENTAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033303
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033304
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DEATH_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033305
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: MILITARY_DISCHARGE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033306
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033307
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033308
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033309
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GENDER_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033310
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_IDENTITY_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033311
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_IDENTITY_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033312
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_IDENTITY_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033313
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GENDER_IDENTITY_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033314
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEXUAL_ORIENTATION_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033315
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEXUAL_ORIENTATION_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033316
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEXUAL_ORIENTATION_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033317
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SEXUAL_ORIENTATION_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033318
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RELIGION_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033319
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RELIGION_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033320
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RELIGION_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033321
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: RELIGION_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033322
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MARITAL_STATUS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033323
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MARITAL_STATUS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033324
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MARITAL_STATUS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033325
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: MARITAL_STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033326
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STUDENT_STATUS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033327
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STUDENT_STATUS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033328
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STUDENT_STATUS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033329
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: STUDENT_STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033330
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033331
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033332
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033333
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033334
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_GROUP_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033335
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_GROUP_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033336
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_GROUP_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033337
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_GROUP_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033338
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RACE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033339
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RACE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033340
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RACE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033341
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: RACE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033342
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHEST_EDUCATION_LEVEL_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033343
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHEST_EDUCATION_LEVEL_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033344
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHEST_EDUCATION_LEVEL_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033345
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HIGHEST_EDUCATION_LEVEL_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033346
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MILITARY_STATUS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033347
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MILITARY_STATUS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033348
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MILITARY_STATUS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033349
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: MILITARY_STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033350
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_GIVEN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033351
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_MIDDLE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033352
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_FAMILY_NAME_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033353
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_FAMILY_NAME_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033354
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_FORMATTED_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033355
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_NICK_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033356
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_FAMILY_NAME_1_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033357
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_FAMILY_NAME_2_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033358
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_INITIALS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033359
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033360
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033361
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033362
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033363
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_SCRIPT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033364
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_SCRIPT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033365
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_SCRIPT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033366
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_SCRIPT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033367
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_LANGUAGE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033368
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_LANGUAGE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033369
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_LANGUAGE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033370
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_LANGUAGE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033371
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_GENERATION_AFFIX_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033372
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_GENERATION_AFFIX_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033373
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_GENERATION_AFFIX_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033374
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_GENERATION_AFFIX_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033375
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_QUALIFICATION_AFFIX_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033376
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_QUALIFICATION_AFFIX_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033377
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_QUALIFICATION_AFFIX_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033378
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_QUALIFICATION_AFFIX_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033379
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033380
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_GENERATION_AFFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033381
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_QUALIFICATION_AFFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033382
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_SCRIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033383
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033384
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_NAME_LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033385
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_GIVEN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033386
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_MIDDLE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033387
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_FAMILY_NAME_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033388
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_FAMILY_NAME_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033389
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_FORMATTED_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033390
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_NICK_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033391
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_FAMILY_NAME_1_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033392
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_FAMILY_NAME_2_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033393
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_INITIALS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033394
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033395
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033396
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033397
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033398
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_SCRIPT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033399
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_SCRIPT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033400
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_SCRIPT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033401
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_SCRIPT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033402
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_LANGUAGE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033403
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_LANGUAGE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033404
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_LANGUAGE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033405
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_LANGUAGE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033406
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_GENERATION_AFFIX_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033407
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_GENERATION_AFFIX_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033408
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_GENERATION_AFFIX_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033409
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_GENERATION_AFFIX_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033410
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_QUALIFICATION_AFFIX_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033411
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_QUALIFICATION_AFFIX_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033412
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_QUALIFICATION_AFFIX_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033413
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_QUALIFICATION_AFFIX_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033414
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033415
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_GENERATION_AFFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033416
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_QUALIFICATION_AFFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033417
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_SCRIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033418
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033419
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_NAME_LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033420
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_GIVEN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033421
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_MIDDLE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033422
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_FAMILY_NAME_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033423
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_FAMILY_NAME_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033424
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_FORMATTED_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033425
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_NICK_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033426
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_FAMILY_NAME_1_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033427
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_FAMILY_NAME_2_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033428
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_INITIALS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033429
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033430
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033431
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033432
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033433
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_SCRIPT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033434
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_SCRIPT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033435
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_SCRIPT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033436
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_SCRIPT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033437
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_LANGUAGE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033438
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_LANGUAGE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033439
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_LANGUAGE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033440
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_LANGUAGE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033441
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_GENERATION_AFFIX_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033442
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_GENERATION_AFFIX_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033443
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_GENERATION_AFFIX_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033444
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_GENERATION_AFFIX_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033445
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_QUALIFICATION_AFFIX_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033446
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_QUALIFICATION_AFFIX_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033447
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_QUALIFICATION_AFFIX_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033448
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_QUALIFICATION_AFFIX_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033449
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033450
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_GENERATION_AFFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033451
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_QUALIFICATION_AFFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033452
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_SCRIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033453
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033454
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_NAME_LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033455
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_ATTENTION_OF_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033456
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_CARE_OF_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033457
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033458
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033459
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_LINE_THREE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033460
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_LINE_FOUR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033461
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_LINE_FIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033462
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_BUILDING_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033463
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_BUILDING_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033464
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_BLOCK_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033465
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STREET_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033466
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033467
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033468
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033469
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033470
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_FLOOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033471
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STAIR_CASE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033472
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_DOOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033473
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_POST_OFFICE_BOX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033474
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_DELIVERY_POINT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033475
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_PLOT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033476
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_FORMATTED_BIRTH_PLACE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033477
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_SAME_AS_ADDRESS_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033478
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033479
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033480
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033481
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033482
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_SCRIPT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033483
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_SCRIPT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033484
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_SCRIPT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033485
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_SCRIPT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033486
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STREET_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033487
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STREET_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033488
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STREET_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033489
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STREET_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033490
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033491
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033492
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033493
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033494
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_GEO_COORDINATE_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033495
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_GEO_COORDINATE_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033496
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033497
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_COUNTRY_SUBDIVISION_LEVEL_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033498
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_COUNTRY_SUBDIVISION_LEVEL_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033499
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_STREET_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033500
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_SCRIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033501
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033502
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ADDRESS_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033503
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_ATTENTION_OF_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033504
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_CARE_OF_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033505
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033506
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033507
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_LINE_THREE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033508
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_LINE_FOUR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033509
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_LINE_FIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033510
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_BUILDING_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033511
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_BUILDING_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033512
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_BLOCK_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033513
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STREET_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033514
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033515
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033516
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033517
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033518
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_FLOOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033519
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STAIR_CASE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033520
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_DOOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033521
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_POST_OFFICE_BOX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033522
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_DELIVERY_POINT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033523
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_PLOT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033524
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_FORMATTED_BIRTH_PLACE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033525
+              stepCounter: "200004206"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_SAME_AS_ADDRESS_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033526
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033527
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033528
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033529
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033530
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_SCRIPT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033531
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_SCRIPT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033532
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_SCRIPT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033533
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_SCRIPT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033534
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STREET_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033535
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STREET_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033536
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STREET_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033537
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STREET_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033538
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033539
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033540
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033541
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033542
+              stepCounter: "200004206"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_GEO_COORDINATE_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033543
+              stepCounter: "200004206"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_GEO_COORDINATE_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033544
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033545
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_COUNTRY_SUBDIVISION_LEVEL_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033546
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_COUNTRY_SUBDIVISION_LEVEL_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033547
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_STREET_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033548
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_SCRIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033549
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033550
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIRTH_PLACE_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033551
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER_IDENTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033552
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEXUAL_ORIENTATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033553
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RELIGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033554
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MARITAL_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033555
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STUDENT_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033556
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033557
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ETHNICITY_GROUP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033558
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RACE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033559
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHEST_EDUCATION_LEVEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033560
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MILITARY_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033561
+              stepCounter: "200004206"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GENDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033562
+              stepCounter: "200004206"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_401_K_PLAN_ENTRY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033563
+              stepCounter: "200004206"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_HSA_
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033564
+              stepCounter: "200004206"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000033565
+              stepCounter: "200004206"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.PERSON'"
+          - columnReference:
+              columnCounter: 2000033566
+              stepCounter: "200004206"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PERSON_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_PERSON_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004206"

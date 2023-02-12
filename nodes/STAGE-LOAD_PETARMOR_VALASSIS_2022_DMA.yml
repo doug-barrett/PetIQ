@@ -1,0 +1,132 @@
+steps:
+  LOAD_PETARMOR_VALASSIS_2022_DMA-200003642:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027971
+              stepCounter: "200003642"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027972
+              stepCounter: "200003642"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DMA_REGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027973
+              stepCounter: "200003642"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027974
+              stepCounter: "200003642"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LINK_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027975
+              stepCounter: "200003642"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: CTR__LINK_CLICK_THROUGH_RATE_
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027976
+              stepCounter: "200003642"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: TOTAL_SPEND__USD_
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027977
+              stepCounter: "200003642"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: CPC__COST_PER_CLICK_
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027970
+              stepCounter: "200003642"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.PETARMOR_VALASSIS_2022_DMA'"
+          - columnReference:
+              columnCounter: 2000027969
+              stepCounter: "200003642"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PETARMOR_VALASSIS_2022_DMA
+            noLinkRefs: []
+      name: LOAD_PETARMOR_VALASSIS_2022_DMA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003642"

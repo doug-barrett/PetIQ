@@ -1,0 +1,243 @@
+steps:
+  LOAD_FILEUPLOAD_POS_COSTCO-200002482:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026109
+              stepCounter: "200002482"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: DATEYYYYMMDD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST( CAST(COSTCO_SALES_STG.DATEYYYYMMDD AS VARCHAR) AS
+                  DATE  )
+          - columnReference:
+              columnCounter: 2000024855
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024856
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMNUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024858
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024857
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024859
+              stepCounter: "200002482"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024860
+              stepCounter: "200002482"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DOLLARSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024861
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REFUNDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024862
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REFUNDDOLLARS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024863
+              stepCounter: "200002482"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYONHAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024864
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024865
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSECODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024866
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSENAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024867
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024868
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024869
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATEORPROVINCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024870
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: POSTALCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024871
+              stepCounter: "200002482"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_POS_DEV.DBO.COSTCO_SALES_STG'"
+          - columnReference:
+              columnCounter: 2000024872
+              stepCounter: "200002482"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_FILEUPLOAD_POS_COSTCO
+            noLinkRefs: []
+      name: LOAD_FILEUPLOAD_POS_COSTCO
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002482"

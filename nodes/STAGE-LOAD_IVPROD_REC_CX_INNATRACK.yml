@@ -1,0 +1,726 @@
+steps:
+  LOAD_IVPROD_REC_CX_INNATRACK-200001873:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024067
+              stepCounter: "200001873"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024068
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODPRDSTAT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024069
+              stepCounter: "200001873"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: PRODDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024070
+              stepCounter: "200001873"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: PRODDESC1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024071
+              stepCounter: "200001873"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PRODPRDTYP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024072
+              stepCounter: "200001873"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: PRODPRDGRD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024073
+              stepCounter: "200001873"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRODPRDCLASS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024074
+              stepCounter: "200001873"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRODPRDGRP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024075
+              stepCounter: "200001873"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRODBRAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024076
+              stepCounter: "200001873"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRODSTYLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024077
+              stepCounter: "200001873"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRODPROCESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024078
+              stepCounter: "200001873"
+            dataType: VARCHAR(4)
+            defaultValue: ""
+            description: ""
+            name: PRODBOLCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024079
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODABC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024080
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODCONVCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024081
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODNONINV
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024082
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODTAXABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024083
+              stepCounter: "200001873"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PRODSTKUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024084
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODSTCKMETH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024085
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODSHLFLIFE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024086
+              stepCounter: "200001873"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PRODDATCOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024087
+              stepCounter: "200001873"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRODRPTCAT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024088
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024089
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024090
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024091
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024092
+              stepCounter: "200001873"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PRODCOMBASE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024093
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODCOSTMETH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024094
+              stepCounter: "200001873"
+            dataType: VARCHAR(12)
+            defaultValue: ""
+            description: ""
+            name: PRODADDUSR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024095
+              stepCounter: "200001873"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PRODADDDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),PRODADDDT,120)
+          - columnReference:
+              columnCounter: 2000024096
+              stepCounter: "200001873"
+            dataType: VARCHAR(12)
+            defaultValue: ""
+            description: ""
+            name: PRODCHGUSR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024097
+              stepCounter: "200001873"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PRODCHGDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),PRODCHGDT,120)
+          - columnReference:
+              columnCounter: 2000024098
+              stepCounter: "200001873"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRODBASEITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024099
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODSTKMTHD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024100
+              stepCounter: "200001873"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRODSIMITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024101
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODBCKFLUSH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024102
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODPHANTOM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024103
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODPHNTMCST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024104
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODSHFLIFEO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024105
+              stepCounter: "200001873"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRODCOITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024106
+              stepCounter: "200001873"
+            dataType: VARCHAR(4)
+            defaultValue: ""
+            description: ""
+            name: PRODINTLBOL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024107
+              stepCounter: "200001873"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PRODINTRODT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),PRODINTRODT,120)
+          - columnReference:
+              columnCounter: 2000024108
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODECNNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024109
+              stepCounter: "200001873"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PRODPRCUOM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024110
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODTEMPREQ
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024111
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODMAXLIFEO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024112
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODBESTBYO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024113
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODDATEGEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024114
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODGLEQUIV
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024115
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODMAXLIFE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024116
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODBESTBY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024117
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODREQCTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024118
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024119
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024120
+              stepCounter: "200001873"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: PRODREQMFGDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024121
+              stepCounter: "200001873"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODREMLIFE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024122
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024123
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024124
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSR9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024125
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSRA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024126
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSRB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024127
+              stepCounter: "200001873"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRODPRODUSRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024128
+              stepCounter: "200001873"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_INNATRACK.DBO.IVPROD_REC'"
+          - columnReference:
+              columnCounter: 2000024129
+              stepCounter: "200001873"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_IVPROD_REC_CX_INNATRACK
+            noLinkRefs: []
+      name: LOAD_IVPROD_REC_CX_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001873"

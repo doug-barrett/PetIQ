@@ -1,0 +1,187 @@
+steps:
+  LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN-200003935:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031754
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031755
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031756
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031757
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031758
+              stepCounter: "200003935"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031759
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031760
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031761
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031762
+              stepCounter: "200003935"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031763
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031764
+              stepCounter: "200003935"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031765
+              stepCounter: "200003935"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000031766
+              stepCounter: "200003935"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.ORGANIZATIONAL_UNIT'"
+          - columnReference:
+              columnCounter: 2000031767
+              stepCounter: "200003935"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003935"

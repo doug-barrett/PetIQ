@@ -1,0 +1,132 @@
+steps:
+  LOAD_PETARMOR_VALASSIS_2022_RETAILOR-200003644:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027980
+              stepCounter: "200003644"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DAY, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027981
+              stepCounter: "200003644"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027982
+              stepCounter: "200003644"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027983
+              stepCounter: "200003644"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LINK_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027984
+              stepCounter: "200003644"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: CTR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027985
+              stepCounter: "200003644"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SPEND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027986
+              stepCounter: "200003644"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: CPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027979
+              stepCounter: "200003644"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.PETARMOR_VALASSIS_2022_RETAILOR'"
+          - columnReference:
+              columnCounter: 2000027978
+              stepCounter: "200003644"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PETARMOR_VALASSIS_2022_RETAILOR
+            noLinkRefs: []
+      name: LOAD_PETARMOR_VALASSIS_2022_RETAILOR
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003644"

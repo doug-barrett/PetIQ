@@ -1,0 +1,242 @@
+steps:
+  LOAD_HOST_TRANSACTIONS_APOLLO_READ_REPLICA-200003905:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030836
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030837
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030838
+              stepCounter: "200003905"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030839
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: AMOUNT_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030840
+              stepCounter: "200003905"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE_ON, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000030841
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030842
+              stepCounter: "200003905"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030843
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030844
+              stepCounter: "200003905"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAYOUT_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(PAYOUT_EXPIRES_ON, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000030845
+              stepCounter: "200003905"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAID_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(PAID_ON, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000030846
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PARENT_TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030847
+              stepCounter: "200003905"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000030848
+              stepCounter: "200003905"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000030849
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030850
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030851
+              stepCounter: "200003905"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030852
+              stepCounter: "200003905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DEBIT_TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030853
+              stepCounter: "200003905"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO_READ_REPLICA.PUBLIC.HOST_TRANSACTIONS'"
+          - columnReference:
+              columnCounter: 2000030854
+              stepCounter: "200003905"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_HOST_TRANSACTIONS_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: LOAD_HOST_TRANSACTIONS_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003905"

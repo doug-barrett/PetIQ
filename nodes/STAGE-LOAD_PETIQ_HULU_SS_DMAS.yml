@@ -1,0 +1,242 @@
+steps:
+  LOAD_PETIQ_HULU_SS_DMAS-200003495:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027374
+              stepCounter: "200003495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027375
+              stepCounter: "200003495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FLIGHT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027376
+              stepCounter: "200003495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DMA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027377
+              stepCounter: "200003495"
+            dataType: NUMBER(5,4)
+            defaultValue: ""
+            description: ""
+            name: PERCENT_BREAKOUT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027378
+              stepCounter: "200003495"
+            dataType: NUMBER(5,4)
+            defaultValue: ""
+            description: ""
+            name: VCR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027379
+              stepCounter: "200003495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027380
+              stepCounter: "200003495"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: FLIGHT_START
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027381
+              stepCounter: "200003495"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: FLIGHT_END
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027382
+              stepCounter: "200003495"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027383
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: DELIVERED_IMPRESSION_STARTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027384
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: DELIVERED_IMPRESSION_COMPLETES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027385
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027386
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: EST_SPEND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027387
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS_COMPLETES_BREAKOUT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027388
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS_STARTS_BREAKOUT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027389
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS_BREAKOUT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027390
+              stepCounter: "200003495"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: EST_SPEND_BREAKOUT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027373
+              stepCounter: "200003495"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.PETIQ_HULU_SS_DMAS'"
+          - columnReference:
+              columnCounter: 2000027372
+              stepCounter: "200003495"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PETIQ_HULU_SS_DMAS
+            noLinkRefs: []
+      name: LOAD_PETIQ_HULU_SS_DMAS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003495"

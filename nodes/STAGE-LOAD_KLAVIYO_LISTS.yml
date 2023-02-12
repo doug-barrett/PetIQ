@@ -1,0 +1,77 @@
+steps:
+  LOAD_KLAVIYO_LISTS-200003412:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026463
+              stepCounter: "200003412"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: LIST_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026464
+              stepCounter: "200003412"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: LIST_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026462
+              stepCounter: "200003412"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'API_SISENSE.HTTPS://A.KLAVIYO.COM/API/V2/LISTS?API_KEY=PK_0034F2D32D96E7FF0.API'"
+          - columnReference:
+              columnCounter: 2000026461
+              stepCounter: "200003412"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_KLAVIYO_LISTS
+            noLinkRefs: []
+      name: LOAD_KLAVIYO_LISTS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003412"

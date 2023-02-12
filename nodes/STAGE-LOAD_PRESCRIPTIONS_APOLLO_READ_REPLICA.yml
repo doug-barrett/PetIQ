@@ -1,0 +1,352 @@
+steps:
+  LOAD_PRESCRIPTIONS_APOLLO_READ_REPLICA-200003240:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000025972
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025973
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025974
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025975
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: REFILL_DOSES_AVAILABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025976
+              stepCounter: "200003240"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EFFECTIVE_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(EFFECTIVE_ON,  'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000025977
+              stepCounter: "200003240"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(EXPIRES_ON, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000025978
+              stepCounter: "200003240"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE_INSTRUCTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SUBSTR(DOSAGE_INSTRUCTIONS,1,16777216)
+          - columnReference:
+              columnCounter: 2000025979
+              stepCounter: "200003240"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VET_FULL_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025980
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ORDER_ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025981
+              stepCounter: "200003240"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: FULFILLED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(FULFILLED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000025982
+              stepCounter: "200003240"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FULFILLMENT_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SUBSTR(FULFILLMENT_NOTE,1,16777216)
+          - columnReference:
+              columnCounter: 2000025983
+              stepCounter: "200003240"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: PRINTED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(PRINTED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000025984
+              stepCounter: "200003240"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000025985
+              stepCounter: "200003240"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000025986
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025987
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025988
+              stepCounter: "200003240"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025989
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRESCRIPTION_SIGNATURE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025990
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRODUCTS_VACCERT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025991
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRINTED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025992
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: FULFILLED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025993
+              stepCounter: "200003240"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VET_LICENSE_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025994
+              stepCounter: "200003240"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VET_LICENSE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025995
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VACCERT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025996
+              stepCounter: "200003240"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_PROMOTIONAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025997
+              stepCounter: "200003240"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PHARMACY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025998
+              stepCounter: "200003240"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DROP_SHIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025971
+              stepCounter: "200003240"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO_READ_REPLICA.PUBLIC.PRESCRIPTIONS'"
+          - columnReference:
+              columnCounter: 2000025970
+              stepCounter: "200003240"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PRESCRIPTIONS_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: LOAD_PRESCRIPTIONS_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003240"

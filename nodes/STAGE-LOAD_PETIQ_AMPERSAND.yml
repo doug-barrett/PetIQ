@@ -1,0 +1,110 @@
+steps:
+  LOAD_PETIQ_AMPERSAND-200003493:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027367
+              stepCounter: "200003493"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(WEEK, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027368
+              stepCounter: "200003493"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: DELIVERED_IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027369
+              stepCounter: "200003493"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONTRACTED_IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027370
+              stepCounter: "200003493"
+            dataType: NUMBER(18,4)
+            defaultValue: ""
+            description: ""
+            name: SPEND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027371
+              stepCounter: "200003493"
+            dataType: NUMBER(18,8)
+            defaultValue: ""
+            description: ""
+            name: DELIVERY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027366
+              stepCounter: "200003493"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.PETIQ_AMPERSAND'"
+          - columnReference:
+              columnCounter: 2000027365
+              stepCounter: "200003493"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PETIQ_AMPERSAND
+            noLinkRefs: []
+      name: LOAD_PETIQ_AMPERSAND
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003493"

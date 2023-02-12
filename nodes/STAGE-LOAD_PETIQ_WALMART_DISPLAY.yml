@@ -1,0 +1,286 @@
+steps:
+  LOAD_PETIQ_WALMART_DISPLAY-200003903:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030756
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: WEEK_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030757
+              stepCounter: "200003903"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: DATES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030758
+              stepCounter: "200003903"
+            dataType: VARCHAR(125)
+            defaultValue: ""
+            description: ""
+            name: LINE_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030759
+              stepCounter: "200003903"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_START
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CAMPAIGN_START, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000030760
+              stepCounter: "200003903"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_END
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CAMPAIGN_END, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000030761
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030762
+              stepCounter: "200003903"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SPEND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030763
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TOTAL_ATTRIBUTED_SALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030764
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: STORE_ATTRIBUTED_SALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030765
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PICKUP_SALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030766
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: DELIVERY_SALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030767
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TOTAL_ATTRIBUTED_TRANSACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030768
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: STORE_ATTRIBUTED_TRANSACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030769
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PICKUP_TRANSACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030770
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: DELIVERY_TRANSACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030771
+              stepCounter: "200003903"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_ROAS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030772
+              stepCounter: "200003903"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: STORE_ROAS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030773
+              stepCounter: "200003903"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: PICKUP_ROAS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030774
+              stepCounter: "200003903"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: DELIVERY_ROAS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030775
+              stepCounter: "200003903"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030776
+              stepCounter: "200003903"
+            dataType: NUMBER(6,4)
+            defaultValue: ""
+            description: ""
+            name: CTR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030755
+              stepCounter: "200003903"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.PETIQ_WALMART_DISPLAY'"
+          - columnReference:
+              columnCounter: 2000030754
+              stepCounter: "200003903"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PETIQ_WALMART_DISPLAY
+            noLinkRefs: []
+      name: LOAD_PETIQ_WALMART_DISPLAY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003903"

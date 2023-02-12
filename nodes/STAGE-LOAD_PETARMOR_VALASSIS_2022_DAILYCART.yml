@@ -1,0 +1,121 @@
+steps:
+  LOAD_PETARMOR_VALASSIS_2022_DAILYCART-200003637:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027957
+              stepCounter: "200003637"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027958
+              stepCounter: "200003637"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027959
+              stepCounter: "200003637"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027960
+              stepCounter: "200003637"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027961
+              stepCounter: "200003637"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_CARTED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027962
+              stepCounter: "200003637"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: TOTAL_PRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027956
+              stepCounter: "200003637"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.PETARMOR_VALASSIS_2022_DAILYCART'"
+          - columnReference:
+              columnCounter: 2000027955
+              stepCounter: "200003637"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_PETARMOR_VALASSIS_2022_DAILYCART
+            noLinkRefs: []
+      name: LOAD_PETARMOR_VALASSIS_2022_DAILYCART
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003637"

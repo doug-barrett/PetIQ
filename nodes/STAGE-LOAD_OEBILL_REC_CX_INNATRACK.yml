@@ -1,0 +1,231 @@
+steps:
+  LOAD_OEBILL_REC_CX_INNATRACK-200001875:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024147
+              stepCounter: "200001875"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: BILLBILLTO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024148
+              stepCounter: "200001875"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BILLNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024149
+              stepCounter: "200001875"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BILLATTEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024150
+              stepCounter: "200001875"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BILLDIVISION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024151
+              stepCounter: "200001875"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BILLREGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024152
+              stepCounter: "200001875"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: BILLCOMPANY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024153
+              stepCounter: "200001875"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BILLTRADCLAS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024154
+              stepCounter: "200001875"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: BILLBILLSTAT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024155
+              stepCounter: "200001875"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BILLADDR1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024156
+              stepCounter: "200001875"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BILLADDR2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024157
+              stepCounter: "200001875"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BILLADDR3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024158
+              stepCounter: "200001875"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: BILLCITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024159
+              stepCounter: "200001875"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: BILLSTATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024160
+              stepCounter: "200001875"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: BILLZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024161
+              stepCounter: "200001875"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BILLCOUNTRY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024162
+              stepCounter: "200001875"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: BILLCUSTUSR5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024163
+              stepCounter: "200001875"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_INNATRACK.DBO.OEBILL_REC'"
+          - columnReference:
+              columnCounter: 2000024164
+              stepCounter: "200001875"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_OEBILL_REC_CX_INNATRACK
+            noLinkRefs: []
+      name: LOAD_OEBILL_REC_CX_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001875"
