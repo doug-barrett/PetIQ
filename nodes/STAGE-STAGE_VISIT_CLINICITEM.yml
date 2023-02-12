@@ -1,0 +1,533 @@
+steps:
+  STAGE_VISIT_CLINICITEM-200003388:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031292
+              stepCounter: "200003388"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031293
+                stepCounter: "200003388"
+              - columnCounter: 2000031294
+                stepCounter: "200003388"
+              - columnCounter: 2000031295
+                stepCounter: "200003388"
+            name: HK_L_VISIT_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031293
+              stepCounter: "200003388"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031298
+                stepCounter: "200003388"
+              - columnCounter: 2000031299
+                stepCounter: "200003388"
+            name: HK_H_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031294
+              stepCounter: "200003388"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031296
+                stepCounter: "200003388"
+              - columnCounter: 2000031297
+                stepCounter: "200003388"
+            name: HK_H_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031295
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031296
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031297
+              stepCounter: "200003388"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031298
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VISIT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031299
+              stepCounter: "200003388"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031300
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031301
+              stepCounter: "200003388"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031302
+              stepCounter: "200003388"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031303
+              stepCounter: "200003388"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CALLBACK_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031304
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RABIES_LOT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031305
+              stepCounter: "200003388"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TEXT_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031306
+              stepCounter: "200003388"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TEXT_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031307
+              stepCounter: "200003388"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TEXT_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031308
+              stepCounter: "200003388"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: POSTCARD_SENT_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031309
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_INTERVAL_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031310
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031311
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031312
+              stepCounter: "200003388"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031313
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNIT_PRICE_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031314
+              stepCounter: "200003388"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INJECTION_SITE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031315
+              stepCounter: "200003388"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031316
+              stepCounter: "200003388"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_VACCERT_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031317
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELLER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031318
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROUTE_OF_ADMINISTRATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031319
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BACKORDER_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031320
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REFILL_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031321
+              stepCounter: "200003388"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE_INSTRUCTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031322
+              stepCounter: "200003388"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRESCRIPTION_DOSES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031323
+              stepCounter: "200003388"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PRESCRIPTION_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031324
+              stepCounter: "200003388"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: PARENT_KIT_LINE_UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031325
+              stepCounter: "200003388"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CONTRACT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031326
+              stepCounter: "200003388"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031300
+                stepCounter: "200003388"
+              - columnCounter: 2000031301
+                stepCounter: "200003388"
+              - columnCounter: 2000031302
+                stepCounter: "200003388"
+              - columnCounter: 2000031303
+                stepCounter: "200003388"
+              - columnCounter: 2000031304
+                stepCounter: "200003388"
+              - columnCounter: 2000031305
+                stepCounter: "200003388"
+              - columnCounter: 2000031306
+                stepCounter: "200003388"
+              - columnCounter: 2000031307
+                stepCounter: "200003388"
+              - columnCounter: 2000031308
+                stepCounter: "200003388"
+              - columnCounter: 2000031309
+                stepCounter: "200003388"
+              - columnCounter: 2000031310
+                stepCounter: "200003388"
+              - columnCounter: 2000031311
+                stepCounter: "200003388"
+              - columnCounter: 2000031312
+                stepCounter: "200003388"
+              - columnCounter: 2000031313
+                stepCounter: "200003388"
+              - columnCounter: 2000031314
+                stepCounter: "200003388"
+              - columnCounter: 2000031315
+                stepCounter: "200003388"
+              - columnCounter: 2000031316
+                stepCounter: "200003388"
+              - columnCounter: 2000031317
+                stepCounter: "200003388"
+              - columnCounter: 2000031318
+                stepCounter: "200003388"
+              - columnCounter: 2000031319
+                stepCounter: "200003388"
+              - columnCounter: 2000031320
+                stepCounter: "200003388"
+              - columnCounter: 2000031321
+                stepCounter: "200003388"
+              - columnCounter: 2000031322
+                stepCounter: "200003388"
+              - columnCounter: 2000031323
+                stepCounter: "200003388"
+              - columnCounter: 2000031324
+                stepCounter: "200003388"
+              - columnCounter: 2000031325
+                stepCounter: "200003388"
+            name: DSS_CHANGE_HASH_VISIT_CLINICITEM_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031327
+              stepCounter: "200003388"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031328
+              stepCounter: "200003388"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031329
+              stepCounter: "200003388"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PRODUCTS_VACCERTS_FT: "200003820"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCTS_VACCERTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PRODUCTS_VACCERTS_FT') }}\
+                \ LOAD_PRODUCTS_VACCERTS_FT  "
+            name: STAGE_VISIT_CLINICITEM
+            noLinkRefs: []
+      name: STAGE_VISIT_CLINICITEM
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003388"

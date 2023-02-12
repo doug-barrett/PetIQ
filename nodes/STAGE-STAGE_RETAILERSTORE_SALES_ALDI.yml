@@ -1,0 +1,260 @@
+steps:
+  STAGE_RETAILERSTORE_SALES_ALDI-200002793:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028037
+              stepCounter: "200002793"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028038
+                stepCounter: "200002793"
+              - columnCounter: 2000028039
+                stepCounter: "200002793"
+              - columnCounter: 2000028044
+                stepCounter: "200002793"
+              - columnCounter: 2000028045
+                stepCounter: "200002793"
+            name: HK_L_RETAILERSTORE_SALES_ALDI
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028038
+              stepCounter: "200002793"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028040
+                stepCounter: "200002793"
+              - columnCounter: 2000028041
+                stepCounter: "200002793"
+            name: HK_H_RETAILERPRODUCT_ALDI
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028039
+              stepCounter: "200002793"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028042
+                stepCounter: "200002793"
+              - columnCounter: 2000028043
+                stepCounter: "200002793"
+            name: HK_H_RETAILERSTORE_ALDI
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028040
+              stepCounter: "200002793"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028041
+              stepCounter: "200002793"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ALDI'"
+          - columnReference:
+              columnCounter: 2000028042
+              stepCounter: "200002793"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DIVISION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028043
+              stepCounter: "200002793"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_STORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ALDI'"
+          - columnReference:
+              columnCounter: 2000028044
+              stepCounter: "200002793"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: SALESPERIODEND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028045
+              stepCounter: "200002793"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: SALESPERIODSTART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028046
+              stepCounter: "200002793"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUPPLIERNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028047
+              stepCounter: "200002793"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ALDIREPRESENTATIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028048
+              stepCounter: "200002793"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: WEEKLYUNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028049
+              stepCounter: "200002793"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: WEEKLYCASESSOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028050
+              stepCounter: "200002793"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028046
+                stepCounter: "200002793"
+              - columnCounter: 2000028047
+                stepCounter: "200002793"
+              - columnCounter: 2000028048
+                stepCounter: "200002793"
+              - columnCounter: 2000028049
+                stepCounter: "200002793"
+            name: DSS_CHANGE_HASH_RETAILERSTORE_SALES_ALDI_LROC_DS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028051
+              stepCounter: "200002793"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028052
+              stepCounter: "200002793"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028053
+              stepCounter: "200002793"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ALDI_SALES: "200002789"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ALDI_SALES
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ALDI_SALES') }} LOAD_ALDI_SALES\
+                \  "
+            name: STAGE_RETAILERSTORE_SALES_ALDI
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_SALES_ALDI
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002793"

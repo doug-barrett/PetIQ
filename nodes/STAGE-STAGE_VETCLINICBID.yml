@@ -1,0 +1,319 @@
+steps:
+  STAGE_VETCLINICBID-200003608:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031191
+              stepCounter: "200003608"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031192
+                stepCounter: "200003608"
+              - columnCounter: 2000031193
+                stepCounter: "200003608"
+            name: HK_H_VETCLINICBID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031192
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031193
+              stepCounter: "200003608"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031194
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031195
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_RUN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031196
+              stepCounter: "200003608"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031197
+              stepCounter: "200003608"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031198
+              stepCounter: "200003608"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031199
+              stepCounter: "200003608"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031200
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031201
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031202
+              stepCounter: "200003608"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031203
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ENGAGEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031204
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELECTED_BY_USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031205
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELECTED_BY_OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031206
+              stepCounter: "200003608"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DECLINED_BY_USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031207
+              stepCounter: "200003608"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: DECLINED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031208
+              stepCounter: "200003608"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: MANUAL_BID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031209
+              stepCounter: "200003608"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031194
+                stepCounter: "200003608"
+              - columnCounter: 2000031195
+                stepCounter: "200003608"
+              - columnCounter: 2000031196
+                stepCounter: "200003608"
+              - columnCounter: 2000031197
+                stepCounter: "200003608"
+              - columnCounter: 2000031198
+                stepCounter: "200003608"
+              - columnCounter: 2000031199
+                stepCounter: "200003608"
+              - columnCounter: 2000031200
+                stepCounter: "200003608"
+              - columnCounter: 2000031201
+                stepCounter: "200003608"
+              - columnCounter: 2000031202
+                stepCounter: "200003608"
+              - columnCounter: 2000031203
+                stepCounter: "200003608"
+              - columnCounter: 2000031204
+                stepCounter: "200003608"
+              - columnCounter: 2000031205
+                stepCounter: "200003608"
+              - columnCounter: 2000031206
+                stepCounter: "200003608"
+              - columnCounter: 2000031207
+                stepCounter: "200003608"
+              - columnCounter: 2000031208
+                stepCounter: "200003608"
+            name: DSS_CHANGE_HASH_VETCLINICBID_LROC_DEFAULT_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031210
+              stepCounter: "200003608"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031211
+              stepCounter: "200003608"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031212
+              stepCounter: "200003608"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_VET_BIDS_FT: "200004123"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_VET_BIDS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_VET_BIDS_FT') }} LOAD_VET_BIDS_FT\
+                \    "
+            name: STAGE_VETCLINICBID
+            noLinkRefs: []
+      name: STAGE_VETCLINICBID
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003608"

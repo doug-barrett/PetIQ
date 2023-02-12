@@ -1,0 +1,110 @@
+steps:
+  STAGE_RETAILERSTORE_ALDI-200002794:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028005
+              stepCounter: "200002794"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028006
+                stepCounter: "200002794"
+              - columnCounter: 2000028007
+                stepCounter: "200002794"
+            name: HK_H_RETAILERSTORE_ALDI
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028006
+              stepCounter: "200002794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DIVISION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028007
+              stepCounter: "200002794"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ALDI'"
+          - columnReference:
+              columnCounter: 2000028008
+              stepCounter: "200002794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028009
+              stepCounter: "200002794"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028010
+              stepCounter: "200002794"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ALDI_SALES: "200002789"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ALDI_SALES
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ALDI_SALES') }} LOAD_ALDI_SALES\
+                \  "
+            name: STAGE_RETAILERSTORE_ALDI
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_ALDI
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002794"

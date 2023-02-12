@@ -1,0 +1,228 @@
+steps:
+  STAGE_RETAILERSTORE_TRACTORSUPPLY-200002603:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027203
+              stepCounter: "200002603"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027204
+                stepCounter: "200002603"
+              - columnCounter: 2000027205
+                stepCounter: "200002603"
+            name: HK_H_RETAILERSTORE_TRACTORSUPPLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027204
+              stepCounter: "200002603"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: STORENO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027205
+              stepCounter: "200002603"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_TRACTORSUPPLY'"
+          - columnReference:
+              columnCounter: 2000027206
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTCHANNELDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027207
+              stepCounter: "200002603"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REGIONNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027208
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MARKETINGREGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027209
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027210
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STOREFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027211
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GEOREGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027212
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GEOREGIONZONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027213
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027214
+              stepCounter: "200002603"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027206
+                stepCounter: "200002603"
+              - columnCounter: 2000027207
+                stepCounter: "200002603"
+              - columnCounter: 2000027208
+                stepCounter: "200002603"
+              - columnCounter: 2000027209
+                stepCounter: "200002603"
+              - columnCounter: 2000027210
+                stepCounter: "200002603"
+              - columnCounter: 2000027211
+                stepCounter: "200002603"
+              - columnCounter: 2000027212
+                stepCounter: "200002603"
+              - columnCounter: 2000027213
+                stepCounter: "200002603"
+            name: DSS_CHANGE_HASH_RETAILERSTORE_TRACTORSUPPLY_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027215
+              stepCounter: "200002603"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027216
+              stepCounter: "200002603"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027217
+              stepCounter: "200002603"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_TSC_POS_TRACTORSUPPLY: "200002597"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_TSC_POS_TRACTORSUPPLY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_TSC_POS_TRACTORSUPPLY') }}\
+                \ LOAD_TSC_POS_TRACTORSUPPLY  "
+            name: STAGE_RETAILERSTORE_TRACTORSUPPLY
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_TRACTORSUPPLY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002603"

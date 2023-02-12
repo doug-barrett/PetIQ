@@ -1,0 +1,243 @@
+steps:
+  STAGE_RETAILERSTORE_INVENTORY_BJS-200003168:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028691
+              stepCounter: "200003168"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RETAILERPRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028692
+              stepCounter: "200003168"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_BJS'"
+          - columnReference:
+              columnCounter: 2000028693
+              stepCounter: "200003168"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RETAILERSTOREID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028694
+              stepCounter: "200003168"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_BJS'"
+          - columnReference:
+              columnCounter: 2000028695
+              stepCounter: "200003168"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: WEEK_ENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028696
+              stepCounter: "200003168"
+            dataType: VARCHAR(16)
+            defaultValue: ""
+            description: ""
+            name: BJS_FISCAL_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028699
+              stepCounter: "200003168"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLUB_OH_UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028700
+              stepCounter: "200003168"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLUB_ON_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028701
+              stepCounter: "200003168"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ON_ORDER_FROM_VENDOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028703
+              stepCounter: "200003168"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028704
+              stepCounter: "200003168"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028705
+              stepCounter: "200003168"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028702
+              stepCounter: "200003168"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028699
+                stepCounter: "200003168"
+              - columnCounter: 2000028700
+                stepCounter: "200003168"
+              - columnCounter: 2000028701
+                stepCounter: "200003168"
+            name: DSS_CHANGE_HASH_RETAILERSTORE_INVENTORY_BJS_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028688
+              stepCounter: "200003168"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028689
+                stepCounter: "200003168"
+              - columnCounter: 2000028690
+                stepCounter: "200003168"
+            name: HK_L_RETAILERSTORE_INVENTORY_BJS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028689
+              stepCounter: "200003168"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028691
+                stepCounter: "200003168"
+              - columnCounter: 2000028692
+                stepCounter: "200003168"
+            name: HK_H_RETAILERPRODUCT_BJS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028690
+              stepCounter: "200003168"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028693
+                stepCounter: "200003168"
+              - columnCounter: 2000028694
+                stepCounter: "200003168"
+            name: HK_H_RETAILERSTORE_BJS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALESINVENTORY_POS_BJS: "200001682"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALESINVENTORY_POS_BJS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALESINVENTORY_POS_BJS') }}\
+                \ LOAD_SALESINVENTORY_POS_BJS  "
+            name: STAGE_RETAILERSTORE_INVENTORY_BJS
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_INVENTORY_BJS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003168"

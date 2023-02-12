@@ -1,0 +1,188 @@
+steps:
+  VIEW_LOAD_LOOKUP_CLEAN-200002956:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000011812
+              stepCounter: "200002956"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER ='BJS' THEN
+                  'POS_BJS'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER ='SAMSCLUB'
+                  THEN 'POS_SAMSCLUB'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER ='WALMART'
+                  THEN 'POS_WALMART'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER ='ANDA'
+                  THEN 'POS_ANDA'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER ='COSTCO'
+                  THEN 'POS_COSTCO'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER ='TSC'
+                  THEN 'POS_TRACTORSUPPLY'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='PETCO' THEN 'POS_PETCO'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='MENARDS' THEN 'POS_MENARDS'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='MEIJER' THEN 'POS_MEIJER'  WHEN UPPER(LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER)
+                  ='PETSMART' THEN 'POS_PETSMART'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='TARGET' THEN 'POS_TARGET'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='AMAZON' THEN 'POS_AMAZON'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='COSTCO.COM' THEN 'POS_COSTCO'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='WALGREENS' THEN 'POS_WALGREENS'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='DOLLAR GENERAL' THEN 'POS_DOLLARGEN'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='ALDI' THEN   'POS_ALDI'  WHEN LOAD_SHEET2_PRODUCT_LOOKUP.CUSTOMER
+                  ='RITE AID' THEN 'POS_RITEAID'   ELSE 'ERROR' END AS BKCC
+          - columnReference:
+              columnCounter: 2000011801
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011802
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011803
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PETIQITEMNUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011813
+              stepCounter: "200002956"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PETIQ
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'PETIQ'"
+          - columnReference:
+              columnCounter: 2000011804
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011805
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: POSFILEDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011806
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION2COMPONENTBOM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011807
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMMASTERDESCRIPTIONREPORTINGDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011808
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRECORGIITEMNUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011809
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000011810
+              stepCounter: "200002956"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'VIEW_LOAD_LOOKUP_CLEAN'"
+          - columnReference:
+              columnCounter: 2000011811
+              stepCounter: "200002956"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: VIEW_LOAD_LOOKUP_CLEAN
+            noLinkRefs: []
+      name: VIEW_LOAD_LOOKUP_CLEAN
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200002956"

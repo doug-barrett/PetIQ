@@ -1,0 +1,279 @@
+steps:
+  STAGE_SURVEY-200004069:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032954
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032955
+              stepCounter: "200004069"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SURVEYMONKEY'"
+          - columnReference:
+              columnCounter: 2000032956
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032957
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NICKNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032958
+              stepCounter: "200004069"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: FOOTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032959
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CATEGORY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033263
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CATEGORY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032961
+              stepCounter: "200004069"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032962
+              stepCounter: "200004069"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032963
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033265
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_PAGE_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033264
+              stepCounter: "200004069"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SURVEY_PAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032966
+              stepCounter: "200004069"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032968
+              stepCounter: "200004069"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032956
+                stepCounter: "200004069"
+              - columnCounter: 2000032957
+                stepCounter: "200004069"
+              - columnCounter: 2000032958
+                stepCounter: "200004069"
+              - columnCounter: 2000032959
+                stepCounter: "200004069"
+              - columnCounter: 2000032961
+                stepCounter: "200004069"
+              - columnCounter: 2000032962
+                stepCounter: "200004069"
+              - columnCounter: 2000032963
+                stepCounter: "200004069"
+              - columnCounter: 2000032966
+                stepCounter: "200004069"
+              - columnCounter: 2000033263
+                stepCounter: "200004069"
+              - columnCounter: 2000033264
+                stepCounter: "200004069"
+              - columnCounter: 2000033265
+                stepCounter: "200004069"
+            name: DSS_CHANGE_HASH_SURVEY_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032953
+              stepCounter: "200004069"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032954
+                stepCounter: "200004069"
+              - columnCounter: 2000032955
+                stepCounter: "200004069"
+            name: HK_H_SURVEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033258
+              stepCounter: "200004069"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033259
+              stepCounter: "200004069"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032971
+              stepCounter: "200004069"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN: "200004067"
+              LOAD_SURVEY_PAGE_HISTORY_CX_SNOWFLAKE_FIVETRAN: "200004068"
+              LOAD_SURVEY_CATEGORY_CX_SNOWFLAKE_FIVETRAN: "200004066"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_SURVEY_PAGE_HISTORY_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_SURVEY_CATEGORY_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN  JOIN {{ ref('STAGE','LOAD_SURVEY_PAGE_HISTORY_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_SURVEY_PAGE_HISTORY_CX_SNOWFLAKE_FIVETRAN    ON LOAD_SURVEY_PAGE_HISTORY_CX_SNOWFLAKE_FIVETRAN.SURVEY_ID\
+                \ = LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN.ID  LEFT JOIN {{ ref('STAGE','LOAD_SURVEY_CATEGORY_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_SURVEY_CATEGORY_CX_SNOWFLAKE_FIVETRAN    ON LOAD_SURVEY_CATEGORY_CX_SNOWFLAKE_FIVETRAN.ID\
+                \ = LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN.CATEGORY_ID WHERE LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN._FIVETRAN_ACTIVE\
+                \ = 'TRUE'  AND   LOAD_SURVEY_PAGE_HISTORY_CX_SNOWFLAKE_FIVETRAN._FIVETRAN_ACTIVE\
+                \ = 'TRUE' "
+            name: STAGE_SURVEY
+            noLinkRefs: []
+      name: STAGE_SURVEY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004069"

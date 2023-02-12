@@ -1,0 +1,280 @@
+steps:
+  STAGE_WORKER-200004044:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032897
+              stepCounter: "200004044"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032898
+                stepCounter: "200004044"
+              - columnCounter: 2000032899
+                stepCounter: "200004044"
+            name: HK_H_WORKER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032898
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032899
+              stepCounter: "200004044"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032900
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSOCIATE_OID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032901
+              stepCounter: "200004044"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_HIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032902
+              stepCounter: "200004044"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: REHIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032903
+              stepCounter: "200004044"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ADJUSTED_SERVICE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032904
+              stepCounter: "200004044"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032905
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032906
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ARPA_TERMINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032907
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: POSITION_BUDGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032908
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ROLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032909
+              stepCounter: "200004044"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PLANNER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032910
+              stepCounter: "200004044"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032911
+              stepCounter: "200004044"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032912
+              stepCounter: "200004044"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032900
+                stepCounter: "200004044"
+              - columnCounter: 2000032901
+                stepCounter: "200004044"
+              - columnCounter: 2000032902
+                stepCounter: "200004044"
+              - columnCounter: 2000032903
+                stepCounter: "200004044"
+              - columnCounter: 2000032904
+                stepCounter: "200004044"
+              - columnCounter: 2000032905
+                stepCounter: "200004044"
+              - columnCounter: 2000032906
+                stepCounter: "200004044"
+              - columnCounter: 2000032907
+                stepCounter: "200004044"
+              - columnCounter: 2000032908
+                stepCounter: "200004044"
+              - columnCounter: 2000032909
+                stepCounter: "200004044"
+              - columnCounter: 2000032910
+                stepCounter: "200004044"
+              - columnCounter: 2000032911
+                stepCounter: "200004044"
+            name: DSS_CHANGE_HASH_WORKER_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032913
+              stepCounter: "200004044"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032914
+              stepCounter: "200004044"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032915
+              stepCounter: "200004044"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN: "200003939"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN')
+                }} LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN
+            name: STAGE_WORKER
+            noLinkRefs: []
+      name: STAGE_WORKER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004044"

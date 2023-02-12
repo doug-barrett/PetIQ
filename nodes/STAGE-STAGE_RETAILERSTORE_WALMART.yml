@@ -1,0 +1,176 @@
+steps:
+  STAGE_RETAILERSTORE_WALMART-200002641:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026856
+              stepCounter: "200002641"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026857
+                stepCounter: "200002641"
+              - columnCounter: 2000026858
+                stepCounter: "200002641"
+            name: HK_H_RETAILERSTORE_WALMART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026857
+              stepCounter: "200002641"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: STORENBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026858
+              stepCounter: "200002641"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_WALMART'"
+          - columnReference:
+              columnCounter: 2000026859
+              stepCounter: "200002641"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STORETYPEDESCR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026860
+              stepCounter: "200002641"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026861
+              stepCounter: "200002641"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026862
+              stepCounter: "200002641"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026863
+              stepCounter: "200002641"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026859
+                stepCounter: "200002641"
+              - columnCounter: 2000026860
+                stepCounter: "200002641"
+              - columnCounter: 2000026861
+                stepCounter: "200002641"
+              - columnCounter: 2000026862
+                stepCounter: "200002641"
+            name: DSS_CHANGE_HASH_RETAILERSTORE_WALMART_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026864
+              stepCounter: "200002641"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026865
+              stepCounter: "200002641"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026866
+              stepCounter: "200002641"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_WALMARTSALES_POS_WALMART: "200002635"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_WALMARTSALES_POS_WALMART
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_WALMARTSALES_POS_WALMART')\
+                \ }} LOAD_WALMARTSALES_POS_WALMART  "
+            name: STAGE_RETAILERSTORE_WALMART
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_WALMART
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002641"

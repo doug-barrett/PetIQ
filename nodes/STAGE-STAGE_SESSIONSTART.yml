@@ -1,0 +1,292 @@
+steps:
+  STAGE_SESSIONSTART-200003527:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: GA property from BQ
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029716
+              stepCounter: "200003527"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029717
+                stepCounter: "200003527"
+              - columnCounter: 2000029718
+                stepCounter: "200003527"
+              - columnCounter: 2000029719
+                stepCounter: "200003527"
+              - columnCounter: 2000029720
+                stepCounter: "200003527"
+            name: HK_L_SESSIONSTART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029717
+              stepCounter: "200003527"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029721
+                stepCounter: "200003527"
+              - columnCounter: 2000029727
+                stepCounter: "200003527"
+            name: HK_H_USER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029718
+              stepCounter: "200003527"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029725
+                stepCounter: "200003527"
+              - columnCounter: 2000029729
+                stepCounter: "200003527"
+            name: HK_H_AD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029719
+              stepCounter: "200003527"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029724
+                stepCounter: "200003527"
+              - columnCounter: 2000029728
+                stepCounter: "200003527"
+            name: HK_H_CAMPAIGN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029720
+              stepCounter: "200003527"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029722
+                stepCounter: "200003527"
+              - columnCounter: 2000029723
+                stepCounter: "200003527"
+              - columnCounter: 2000029726
+                stepCounter: "200003527"
+            name: HK_H_SESSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029721
+              stepCounter: "200003527"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: CLIENTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029722
+              stepCounter: "200003527"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: FULLVISITORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029723
+              stepCounter: "200003527"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: VISITID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029724
+              stepCounter: "200003527"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGNBK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029725
+              stepCounter: "200003527"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADBK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029726
+              stepCounter: "200003527"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_SESSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029727
+              stepCounter: "200003527"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLIENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029728
+              stepCounter: "200003527"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CAMPAIGN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029729
+              stepCounter: "200003527"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_AD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029730
+              stepCounter: "200003527"
+            dataType: TEXT(9)
+            defaultValue: ""
+            description: ""
+            name: TABLEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029731
+              stepCounter: "200003527"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029730
+                stepCounter: "200003527"
+            name: DSS_CHANGE_HASH_SESSIONSTART_MROC_TRAFFICSOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029732
+              stepCounter: "200003527"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029733
+              stepCounter: "200003527"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029734
+              stepCounter: "200003527"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA: "200003521"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA')\
+                \ }} LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA  "
+            name: STAGE_SESSIONSTART
+            noLinkRefs: []
+      name: STAGE_SESSIONSTART
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003527"

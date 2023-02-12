@@ -1,0 +1,247 @@
+steps:
+  STAGE_RETAILERSTORE_SALES_MEIJER-200002525:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026623
+              stepCounter: "200002525"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026624
+                stepCounter: "200002525"
+              - columnCounter: 2000026625
+                stepCounter: "200002525"
+              - columnCounter: 2000026630
+                stepCounter: "200002525"
+            name: HK_L_RETAILERSTORE_SALES_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026624
+              stepCounter: "200002525"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026628
+                stepCounter: "200002525"
+              - columnCounter: 2000026629
+                stepCounter: "200002525"
+            name: HK_H_RETAILERSTORE_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026625
+              stepCounter: "200002525"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026626
+                stepCounter: "200002525"
+              - columnCounter: 2000026627
+                stepCounter: "200002525"
+            name: HK_H_RETAILERPRODUCT_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026626
+              stepCounter: "200002525"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026627
+              stepCounter: "200002525"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MEIJER'"
+          - columnReference:
+              columnCounter: 2000026628
+              stepCounter: "200002525"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026629
+              stepCounter: "200002525"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MEIJER'"
+          - columnReference:
+              columnCounter: 2000026630
+              stepCounter: "200002525"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026631
+              stepCounter: "200002525"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026632
+              stepCounter: "200002525"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026633
+              stepCounter: "200002525"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: DMDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026634
+              stepCounter: "200002525"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DMPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026635
+              stepCounter: "200002525"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026631
+                stepCounter: "200002525"
+              - columnCounter: 2000026632
+                stepCounter: "200002525"
+              - columnCounter: 2000026633
+                stepCounter: "200002525"
+              - columnCounter: 2000026634
+                stepCounter: "200002525"
+            name: DSS_CHANGE_HASH_RETAILERSTORE_SALES_MEIJER_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026636
+              stepCounter: "200002525"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026637
+              stepCounter: "200002525"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026638
+              stepCounter: "200002525"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALES_POS_MEIJER: "200002516"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALES_POS_MEIJER
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALES_POS_MEIJER') }} LOAD_SALES_POS_MEIJER\
+                \  "
+            name: STAGE_RETAILERSTORE_SALES_MEIJER
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_SALES_MEIJER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002525"

@@ -1,0 +1,247 @@
+steps:
+  STAGE_RIGRUN_APOLLO_READ_REPLICA_1-200003829:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031640
+              stepCounter: "200003829"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031641
+                stepCounter: "200003829"
+              - columnCounter: 2000031642
+                stepCounter: "200003829"
+            name: HK_H_RIGRUN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031641
+              stepCounter: "200003829"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_RUN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031642
+              stepCounter: "200003829"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031643
+              stepCounter: "200003829"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_CODE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031644
+              stepCounter: "200003829"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031645
+              stepCounter: "200003829"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031646
+              stepCounter: "200003829"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031647
+              stepCounter: "200003829"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031648
+              stepCounter: "200003829"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031649
+              stepCounter: "200003829"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: LEAVE_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031650
+              stepCounter: "200003829"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: RETURN_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031651
+              stepCounter: "200003829"
+            dataType: VARCHAR(1000)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031652
+              stepCounter: "200003829"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031643
+                stepCounter: "200003829"
+              - columnCounter: 2000031644
+                stepCounter: "200003829"
+              - columnCounter: 2000031645
+                stepCounter: "200003829"
+              - columnCounter: 2000031646
+                stepCounter: "200003829"
+              - columnCounter: 2000031647
+                stepCounter: "200003829"
+              - columnCounter: 2000031648
+                stepCounter: "200003829"
+              - columnCounter: 2000031649
+                stepCounter: "200003829"
+              - columnCounter: 2000031650
+                stepCounter: "200003829"
+              - columnCounter: 2000031651
+                stepCounter: "200003829"
+            name: DSS_CHANGE_HASH_RIGRUN_MROC_SHIFT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031653
+              stepCounter: "200003829"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031654
+              stepCounter: "200003829"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031655
+              stepCounter: "200003829"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_RIG_SHIFTS_FT: "200004110"
+              LOAD_RIG_RUNS_FT: "200004109"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_RIG_SHIFTS_FT
+              - locationName: STAGE
+                nodeName: LOAD_RIG_RUNS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_RIG_SHIFTS_FT') }} LOAD_RIG_SHIFTS_FT\
+                \  INNER JOIN {{ ref('STAGE','LOAD_RIG_RUNS_FT') }} LOAD_RIG_RUNS_FT\
+                \  ON LOAD_RIG_SHIFTS_FT.RIG_CODE_ID = LOAD_RIG_RUNS_FT.RIG_CODE_ID\
+                \  AND LOAD_RIG_RUNS_FT.RUN_DATE BETWEEN LOAD_RIG_SHIFTS_FT.LEAVE_AT::DATE\
+                \ AND LOAD_RIG_SHIFTS_FT.RETURN_AT  "
+            name: STAGE_RIGRUN_APOLLO_READ_REPLICA_1
+            noLinkRefs: []
+      name: STAGE_RIGRUN_APOLLO_READ_REPLICA_1
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003829"

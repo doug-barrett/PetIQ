@@ -1,0 +1,211 @@
+steps:
+  STAGE_WORKER_WORKASSIGNMENT_DEPARTMENT-200004006:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032926
+              stepCounter: "200004006"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032927
+                stepCounter: "200004006"
+              - columnCounter: 2000032928
+                stepCounter: "200004006"
+              - columnCounter: 2000032929
+                stepCounter: "200004006"
+            name: HK_L_WORKER_WORKASSIGNMENT_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032927
+              stepCounter: "200004006"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032930
+                stepCounter: "200004006"
+              - columnCounter: 2000032931
+                stepCounter: "200004006"
+            name: HK_H_WORKER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032928
+              stepCounter: "200004006"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032932
+                stepCounter: "200004006"
+              - columnCounter: 2000032933
+                stepCounter: "200004006"
+            name: HK_H_WORK_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032929
+              stepCounter: "200004006"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032934
+                stepCounter: "200004006"
+              - columnCounter: 2000032935
+                stepCounter: "200004006"
+            name: HK_H_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032930
+              stepCounter: "200004006"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032931
+              stepCounter: "200004006"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: WORKER_BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032932
+              stepCounter: "200004006"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032933
+              stepCounter: "200004006"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ASSIGNMENT_BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032934
+              stepCounter: "200004006"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032935
+              stepCounter: "200004006"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032936
+              stepCounter: "200004006"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032937
+              stepCounter: "200004006"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032938
+              stepCounter: "200004006"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN: "200003938"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN\
+                \  "
+            name: STAGE_WORKER_WORKASSIGNMENT_DEPARTMENT
+            noLinkRefs: []
+      name: STAGE_WORKER_WORKASSIGNMENT_DEPARTMENT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004006"

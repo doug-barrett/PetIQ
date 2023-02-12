@@ -1,0 +1,105 @@
+steps:
+  VIEW_POS_WEEKLY_INVENTORYSALES-200003238:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000017182
+              stepCounter: "200003238"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: COALESCE(H_RETAILER_S.RETAILERID,H_RETAILER_I.RETAILERID)
+          - columnReference:
+              columnCounter: 2000017184
+              stepCounter: "200003238"
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017186
+              stepCounter: "200003238"
+            dataType: TIMESTAMP_NTZ(0)
+            defaultValue: ""
+            description: ""
+            name: SALESDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017187
+              stepCounter: "200003238"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017188
+              stepCounter: "200003238"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TOTALINVENTORYUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017189
+              stepCounter: "200003238"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: COSTOFPRODUCTSSOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017190
+              stepCounter: "200003238"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTUNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: VIEW_POS_WEEKLY_INVENTORYSALES
+            noLinkRefs: []
+      name: VIEW_POS_WEEKLY_INVENTORYSALES
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003238"

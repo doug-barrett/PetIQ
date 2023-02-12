@@ -1,0 +1,210 @@
+steps:
+  STAGE_SALESORDER_OWNER_DISTRICT-200002246:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030990
+              stepCounter: "200002246"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030991
+                stepCounter: "200002246"
+              - columnCounter: 2000030992
+                stepCounter: "200002246"
+              - columnCounter: 2000030993
+                stepCounter: "200002246"
+            name: HK_L_SALESORDER_OWNER_DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030991
+              stepCounter: "200002246"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030994
+                stepCounter: "200002246"
+              - columnCounter: 2000030995
+                stepCounter: "200002246"
+            name: HK_H_SALESORDER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030992
+              stepCounter: "200002246"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030996
+                stepCounter: "200002246"
+              - columnCounter: 2000030997
+                stepCounter: "200002246"
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030993
+              stepCounter: "200002246"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030998
+                stepCounter: "200002246"
+              - columnCounter: 2000030999
+                stepCounter: "200002246"
+            name: HK_H_DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030994
+              stepCounter: "200002246"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SALESORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030995
+              stepCounter: "200002246"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_SALESORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030996
+              stepCounter: "200002246"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030997
+              stepCounter: "200002246"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030998
+              stepCounter: "200002246"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTRICT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030999
+              stepCounter: "200002246"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031000
+              stepCounter: "200002246"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031001
+              stepCounter: "200002246"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031002
+              stepCounter: "200002246"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ORDERS_FT: "200004195"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ORDERS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ORDERS_FT') }} LOAD_ORDERS_FT\
+                \    "
+            name: STAGE_SALESORDER_OWNER_DISTRICT
+            noLinkRefs: []
+      name: STAGE_SALESORDER_OWNER_DISTRICT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002246"

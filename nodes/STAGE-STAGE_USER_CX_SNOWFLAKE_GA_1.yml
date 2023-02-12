@@ -1,0 +1,384 @@
+steps:
+  STAGE_USER_CX_SNOWFLAKE_GA_1-200003529:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029745
+              stepCounter: "200003529"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029746
+                stepCounter: "200003529"
+              - columnCounter: 2000029747
+                stepCounter: "200003529"
+            name: HK_H_USER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029746
+              stepCounter: "200003529"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: CLIENTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029747
+              stepCounter: "200003529"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029748
+              stepCounter: "200003529"
+            dataType: TEXT(9)
+            defaultValue: ""
+            description: ""
+            name: TABLEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029749
+              stepCounter: "200003529"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: FULLVISITORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029750
+              stepCounter: "200003529"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: VISITID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029751
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_BROWSER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029752
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_BROWSERSIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029753
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_BROWSERVERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029754
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_DEVICECATEGORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029755
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_FLASHVERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029756
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_ISMOBILE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029757
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_JAVAENABLED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029758
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029759
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_MOBILEDEVICEBRANDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029760
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_MOBILEDEVICEINFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029761
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_MOBILEDEVICEMARKETINGNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029762
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_MOBILEDEVICEMODEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029763
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_MOBILEINPUTSELECTOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029764
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_OPERATINGSYSTEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029765
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_OPERATINGSYSTEMVERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029766
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_SCREENCOLORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029767
+              stepCounter: "200003529"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: DEVICE_SCREENRESOLUTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029768
+              stepCounter: "200003529"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029748
+                stepCounter: "200003529"
+              - columnCounter: 2000029749
+                stepCounter: "200003529"
+              - columnCounter: 2000029750
+                stepCounter: "200003529"
+              - columnCounter: 2000029751
+                stepCounter: "200003529"
+              - columnCounter: 2000029752
+                stepCounter: "200003529"
+              - columnCounter: 2000029753
+                stepCounter: "200003529"
+              - columnCounter: 2000029754
+                stepCounter: "200003529"
+              - columnCounter: 2000029755
+                stepCounter: "200003529"
+              - columnCounter: 2000029756
+                stepCounter: "200003529"
+              - columnCounter: 2000029757
+                stepCounter: "200003529"
+              - columnCounter: 2000029758
+                stepCounter: "200003529"
+              - columnCounter: 2000029759
+                stepCounter: "200003529"
+              - columnCounter: 2000029760
+                stepCounter: "200003529"
+              - columnCounter: 2000029761
+                stepCounter: "200003529"
+              - columnCounter: 2000029762
+                stepCounter: "200003529"
+              - columnCounter: 2000029763
+                stepCounter: "200003529"
+              - columnCounter: 2000029764
+                stepCounter: "200003529"
+              - columnCounter: 2000029765
+                stepCounter: "200003529"
+              - columnCounter: 2000029766
+                stepCounter: "200003529"
+              - columnCounter: 2000029767
+                stepCounter: "200003529"
+            name: DSS_CHANGE_HASH_USER_MROC_DEVICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029769
+              stepCounter: "200003529"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029770
+              stepCounter: "200003529"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029771
+              stepCounter: "200003529"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_COMBINEDUA_DEVICE_VIEW_CX_SNOWFLAKE_GA: "200003517"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_COMBINEDUA_DEVICE_VIEW_CX_SNOWFLAKE_GA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_COMBINEDUA_DEVICE_VIEW_CX_SNOWFLAKE_GA')\
+                \ }} LOAD_COMBINEDUA_DEVICE_VIEW_CX_SNOWFLAKE_GA  "
+            name: STAGE_USER_CX_SNOWFLAKE_GA_1
+            noLinkRefs: []
+      name: STAGE_USER_CX_SNOWFLAKE_GA_1
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003529"

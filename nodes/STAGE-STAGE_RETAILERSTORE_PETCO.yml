@@ -1,0 +1,215 @@
+steps:
+  STAGE_RETAILERSTORE_PETCO-200002681:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027294
+              stepCounter: "200002681"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027295
+                stepCounter: "200002681"
+              - columnCounter: 2000027296
+                stepCounter: "200002681"
+            name: HK_H_RETAILERSTORE_PETCO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027295
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027296
+              stepCounter: "200002681"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_PETCO'"
+          - columnReference:
+              columnCounter: 2000027297
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027298
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STREET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027299
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027300
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027301
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027302
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027303
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027304
+              stepCounter: "200002681"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027297
+                stepCounter: "200002681"
+              - columnCounter: 2000027298
+                stepCounter: "200002681"
+              - columnCounter: 2000027299
+                stepCounter: "200002681"
+              - columnCounter: 2000027300
+                stepCounter: "200002681"
+              - columnCounter: 2000027301
+                stepCounter: "200002681"
+              - columnCounter: 2000027302
+                stepCounter: "200002681"
+              - columnCounter: 2000027303
+                stepCounter: "200002681"
+            name: DSS_CHANGE_HASH_RETAILERSTORE_PETCO_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027305
+              stepCounter: "200002681"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027306
+              stepCounter: "200002681"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027307
+              stepCounter: "200002681"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_DATA_POS_PETCO: "200002677"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_DATA_POS_PETCO
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_DATA_POS_PETCO') }} LOAD_DATA_POS_PETCO\
+                \  "
+            name: STAGE_RETAILERSTORE_PETCO
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_PETCO
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002681"

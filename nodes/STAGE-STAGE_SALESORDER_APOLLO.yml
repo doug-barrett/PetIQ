@@ -1,0 +1,774 @@
+steps:
+  STAGE_SALESORDER_APOLLO-200002245:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030933
+              stepCounter: "200002245"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030934
+                stepCounter: "200002245"
+              - columnCounter: 2000030935
+                stepCounter: "200002245"
+            name: HK_H_SALESORDER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030934
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SALESORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030935
+              stepCounter: "200002245"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030936
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030937
+              stepCounter: "200002245"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030938
+              stepCounter: "200002245"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030939
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDER_SOURCE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030940
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PICK_BATCH_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030941
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INTERNAL_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030942
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030943
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030944
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_ADDRESS2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030945
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030946
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030947
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030948
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_COUNTRY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030949
+              stepCounter: "200002245"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_ADDRESS_VERIFIED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030950
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_TRANSACTION_REFERENCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030951
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_TRACKING_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030952
+              stepCounter: "200002245"
+            dataType: VARCHAR(2000)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_STAMP_URL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030953
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRICE_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030954
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_METHOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030955
+              stepCounter: "200002245"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CHECK_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030956
+              stepCounter: "200002245"
+            dataType: VARCHAR(4)
+            defaultValue: ""
+            description: ""
+            name: CREDIT_CARD_LAST_FOUR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030957
+              stepCounter: "200002245"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: CREDIT_CARD_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030958
+              stepCounter: "200002245"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CREDIT_CARD_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030959
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_NAME_ON_CARD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030960
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030961
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_ADDRESS2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030962
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030963
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030964
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030965
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BILLING_COUNTRY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030966
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030967
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXTERNAL_ORDER_REFERENCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030968
+              stepCounter: "200002245"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030969
+              stepCounter: "200002245"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_CHARGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030970
+              stepCounter: "200002245"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030971
+              stepCounter: "200002245"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030972
+              stepCounter: "200002245"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: INVOICED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030973
+              stepCounter: "200002245"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_FREE_SHIPPING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030974
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALES_PERSON_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030975
+              stepCounter: "200002245"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_SHIPPING_OVERRIDED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030976
+              stepCounter: "200002245"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EXTERNAL_ORDER_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030977
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLIENT_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030978
+              stepCounter: "200002245"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SHIPPING_CONFIRMATION_EMAIL_SENT_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030979
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030980
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030981
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030982
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMER_PICKUP_CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030983
+              stepCounter: "200002245"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030984
+              stepCounter: "200002245"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: PREFERRED_LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030985
+              stepCounter: "200002245"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030986
+              stepCounter: "200002245"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030936
+                stepCounter: "200002245"
+              - columnCounter: 2000030937
+                stepCounter: "200002245"
+              - columnCounter: 2000030938
+                stepCounter: "200002245"
+              - columnCounter: 2000030939
+                stepCounter: "200002245"
+              - columnCounter: 2000030940
+                stepCounter: "200002245"
+              - columnCounter: 2000030941
+                stepCounter: "200002245"
+              - columnCounter: 2000030942
+                stepCounter: "200002245"
+              - columnCounter: 2000030943
+                stepCounter: "200002245"
+              - columnCounter: 2000030944
+                stepCounter: "200002245"
+              - columnCounter: 2000030945
+                stepCounter: "200002245"
+              - columnCounter: 2000030946
+                stepCounter: "200002245"
+              - columnCounter: 2000030947
+                stepCounter: "200002245"
+              - columnCounter: 2000030948
+                stepCounter: "200002245"
+              - columnCounter: 2000030949
+                stepCounter: "200002245"
+              - columnCounter: 2000030950
+                stepCounter: "200002245"
+              - columnCounter: 2000030951
+                stepCounter: "200002245"
+              - columnCounter: 2000030952
+                stepCounter: "200002245"
+              - columnCounter: 2000030953
+                stepCounter: "200002245"
+              - columnCounter: 2000030954
+                stepCounter: "200002245"
+              - columnCounter: 2000030955
+                stepCounter: "200002245"
+              - columnCounter: 2000030956
+                stepCounter: "200002245"
+              - columnCounter: 2000030957
+                stepCounter: "200002245"
+              - columnCounter: 2000030958
+                stepCounter: "200002245"
+              - columnCounter: 2000030959
+                stepCounter: "200002245"
+              - columnCounter: 2000030960
+                stepCounter: "200002245"
+              - columnCounter: 2000030961
+                stepCounter: "200002245"
+              - columnCounter: 2000030962
+                stepCounter: "200002245"
+              - columnCounter: 2000030963
+                stepCounter: "200002245"
+              - columnCounter: 2000030964
+                stepCounter: "200002245"
+              - columnCounter: 2000030965
+                stepCounter: "200002245"
+              - columnCounter: 2000030966
+                stepCounter: "200002245"
+              - columnCounter: 2000030967
+                stepCounter: "200002245"
+              - columnCounter: 2000030968
+                stepCounter: "200002245"
+              - columnCounter: 2000030969
+                stepCounter: "200002245"
+              - columnCounter: 2000030970
+                stepCounter: "200002245"
+              - columnCounter: 2000030971
+                stepCounter: "200002245"
+              - columnCounter: 2000030972
+                stepCounter: "200002245"
+              - columnCounter: 2000030973
+                stepCounter: "200002245"
+              - columnCounter: 2000030974
+                stepCounter: "200002245"
+              - columnCounter: 2000030975
+                stepCounter: "200002245"
+              - columnCounter: 2000030976
+                stepCounter: "200002245"
+              - columnCounter: 2000030977
+                stepCounter: "200002245"
+              - columnCounter: 2000030978
+                stepCounter: "200002245"
+              - columnCounter: 2000030979
+                stepCounter: "200002245"
+              - columnCounter: 2000030980
+                stepCounter: "200002245"
+              - columnCounter: 2000030981
+                stepCounter: "200002245"
+              - columnCounter: 2000030982
+                stepCounter: "200002245"
+              - columnCounter: 2000030983
+                stepCounter: "200002245"
+              - columnCounter: 2000030984
+                stepCounter: "200002245"
+              - columnCounter: 2000030985
+                stepCounter: "200002245"
+            name: DSS_CHANGE_HASH_SALESORDER_APOLLO_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030987
+              stepCounter: "200002245"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030988
+              stepCounter: "200002245"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030989
+              stepCounter: "200002245"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ORDERS_FT: "200004195"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ORDERS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ORDERS_FT') }} LOAD_ORDERS_FT\
+                \    "
+            name: STAGE_SALESORDER_APOLLO
+            noLinkRefs: []
+      name: STAGE_SALESORDER_APOLLO
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002245"

@@ -1,0 +1,540 @@
+steps:
+  STAGE_VET_APOLLO_READ_REPLICA-200003572:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031110
+              stepCounter: "200003572"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031111
+                stepCounter: "200003572"
+              - columnCounter: 2000031112
+                stepCounter: "200003572"
+            name: HK_H_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031111
+              stepCounter: "200003572"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031112
+              stepCounter: "200003572"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031113
+              stepCounter: "200003572"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031114
+              stepCounter: "200003572"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031115
+              stepCounter: "200003572"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031116
+              stepCounter: "200003572"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031117
+              stepCounter: "200003572"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031118
+              stepCounter: "200003572"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031119
+              stepCounter: "200003572"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_ISSUE_HEALTH_CERTIFICATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031120
+              stepCounter: "200003572"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_DAILY_RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031121
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCHEDULING_RESTRICTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031122
+              stepCounter: "200003572"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_W2_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031123
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WORK_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031124
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCHOOL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031125
+              stepCounter: "200003572"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_OF_GRADUATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031126
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: USDA_HEALTH_CERTIFICATION_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031127
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AVMA_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031128
+              stepCounter: "200003572"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: VET_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031129
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_COMPANY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031130
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_POLICY_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031131
+              stepCounter: "200003572"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031132
+              stepCounter: "200003572"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_MINIMUM_COVERAGE_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031133
+              stepCounter: "200003572"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_CONTRACTOR_AGREEMENT_COMPLETE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031134
+              stepCounter: "200003572"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031135
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCRUB_TOP_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031136
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LAB_COAT_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031137
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031138
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031139
+              stepCounter: "200003572"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031140
+              stepCounter: "200003572"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031141
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_LEVEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031142
+              stepCounter: "200003572"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: BASE64_SIGNATURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031143
+              stepCounter: "200003572"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: LAB_COAT_SLEEVE_LENGTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031144
+              stepCounter: "200003572"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_CONTRACT_IT_NOW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031145
+              stepCounter: "200003572"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031113
+                stepCounter: "200003572"
+              - columnCounter: 2000031114
+                stepCounter: "200003572"
+              - columnCounter: 2000031115
+                stepCounter: "200003572"
+              - columnCounter: 2000031116
+                stepCounter: "200003572"
+              - columnCounter: 2000031117
+                stepCounter: "200003572"
+              - columnCounter: 2000031118
+                stepCounter: "200003572"
+              - columnCounter: 2000031119
+                stepCounter: "200003572"
+              - columnCounter: 2000031120
+                stepCounter: "200003572"
+              - columnCounter: 2000031121
+                stepCounter: "200003572"
+              - columnCounter: 2000031122
+                stepCounter: "200003572"
+              - columnCounter: 2000031123
+                stepCounter: "200003572"
+              - columnCounter: 2000031124
+                stepCounter: "200003572"
+              - columnCounter: 2000031125
+                stepCounter: "200003572"
+              - columnCounter: 2000031126
+                stepCounter: "200003572"
+              - columnCounter: 2000031127
+                stepCounter: "200003572"
+              - columnCounter: 2000031128
+                stepCounter: "200003572"
+              - columnCounter: 2000031129
+                stepCounter: "200003572"
+              - columnCounter: 2000031130
+                stepCounter: "200003572"
+              - columnCounter: 2000031131
+                stepCounter: "200003572"
+              - columnCounter: 2000031132
+                stepCounter: "200003572"
+              - columnCounter: 2000031133
+                stepCounter: "200003572"
+              - columnCounter: 2000031134
+                stepCounter: "200003572"
+              - columnCounter: 2000031135
+                stepCounter: "200003572"
+              - columnCounter: 2000031136
+                stepCounter: "200003572"
+              - columnCounter: 2000031137
+                stepCounter: "200003572"
+              - columnCounter: 2000031138
+                stepCounter: "200003572"
+              - columnCounter: 2000031139
+                stepCounter: "200003572"
+              - columnCounter: 2000031140
+                stepCounter: "200003572"
+              - columnCounter: 2000031141
+                stepCounter: "200003572"
+              - columnCounter: 2000031142
+                stepCounter: "200003572"
+              - columnCounter: 2000031143
+                stepCounter: "200003572"
+              - columnCounter: 2000031144
+                stepCounter: "200003572"
+            name: DSS_CHANGE_HASH_VET_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031146
+              stepCounter: "200003572"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031147
+              stepCounter: "200003572"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031148
+              stepCounter: "200003572"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_VET_PROPERTIES_FT: "200004122"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_VET_PROPERTIES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_VET_PROPERTIES_FT') }} LOAD_VET_PROPERTIES_FT\
+                \    "
+            name: STAGE_VET_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: STAGE_VET_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003572"

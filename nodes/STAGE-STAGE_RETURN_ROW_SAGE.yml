@@ -1,0 +1,788 @@
+steps:
+  STAGE_RETURN_ROW_SAGE-200001991:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000023026
+              stepCounter: "200001991"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000023027
+                stepCounter: "200001991"
+              - columnCounter: 2000023028
+                stepCounter: "200001991"
+            name: HK_H_RETURN_ROW_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023027
+              stepCounter: "200001991"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RETURN_ROW_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(SRHNUM_0, '|', SRDLIN_0)
+          - columnReference:
+              columnCounter: 2000023028
+              stepCounter: "200001991"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000023029
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SRHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023030
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SRDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023031
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDTICK_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023032
+              stepCounter: "200001991"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CPY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023033
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ITMREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023034
+              stepCounter: "200001991"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: ITMDES1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023035
+              stepCounter: "200001991"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: ITMDES_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023036
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SDHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023037
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SDDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023038
+              stepCounter: "200001991"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DLVQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023039
+              stepCounter: "200001991"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: EXTQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023040
+              stepCounter: "200001991"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: EXTQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023041
+              stepCounter: "200001991"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: QTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023042
+              stepCounter: "200001991"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: QTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023043
+              stepCounter: "200001991"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: SAU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023044
+              stepCounter: "200001991"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: STU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023045
+              stepCounter: "200001991"
+            dataType: NUMBER(18,7)
+            defaultValue: ""
+            description: ""
+            name: SAUSTUCOE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023046
+              stepCounter: "200001991"
+            dataType: NUMBER(19,5)
+            defaultValue: ""
+            description: ""
+            name: NETPRI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023047
+              stepCounter: "200001991"
+            dataType: NUMBER(19,5)
+            defaultValue: ""
+            description: ""
+            name: NETPRINOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023048
+              stepCounter: "200001991"
+            dataType: NUMBER(19,5)
+            defaultValue: ""
+            description: ""
+            name: NETPRIATI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023049
+              stepCounter: "200001991"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: CUR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023050
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: RTNREN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023051
+              stepCounter: "200001991"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: RTNDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023052
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RTNSTOUPD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023053
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RTNINVUPD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023054
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RTNCNOFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023055
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDUPD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023056
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SIHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023057
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SIDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023058
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SCSNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023059
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SCSLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023060
+              stepCounter: "200001991"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SCSDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023061
+              stepCounter: "200001991"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: STOFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023062
+              stepCounter: "200001991"
+            dataType: VARCHAR(17)
+            defaultValue: ""
+            description: ""
+            name: SRDTEX_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023063
+              stepCounter: "200001991"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: PRIORD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023064
+              stepCounter: "200001991"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PNHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023065
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PNDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023066
+              stepCounter: "200001991"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: WRH_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023067
+              stepCounter: "200001991"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: PJT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023068
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EXPNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023069
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: IMPNUMLIG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023070
+              stepCounter: "200001991"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CREUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023071
+              stepCounter: "200001991"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023072
+              stepCounter: "200001991"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: UPDUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023073
+              stepCounter: "200001991"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023074
+              stepCounter: "200001991"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023075
+              stepCounter: "200001991"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023076
+              stepCounter: "200001991"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AUUID_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023077
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SRHCAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023078
+              stepCounter: "200001991"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROWID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023079
+              stepCounter: "200001991"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000023029
+                stepCounter: "200001991"
+              - columnCounter: 2000023030
+                stepCounter: "200001991"
+            name: DSS_CHANGE_HASH_RETURN_ROW_SAGE_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023080
+              stepCounter: "200001991"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000023031
+                stepCounter: "200001991"
+              - columnCounter: 2000023032
+                stepCounter: "200001991"
+              - columnCounter: 2000023033
+                stepCounter: "200001991"
+              - columnCounter: 2000023034
+                stepCounter: "200001991"
+              - columnCounter: 2000023035
+                stepCounter: "200001991"
+              - columnCounter: 2000023036
+                stepCounter: "200001991"
+              - columnCounter: 2000023037
+                stepCounter: "200001991"
+              - columnCounter: 2000023038
+                stepCounter: "200001991"
+              - columnCounter: 2000023039
+                stepCounter: "200001991"
+              - columnCounter: 2000023040
+                stepCounter: "200001991"
+              - columnCounter: 2000023041
+                stepCounter: "200001991"
+              - columnCounter: 2000023042
+                stepCounter: "200001991"
+              - columnCounter: 2000023043
+                stepCounter: "200001991"
+              - columnCounter: 2000023044
+                stepCounter: "200001991"
+              - columnCounter: 2000023045
+                stepCounter: "200001991"
+              - columnCounter: 2000023046
+                stepCounter: "200001991"
+              - columnCounter: 2000023047
+                stepCounter: "200001991"
+              - columnCounter: 2000023048
+                stepCounter: "200001991"
+              - columnCounter: 2000023049
+                stepCounter: "200001991"
+              - columnCounter: 2000023050
+                stepCounter: "200001991"
+              - columnCounter: 2000023051
+                stepCounter: "200001991"
+              - columnCounter: 2000023052
+                stepCounter: "200001991"
+              - columnCounter: 2000023053
+                stepCounter: "200001991"
+              - columnCounter: 2000023054
+                stepCounter: "200001991"
+              - columnCounter: 2000023055
+                stepCounter: "200001991"
+              - columnCounter: 2000023056
+                stepCounter: "200001991"
+              - columnCounter: 2000023057
+                stepCounter: "200001991"
+              - columnCounter: 2000023058
+                stepCounter: "200001991"
+              - columnCounter: 2000023059
+                stepCounter: "200001991"
+              - columnCounter: 2000023060
+                stepCounter: "200001991"
+              - columnCounter: 2000023061
+                stepCounter: "200001991"
+              - columnCounter: 2000023062
+                stepCounter: "200001991"
+              - columnCounter: 2000023063
+                stepCounter: "200001991"
+              - columnCounter: 2000023064
+                stepCounter: "200001991"
+              - columnCounter: 2000023065
+                stepCounter: "200001991"
+              - columnCounter: 2000023066
+                stepCounter: "200001991"
+              - columnCounter: 2000023067
+                stepCounter: "200001991"
+              - columnCounter: 2000023068
+                stepCounter: "200001991"
+              - columnCounter: 2000023069
+                stepCounter: "200001991"
+              - columnCounter: 2000023070
+                stepCounter: "200001991"
+              - columnCounter: 2000023071
+                stepCounter: "200001991"
+              - columnCounter: 2000023072
+                stepCounter: "200001991"
+              - columnCounter: 2000023073
+                stepCounter: "200001991"
+              - columnCounter: 2000023074
+                stepCounter: "200001991"
+              - columnCounter: 2000023075
+                stepCounter: "200001991"
+              - columnCounter: 2000023076
+                stepCounter: "200001991"
+              - columnCounter: 2000023077
+                stepCounter: "200001991"
+              - columnCounter: 2000023078
+                stepCounter: "200001991"
+            name: DSS_CHANGE_HASH_RETURN_ROW_SAGE_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023081
+              stepCounter: "200001991"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023082
+              stepCounter: "200001991"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023083
+              stepCounter: "200001991"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SRETURND_CX_SAGE: "200001976"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SRETURND_CX_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SRETURND_CX_SAGE') }} LOAD_SRETURND_CX_SAGE\
+                \  "
+            name: STAGE_RETURN_ROW_SAGE
+            noLinkRefs: []
+      name: STAGE_RETURN_ROW_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001991"

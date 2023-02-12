@@ -1,0 +1,839 @@
+steps:
+  STAGE_VISIT-200002250:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031230
+              stepCounter: "200002250"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031231
+                stepCounter: "200002250"
+              - columnCounter: 2000031232
+                stepCounter: "200002250"
+            name: HK_H_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031231
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VISIT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031232
+              stepCounter: "200002250"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031233
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031234
+              stepCounter: "200002250"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VACCERT_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031235
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_PREGNANT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031236
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_FIXED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031237
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ON_MEDICATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031238
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAD_VACCINE_REACTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031239
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAS_SIGNS_OF_ILLNESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031240
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_HEALTHY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031241
+              stepCounter: "200002250"
+            dataType: VARCHAR(2000)
+            defaultValue: ""
+            description: ""
+            name: MEDICATIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031242
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_RESPONSIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031243
+              stepCounter: "200002250"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: VET_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031244
+              stepCounter: "200002250"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031245
+              stepCounter: "200002250"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031246
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031247
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031248
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031249
+              stepCounter: "200002250"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXISTING_MICROCHIP_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031250
+              stepCounter: "200002250"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: VIP_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031251
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031252
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_MICROCHIPPED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031253
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031254
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031255
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031256
+              stepCounter: "200002250"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: PET_TOTALS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031257
+              stepCounter: "200002250"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: PET_TOTALS_PRE_DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031258
+              stepCounter: "200002250"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: PET_TOTALS_DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031259
+              stepCounter: "200002250"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031260
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031261
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PET_IS_BAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031262
+              stepCounter: "200002250"
+            dataType: VARCHAR(2000)
+            defaultValue: ""
+            description: ""
+            name: ILLNESSES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031263
+              stepCounter: "200002250"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: TEMPERATURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031264
+              stepCounter: "200002250"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PULSE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031265
+              stepCounter: "200002250"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: RESPIRATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031266
+              stepCounter: "200002250"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EYE_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031267
+              stepCounter: "200002250"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EAR_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031268
+              stepCounter: "200002250"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SKIN_COAT_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031269
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PREVIOUS_REACTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031270
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: NEEDS_ANNUAL_VACCINES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031271
+              stepCounter: "200002250"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_VACCINES_LICENSE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031272
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: FELINE_LEUKEMIA_VACCINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031273
+              stepCounter: "200002250"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: FELINE_LEUKEMIA_VACCINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031274
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ON_HEARTWORM_PREVENTATIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031275
+              stepCounter: "200002250"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: HEARTWORM_PRODUCT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031276
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ON_FLEA_TICK_PREVENTATIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031277
+              stepCounter: "200002250"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: FLEA_TICK_PRODUCT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031278
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LIVES_INDOORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031279
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LIVES_OUTDOORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031280
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LIVES_BOTH_INDOORS_AND_OUTDOORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031281
+              stepCounter: "200002250"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031282
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: WEIGHT_IS_ESTIMATED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031283
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_HEALTHY_ENOUGH_TO_VACCINATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031284
+              stepCounter: "200002250"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: PHYSICAL_EXAM_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031285
+              stepCounter: "200002250"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: PET_WEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031286
+              stepCounter: "200002250"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TEMPERAMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031287
+              stepCounter: "200002250"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REFERRED_TO_EXTERNAL_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031288
+              stepCounter: "200002250"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031233
+                stepCounter: "200002250"
+              - columnCounter: 2000031234
+                stepCounter: "200002250"
+              - columnCounter: 2000031235
+                stepCounter: "200002250"
+              - columnCounter: 2000031236
+                stepCounter: "200002250"
+              - columnCounter: 2000031237
+                stepCounter: "200002250"
+              - columnCounter: 2000031238
+                stepCounter: "200002250"
+              - columnCounter: 2000031239
+                stepCounter: "200002250"
+              - columnCounter: 2000031240
+                stepCounter: "200002250"
+              - columnCounter: 2000031241
+                stepCounter: "200002250"
+              - columnCounter: 2000031242
+                stepCounter: "200002250"
+              - columnCounter: 2000031243
+                stepCounter: "200002250"
+              - columnCounter: 2000031244
+                stepCounter: "200002250"
+              - columnCounter: 2000031245
+                stepCounter: "200002250"
+              - columnCounter: 2000031246
+                stepCounter: "200002250"
+              - columnCounter: 2000031247
+                stepCounter: "200002250"
+              - columnCounter: 2000031248
+                stepCounter: "200002250"
+              - columnCounter: 2000031249
+                stepCounter: "200002250"
+              - columnCounter: 2000031250
+                stepCounter: "200002250"
+              - columnCounter: 2000031251
+                stepCounter: "200002250"
+              - columnCounter: 2000031252
+                stepCounter: "200002250"
+              - columnCounter: 2000031253
+                stepCounter: "200002250"
+              - columnCounter: 2000031254
+                stepCounter: "200002250"
+              - columnCounter: 2000031255
+                stepCounter: "200002250"
+              - columnCounter: 2000031256
+                stepCounter: "200002250"
+              - columnCounter: 2000031257
+                stepCounter: "200002250"
+              - columnCounter: 2000031258
+                stepCounter: "200002250"
+              - columnCounter: 2000031259
+                stepCounter: "200002250"
+              - columnCounter: 2000031260
+                stepCounter: "200002250"
+              - columnCounter: 2000031261
+                stepCounter: "200002250"
+              - columnCounter: 2000031262
+                stepCounter: "200002250"
+              - columnCounter: 2000031263
+                stepCounter: "200002250"
+              - columnCounter: 2000031264
+                stepCounter: "200002250"
+              - columnCounter: 2000031265
+                stepCounter: "200002250"
+              - columnCounter: 2000031266
+                stepCounter: "200002250"
+              - columnCounter: 2000031267
+                stepCounter: "200002250"
+              - columnCounter: 2000031268
+                stepCounter: "200002250"
+              - columnCounter: 2000031269
+                stepCounter: "200002250"
+              - columnCounter: 2000031270
+                stepCounter: "200002250"
+              - columnCounter: 2000031271
+                stepCounter: "200002250"
+              - columnCounter: 2000031272
+                stepCounter: "200002250"
+              - columnCounter: 2000031273
+                stepCounter: "200002250"
+              - columnCounter: 2000031274
+                stepCounter: "200002250"
+              - columnCounter: 2000031275
+                stepCounter: "200002250"
+              - columnCounter: 2000031276
+                stepCounter: "200002250"
+              - columnCounter: 2000031277
+                stepCounter: "200002250"
+              - columnCounter: 2000031278
+                stepCounter: "200002250"
+              - columnCounter: 2000031279
+                stepCounter: "200002250"
+              - columnCounter: 2000031280
+                stepCounter: "200002250"
+              - columnCounter: 2000031281
+                stepCounter: "200002250"
+              - columnCounter: 2000031282
+                stepCounter: "200002250"
+              - columnCounter: 2000031283
+                stepCounter: "200002250"
+              - columnCounter: 2000031284
+                stepCounter: "200002250"
+              - columnCounter: 2000031285
+                stepCounter: "200002250"
+              - columnCounter: 2000031286
+                stepCounter: "200002250"
+              - columnCounter: 2000031287
+                stepCounter: "200002250"
+            name: DSS_CHANGE_HASH_VISIT_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031289
+              stepCounter: "200002250"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031290
+              stepCounter: "200002250"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031291
+              stepCounter: "200002250"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_VACCERTS_FT: "200003821"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_VACCERTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_VACCERTS_FT') }} LOAD_VACCERTS_FT\
+                \  "
+            name: STAGE_VISIT
+            noLinkRefs: []
+      name: STAGE_VISIT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002250"

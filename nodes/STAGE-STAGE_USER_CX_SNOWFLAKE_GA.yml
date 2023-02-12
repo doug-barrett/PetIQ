@@ -1,0 +1,163 @@
+steps:
+  STAGE_USER_CX_SNOWFLAKE_GA-200003528:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029735
+              stepCounter: "200003528"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029736
+                stepCounter: "200003528"
+              - columnCounter: 2000029737
+                stepCounter: "200003528"
+            name: HK_H_USER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029736
+              stepCounter: "200003528"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: CLIENTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029737
+              stepCounter: "200003528"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029738
+              stepCounter: "200003528"
+            dataType: TEXT(9)
+            defaultValue: ""
+            description: ""
+            name: TABLEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029739
+              stepCounter: "200003528"
+            dataType: TEXT(16777216)
+            defaultValue: ""
+            description: ""
+            name: FULLVISITORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029740
+              stepCounter: "200003528"
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: VISITID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029741
+              stepCounter: "200003528"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029738
+                stepCounter: "200003528"
+              - columnCounter: 2000029739
+                stepCounter: "200003528"
+              - columnCounter: 2000029740
+                stepCounter: "200003528"
+            name: DSS_CHANGE_HASH_USER_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029742
+              stepCounter: "200003528"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029743
+              stepCounter: "200003528"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029744
+              stepCounter: "200003528"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_COMBINEDUA_VIEW_CX_SNOWFLAKE_GA: "200003522"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_COMBINEDUA_VIEW_CX_SNOWFLAKE_GA
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_COMBINEDUA_VIEW_CX_SNOWFLAKE_GA')
+                }} LOAD_COMBINEDUA_VIEW_CX_SNOWFLAKE_GA
+            name: STAGE_USER_CX_SNOWFLAKE_GA
+            noLinkRefs: []
+      name: STAGE_USER_CX_SNOWFLAKE_GA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003528"

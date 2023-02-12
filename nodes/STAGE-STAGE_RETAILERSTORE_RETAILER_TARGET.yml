@@ -1,0 +1,168 @@
+steps:
+  STAGE_RETAILERSTORE_RETAILER_TARGET-200002567:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026897
+              stepCounter: "200002567"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026898
+                stepCounter: "200002567"
+              - columnCounter: 2000026899
+                stepCounter: "200002567"
+            name: HK_L_RETAILERSTORE_RETAILER_TARGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026898
+              stepCounter: "200002567"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026900
+                stepCounter: "200002567"
+              - columnCounter: 2000026901
+                stepCounter: "200002567"
+            name: HK_H_RETAILERSTORE_TARGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026899
+              stepCounter: "200002567"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026902
+                stepCounter: "200002567"
+              - columnCounter: 2000026903
+                stepCounter: "200002567"
+            name: HK_H_RETAILER_TARGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026900
+              stepCounter: "200002567"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: STORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026901
+              stepCounter: "200002567"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_STORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_TARGET'"
+          - columnReference:
+              columnCounter: 2000026902
+              stepCounter: "200002567"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'TARGET'"
+          - columnReference:
+              columnCounter: 2000026903
+              stepCounter: "200002567"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_TARGET'"
+          - columnReference:
+              columnCounter: 2000026904
+              stepCounter: "200002567"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026905
+              stepCounter: "200002567"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026906
+              stepCounter: "200002567"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALESINVENTORY_POS_TARGET: "200002563"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALESINVENTORY_POS_TARGET
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_SALESINVENTORY_POS_TARGET')
+                }} LOAD_SALESINVENTORY_POS_TARGET
+            name: STAGE_RETAILERSTORE_RETAILER_TARGET
+            noLinkRefs: []
+      name: STAGE_RETAILERSTORE_RETAILER_TARGET
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002567"

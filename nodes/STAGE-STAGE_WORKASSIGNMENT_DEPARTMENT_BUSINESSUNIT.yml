@@ -1,0 +1,240 @@
+steps:
+  STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT-200004169:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033239
+              stepCounter: "200004169"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033179
+                stepCounter: "200004169"
+              - columnCounter: 2000033237
+                stepCounter: "200004169"
+              - columnCounter: 2000033238
+                stepCounter: "200004169"
+            name: HK_L_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033179
+              stepCounter: "200004169"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033180
+                stepCounter: "200004169"
+              - columnCounter: 2000033181
+                stepCounter: "200004169"
+            name: HK_H_WORK_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033237
+              stepCounter: "200004169"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033233
+                stepCounter: "200004169"
+              - columnCounter: 2000033235
+                stepCounter: "200004169"
+            name: HK_H_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033238
+              stepCounter: "200004169"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033234
+                stepCounter: "200004169"
+              - columnCounter: 2000033236
+                stepCounter: "200004169"
+            name: HK_H_BUSINESS_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033180
+              stepCounter: "200004169"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033181
+              stepCounter: "200004169"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_WORKASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000033233
+              stepCounter: "200004169"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: DEPT.ID
+          - columnReference:
+              columnCounter: 2000033235
+              stepCounter: "200004169"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000033234
+              stepCounter: "200004169"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BUSINESS_UNIT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: BIZ.ID
+          - columnReference:
+              columnCounter: 2000033236
+              stepCounter: "200004169"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_BUSINESS_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000033228
+              stepCounter: "200004169"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033230
+              stepCounter: "200004169"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033231
+              stepCounter: "200004169"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033232
+              stepCounter: "200004169"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN: "200003936"
+              LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN: "200003938"
+              LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN: "200003935"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN  LEFT JOIN   (SELECT\
+                \ AOU.WORKER_ASSIGNMENT_ID, OU.ID FROM {{ ref('STAGE','LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} AOU  LEFT JOIN {{ ref('STAGE','LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} OU ON OU.ID = AOU.ID AND OU.TYPE_SHORT_NAME = 'DEPARTMENT') DEPT\
+                \ ON DEPT.WORKER_ASSIGNMENT_ID = LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.ID\
+                \  LEFT JOIN   (SELECT AOU.WORKER_ASSIGNMENT_ID, OU.ID FROM {{ ref('STAGE','LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} AOU  LEFT JOIN {{ ref('STAGE','LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} OU ON OU.ID = AOU.ID AND OU.TYPE_SHORT_NAME = 'BUSINESS UNIT')\
+                \ BIZ ON BIZ.WORKER_ASSIGNMENT_ID = LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.ID\
+                \  "
+            name: STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+            noLinkRefs: []
+      name: STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004169"

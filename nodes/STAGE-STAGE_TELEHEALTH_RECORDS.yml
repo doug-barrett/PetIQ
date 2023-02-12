@@ -1,0 +1,642 @@
+steps:
+  STAGE_TELEHEALTH_RECORDS-200003667:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029941
+              stepCounter: "200003667"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029896
+                stepCounter: "200003667"
+              - columnCounter: 2000029940
+                stepCounter: "200003667"
+            name: HK_H_TELEHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029896
+              stepCounter: "200003667"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TELEHEALTH_RECORDS_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029940
+              stepCounter: "200003667"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000029902
+              stepCounter: "200003667"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029904
+              stepCounter: "200003667"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029905
+              stepCounter: "200003667"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029903
+              stepCounter: "200003667"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRIAGE_DATA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029897
+              stepCounter: "200003667"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029898
+              stepCounter: "200003667"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029899
+              stepCounter: "200003667"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029900
+              stepCounter: "200003667"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029901
+              stepCounter: "200003667"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029910
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029911
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: SUBJECT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029912
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: WD_MEMBER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029913
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: STATUS_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029914
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_TEXT1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029915
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_TEXT2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029916
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_TEXT3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029917
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_TEXT4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029918
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_CREATEDTIME1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029919
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_CREATEDTIME2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029920
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_CREATEDTIME3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029921
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERACTION_CREATEDTIME4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029922
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CHANNEL_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029923
+              stepCounter: "200003667"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: CREATED_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029924
+              stepCounter: "200003667"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: UPDATED_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029925
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INITIAL_INTENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029926
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CAT_LEVEL1_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029927
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CAT_LEVEL2_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029928
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CAT_LEVEL3_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029929
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CURRENT_DISPOSITION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029930
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CURRENT_ORGANIZATION_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029931
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CLOSED_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029932
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_AGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029933
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029934
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029935
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_BREED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029936
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_FIXED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029937
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_GENDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029938
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029939
+              stepCounter: "200003667"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PET_IS_ESTIMATED_BIRTHDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029942
+              stepCounter: "200003667"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029897
+                stepCounter: "200003667"
+              - columnCounter: 2000029898
+                stepCounter: "200003667"
+              - columnCounter: 2000029899
+                stepCounter: "200003667"
+              - columnCounter: 2000029900
+                stepCounter: "200003667"
+              - columnCounter: 2000029901
+                stepCounter: "200003667"
+              - columnCounter: 2000029902
+                stepCounter: "200003667"
+              - columnCounter: 2000029903
+                stepCounter: "200003667"
+              - columnCounter: 2000029904
+                stepCounter: "200003667"
+              - columnCounter: 2000029905
+                stepCounter: "200003667"
+              - columnCounter: 2000029910
+                stepCounter: "200003667"
+              - columnCounter: 2000029911
+                stepCounter: "200003667"
+              - columnCounter: 2000029912
+                stepCounter: "200003667"
+              - columnCounter: 2000029913
+                stepCounter: "200003667"
+              - columnCounter: 2000029914
+                stepCounter: "200003667"
+              - columnCounter: 2000029915
+                stepCounter: "200003667"
+              - columnCounter: 2000029916
+                stepCounter: "200003667"
+              - columnCounter: 2000029917
+                stepCounter: "200003667"
+              - columnCounter: 2000029918
+                stepCounter: "200003667"
+              - columnCounter: 2000029919
+                stepCounter: "200003667"
+              - columnCounter: 2000029920
+                stepCounter: "200003667"
+              - columnCounter: 2000029921
+                stepCounter: "200003667"
+              - columnCounter: 2000029922
+                stepCounter: "200003667"
+              - columnCounter: 2000029923
+                stepCounter: "200003667"
+              - columnCounter: 2000029924
+                stepCounter: "200003667"
+              - columnCounter: 2000029925
+                stepCounter: "200003667"
+              - columnCounter: 2000029926
+                stepCounter: "200003667"
+              - columnCounter: 2000029927
+                stepCounter: "200003667"
+              - columnCounter: 2000029928
+                stepCounter: "200003667"
+              - columnCounter: 2000029929
+                stepCounter: "200003667"
+              - columnCounter: 2000029930
+                stepCounter: "200003667"
+              - columnCounter: 2000029931
+                stepCounter: "200003667"
+              - columnCounter: 2000029932
+                stepCounter: "200003667"
+              - columnCounter: 2000029933
+                stepCounter: "200003667"
+              - columnCounter: 2000029934
+                stepCounter: "200003667"
+              - columnCounter: 2000029935
+                stepCounter: "200003667"
+              - columnCounter: 2000029936
+                stepCounter: "200003667"
+              - columnCounter: 2000029937
+                stepCounter: "200003667"
+              - columnCounter: 2000029938
+                stepCounter: "200003667"
+              - columnCounter: 2000029939
+                stepCounter: "200003667"
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029906
+              stepCounter: "200003667"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029907
+              stepCounter: "200003667"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029909
+              stepCounter: "200003667"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029908
+              stepCounter: "200003667"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_TELEHEALTH_RECORDS_FT: "200004200"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_TELEHEALTH_RECORDS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_TELEHEALTH_RECORDS_FT') }}\
+                \ LOAD_TELEHEALTH_RECORDS_FT    "
+            name: STAGE_TELEHEALTH_RECORDS
+            noLinkRefs: []
+      name: STAGE_TELEHEALTH_RECORDS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003667"

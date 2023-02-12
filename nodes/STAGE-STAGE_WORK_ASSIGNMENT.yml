@@ -1,0 +1,708 @@
+steps:
+  STAGE_WORK_ASSIGNMENT-200004043:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032843
+              stepCounter: "200004043"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032844
+                stepCounter: "200004043"
+              - columnCounter: 2000032845
+                stepCounter: "200004043"
+            name: HK_H_WORK_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032844
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032845
+              stepCounter: "200004043"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032846
+              stepCounter: "200004043"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032847
+              stepCounter: "200004043"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: MANAGEMENT_POSITION_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032848
+              stepCounter: "200004043"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032849
+              stepCounter: "200004043"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SENIORITY_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032850
+              stepCounter: "200004043"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ACTUAL_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032851
+              stepCounter: "200004043"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032852
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032853
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: POSITION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032854
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_GROUP_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032855
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_SCHEDULE_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032856
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_FILE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032857
+              stepCounter: "200004043"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: FULL_TIME_EQUIVALENCE_RATIO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032858
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032859
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032860
+              stepCounter: "200004043"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032861
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032862
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: COALESCE(LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.ASSIGNMENT_STATUS_REASON_SHORT_NAME,LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.ASSIGNMENT_STATUS_REASON_LONG_NAME)
+          - columnReference:
+              columnCounter: 2000032864
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_TYPE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032865
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_SHIFT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032866
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_CYCLE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032867
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: COALESCE(LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.JOB_SHORT_NAME,LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.JOB_LONG_NAME)
+          - columnReference:
+              columnCounter: 2000032869
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: REPORT_TO_WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032870
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: REPORT_TO_POSITION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032871
+              stepCounter: "200004043"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032872
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032873
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032874
+              stepCounter: "200004043"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032875
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032876
+              stepCounter: "200004043"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032877
+              stepCounter: "200004043"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032878
+              stepCounter: "200004043"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032879
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: COALESCE(LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.HOME_WORK_LOCATION_NAME_SHORT_NAME,LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.HOME_WORK_LOCATION_NAME_LONG_NAME)
+          - columnReference:
+              columnCounter: 2000032881
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_ADDRESS_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032882
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_ADDRESS_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032883
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032884
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032885
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032886
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032887
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LOCATION_ABBREVIATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032888
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032889
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032890
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032891
+              stepCounter: "200004043"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032892
+              stepCounter: "200004043"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032893
+              stepCounter: "200004043"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032846
+                stepCounter: "200004043"
+              - columnCounter: 2000032847
+                stepCounter: "200004043"
+              - columnCounter: 2000032848
+                stepCounter: "200004043"
+              - columnCounter: 2000032849
+                stepCounter: "200004043"
+              - columnCounter: 2000032850
+                stepCounter: "200004043"
+              - columnCounter: 2000032851
+                stepCounter: "200004043"
+              - columnCounter: 2000032852
+                stepCounter: "200004043"
+              - columnCounter: 2000032853
+                stepCounter: "200004043"
+              - columnCounter: 2000032854
+                stepCounter: "200004043"
+              - columnCounter: 2000032855
+                stepCounter: "200004043"
+              - columnCounter: 2000032856
+                stepCounter: "200004043"
+              - columnCounter: 2000032857
+                stepCounter: "200004043"
+              - columnCounter: 2000032858
+                stepCounter: "200004043"
+              - columnCounter: 2000032859
+                stepCounter: "200004043"
+              - columnCounter: 2000032860
+                stepCounter: "200004043"
+              - columnCounter: 2000032861
+                stepCounter: "200004043"
+              - columnCounter: 2000032862
+                stepCounter: "200004043"
+              - columnCounter: 2000032864
+                stepCounter: "200004043"
+              - columnCounter: 2000032865
+                stepCounter: "200004043"
+              - columnCounter: 2000032866
+                stepCounter: "200004043"
+              - columnCounter: 2000032867
+                stepCounter: "200004043"
+              - columnCounter: 2000032869
+                stepCounter: "200004043"
+              - columnCounter: 2000032870
+                stepCounter: "200004043"
+              - columnCounter: 2000032871
+                stepCounter: "200004043"
+              - columnCounter: 2000032872
+                stepCounter: "200004043"
+              - columnCounter: 2000032873
+                stepCounter: "200004043"
+              - columnCounter: 2000032874
+                stepCounter: "200004043"
+              - columnCounter: 2000032875
+                stepCounter: "200004043"
+              - columnCounter: 2000032876
+                stepCounter: "200004043"
+              - columnCounter: 2000032877
+                stepCounter: "200004043"
+              - columnCounter: 2000032878
+                stepCounter: "200004043"
+              - columnCounter: 2000032879
+                stepCounter: "200004043"
+              - columnCounter: 2000032881
+                stepCounter: "200004043"
+              - columnCounter: 2000032882
+                stepCounter: "200004043"
+              - columnCounter: 2000032883
+                stepCounter: "200004043"
+              - columnCounter: 2000032884
+                stepCounter: "200004043"
+              - columnCounter: 2000032885
+                stepCounter: "200004043"
+              - columnCounter: 2000032886
+                stepCounter: "200004043"
+              - columnCounter: 2000032887
+                stepCounter: "200004043"
+              - columnCounter: 2000032888
+                stepCounter: "200004043"
+              - columnCounter: 2000032889
+                stepCounter: "200004043"
+              - columnCounter: 2000032890
+                stepCounter: "200004043"
+              - columnCounter: 2000032891
+                stepCounter: "200004043"
+              - columnCounter: 2000032892
+                stepCounter: "200004043"
+            name: DSS_CHANGE_HASH_WORK_ASSIGNMENT_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032894
+              stepCounter: "200004043"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032895
+              stepCounter: "200004043"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032896
+              stepCounter: "200004043"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN: "200003936"
+              LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN: "200004041"
+              LOAD_WORKER_REPORT_TO_CX_SNOWFLAKE_FIVETRAN: "200004042"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_WORKER_REPORT_TO_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN  LEFT OUTER JOIN {{\
+                \ ref('STAGE','LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN  ON LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN.WORKER_ASSIGNMENT_ID\
+                \ = LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.ID  LEFT OUTER JOIN\
+                \ {{ ref('STAGE','LOAD_WORKER_REPORT_TO_CX_SNOWFLAKE_FIVETRAN') }}\
+                \ LOAD_WORKER_REPORT_TO_CX_SNOWFLAKE_FIVETRAN  ON LOAD_WORKER_REPORT_TO_CX_SNOWFLAKE_FIVETRAN.WORKER_ASSIGNMENT_ID\
+                \ = LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN.ID  "
+            name: STAGE_WORK_ASSIGNMENT
+            noLinkRefs: []
+      name: STAGE_WORK_ASSIGNMENT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004043"

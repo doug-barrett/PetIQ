@@ -1,0 +1,212 @@
+steps:
+  STAGE_SURVEY_QUESTION_OPTION-200004072:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033024
+              stepCounter: "200004072"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033025
+              stepCounter: "200004072"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_QUESTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SURVEYMONKEY'"
+          - columnReference:
+              columnCounter: 2000033063
+              stepCounter: "200004072"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SUB_QUESTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: IFNULL(LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN.ID,'-2')
+          - columnReference:
+              columnCounter: 2000033026
+              stepCounter: "200004072"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_SUB_QUESTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SURVEYMONKEY'"
+          - columnReference:
+              columnCounter: 2000033027
+              stepCounter: "200004072"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033028
+              stepCounter: "200004072"
+            dataType: VARCHAR(512)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_TEXT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033064
+              stepCounter: "200004072"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_POSITION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033065
+              stepCounter: "200004072"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: QUESTION_OPTION_VISIBLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033030
+              stepCounter: "200004072"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033031
+              stepCounter: "200004072"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033032
+              stepCounter: "200004072"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033023
+              stepCounter: "200004072"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033024
+                stepCounter: "200004072"
+              - columnCounter: 2000033025
+                stepCounter: "200004072"
+              - columnCounter: 2000033063
+                stepCounter: "200004072"
+              - columnCounter: 2000033026
+                stepCounter: "200004072"
+            name: HK_H_SURVEY_QUESTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033029
+              stepCounter: "200004072"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033027
+                stepCounter: "200004072"
+              - columnCounter: 2000033028
+                stepCounter: "200004072"
+              - columnCounter: 2000033064
+                stepCounter: "200004072"
+              - columnCounter: 2000033065
+                stepCounter: "200004072"
+            name: DSS_CHANGE_HASH_SURVEY_QUESTION_MROC_OPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_QUESTION_OPTION_HISTORY_CX_SNOWFLAKE_FIVETRAN: "200004062"
+              LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN: "200004065"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_QUESTION_OPTION_HISTORY_CX_SNOWFLAKE_FIVETRAN
+              - locationName: STAGE
+                nodeName: LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_QUESTION_OPTION_HISTORY_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_QUESTION_OPTION_HISTORY_CX_SNOWFLAKE_FIVETRAN  LEFT JOIN\
+                \ {{ ref('STAGE','LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN    ON LOAD_QUESTION_OPTION_HISTORY_CX_SNOWFLAKE_FIVETRAN.QUESTION_ID\
+                \ = LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN.QUESTION_ID WHERE\
+                \ LOAD_QUESTION_OPTION_HISTORY_CX_SNOWFLAKE_FIVETRAN._FIVETRAN_ACTIVE\
+                \ = 'TRUE'  AND   (LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN._FIVETRAN_ACTIVE\
+                \ = 'TRUE'  OR   LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN._FIVETRAN_ACTIVE\
+                \ IS NULL) "
+            name: STAGE_SURVEY_QUESTION_OPTION
+            noLinkRefs: []
+      name: STAGE_SURVEY_QUESTION_OPTION
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004072"

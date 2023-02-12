@@ -1,0 +1,215 @@
+steps:
+  STAGE_VET_CLINIC_VETCLINICCONTRACT-200003606:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031155
+              stepCounter: "200003606"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031156
+                stepCounter: "200003606"
+              - columnCounter: 2000031157
+                stepCounter: "200003606"
+              - columnCounter: 2000031158
+                stepCounter: "200003606"
+            name: HK_L_VET_CLINIC_VETCLINICCONTRACT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031156
+              stepCounter: "200003606"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031159
+                stepCounter: "200003606"
+              - columnCounter: 2000031160
+                stepCounter: "200003606"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031157
+              stepCounter: "200003606"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031163
+                stepCounter: "200003606"
+              - columnCounter: 2000031164
+                stepCounter: "200003606"
+            name: HK_H_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031158
+              stepCounter: "200003606"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031161
+                stepCounter: "200003606"
+              - columnCounter: 2000031162
+                stepCounter: "200003606"
+            name: HK_H_VETCLINICCONTRACT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031159
+              stepCounter: "200003606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031160
+              stepCounter: "200003606"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031161
+              stepCounter: "200003606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VETCLINICCONTRACT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031162
+              stepCounter: "200003606"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_VETCLINICCONTRACT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031163
+              stepCounter: "200003606"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031164
+              stepCounter: "200003606"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031165
+              stepCounter: "200003606"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031166
+              stepCounter: "200003606"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031167
+              stepCounter: "200003606"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_VET_CONTRACTS_FT: "200004124"
+              LOAD_CLINICS_VET_CONTRACTS_FT: "200004120"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_VET_CONTRACTS_FT
+              - locationName: STAGE
+                nodeName: LOAD_CLINICS_VET_CONTRACTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_VET_CONTRACTS_FT') }} LOAD_VET_CONTRACTS_FT\
+                \  LEFT JOIN {{ ref('STAGE','LOAD_CLINICS_VET_CONTRACTS_FT') }} LOAD_CLINICS_VET_CONTRACTS_FT\
+                \    ON LOAD_VET_CONTRACTS_FT.ID = LOAD_CLINICS_VET_CONTRACTS_FT.VET_CONTRACT_ID\
+                \    "
+            name: STAGE_VET_CLINIC_VETCLINICCONTRACT
+            noLinkRefs: []
+      name: STAGE_VET_CLINIC_VETCLINICCONTRACT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003606"
