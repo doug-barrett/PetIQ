@@ -1,0 +1,101 @@
+steps:
+  H_SALESORDER_APOLLO-200003752:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033126
+              stepCounter: "200003752"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_SALESORDER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033127
+              stepCounter: "200003752"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SALESORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033128
+              stepCounter: "200003752"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033129
+              stepCounter: "200003752"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033130
+              stepCounter: "200003752"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033131
+              stepCounter: "200003752"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_SALESORDER_APOLLO: "200002245"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_SALESORDER_APOLLO
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_SALESORDER_APOLLO') }} STAGE_SALESORDER_APOLLO
+            name: H_SALESORDER_APOLLO
+            noLinkRefs: []
+      name: H_SALESORDER_APOLLO
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003752"

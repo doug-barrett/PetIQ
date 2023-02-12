@@ -1,0 +1,102 @@
+steps:
+  H_APOLLO_PRODUCT_CATEGORIES_REFERENCE-200002256:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032991
+              stepCounter: "200002256"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032992
+              stepCounter: "200002256"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032993
+              stepCounter: "200002256"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032994
+              stepCounter: "200002256"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032995
+              stepCounter: "200002256"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032996
+              stepCounter: "200002256"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE: "200002216"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE')
+                }} STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+            name: H_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+            noLinkRefs: []
+      name: H_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200002256"

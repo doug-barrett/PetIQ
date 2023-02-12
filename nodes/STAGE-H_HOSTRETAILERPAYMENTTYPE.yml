@@ -1,0 +1,102 @@
+steps:
+  H_HOSTRETAILERPAYMENTTYPE-200003845:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034536
+              stepCounter: "200003845"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_HOSTRETAILERPAYMENTTYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034537
+              stepCounter: "200003845"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_PAYMENT_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034538
+              stepCounter: "200003845"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034539
+              stepCounter: "200003845"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034540
+              stepCounter: "200003845"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034541
+              stepCounter: "200003845"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_HOSTRETAILERPAYMENTTYPE: "200003843"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_HOSTRETAILERPAYMENTTYPE
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_HOSTRETAILERPAYMENTTYPE')
+                }} STAGE_HOSTRETAILERPAYMENTTYPE
+            name: H_HOSTRETAILERPAYMENTTYPE
+            noLinkRefs: []
+      name: H_HOSTRETAILERPAYMENTTYPE
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003845"

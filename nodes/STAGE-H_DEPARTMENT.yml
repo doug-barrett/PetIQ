@@ -1,0 +1,102 @@
+steps:
+  H_DEPARTMENT-200004007:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000035641
+              stepCounter: "200004007"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035642
+              stepCounter: "200004007"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035643
+              stepCounter: "200004007"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035644
+              stepCounter: "200004007"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035645
+              stepCounter: "200004007"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035646
+              stepCounter: "200004007"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_DEPARTMENT: "200004000"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_DEPARTMENT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_DEPARTMENT') }} STAGE_DEPARTMENT\
+                \  "
+            name: H_DEPARTMENT
+            noLinkRefs: []
+      name: H_DEPARTMENT
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200004007"

@@ -1,0 +1,102 @@
+steps:
+  H_CAMPAIGN-200003533:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: GA property from BQ
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032565
+              stepCounter: "200003533"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CAMPAIGN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032566
+              stepCounter: "200003533"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGNBK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032567
+              stepCounter: "200003533"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032568
+              stepCounter: "200003533"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032569
+              stepCounter: "200003533"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032570
+              stepCounter: "200003533"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_CAMPAIGN: "200003524"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_CAMPAIGN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_CAMPAIGN') }} STAGE_CAMPAIGN\
+                \ WHERE STAGE_CAMPAIGN.CAMPAIGNBK <> '(NOT SET)' "
+            name: H_CAMPAIGN
+            noLinkRefs: []
+      name: H_CAMPAIGN
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003533"

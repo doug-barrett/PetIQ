@@ -1,0 +1,102 @@
+steps:
+  H_RETURN_ROW-200002001:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024936
+              stepCounter: "200002001"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETURN_ROW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024937
+              stepCounter: "200002001"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RETURNROWID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(SRHNUM_0, '|', SRDLIN_0)
+          - columnReference:
+              columnCounter: 2000024938
+              stepCounter: "200002001"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024939
+              stepCounter: "200002001"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024940
+              stepCounter: "200002001"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024941
+              stepCounter: "200002001"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETURN_ROW_SAGE: "200001991"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETURN_ROW_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETURN_ROW_SAGE') }} STAGE_RETURN_ROW_SAGE\
+                \  "
+            name: H_RETURN_ROW
+            noLinkRefs: []
+      name: H_RETURN_ROW
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200002001"

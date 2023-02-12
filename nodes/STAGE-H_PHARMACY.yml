@@ -1,0 +1,102 @@
+steps:
+  H_PHARMACY-200003271:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031873
+              stepCounter: "200003271"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PHARMACY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031874
+              stepCounter: "200003271"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PHARMACY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031875
+              stepCounter: "200003271"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031876
+              stepCounter: "200003271"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031877
+              stepCounter: "200003271"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031878
+              stepCounter: "200003271"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_PHARMACIES_APOLLO_READ_REPLICA: "200003268"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_PHARMACIES_APOLLO_READ_REPLICA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_PHARMACIES_APOLLO_READ_REPLICA')\
+                \ }} STAGE_PHARMACIES_APOLLO_READ_REPLICA  "
+            name: H_PHARMACY
+            noLinkRefs: []
+      name: H_PHARMACY
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003271"

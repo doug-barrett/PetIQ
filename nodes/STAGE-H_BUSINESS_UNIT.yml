@@ -1,0 +1,102 @@
+steps:
+  H_BUSINESS_UNIT-200003949:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000035324
+              stepCounter: "200003949"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_BUSINESS_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035325
+              stepCounter: "200003949"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BUSINESS_UNIT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035326
+              stepCounter: "200003949"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035327
+              stepCounter: "200003949"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035328
+              stepCounter: "200003949"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035329
+              stepCounter: "200003949"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_BUSINESS_UNIT: "200003940"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_BUSINESS_UNIT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_BUSINESS_UNIT') }} STAGE_BUSINESS_UNIT\
+                \  "
+            name: H_BUSINESS_UNIT
+            noLinkRefs: []
+      name: H_BUSINESS_UNIT
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003949"

@@ -1,0 +1,91 @@
+steps:
+  H_ZIPCODE-200003921:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034654
+              stepCounter: "200003921"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ZIPCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034655
+              stepCounter: "200003921"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034656
+              stepCounter: "200003921"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034657
+              stepCounter: "200003921"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034658
+              stepCounter: "200003921"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_VIEW_DEMOGRAPHICS_BY_ZIP: "200003901"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_VIEW_DEMOGRAPHICS_BY_ZIP
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_VIEW_DEMOGRAPHICS_BY_ZIP')\
+                \ }} STAGE_VIEW_DEMOGRAPHICS_BY_ZIP    "
+            name: H_ZIPCODE
+            noLinkRefs: []
+      name: H_ZIPCODE
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003921"

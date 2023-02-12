@@ -1,0 +1,101 @@
+steps:
+  H_VETCLINICCONTRACT-200003611:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033156
+              stepCounter: "200003611"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_VETCLINICCONTRACT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033157
+              stepCounter: "200003611"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VETCLINICCONTRACT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033158
+              stepCounter: "200003611"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033159
+              stepCounter: "200003611"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033160
+              stepCounter: "200003611"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033161
+              stepCounter: "200003611"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_VETCLINICCONTRACT: "200003609"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_VETCLINICCONTRACT
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_VETCLINICCONTRACT') }} STAGE_VETCLINICCONTRACT
+            name: H_VETCLINICCONTRACT
+            noLinkRefs: []
+      name: H_VETCLINICCONTRACT
+      overrideSQL: false
+      sqlType: Hub
+      type: sql
+    stepCounter: "200003611"
