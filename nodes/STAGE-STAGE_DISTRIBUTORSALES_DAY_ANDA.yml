@@ -1,0 +1,416 @@
+steps:
+  STAGE_DISTRIBUTORSALES_DAY_ANDA-200001818:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021265
+              stepCounter: "200001818"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021266
+                stepCounter: "200001818"
+              - columnCounter: 2000021267
+                stepCounter: "200001818"
+              - columnCounter: 2000021272
+                stepCounter: "200001818"
+              - columnCounter: 2000021273
+                stepCounter: "200001818"
+            name: HK_L_DISTRIBUTORSALES_DAY_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021266
+              stepCounter: "200001818"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021268
+                stepCounter: "200001818"
+              - columnCounter: 2000021269
+                stepCounter: "200001818"
+            name: HK_H_DISTRIBUTORPRODUCT_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021267
+              stepCounter: "200001818"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021270
+                stepCounter: "200001818"
+              - columnCounter: 2000021271
+                stepCounter: "200001818"
+            name: HK_H_DISTRIBUTOR_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021268
+              stepCounter: "200001818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021269
+              stepCounter: "200001818"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRIBUTORPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021270
+              stepCounter: "200001818"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: DISTRIBUTORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ANDA'"
+          - columnReference:
+              columnCounter: 2000021271
+              stepCounter: "200001818"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRIBUTOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021272
+              stepCounter: "200001818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021273
+              stepCounter: "200001818"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021274
+              stepCounter: "200001818"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: RUNDATETIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021275
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERTYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021276
+              stepCounter: "200001818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CUSTTYPECD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021277
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021278
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STORENUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021279
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUST_ADDRESS_LINE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021280
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUST_ADDRESS_LINE2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021281
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUST_SHIP_TO_CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021282
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUST_SHIP_TO_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021283
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUST_SHIP_TO_ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021284
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOCUMENT_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021285
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021286
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021287
+              stepCounter: "200001818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021288
+              stepCounter: "200001818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITS_NET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021289
+              stepCounter: "200001818"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: NET_SALES_AMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021290
+              stepCounter: "200001818"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021274
+                stepCounter: "200001818"
+              - columnCounter: 2000021275
+                stepCounter: "200001818"
+              - columnCounter: 2000021276
+                stepCounter: "200001818"
+              - columnCounter: 2000021277
+                stepCounter: "200001818"
+              - columnCounter: 2000021278
+                stepCounter: "200001818"
+              - columnCounter: 2000021279
+                stepCounter: "200001818"
+              - columnCounter: 2000021280
+                stepCounter: "200001818"
+              - columnCounter: 2000021281
+                stepCounter: "200001818"
+              - columnCounter: 2000021282
+                stepCounter: "200001818"
+              - columnCounter: 2000021283
+                stepCounter: "200001818"
+              - columnCounter: 2000021284
+                stepCounter: "200001818"
+              - columnCounter: 2000021285
+                stepCounter: "200001818"
+              - columnCounter: 2000021286
+                stepCounter: "200001818"
+              - columnCounter: 2000021287
+                stepCounter: "200001818"
+              - columnCounter: 2000021288
+                stepCounter: "200001818"
+              - columnCounter: 2000021289
+                stepCounter: "200001818"
+            name: DSS_CHANGE_HASH_DISTRIBUTORSALES_DAY_ANDA_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021291
+              stepCounter: "200001818"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021292
+              stepCounter: "200001818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021293
+              stepCounter: "200001818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALES_POS_ANDA: "200001812"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALES_POS_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALES_POS_ANDA') }} LOAD_SALES_POS_ANDA\
+                \  "
+            name: STAGE_DISTRIBUTORSALES_DAY_ANDA
+            noLinkRefs: []
+      name: STAGE_DISTRIBUTORSALES_DAY_ANDA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001818"

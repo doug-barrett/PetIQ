@@ -1,0 +1,252 @@
+steps:
+  STAGE_OFFICE_TYPES_APOLLO_READ_REPLICA-200003333:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029184
+              stepCounter: "200003333"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029198
+              stepCounter: "200003333"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000029185
+              stepCounter: "200003333"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029186
+              stepCounter: "200003333"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CODE_MINIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029187
+              stepCounter: "200003333"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CODE_MAXIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029188
+              stepCounter: "200003333"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029189
+              stepCounter: "200003333"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029190
+              stepCounter: "200003333"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029191
+              stepCounter: "200003333"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029192
+              stepCounter: "200003333"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029193
+              stepCounter: "200003333"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_WELLNESS_CENTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029194
+              stepCounter: "200003333"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029195
+              stepCounter: "200003333"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029199
+              stepCounter: "200003333"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029184
+                stepCounter: "200003333"
+              - columnCounter: 2000029198
+                stepCounter: "200003333"
+            name: HK_H_OFFICE_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029200
+              stepCounter: "200003333"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029185
+                stepCounter: "200003333"
+              - columnCounter: 2000029186
+                stepCounter: "200003333"
+              - columnCounter: 2000029187
+                stepCounter: "200003333"
+              - columnCounter: 2000029188
+                stepCounter: "200003333"
+              - columnCounter: 2000029189
+                stepCounter: "200003333"
+              - columnCounter: 2000029190
+                stepCounter: "200003333"
+              - columnCounter: 2000029191
+                stepCounter: "200003333"
+              - columnCounter: 2000029192
+                stepCounter: "200003333"
+              - columnCounter: 2000029193
+                stepCounter: "200003333"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029197
+              stepCounter: "200003333"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029196
+              stepCounter: "200003333"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_OFFICE_TYPES_FT: "200004113"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_OFFICE_TYPES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_OFFICE_TYPES_FT') }} LOAD_OFFICE_TYPES_FT\
+                \  "
+            name: STAGE_OFFICE_TYPES_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: STAGE_OFFICE_TYPES_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003333"

@@ -1,0 +1,241 @@
+steps:
+  STAGE_LOCATION-200003941:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032827
+              stepCounter: "200003941"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032828
+                stepCounter: "200003941"
+              - columnCounter: 2000032829
+                stepCounter: "200003941"
+            name: HK_H_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032828
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032829
+              stepCounter: "200003941"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032830
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032831
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032832
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032833
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032834
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032835
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032836
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_COUNTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032837
+              stepCounter: "200003941"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032838
+              stepCounter: "200003941"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032839
+              stepCounter: "200003941"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032830
+                stepCounter: "200003941"
+              - columnCounter: 2000032831
+                stepCounter: "200003941"
+              - columnCounter: 2000032832
+                stepCounter: "200003941"
+              - columnCounter: 2000032833
+                stepCounter: "200003941"
+              - columnCounter: 2000032834
+                stepCounter: "200003941"
+              - columnCounter: 2000032835
+                stepCounter: "200003941"
+              - columnCounter: 2000032836
+                stepCounter: "200003941"
+              - columnCounter: 2000032837
+                stepCounter: "200003941"
+              - columnCounter: 2000032838
+                stepCounter: "200003941"
+            name: DSS_CHANGE_HASH_LOCATION_MROC_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032840
+              stepCounter: "200003941"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032841
+              stepCounter: "200003941"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032842
+              stepCounter: "200003941"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_LOCATION_CX_SNOWFLAKE_FIVETRAN: "200003934"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_LOCATION_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_LOCATION_CX_SNOWFLAKE_FIVETRAN')
+                }} LOAD_LOCATION_CX_SNOWFLAKE_FIVETRAN
+            name: STAGE_LOCATION
+            noLinkRefs: []
+      name: STAGE_LOCATION
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003941"

@@ -1,0 +1,422 @@
+steps:
+  STAGE_EMPLOYEE-200004147:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033069
+              stepCounter: "200004147"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033072
+                stepCounter: "200004147"
+              - columnCounter: 2000033071
+                stepCounter: "200004147"
+            name: HK_H_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033072
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033071
+              stepCounter: "200004147"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000033070
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_PROPERTY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033073
+              stepCounter: "200004147"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033074
+              stepCounter: "200004147"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033075
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033076
+              stepCounter: "200004147"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033077
+              stepCounter: "200004147"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033078
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033079
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033080
+              stepCounter: "200004147"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033081
+              stepCounter: "200004147"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033082
+              stepCounter: "200004147"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_MANAGE_ENGAGEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033083
+              stepCounter: "200004147"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_A_COMMUNITY_LIAISON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033084
+              stepCounter: "200004147"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033085
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_TRAINING_LEVEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033086
+              stepCounter: "200004147"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: ADP_FILE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033087
+              stepCounter: "200004147"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_PHONE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033088
+              stepCounter: "200004147"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_PHONE_EXTENSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033089
+              stepCounter: "200004147"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_FAX_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033090
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_JOB_TITLE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033091
+              stepCounter: "200004147"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: JOB_TITLE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033092
+              stepCounter: "200004147"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033093
+              stepCounter: "200004147"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033095
+              stepCounter: "200004147"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033096
+              stepCounter: "200004147"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033097
+              stepCounter: "200004147"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033094
+              stepCounter: "200004147"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033070
+                stepCounter: "200004147"
+              - columnCounter: 2000033072
+                stepCounter: "200004147"
+              - columnCounter: 2000033073
+                stepCounter: "200004147"
+              - columnCounter: 2000033074
+                stepCounter: "200004147"
+              - columnCounter: 2000033075
+                stepCounter: "200004147"
+              - columnCounter: 2000033076
+                stepCounter: "200004147"
+              - columnCounter: 2000033077
+                stepCounter: "200004147"
+              - columnCounter: 2000033078
+                stepCounter: "200004147"
+              - columnCounter: 2000033079
+                stepCounter: "200004147"
+              - columnCounter: 2000033080
+                stepCounter: "200004147"
+              - columnCounter: 2000033081
+                stepCounter: "200004147"
+              - columnCounter: 2000033082
+                stepCounter: "200004147"
+              - columnCounter: 2000033083
+                stepCounter: "200004147"
+              - columnCounter: 2000033084
+                stepCounter: "200004147"
+              - columnCounter: 2000033085
+                stepCounter: "200004147"
+              - columnCounter: 2000033086
+                stepCounter: "200004147"
+              - columnCounter: 2000033087
+                stepCounter: "200004147"
+              - columnCounter: 2000033088
+                stepCounter: "200004147"
+              - columnCounter: 2000033089
+                stepCounter: "200004147"
+              - columnCounter: 2000033090
+                stepCounter: "200004147"
+              - columnCounter: 2000033091
+                stepCounter: "200004147"
+              - columnCounter: 2000033092
+                stepCounter: "200004147"
+              - columnCounter: 2000033093
+                stepCounter: "200004147"
+            name: DSS_CHANGE_HASH_EMPLOYEE_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_EMPLOYEE_PROPERTIES_FT: "200004183"
+              LOAD_EMPLOYEE_JOB_TITLES_FT: "200004184"
+              LOAD_EMPLOYEE_DEPARTMENTS_FT: "200004185"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_EMPLOYEE_PROPERTIES_FT
+              - locationName: STAGE
+                nodeName: LOAD_EMPLOYEE_JOB_TITLES_FT
+              - locationName: STAGE
+                nodeName: LOAD_EMPLOYEE_DEPARTMENTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_EMPLOYEE_PROPERTIES_FT') }}\
+                \ LOAD_EMPLOYEE_PROPERTIES_FT  LEFT JOIN {{ ref('STAGE','LOAD_EMPLOYEE_JOB_TITLES_FT')\
+                \ }} LOAD_EMPLOYEE_JOB_TITLES_FT    ON LOAD_EMPLOYEE_PROPERTIES_FT.EMPLOYEE_JOB_TITLE_ID\
+                \ = LOAD_EMPLOYEE_JOB_TITLES_FT.ID  LEFT JOIN {{ ref('STAGE','LOAD_EMPLOYEE_DEPARTMENTS_FT')\
+                \ }} LOAD_EMPLOYEE_DEPARTMENTS_FT    ON LOAD_EMPLOYEE_PROPERTIES_FT.EMPLOYEE_DEPARTMENT_ID\
+                \ = LOAD_EMPLOYEE_DEPARTMENTS_FT.ID    "
+            name: STAGE_EMPLOYEE
+            noLinkRefs: []
+      name: STAGE_EMPLOYEE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004147"

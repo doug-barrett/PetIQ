@@ -1,0 +1,387 @@
+steps:
+  STAGE_OFFICE_EMPLOYEE-200004148:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033098
+              stepCounter: "200004148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033100
+                stepCounter: "200004148"
+              - columnCounter: 2000033099
+                stepCounter: "200004148"
+            name: HK_L_OFFICE_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033100
+              stepCounter: "200004148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033102
+                stepCounter: "200004148"
+              - columnCounter: 2000033103
+                stepCounter: "200004148"
+            name: HK_H_OFFICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033099
+              stepCounter: "200004148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033104
+                stepCounter: "200004148"
+              - columnCounter: 2000033105
+                stepCounter: "200004148"
+            name: HK_H_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033102
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033103
+              stepCounter: "200004148"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_OFFICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000033104
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033105
+              stepCounter: "200004148"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000033106
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ROSTER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033107
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_SCHEDULE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033108
+              stepCounter: "200004148"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033109
+              stepCounter: "200004148"
+            dataType: VARCHAR(1000)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033110
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033111
+              stepCounter: "200004148"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033112
+              stepCounter: "200004148"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: TYPE_OF_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033113
+              stepCounter: "200004148"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033114
+              stepCounter: "200004148"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: START_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033115
+              stepCounter: "200004148"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: END_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033116
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033117
+              stepCounter: "200004148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033118
+              stepCounter: "200004148"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033119
+              stepCounter: "200004148"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033120
+              stepCounter: "200004148"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033122
+              stepCounter: "200004148"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033123
+              stepCounter: "200004148"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033124
+              stepCounter: "200004148"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033121
+              stepCounter: "200004148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000033106
+                stepCounter: "200004148"
+              - columnCounter: 2000033107
+                stepCounter: "200004148"
+              - columnCounter: 2000033108
+                stepCounter: "200004148"
+              - columnCounter: 2000033109
+                stepCounter: "200004148"
+              - columnCounter: 2000033110
+                stepCounter: "200004148"
+              - columnCounter: 2000033111
+                stepCounter: "200004148"
+              - columnCounter: 2000033112
+                stepCounter: "200004148"
+              - columnCounter: 2000033113
+                stepCounter: "200004148"
+              - columnCounter: 2000033114
+                stepCounter: "200004148"
+              - columnCounter: 2000033115
+                stepCounter: "200004148"
+              - columnCounter: 2000033116
+                stepCounter: "200004148"
+              - columnCounter: 2000033117
+                stepCounter: "200004148"
+              - columnCounter: 2000033118
+                stepCounter: "200004148"
+              - columnCounter: 2000033119
+                stepCounter: "200004148"
+              - columnCounter: 2000033120
+                stepCounter: "200004148"
+            name: DSS_CHANGE_HASH_OFFICE_EMPLOYEE_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_OFFICE_ROSTERS_FT: "200004179"
+              LOAD_OFFICE_SCHEDULES_FT: "200004180"
+              LOAD_ASSIGNMENTS_FT: "200004111"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_OFFICE_ROSTERS_FT
+              - locationName: STAGE
+                nodeName: LOAD_OFFICE_SCHEDULES_FT
+              - locationName: STAGE
+                nodeName: LOAD_ASSIGNMENTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_OFFICE_ROSTERS_FT') }} LOAD_OFFICE_ROSTERS_FT\
+                \  JOIN {{ ref('STAGE','LOAD_OFFICE_SCHEDULES_FT') }} LOAD_OFFICE_SCHEDULES_FT\
+                \    ON LOAD_OFFICE_ROSTERS_FT.OFFICE_SCHEDULE_ID = LOAD_OFFICE_SCHEDULES_FT.ID\
+                \  JOIN {{ ref('STAGE','LOAD_ASSIGNMENTS_FT') }} LOAD_ASSIGNMENTS_FT\
+                \    ON LOAD_OFFICE_ROSTERS_FT.ASSIGNMENT_ID = LOAD_ASSIGNMENTS_FT.ID\
+                \  "
+            name: STAGE_OFFICE_EMPLOYEE
+            noLinkRefs: []
+      name: STAGE_OFFICE_EMPLOYEE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004148"

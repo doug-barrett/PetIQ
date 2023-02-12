@@ -1,0 +1,241 @@
+steps:
+  STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE-200002216:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030123
+              stepCounter: "200002216"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030124
+                stepCounter: "200002216"
+              - columnCounter: 2000030125
+                stepCounter: "200002216"
+            name: HK_H_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030124
+              stepCounter: "200002216"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030125
+              stepCounter: "200002216"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030126
+              stepCounter: "200002216"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030127
+              stepCounter: "200002216"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030128
+              stepCounter: "200002216"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SORT_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030129
+              stepCounter: "200002216"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030130
+              stepCounter: "200002216"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030131
+              stepCounter: "200002216"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030132
+              stepCounter: "200002216"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030133
+              stepCounter: "200002216"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030134
+              stepCounter: "200002216"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030135
+              stepCounter: "200002216"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030126
+                stepCounter: "200002216"
+              - columnCounter: 2000030127
+                stepCounter: "200002216"
+              - columnCounter: 2000030128
+                stepCounter: "200002216"
+              - columnCounter: 2000030129
+                stepCounter: "200002216"
+              - columnCounter: 2000030130
+                stepCounter: "200002216"
+              - columnCounter: 2000030131
+                stepCounter: "200002216"
+              - columnCounter: 2000030132
+                stepCounter: "200002216"
+              - columnCounter: 2000030133
+                stepCounter: "200002216"
+              - columnCounter: 2000030134
+                stepCounter: "200002216"
+            name: DSS_CHANGE_HASH_APOLLO_PRODUCT_CATEGORIES_REFERENCE_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030136
+              stepCounter: "200002216"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030137
+              stepCounter: "200002216"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030138
+              stepCounter: "200002216"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PRODUCT_CATEGORIES_FT: "200004186"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCT_CATEGORIES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PRODUCT_CATEGORIES_FT') }}\
+                \ LOAD_PRODUCT_CATEGORIES_FT    "
+            name: STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+            noLinkRefs: []
+      name: STAGE_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002216"

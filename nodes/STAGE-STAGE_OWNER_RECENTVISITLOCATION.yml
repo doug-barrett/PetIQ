@@ -1,0 +1,203 @@
+steps:
+  STAGE_OWNER_RECENTVISITLOCATION-200003807:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031562
+              stepCounter: "200003807"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: OWNER.OWNER_ID
+          - columnReference:
+              columnCounter: 2000031565
+              stepCounter: "200003807"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: OWNER.CREATED_AT
+          - columnReference:
+              columnCounter: 2000031566
+              stepCounter: "200003807"
+            dataType: FLOAT8
+            defaultValue: ""
+            description: ""
+            name: OWNER_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031567
+              stepCounter: "200003807"
+            dataType: FLOAT8
+            defaultValue: ""
+            description: ""
+            name: OWNER_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031568
+              stepCounter: "200003807"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031569
+              stepCounter: "200003807"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031570
+              stepCounter: "200003807"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: OWNER_CLINIC_DISTANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ST_DISTANCE(ST_POINT(OWNER_LONGITUDE,OWNER_LATITUDE),                ST_POINT(CLINIC_LONGITUDE,CLINIC_LATITUDE))
+          - columnReference:
+              columnCounter: 2000031572
+              stepCounter: "200003807"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031573
+              stepCounter: "200003807"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031562
+                stepCounter: "200003807"
+              - columnCounter: 2000031572
+                stepCounter: "200003807"
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031574
+              stepCounter: "200003807"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031570
+                stepCounter: "200003807"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031564
+              stepCounter: "200003807"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031563
+              stepCounter: "200003807"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              S_VISIT_LROC_INFO: "200002291"
+              L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION: "200003805"
+              S_CLINIC_LOCATION_LROC_INFO_CURRENT: "200003309"
+              S_OWNER_LROC_INFO_CURRENT: "200003031"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_VISIT_LROC_INFO
+              - locationName: STAGE
+                nodeName: S_VISIT_LROC_INFO
+              - locationName: STAGE
+                nodeName: L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION
+              - locationName: STAGE
+                nodeName: S_CLINIC_LOCATION_LROC_INFO_CURRENT
+              - locationName: STAGE
+                nodeName: S_OWNER_LROC_INFO_CURRENT
+            join:
+              joinCondition: "FROM  (SELECT       S_VISIT_LROC_INFO.OWNER_ID,    \
+                \  MAX(S_VISIT_LROC_INFO.CREATED_AT) AS CREATED_AT      FROM {{ ref('STAGE','S_VISIT_LROC_INFO')\
+                \ }} AS S_VISIT_LROC_INFO       GROUP BY S_VISIT_LROC_INFO.OWNER_ID)\
+                \ OWNER    INNER JOIN {{ ref('STAGE','S_VISIT_LROC_INFO') }} S_VISIT_LROC_INFO\
+                \   ON S_VISIT_LROC_INFO.OWNER_ID = OWNER.OWNER_ID   AND S_VISIT_LROC_INFO.CREATED_AT\
+                \ = OWNER.CREATED_AT    INNER JOIN {{ ref('STAGE','L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION')\
+                \ }} L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION   ON L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION.HK_H_VISIT\
+                \ = S_VISIT_LROC_INFO.HK_H_VISIT    INNER JOIN {{ ref('STAGE','S_CLINIC_LOCATION_LROC_INFO_CURRENT')\
+                \ }} S_CLINIC_LOCATION_LROC_INFO_CURRENT   ON S_CLINIC_LOCATION_LROC_INFO_CURRENT.HK_H_CLINIC_LOCATION\
+                \ = L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION.HK_H_CLINICLOCATION\
+                \    INNER JOIN {{ ref('STAGE','S_OWNER_LROC_INFO_CURRENT') }} S_OWNER_LROC_INFO_CURRENT\
+                \ ON S_OWNER_LROC_INFO_CURRENT.HK_H_OWNER = L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION.HK_H_OWNER\
+                \  "
+            name: STAGE_OWNER_RECENTVISITLOCATION
+            noLinkRefs: []
+      name: STAGE_OWNER_RECENTVISITLOCATION
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003807"

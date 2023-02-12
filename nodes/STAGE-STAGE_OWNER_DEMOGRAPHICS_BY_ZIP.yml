@@ -1,0 +1,191 @@
+steps:
+  STAGE_OWNER_DEMOGRAPHICS_BY_ZIP-200003891:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031756
+              stepCounter: "200003891"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032523
+              stepCounter: "200003891"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'S_ZIPCODE_LROC_DEMOGRAPHICS'"
+          - columnReference:
+              columnCounter: 2000031759
+              stepCounter: "200003891"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032529
+              stepCounter: "200003891"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MEDIAN_AGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032527
+              stepCounter: "200003891"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: POPULATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032520
+              stepCounter: "200003891"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: HH_MEDIAN_INCOME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032528
+              stepCounter: "200003891"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: PERCAPITA_INCOME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032518
+              stepCounter: "200003891"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032519
+              stepCounter: "200003891"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032521
+              stepCounter: "200003891"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031756
+                stepCounter: "200003891"
+              - columnCounter: 2000032519
+                stepCounter: "200003891"
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032522
+              stepCounter: "200003891"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031759
+                stepCounter: "200003891"
+              - columnCounter: 2000032520
+                stepCounter: "200003891"
+              - columnCounter: 2000032527
+                stepCounter: "200003891"
+              - columnCounter: 2000032528
+                stepCounter: "200003891"
+              - columnCounter: 2000032529
+                stepCounter: "200003891"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              H_OWNER: "200001556"
+              S_OWNER_LROC_INFO_CURRENT: "200003031"
+              H_ZIPCODE: "200003921"
+              S_ZIPCODE_LROC_DEMOGRAPHICS: "200003923"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_OWNER
+              - locationName: STAGE
+                nodeName: S_OWNER_LROC_INFO_CURRENT
+              - locationName: STAGE
+                nodeName: H_ZIPCODE
+              - locationName: STAGE
+                nodeName: S_ZIPCODE_LROC_DEMOGRAPHICS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','H_OWNER') }} H_OWNER  JOIN {{ ref('STAGE','S_OWNER_LROC_INFO_CURRENT')\
+                \ }} S_OWNER_LROC_INFO_CURRENT    ON H_OWNER.HK_H_OWNER = S_OWNER_LROC_INFO_CURRENT.HK_H_OWNER\
+                \  JOIN {{ ref('STAGE','H_ZIPCODE') }} H_ZIPCODE    ON S_OWNER_LROC_INFO_CURRENT.ZIP\
+                \ = H_ZIPCODE.ZIP  JOIN {{ ref('STAGE','S_ZIPCODE_LROC_DEMOGRAPHICS')\
+                \ }} S_ZIPCODE_LROC_DEMOGRAPHICS    ON H_ZIPCODE.HK_H_ZIPCODE = S_ZIPCODE_LROC_DEMOGRAPHICS.HK_H_ZIPCODE\
+                \  "
+            name: STAGE_OWNER_DEMOGRAPHICS_BY_ZIP
+            noLinkRefs: []
+      name: STAGE_OWNER_DEMOGRAPHICS_BY_ZIP
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003891"

@@ -1,0 +1,168 @@
+steps:
+  STAGE_CLINIC_RIG-200002221:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030327
+              stepCounter: "200002221"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030328
+                stepCounter: "200002221"
+              - columnCounter: 2000030329
+                stepCounter: "200002221"
+            name: HK_L_CLINIC_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030328
+              stepCounter: "200002221"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030332
+                stepCounter: "200002221"
+              - columnCounter: 2000030333
+                stepCounter: "200002221"
+            name: HK_H_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030329
+              stepCounter: "200002221"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030330
+                stepCounter: "200002221"
+              - columnCounter: 2000030331
+                stepCounter: "200002221"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030330
+              stepCounter: "200002221"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030331
+              stepCounter: "200002221"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030332
+              stepCounter: "200002221"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030333
+              stepCounter: "200002221"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030334
+              stepCounter: "200002221"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030335
+              stepCounter: "200002221"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030336
+              stepCounter: "200002221"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINICS_FT: "200003818"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINICS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINICS_FT') }} LOAD_CLINICS_FT\
+                \  "
+            name: STAGE_CLINIC_RIG
+            noLinkRefs: []
+      name: STAGE_CLINIC_RIG
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002221"

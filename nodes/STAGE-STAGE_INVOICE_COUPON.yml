@@ -1,0 +1,168 @@
+steps:
+  STAGE_INVOICE_COUPON-200002232:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030630
+              stepCounter: "200002232"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030631
+                stepCounter: "200002232"
+              - columnCounter: 2000030632
+                stepCounter: "200002232"
+            name: HK_L_INVOICE_COUPON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030631
+              stepCounter: "200002232"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030633
+                stepCounter: "200002232"
+              - columnCounter: 2000030634
+                stepCounter: "200002232"
+            name: HK_H_INVOICE_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030632
+              stepCounter: "200002232"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030635
+                stepCounter: "200002232"
+              - columnCounter: 2000030636
+                stepCounter: "200002232"
+            name: HK_H_COUPON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030633
+              stepCounter: "200002232"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INVOICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030634
+              stepCounter: "200002232"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030635
+              stepCounter: "200002232"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUPON_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030636
+              stepCounter: "200002232"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_COUPON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030637
+              stepCounter: "200002232"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030638
+              stepCounter: "200002232"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030639
+              stepCounter: "200002232"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALE_PAYMENTS_FT: "200003824"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALE_PAYMENTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALE_PAYMENTS_FT') }} LOAD_SALE_PAYMENTS_FT\
+                \  "
+            name: STAGE_INVOICE_COUPON
+            noLinkRefs: []
+      name: STAGE_INVOICE_COUPON
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002232"

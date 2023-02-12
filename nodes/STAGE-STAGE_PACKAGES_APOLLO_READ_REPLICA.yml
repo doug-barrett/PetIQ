@@ -1,0 +1,202 @@
+steps:
+  STAGE_PACKAGES_APOLLO_READ_REPLICA-200002674:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027256
+              stepCounter: "200002674"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027251
+                stepCounter: "200002674"
+              - columnCounter: 2000027261
+                stepCounter: "200002674"
+            name: HK_H_PACKAGEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027251
+              stepCounter: "200002674"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PACKAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027261
+              stepCounter: "200002674"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000027254
+              stepCounter: "200002674"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027259
+              stepCounter: "200002674"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTTYPENAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027255
+              stepCounter: "200002674"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CATEGORY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027260
+              stepCounter: "200002674"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CATEGORYNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027257
+              stepCounter: "200002674"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_ALTERNATE_DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027258
+              stepCounter: "200002674"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RECEIPT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027649
+              stepCounter: "200002674"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027253
+              stepCounter: "200002674"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027650
+              stepCounter: "200002674"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027252
+              stepCounter: "200002674"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PACKAGES_PRODUCTS_APOLLO_READ_REPLICA: "200002974"
+              LOAD_PRODUCTS_FT: "200004187"
+              LOAD_PRODUCT_TYPES_FT: "200004188"
+              LOAD_PRODUCT_CATEGORIES_FT: "200004186"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PACKAGES_PRODUCTS_APOLLO_READ_REPLICA
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCTS_FT
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCT_TYPES_FT
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCT_CATEGORIES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PACKAGES_PRODUCTS_APOLLO_READ_REPLICA')\
+                \ }} LOAD_PACKAGES_PRODUCTS_APOLLO_READ_REPLICA  JOIN {{ ref('STAGE','LOAD_PRODUCTS_FT')\
+                \ }} LOAD_PRODUCTS_FT    ON LOAD_PACKAGES_PRODUCTS_APOLLO_READ_REPLICA.PRODUCT_PACKAGE_ID\
+                \ = LOAD_PRODUCTS_FT.ID  LEFT JOIN {{ ref('STAGE','LOAD_PRODUCT_TYPES_FT')\
+                \ }} LOAD_PRODUCT_TYPES_FT    ON LOAD_PRODUCTS_FT.PRODUCT_TYPE_ID\
+                \ = LOAD_PRODUCT_TYPES_FT.ID  LEFT JOIN {{ ref('STAGE','LOAD_PRODUCT_CATEGORIES_FT')\
+                \ }} LOAD_PRODUCT_CATEGORIES_FT    ON LOAD_PRODUCT_TYPES_FT.PRODUCT_CATEGORY_ID\
+                \ = LOAD_PRODUCT_CATEGORIES_FT.ID  "
+            name: STAGE_PACKAGES_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: STAGE_PACKAGES_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002674"

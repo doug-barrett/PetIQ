@@ -1,0 +1,263 @@
+steps:
+  STAGE_ITEM_S_ORDER_ROW_S_ORDER_SAGE_CX_SAGE-200001988:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000022751
+              stepCounter: "200001988"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022752
+                stepCounter: "200001988"
+              - columnCounter: 2000022753
+                stepCounter: "200001988"
+              - columnCounter: 2000022754
+                stepCounter: "200001988"
+            name: HK_L_ITEM_S_ORDER_ROW_S_ORDER_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022752
+              stepCounter: "200001988"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022755
+                stepCounter: "200001988"
+              - columnCounter: 2000022756
+                stepCounter: "200001988"
+            name: HK_H_SALES_ORDER_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022753
+              stepCounter: "200001988"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022757
+                stepCounter: "200001988"
+              - columnCounter: 2000022758
+                stepCounter: "200001988"
+            name: HK_H_SALES_ORDER_ROW_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022754
+              stepCounter: "200001988"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022759
+                stepCounter: "200001988"
+              - columnCounter: 2000022760
+                stepCounter: "200001988"
+            name: HK_H_ITEM_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022755
+              stepCounter: "200001988"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SOHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022756
+              stepCounter: "200001988"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_SALES_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022757
+              stepCounter: "200001988"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SALES_ORDER_ROW_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(SOHNUM_0, '|', SOPLIN_0, '|', SOQSEQ_0)
+          - columnReference:
+              columnCounter: 2000022758
+              stepCounter: "200001988"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_SALES_ORDER_ROWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022759
+              stepCounter: "200001988"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ITMREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022760
+              stepCounter: "200001988"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022761
+              stepCounter: "200001988"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SOHNUM_0_SALES_ORDER_ROWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022762
+              stepCounter: "200001988"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOPLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022763
+              stepCounter: "200001988"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOQSEQ_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022764
+              stepCounter: "200001988"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022761
+                stepCounter: "200001988"
+              - columnCounter: 2000022762
+                stepCounter: "200001988"
+              - columnCounter: 2000022763
+                stepCounter: "200001988"
+            name: DSS_CHANGE_HASH_ITEM_S_ORDER_ROW_S_ORDER_SAGE_BOK_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022765
+              stepCounter: "200001988"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022766
+              stepCounter: "200001988"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022767
+              stepCounter: "200001988"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SORDERQ_CX_SAGE: "200001974"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SORDERQ_CX_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SORDERQ_CX_SAGE') }} LOAD_SORDERQ_CX_SAGE\
+                \  "
+            name: STAGE_ITEM_S_ORDER_ROW_S_ORDER_SAGE_CX_SAGE
+            noLinkRefs: []
+      name: STAGE_ITEM_S_ORDER_ROW_S_ORDER_SAGE_CX_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001988"

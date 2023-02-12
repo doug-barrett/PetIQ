@@ -1,0 +1,319 @@
+steps:
+  STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA-200001816:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021228
+              stepCounter: "200001816"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021229
+                stepCounter: "200001816"
+              - columnCounter: 2000021230
+                stepCounter: "200001816"
+            name: HK_H_DISTRIBUTORPRODUCT_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021229
+              stepCounter: "200001816"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021230
+              stepCounter: "200001816"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021231
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEM_STATUS_CD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021232
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INVENTORY_TYPE_DESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021233
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BRAND_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021234
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021235
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FORM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021236
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEM_GENERIC_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021237
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NDC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021238
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021239
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MFG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021240
+              stepCounter: "200001816"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FINELINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021241
+              stepCounter: "200001816"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: AWP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021242
+              stepCounter: "200001816"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: CURRENT_RETAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021243
+              stepCounter: "200001816"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: TELE_SPECIAL_PRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021244
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PROMO_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021245
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PROMO_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021246
+              stepCounter: "200001816"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021231
+                stepCounter: "200001816"
+              - columnCounter: 2000021232
+                stepCounter: "200001816"
+              - columnCounter: 2000021233
+                stepCounter: "200001816"
+              - columnCounter: 2000021234
+                stepCounter: "200001816"
+              - columnCounter: 2000021235
+                stepCounter: "200001816"
+              - columnCounter: 2000021236
+                stepCounter: "200001816"
+              - columnCounter: 2000021237
+                stepCounter: "200001816"
+              - columnCounter: 2000021238
+                stepCounter: "200001816"
+              - columnCounter: 2000021239
+                stepCounter: "200001816"
+              - columnCounter: 2000021240
+                stepCounter: "200001816"
+              - columnCounter: 2000021241
+                stepCounter: "200001816"
+              - columnCounter: 2000021242
+                stepCounter: "200001816"
+              - columnCounter: 2000021243
+                stepCounter: "200001816"
+              - columnCounter: 2000021244
+                stepCounter: "200001816"
+              - columnCounter: 2000021245
+                stepCounter: "200001816"
+            name: DSS_CHANGE_HASH_DISTRIBUTORPRODUCT_ANDA_LROC_INVENTORYPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021247
+              stepCounter: "200001816"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021248
+              stepCounter: "200001816"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021249
+              stepCounter: "200001816"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_ANDA: "200001811"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_INVENTORY_POS_ANDA') }} LOAD_INVENTORY_POS_ANDA\
+                \  "
+            name: STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA
+            noLinkRefs: []
+      name: STAGE_DISTRIBUTORPRODUCT_ANDA_POS_ANDA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001816"

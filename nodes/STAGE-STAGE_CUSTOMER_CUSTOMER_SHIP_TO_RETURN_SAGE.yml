@@ -1,0 +1,250 @@
+steps:
+  STAGE_CUSTOMER_CUSTOMER_SHIP_TO_RETURN_SAGE-200001978:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021679
+              stepCounter: "200001978"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021680
+                stepCounter: "200001978"
+              - columnCounter: 2000021681
+                stepCounter: "200001978"
+              - columnCounter: 2000021682
+                stepCounter: "200001978"
+            name: HK_L_CUSTOMER_CUSTOMER_SHIP_TO_RETURN_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021680
+              stepCounter: "200001978"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021685
+                stepCounter: "200001978"
+              - columnCounter: 2000021686
+                stepCounter: "200001978"
+            name: HK_H_CUSTOMER_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021681
+              stepCounter: "200001978"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021687
+                stepCounter: "200001978"
+              - columnCounter: 2000021688
+                stepCounter: "200001978"
+            name: HK_H_CUSTOMER_SHIP_TO_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021682
+              stepCounter: "200001978"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021683
+                stepCounter: "200001978"
+              - columnCounter: 2000021684
+                stepCounter: "200001978"
+            name: HK_H_RETURN_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021683
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SRHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021684
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETURN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000021685
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPCORD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021686
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000021687
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMER_SHIP_TO_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(BPCORD_0, '|', BPAADD_0)
+          - columnReference:
+              columnCounter: 2000021688
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CUSTOMER_SHIP_TO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000021689
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPCNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021690
+              stepCounter: "200001978"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPAADD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021691
+              stepCounter: "200001978"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021689
+                stepCounter: "200001978"
+              - columnCounter: 2000021690
+                stepCounter: "200001978"
+            name: DSS_CHANGE_HASH_CUSTOMER_CUSTOMER_SHIP_TO_RETURN_SAGE_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021692
+              stepCounter: "200001978"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021693
+              stepCounter: "200001978"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021694
+              stepCounter: "200001978"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SRETURN_CX_SAGE: "200001975"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SRETURN_CX_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SRETURN_CX_SAGE') }} LOAD_SRETURN_CX_SAGE\
+                \  "
+            name: STAGE_CUSTOMER_CUSTOMER_SHIP_TO_RETURN_SAGE
+            noLinkRefs: []
+      name: STAGE_CUSTOMER_CUSTOMER_SHIP_TO_RETURN_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001978"

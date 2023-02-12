@@ -1,0 +1,171 @@
+steps:
+  STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA_1-200001815:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021217
+              stepCounter: "200001815"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021218
+                stepCounter: "200001815"
+              - columnCounter: 2000021219
+                stepCounter: "200001815"
+              - columnCounter: 2000021224
+                stepCounter: "200001815"
+            name: HK_L_DISTRIBUTORINVENTORY_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021218
+              stepCounter: "200001815"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTORPRODUCT_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CAST(MD5(                 NVL(UPPER((CAST(LOAD_INVENTORY_POS_ANDA._ITEM_NO_\
+                  \ AS VARCHAR))),'NULL') ||'||'||                 NVL(UPPER((CAST('POS_ANDA'\
+                  \ AS VARCHAR))),'NULL')                 ) AS CHAR(32)) "
+          - columnReference:
+              columnCounter: 2000021219
+              stepCounter: "200001815"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTOR_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(MD5(                 NVL(UPPER((CAST('ANDA' AS VARCHAR))),'NULL')
+                  ||'||'||                 NVL(UPPER((CAST('POS_ANDA' AS VARCHAR))),'NULL')                 )
+                  AS CHAR(32))
+          - columnReference:
+              columnCounter: 2000021220
+              stepCounter: "200001815"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021221
+              stepCounter: "200001815"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRIBUTORPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021222
+              stepCounter: "200001815"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: DISTRIBUTORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ANDA'"
+          - columnReference:
+              columnCounter: 2000021223
+              stepCounter: "200001815"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRIBUTOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021224
+              stepCounter: "200001815"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RUNDATETIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021225
+              stepCounter: "200001815"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021226
+              stepCounter: "200001815"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021227
+              stepCounter: "200001815"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_ANDA: "200001811"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_INVENTORY_POS_ANDA') }} LOAD_INVENTORY_POS_ANDA\
+                \  "
+            name: STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA_1
+            noLinkRefs: []
+      name: STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA_1
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001815"

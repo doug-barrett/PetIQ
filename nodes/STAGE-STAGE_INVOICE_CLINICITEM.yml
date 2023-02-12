@@ -1,0 +1,551 @@
+steps:
+  STAGE_INVOICE_CLINICITEM-200002231:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030591
+              stepCounter: "200002231"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030592
+                stepCounter: "200002231"
+              - columnCounter: 2000030593
+                stepCounter: "200002231"
+            name: HK_L_INVOICE_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030592
+              stepCounter: "200002231"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030594
+                stepCounter: "200002231"
+              - columnCounter: 2000030595
+                stepCounter: "200002231"
+            name: HK_H_INVOICE_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030593
+              stepCounter: "200002231"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030596
+                stepCounter: "200002231"
+              - columnCounter: 2000030597
+                stepCounter: "200002231"
+            name: HK_H_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030594
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INVOICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030595
+              stepCounter: "200002231"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030596
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINICITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030597
+              stepCounter: "200002231"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030598
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030599
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VACCERT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030600
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030601
+              stepCounter: "200002231"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030602
+              stepCounter: "200002231"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030603
+              stepCounter: "200002231"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CALLBACK_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030604
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RABIES_LOT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030605
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TEXT_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030606
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TEXT_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030607
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TEXT_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030608
+              stepCounter: "200002231"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: POSTCARD_SENT_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030609
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_INTERVAL_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030610
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030611
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030612
+              stepCounter: "200002231"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030613
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNIT_PRICE_IN_CENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030614
+              stepCounter: "200002231"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INJECTION_SITE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030615
+              stepCounter: "200002231"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030616
+              stepCounter: "200002231"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_VACCERT_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030617
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELLER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030618
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROUTE_OF_ADMINISTRATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030619
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BACKORDER_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030620
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REFILL_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030621
+              stepCounter: "200002231"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE_INSTRUCTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030622
+              stepCounter: "200002231"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRESCRIPTION_DOSES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030623
+              stepCounter: "200002231"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PRESCRIPTION_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030624
+              stepCounter: "200002231"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: PARENT_KIT_LINE_UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030625
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CONTRACT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030626
+              stepCounter: "200002231"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030598
+                stepCounter: "200002231"
+              - columnCounter: 2000030599
+                stepCounter: "200002231"
+              - columnCounter: 2000030600
+                stepCounter: "200002231"
+              - columnCounter: 2000030601
+                stepCounter: "200002231"
+              - columnCounter: 2000030602
+                stepCounter: "200002231"
+              - columnCounter: 2000030603
+                stepCounter: "200002231"
+              - columnCounter: 2000030604
+                stepCounter: "200002231"
+              - columnCounter: 2000030605
+                stepCounter: "200002231"
+              - columnCounter: 2000030606
+                stepCounter: "200002231"
+              - columnCounter: 2000030607
+                stepCounter: "200002231"
+              - columnCounter: 2000030608
+                stepCounter: "200002231"
+              - columnCounter: 2000030609
+                stepCounter: "200002231"
+              - columnCounter: 2000030610
+                stepCounter: "200002231"
+              - columnCounter: 2000030611
+                stepCounter: "200002231"
+              - columnCounter: 2000030612
+                stepCounter: "200002231"
+              - columnCounter: 2000030613
+                stepCounter: "200002231"
+              - columnCounter: 2000030614
+                stepCounter: "200002231"
+              - columnCounter: 2000030615
+                stepCounter: "200002231"
+              - columnCounter: 2000030616
+                stepCounter: "200002231"
+              - columnCounter: 2000030617
+                stepCounter: "200002231"
+              - columnCounter: 2000030618
+                stepCounter: "200002231"
+              - columnCounter: 2000030619
+                stepCounter: "200002231"
+              - columnCounter: 2000030620
+                stepCounter: "200002231"
+              - columnCounter: 2000030621
+                stepCounter: "200002231"
+              - columnCounter: 2000030622
+                stepCounter: "200002231"
+              - columnCounter: 2000030623
+                stepCounter: "200002231"
+              - columnCounter: 2000030624
+                stepCounter: "200002231"
+              - columnCounter: 2000030625
+                stepCounter: "200002231"
+            name: DSS_CHANGE_HASH_INVOICE_CLINICITEM_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030627
+              stepCounter: "200002231"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030628
+              stepCounter: "200002231"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030629
+              stepCounter: "200002231"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PRODUCTS_VACCERTS_FT: "200003820"
+              LOAD_VACCERTS_FT: "200003821"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCTS_VACCERTS_FT
+              - locationName: STAGE
+                nodeName: LOAD_VACCERTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PRODUCTS_VACCERTS_FT') }}\
+                \ LOAD_PRODUCTS_VACCERTS_FT  INNER JOIN {{ ref('STAGE','LOAD_VACCERTS_FT')\
+                \ }} LOAD_VACCERTS_FT  ON LOAD_VACCERTS_FT.ID =  LOAD_PRODUCTS_VACCERTS_FT.VACCERT_ID\
+                \  "
+            name: STAGE_INVOICE_CLINICITEM
+            noLinkRefs: []
+      name: STAGE_INVOICE_CLINICITEM
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002231"

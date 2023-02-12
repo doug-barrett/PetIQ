@@ -1,0 +1,168 @@
+steps:
+  STAGE_OFFICE_RIG-200002228:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000025366
+              stepCounter: "200002228"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000025367
+                stepCounter: "200002228"
+              - columnCounter: 2000025368
+                stepCounter: "200002228"
+            name: HK_L_OFFICE_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025367
+              stepCounter: "200002228"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000025369
+                stepCounter: "200002228"
+              - columnCounter: 2000025370
+                stepCounter: "200002228"
+            name: HK_H_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025368
+              stepCounter: "200002228"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000025371
+                stepCounter: "200002228"
+              - columnCounter: 2000025372
+                stepCounter: "200002228"
+            name: HK_H_OFFICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025371
+              stepCounter: "200002228"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025372
+              stepCounter: "200002228"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_OFFICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000025369
+              stepCounter: "200002228"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025370
+              stepCounter: "200002228"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000025373
+              stepCounter: "200002228"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025374
+              stepCounter: "200002228"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025375
+              stepCounter: "200002228"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_RIG_CODES_FT: "200004182"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_RIG_CODES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_RIG_CODES_FT') }} LOAD_RIG_CODES_FT\
+                \    "
+            name: STAGE_OFFICE_RIG
+            noLinkRefs: []
+      name: STAGE_OFFICE_RIG
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002228"

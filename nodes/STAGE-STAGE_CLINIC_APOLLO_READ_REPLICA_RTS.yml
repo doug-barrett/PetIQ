@@ -1,0 +1,152 @@
+steps:
+  STAGE_CLINIC_APOLLO_READ_REPLICA_RTS-200003155:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028899
+              stepCounter: "200003155"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REMOVED_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: 'CASE WHEN STAGE_CLINIC_APOLLO_READ_REPLICA.HK_H_CLINIC
+                  IS NULL THEN 1 ELSE 0 END '
+          - columnReference:
+              columnCounter: 2000029266
+              stepCounter: "200003155"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029267
+              stepCounter: "200003155"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029268
+              stepCounter: "200003155"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029266
+                stepCounter: "200003155"
+              - columnCounter: 2000029267
+                stepCounter: "200003155"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028900
+              stepCounter: "200003155"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028899
+                stepCounter: "200003155"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028646
+              stepCounter: "200003155"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: STAGE_CLINIC_APOLLO_READ_REPLICA_CROSS.DSS_RECORD_SOURCE
+          - columnReference:
+              columnCounter: 2000028647
+              stepCounter: "200003155"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: STAGE_CLINIC_APOLLO_READ_REPLICA_CROSS.DSS_LOAD_DATE
+          - columnReference:
+              columnCounter: 2000028648
+              stepCounter: "200003155"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              H_CLINIC: "200001552"
+              STAGE_CLINIC_APOLLO_READ_REPLICA: "200002218"
+              S_CLINIC_LROC_INFO_CURRENT: "200003011"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_CLINIC
+              - locationName: STAGE
+                nodeName: STAGE_CLINIC_APOLLO_READ_REPLICA
+              - locationName: STAGE
+                nodeName: STAGE_CLINIC_APOLLO_READ_REPLICA
+              - locationName: STAGE
+                nodeName: S_CLINIC_LROC_INFO_CURRENT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','H_CLINIC') }} H_CLINIC  LEFT JOIN\
+                \ {{ ref('STAGE','STAGE_CLINIC_APOLLO_READ_REPLICA') }} STAGE_CLINIC_APOLLO_READ_REPLICA\
+                \    ON H_CLINIC.HK_H_CLINIC = STAGE_CLINIC_APOLLO_READ_REPLICA.HK_H_CLINIC\
+                \    CROSS JOIN {{ ref('STAGE','STAGE_CLINIC_APOLLO_READ_REPLICA')\
+                \ }} STAGE_CLINIC_APOLLO_READ_REPLICA_CROSS    INNER JOIN {{ ref('STAGE','S_CLINIC_LROC_INFO_CURRENT')\
+                \ }} S_CLINIC_LROC_INFO    ON S_CLINIC_LROC_INFO.HK_H_CLINIC = H_CLINIC.HK_H_CLINIC\
+                \ WHERE S_CLINIC_LROC_INFO.UPDATED_AT >=  CURRENT_TIMESTAMP - INTERVAL\
+                \ '7 DAY' "
+            name: STAGE_CLINIC_APOLLO_READ_REPLICA_RTS
+            noLinkRefs: []
+      name: STAGE_CLINIC_APOLLO_READ_REPLICA_RTS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003155"

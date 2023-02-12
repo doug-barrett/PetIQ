@@ -1,0 +1,748 @@
+steps:
+  STAGE_PACKAGE-200003742:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030733
+              stepCounter: "200003742"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030734
+                stepCounter: "200003742"
+              - columnCounter: 2000030735
+                stepCounter: "200003742"
+            name: HK_H_PACKAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030734
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PACKAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030735
+              stepCounter: "200003742"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030736
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030737
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_ALTERNATE_DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030738
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NICKNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030739
+              stepCounter: "200003742"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030740
+              stepCounter: "200003742"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030741
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030742
+              stepCounter: "200003742"
+            dataType: NUMBER(5,2)
+            defaultValue: ""
+            description: ""
+            name: WEIGHT_RANGE_MINIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030743
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MANUFACTURER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030744
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VACCERT_DISPLAY_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030745
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030746
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_PRESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030747
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030748
+              stepCounter: "200003742"
+            dataType: NUMBER(28,6)
+            defaultValue: ""
+            description: ""
+            name: CONTAINER_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030749
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: HISTORICAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030750
+              stepCounter: "200003742"
+            dataType: NUMBER(5,2)
+            defaultValue: ""
+            description: ""
+            name: WEIGHT_RANGE_MAXIMUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030751
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REBATE_URL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030752
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_BE_DISPLAYED_ON_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030753
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030754
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030755
+              stepCounter: "200003742"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030756
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_POINT_OF_SALE_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030757
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030758
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030759
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MAXIMUM_AGE_WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030760
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REQUIRES_BARCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030761
+              stepCounter: "200003742"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: BARCODE_PREFIX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030762
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BARCODE_LENGTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030763
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REQUIRED_INTACT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030764
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: NEEDS_VET_TO_FINISH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030765
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REQUIRES_LOT_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030766
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SORT_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030767
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_PURCHASE_MULTIPLES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030768
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MINIMUM_AGE_WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030769
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_KIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030770
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RECEIPT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030771
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EXCHANGEABLE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030772
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_BE_DISPLAYED_AT_CLINICS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030773
+              stepCounter: "200003742"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: UNIT_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030774
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: QUANTITY_ON_HAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030775
+              stepCounter: "200003742"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DOSAGE_INSTRUCTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030776
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRESCRIPTION_DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030777
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_AUTOSHIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030778
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030779
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_SUBSCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030780
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_SUBSCRIBABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030781
+              stepCounter: "200003742"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SUBSCRIPTION_COUPON_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030782
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_PREFERRED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030783
+              stepCounter: "200003742"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REQUIRES_CLINIC_TEST_RESULTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030784
+              stepCounter: "200003742"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030736
+                stepCounter: "200003742"
+              - columnCounter: 2000030737
+                stepCounter: "200003742"
+              - columnCounter: 2000030738
+                stepCounter: "200003742"
+              - columnCounter: 2000030739
+                stepCounter: "200003742"
+              - columnCounter: 2000030740
+                stepCounter: "200003742"
+              - columnCounter: 2000030741
+                stepCounter: "200003742"
+              - columnCounter: 2000030742
+                stepCounter: "200003742"
+              - columnCounter: 2000030743
+                stepCounter: "200003742"
+              - columnCounter: 2000030744
+                stepCounter: "200003742"
+              - columnCounter: 2000030745
+                stepCounter: "200003742"
+              - columnCounter: 2000030746
+                stepCounter: "200003742"
+              - columnCounter: 2000030747
+                stepCounter: "200003742"
+              - columnCounter: 2000030748
+                stepCounter: "200003742"
+              - columnCounter: 2000030749
+                stepCounter: "200003742"
+              - columnCounter: 2000030750
+                stepCounter: "200003742"
+              - columnCounter: 2000030751
+                stepCounter: "200003742"
+              - columnCounter: 2000030752
+                stepCounter: "200003742"
+              - columnCounter: 2000030753
+                stepCounter: "200003742"
+              - columnCounter: 2000030754
+                stepCounter: "200003742"
+              - columnCounter: 2000030755
+                stepCounter: "200003742"
+              - columnCounter: 2000030756
+                stepCounter: "200003742"
+              - columnCounter: 2000030757
+                stepCounter: "200003742"
+              - columnCounter: 2000030758
+                stepCounter: "200003742"
+              - columnCounter: 2000030759
+                stepCounter: "200003742"
+              - columnCounter: 2000030760
+                stepCounter: "200003742"
+              - columnCounter: 2000030761
+                stepCounter: "200003742"
+              - columnCounter: 2000030762
+                stepCounter: "200003742"
+              - columnCounter: 2000030763
+                stepCounter: "200003742"
+              - columnCounter: 2000030764
+                stepCounter: "200003742"
+              - columnCounter: 2000030765
+                stepCounter: "200003742"
+              - columnCounter: 2000030766
+                stepCounter: "200003742"
+              - columnCounter: 2000030767
+                stepCounter: "200003742"
+              - columnCounter: 2000030768
+                stepCounter: "200003742"
+              - columnCounter: 2000030769
+                stepCounter: "200003742"
+              - columnCounter: 2000030770
+                stepCounter: "200003742"
+              - columnCounter: 2000030771
+                stepCounter: "200003742"
+              - columnCounter: 2000030772
+                stepCounter: "200003742"
+              - columnCounter: 2000030773
+                stepCounter: "200003742"
+              - columnCounter: 2000030774
+                stepCounter: "200003742"
+              - columnCounter: 2000030775
+                stepCounter: "200003742"
+              - columnCounter: 2000030776
+                stepCounter: "200003742"
+              - columnCounter: 2000030777
+                stepCounter: "200003742"
+              - columnCounter: 2000030778
+                stepCounter: "200003742"
+              - columnCounter: 2000030779
+                stepCounter: "200003742"
+              - columnCounter: 2000030780
+                stepCounter: "200003742"
+              - columnCounter: 2000030781
+                stepCounter: "200003742"
+              - columnCounter: 2000030782
+                stepCounter: "200003742"
+              - columnCounter: 2000030783
+                stepCounter: "200003742"
+            name: DSS_CHANGE_HASH_PACKAGE_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030785
+              stepCounter: "200003742"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030786
+              stepCounter: "200003742"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030787
+              stepCounter: "200003742"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PRODUCTS_APOLLO_READ_REPLICA: "200001523"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCTS_APOLLO_READ_REPLICA
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_PRODUCTS_APOLLO_READ_REPLICA')
+                }} LOAD_PRODUCTS_APOLLO_READ_REPLICA
+            name: STAGE_PACKAGE
+            noLinkRefs: []
+      name: STAGE_PACKAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003742"

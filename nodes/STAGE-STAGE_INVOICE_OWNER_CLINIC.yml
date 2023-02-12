@@ -1,0 +1,210 @@
+steps:
+  STAGE_INVOICE_OWNER_CLINIC-200002233:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030640
+              stepCounter: "200002233"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030641
+                stepCounter: "200002233"
+              - columnCounter: 2000030642
+                stepCounter: "200002233"
+              - columnCounter: 2000030643
+                stepCounter: "200002233"
+            name: HK_L_INVOICE_OWNER_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030641
+              stepCounter: "200002233"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030646
+                stepCounter: "200002233"
+              - columnCounter: 2000030647
+                stepCounter: "200002233"
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030642
+              stepCounter: "200002233"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030644
+                stepCounter: "200002233"
+              - columnCounter: 2000030645
+                stepCounter: "200002233"
+            name: HK_H_INVOICE_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030643
+              stepCounter: "200002233"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030648
+                stepCounter: "200002233"
+              - columnCounter: 2000030649
+                stepCounter: "200002233"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030644
+              stepCounter: "200002233"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INVOICE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030645
+              stepCounter: "200002233"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_SALE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030646
+              stepCounter: "200002233"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030647
+              stepCounter: "200002233"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030648
+              stepCounter: "200002233"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030649
+              stepCounter: "200002233"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030650
+              stepCounter: "200002233"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030651
+              stepCounter: "200002233"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030652
+              stepCounter: "200002233"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALES_FT: "200003823"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALES_FT') }} LOAD_SALES_FT\
+                \  "
+            name: STAGE_INVOICE_OWNER_CLINIC
+            noLinkRefs: []
+      name: STAGE_INVOICE_OWNER_CLINIC
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002233"

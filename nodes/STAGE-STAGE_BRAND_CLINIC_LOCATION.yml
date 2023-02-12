@@ -1,0 +1,168 @@
+steps:
+  STAGE_BRAND_CLINIC_LOCATION-200003288:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029040
+              stepCounter: "200003288"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029039
+                stepCounter: "200003288"
+              - columnCounter: 2000029038
+                stepCounter: "200003288"
+            name: HK_L_BRAND_CLINIC_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029039
+              stepCounter: "200003288"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029007
+                stepCounter: "200003288"
+              - columnCounter: 2000029037
+                stepCounter: "200003288"
+            name: HK_H_BRAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029038
+              stepCounter: "200003288"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028972
+                stepCounter: "200003288"
+              - columnCounter: 2000029037
+                stepCounter: "200003288"
+            name: HK_H_CLINIC_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028972
+              stepCounter: "200003288"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029037
+              stepCounter: "200003288"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000029007
+              stepCounter: "200003288"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BRAND_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029033
+              stepCounter: "200003288"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029034
+              stepCounter: "200003288"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029036
+              stepCounter: "200003288"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029035
+              stepCounter: "200003288"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINIC_LOCATIONS_FT: "200003874"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINIC_LOCATIONS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINIC_LOCATIONS_FT') }} LOAD_CLINIC_LOCATIONS_FT\
+                \  "
+            name: STAGE_BRAND_CLINIC_LOCATION
+            noLinkRefs: []
+      name: STAGE_BRAND_CLINIC_LOCATION
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003288"

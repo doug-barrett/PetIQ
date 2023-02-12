@@ -1,0 +1,168 @@
+steps:
+  STAGE_ORDER_RETAILERLOCATION_INNATRACK-200001885:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024874
+              stepCounter: "200001885"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024875
+                stepCounter: "200001885"
+              - columnCounter: 2000024876
+                stepCounter: "200001885"
+            name: HK_L_ORDER_RETAILERLOCATION_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024875
+              stepCounter: "200001885"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024877
+                stepCounter: "200001885"
+              - columnCounter: 2000024878
+                stepCounter: "200001885"
+            name: HK_H_ORDER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024876
+              stepCounter: "200001885"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024879
+                stepCounter: "200001885"
+              - columnCounter: 2000024880
+                stepCounter: "200001885"
+            name: HK_H_RETAILERLOCATION_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024877
+              stepCounter: "200001885"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024878
+              stepCounter: "200001885"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024879
+              stepCounter: "200001885"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: RETAILERLOCATIONID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024880
+              stepCounter: "200001885"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024881
+              stepCounter: "200001885"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024882
+              stepCounter: "200001885"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024883
+              stepCounter: "200001885"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_OECOHD_REC_CX_INNATRACK: "200001876"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_OECOHD_REC_CX_INNATRACK
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_OECOHD_REC_CX_INNATRACK')\
+                \ }} LOAD_OECOHD_REC_CX_INNATRACK  "
+            name: STAGE_ORDER_RETAILERLOCATION_INNATRACK
+            noLinkRefs: []
+      name: STAGE_ORDER_RETAILERLOCATION_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001885"

@@ -1,0 +1,289 @@
+steps:
+  STAGE_HOSTRETAILER_CLINICLOCATION_APOLLO_READ_REPLICA-200003841:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032457
+              stepCounter: "200003841"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032458
+                stepCounter: "200003841"
+              - columnCounter: 2000032459
+                stepCounter: "200003841"
+              - columnCounter: 2000032460
+                stepCounter: "200003841"
+            name: HK_L_HOSTRETAILER_CLINICLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032458
+              stepCounter: "200003841"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032461
+                stepCounter: "200003841"
+              - columnCounter: 2000032462
+                stepCounter: "200003841"
+            name: HK_H_HOSTRETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032459
+              stepCounter: "200003841"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032463
+                stepCounter: "200003841"
+            name: HK_H_CLINIC_LOCATION_CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032460
+              stepCounter: "200003841"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032464
+                stepCounter: "200003841"
+            name: HK_H_CLINIC_LOCATION_BKCC_CLINIC_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032461
+              stepCounter: "200003841"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032462
+              stepCounter: "200003841"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_HOST_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032463
+              stepCounter: "200003841"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032464
+              stepCounter: "200003841"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032465
+              stepCounter: "200003841"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032466
+              stepCounter: "200003841"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032467
+              stepCounter: "200003841"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032468
+              stepCounter: "200003841"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032469
+              stepCounter: "200003841"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032470
+              stepCounter: "200003841"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032471
+              stepCounter: "200003841"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_METRIC_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032472
+              stepCounter: "200003841"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032465
+                stepCounter: "200003841"
+              - columnCounter: 2000032466
+                stepCounter: "200003841"
+              - columnCounter: 2000032467
+                stepCounter: "200003841"
+              - columnCounter: 2000032468
+                stepCounter: "200003841"
+              - columnCounter: 2000032469
+                stepCounter: "200003841"
+              - columnCounter: 2000032470
+                stepCounter: "200003841"
+              - columnCounter: 2000032471
+                stepCounter: "200003841"
+            name: DSS_CHANGE_HASH_HOSTRETAILER_CLINICLOCATION_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032473
+              stepCounter: "200003841"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032474
+              stepCounter: "200003841"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032475
+              stepCounter: "200003841"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_HOST_LOCATIONS_FT: "200004116"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_HOST_LOCATIONS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_HOST_LOCATIONS_FT') }} LOAD_HOST_LOCATIONS_FT\
+                \    "
+            name: STAGE_HOSTRETAILER_CLINICLOCATION_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: STAGE_HOSTRETAILER_CLINICLOCATION_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003841"

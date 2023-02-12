@@ -1,0 +1,189 @@
+steps:
+  STAGE_DEPARTMENT-200004000:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032815
+              stepCounter: "200004000"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032816
+                stepCounter: "200004000"
+              - columnCounter: 2000032817
+                stepCounter: "200004000"
+            name: HK_H_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032816
+              stepCounter: "200004000"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032817
+              stepCounter: "200004000"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ADP'"
+          - columnReference:
+              columnCounter: 2000032818
+              stepCounter: "200004000"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032819
+              stepCounter: "200004000"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: COALESCE(LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN.NAME_LONG_NAME,LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN.NAME_SHORT_NAME)
+          - columnReference:
+              columnCounter: 2000032820
+              stepCounter: "200004000"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032821
+              stepCounter: "200004000"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TYPE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032822
+              stepCounter: "200004000"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032823
+              stepCounter: "200004000"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032818
+                stepCounter: "200004000"
+              - columnCounter: 2000032819
+                stepCounter: "200004000"
+              - columnCounter: 2000032820
+                stepCounter: "200004000"
+              - columnCounter: 2000032821
+                stepCounter: "200004000"
+              - columnCounter: 2000032822
+                stepCounter: "200004000"
+            name: DSS_CHANGE_HASH_DEPARTMENT_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032824
+              stepCounter: "200004000"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032825
+              stepCounter: "200004000"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032826
+              stepCounter: "200004000"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN: "200003935"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN')\
+                \ }} LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN WHERE LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN.TYPE_SHORT_NAME='DEPARTMENT' "
+            name: STAGE_DEPARTMENT
+            noLinkRefs: []
+      name: STAGE_DEPARTMENT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004000"

@@ -1,0 +1,760 @@
+steps:
+  STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL_1-200000596:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000008894
+              stepCounter: "200000596"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000008895
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMINVMKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008896
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDCHGID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008897
+              stepCounter: "200000596"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INVDINVDTP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008898
+              stepCounter: "200000596"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: INVDARAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008899
+              stepCounter: "200000596"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: INVDCARAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008900
+              stepCounter: "200000596"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: INVDDISCAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008901
+              stepCounter: "200000596"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: INVDCDISCAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008902
+              stepCounter: "200000596"
+            dataType: NUMBER(9,2)
+            defaultValue: ""
+            description: ""
+            name: INVDTAXAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008903
+              stepCounter: "200000596"
+            dataType: NUMBER(9,2)
+            defaultValue: ""
+            description: ""
+            name: INVDCTAXAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008904
+              stepCounter: "200000596"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INVDEFFDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008905
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDFYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008906
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDFPD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008907
+              stepCounter: "200000596"
+            dataType: CHAR(7)
+            defaultValue: ""
+            description: ""
+            name: INVDBILLTO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008908
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDLUPDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008909
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDCASHKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008910
+              stepCounter: "200000596"
+            dataType: CHAR(16)
+            defaultValue: ""
+            description: ""
+            name: INVDARCHECK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008911
+              stepCounter: "200000596"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INVDCHECKDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008912
+              stepCounter: "200000596"
+            dataType: CHAR(3)
+            defaultValue: ""
+            description: ""
+            name: INVDCHECKSRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008913
+              stepCounter: "200000596"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: INVDDBCRCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008914
+              stepCounter: "200000596"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: INVDREASONCD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008915
+              stepCounter: "200000596"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INVDTRANTP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008916
+              stepCounter: "200000596"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INVDADDDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008917
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDADDTM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008918
+              stepCounter: "200000596"
+            dataType: CHAR(12)
+            defaultValue: ""
+            description: ""
+            name: INVDADDUSR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008919
+              stepCounter: "200000596"
+            dataType: CHAR(12)
+            defaultValue: ""
+            description: ""
+            name: INVDPROGRAM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008920
+              stepCounter: "200000596"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: INVDCUCD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008921
+              stepCounter: "200000596"
+            dataType: NUMBER(14,7)
+            defaultValue: ""
+            description: ""
+            name: INVDCUCDRATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008922
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDARBATCH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008923
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDARIFKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008924
+              stepCounter: "200000596"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: INVDDISPUTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008925
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDPYMTDAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008926
+              stepCounter: "200000596"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INVDCOMMPAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008927
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTHDRKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008928
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDDOCID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008929
+              stepCounter: "200000596"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INVDBACKOUT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008930
+              stepCounter: "200000596"
+            dataType: CHAR(30)
+            defaultValue: ""
+            description: ""
+            name: INVDNOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008931
+              stepCounter: "200000596"
+            dataType: CHAR(7)
+            defaultValue: ""
+            description: ""
+            name: INVDTRANBILL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008932
+              stepCounter: "200000596"
+            dataType: CHAR(5)
+            defaultValue: ""
+            description: ""
+            name: INVDTRANBROK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008933
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDOSTHKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008934
+              stepCounter: "200000596"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INVDOSPYMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008935
+              stepCounter: "200000596"
+            dataType: CHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTNXID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008936
+              stepCounter: "200000596"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: INVDOETERM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008937
+              stepCounter: "200000596"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INVDDUEDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008938
+              stepCounter: "200000596"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INVDDISCDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008939
+              stepCounter: "200000596"
+            dataType: CHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INVDPROCFLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008940
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTHSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008941
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDPALLETS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008942
+              stepCounter: "200000596"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDPALLWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008943
+              stepCounter: "200000596"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: INVDCFRTAMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008944
+              stepCounter: "200000596"
+            dataType: NUMBER(11,2)
+            defaultValue: ""
+            description: ""
+            name: INVDCBILLFRT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008946
+              stepCounter: "200000596"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008947
+              stepCounter: "200000596"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008948
+              stepCounter: "200000596"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008945
+              stepCounter: "200000596"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000008895
+                stepCounter: "200000596"
+              - columnCounter: 2000008897
+                stepCounter: "200000596"
+              - columnCounter: 2000008898
+                stepCounter: "200000596"
+              - columnCounter: 2000008899
+                stepCounter: "200000596"
+              - columnCounter: 2000008900
+                stepCounter: "200000596"
+              - columnCounter: 2000008901
+                stepCounter: "200000596"
+              - columnCounter: 2000008902
+                stepCounter: "200000596"
+              - columnCounter: 2000008903
+                stepCounter: "200000596"
+              - columnCounter: 2000008904
+                stepCounter: "200000596"
+              - columnCounter: 2000008905
+                stepCounter: "200000596"
+              - columnCounter: 2000008906
+                stepCounter: "200000596"
+              - columnCounter: 2000008907
+                stepCounter: "200000596"
+              - columnCounter: 2000008908
+                stepCounter: "200000596"
+              - columnCounter: 2000008909
+                stepCounter: "200000596"
+              - columnCounter: 2000008910
+                stepCounter: "200000596"
+              - columnCounter: 2000008911
+                stepCounter: "200000596"
+              - columnCounter: 2000008912
+                stepCounter: "200000596"
+              - columnCounter: 2000008913
+                stepCounter: "200000596"
+              - columnCounter: 2000008914
+                stepCounter: "200000596"
+              - columnCounter: 2000008915
+                stepCounter: "200000596"
+              - columnCounter: 2000008916
+                stepCounter: "200000596"
+              - columnCounter: 2000008917
+                stepCounter: "200000596"
+              - columnCounter: 2000008918
+                stepCounter: "200000596"
+              - columnCounter: 2000008919
+                stepCounter: "200000596"
+              - columnCounter: 2000008920
+                stepCounter: "200000596"
+              - columnCounter: 2000008921
+                stepCounter: "200000596"
+              - columnCounter: 2000008922
+                stepCounter: "200000596"
+              - columnCounter: 2000008923
+                stepCounter: "200000596"
+              - columnCounter: 2000008924
+                stepCounter: "200000596"
+              - columnCounter: 2000008925
+                stepCounter: "200000596"
+              - columnCounter: 2000008926
+                stepCounter: "200000596"
+              - columnCounter: 2000008927
+                stepCounter: "200000596"
+              - columnCounter: 2000008928
+                stepCounter: "200000596"
+              - columnCounter: 2000008929
+                stepCounter: "200000596"
+              - columnCounter: 2000008930
+                stepCounter: "200000596"
+              - columnCounter: 2000008931
+                stepCounter: "200000596"
+              - columnCounter: 2000008932
+                stepCounter: "200000596"
+              - columnCounter: 2000008933
+                stepCounter: "200000596"
+              - columnCounter: 2000008934
+                stepCounter: "200000596"
+              - columnCounter: 2000008935
+                stepCounter: "200000596"
+              - columnCounter: 2000008936
+                stepCounter: "200000596"
+              - columnCounter: 2000008937
+                stepCounter: "200000596"
+              - columnCounter: 2000008938
+                stepCounter: "200000596"
+              - columnCounter: 2000008939
+                stepCounter: "200000596"
+              - columnCounter: 2000008940
+                stepCounter: "200000596"
+              - columnCounter: 2000008941
+                stepCounter: "200000596"
+              - columnCounter: 2000008942
+                stepCounter: "200000596"
+              - columnCounter: 2000008943
+                stepCounter: "200000596"
+              - columnCounter: 2000008944
+                stepCounter: "200000596"
+            name: DSS_CHANGE_HASH_INVOICE_INNATRACK_MA_CX_INNATRACK_SQL_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008893
+              stepCounter: "200000596"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000008895
+                stepCounter: "200000596"
+              - columnCounter: 2000008894
+                stepCounter: "200000596"
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: UNKNOWN
+                nodeName: LOAD_ARINVD_REC_CX_INNATRACK_SQL
+            join:
+              joinCondition: "FROM {{ ref('UNKNOWN','LOAD_ARINVD_REC_CX_INNATRACK_SQL')\
+                \ }} LOAD_ARINVD_REC_CX_INNATRACK_SQL  "
+            name: STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL_1
+            noLinkRefs: []
+      name: STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL_1
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200000596"

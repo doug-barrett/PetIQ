@@ -1,0 +1,228 @@
+steps:
+  STAGE_MANUFACTURER-200002234:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030653
+              stepCounter: "200002234"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030654
+                stepCounter: "200002234"
+              - columnCounter: 2000030655
+                stepCounter: "200002234"
+            name: HK_H_MANUFACTURER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030654
+              stepCounter: "200002234"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MANUFACTURER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030655
+              stepCounter: "200002234"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030656
+              stepCounter: "200002234"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030657
+              stepCounter: "200002234"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030658
+              stepCounter: "200002234"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030659
+              stepCounter: "200002234"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030660
+              stepCounter: "200002234"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030661
+              stepCounter: "200002234"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030662
+              stepCounter: "200002234"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030663
+              stepCounter: "200002234"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030664
+              stepCounter: "200002234"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030656
+                stepCounter: "200002234"
+              - columnCounter: 2000030657
+                stepCounter: "200002234"
+              - columnCounter: 2000030658
+                stepCounter: "200002234"
+              - columnCounter: 2000030659
+                stepCounter: "200002234"
+              - columnCounter: 2000030660
+                stepCounter: "200002234"
+              - columnCounter: 2000030661
+                stepCounter: "200002234"
+              - columnCounter: 2000030662
+                stepCounter: "200002234"
+              - columnCounter: 2000030663
+                stepCounter: "200002234"
+            name: DSS_CHANGE_HASH_MANUFACTURER_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030665
+              stepCounter: "200002234"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030666
+              stepCounter: "200002234"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030667
+              stepCounter: "200002234"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_MANUFACTURERS_FT: "200004201"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_MANUFACTURERS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_MANUFACTURERS_FT') }} LOAD_MANUFACTURERS_FT\
+                \  "
+            name: STAGE_MANUFACTURER
+            noLinkRefs: []
+      name: STAGE_MANUFACTURER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002234"

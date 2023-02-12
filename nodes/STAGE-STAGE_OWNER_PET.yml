@@ -1,0 +1,273 @@
+steps:
+  STAGE_OWNER_PET-200002237:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030715
+              stepCounter: "200002237"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030716
+                stepCounter: "200002237"
+              - columnCounter: 2000030717
+                stepCounter: "200002237"
+            name: HK_L_OWNER_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030716
+              stepCounter: "200002237"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030718
+                stepCounter: "200002237"
+              - columnCounter: 2000030719
+                stepCounter: "200002237"
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030717
+              stepCounter: "200002237"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030720
+                stepCounter: "200002237"
+              - columnCounter: 2000030721
+                stepCounter: "200002237"
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030718
+              stepCounter: "200002237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030719
+              stepCounter: "200002237"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030720
+              stepCounter: "200002237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030721
+              stepCounter: "200002237"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030722
+              stepCounter: "200002237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030725
+              stepCounter: "200002237"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ATTACHED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030723
+              stepCounter: "200002237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030724
+              stepCounter: "200002237"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030726
+              stepCounter: "200002237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030727
+              stepCounter: "200002237"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030728
+              stepCounter: "200002237"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030729
+              stepCounter: "200002237"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030722
+                stepCounter: "200002237"
+              - columnCounter: 2000030723
+                stepCounter: "200002237"
+              - columnCounter: 2000030724
+                stepCounter: "200002237"
+              - columnCounter: 2000030725
+                stepCounter: "200002237"
+              - columnCounter: 2000030726
+                stepCounter: "200002237"
+              - columnCounter: 2000030727
+                stepCounter: "200002237"
+              - columnCounter: 2000030728
+                stepCounter: "200002237"
+            name: DSS_CHANGE_HASH_OWNER_PET_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030730
+              stepCounter: "200002237"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030731
+              stepCounter: "200002237"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030732
+              stepCounter: "200002237"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_OWNERS_PETS_FT: "200004203"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_OWNERS_PETS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_OWNERS_PETS_FT') }} LOAD_OWNERS_PETS_FT\
+                \    "
+            name: STAGE_OWNER_PET
+            noLinkRefs: []
+      name: STAGE_OWNER_PET
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002237"

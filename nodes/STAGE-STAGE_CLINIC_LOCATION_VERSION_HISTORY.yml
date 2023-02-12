@@ -1,0 +1,1280 @@
+steps:
+  STAGE_CLINIC_LOCATION_VERSION_HISTORY-200003794:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033527
+              stepCounter: "200003794"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_VERSION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033420
+              stepCounter: "200003794"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033424
+              stepCounter: "200003794"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033422
+              stepCounter: "200003794"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033421
+              stepCounter: "200003794"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033423
+              stepCounter: "200003794"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033417
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EVENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033416
+              stepCounter: "200003794"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033415
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEM_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033419
+              stepCounter: "200003794"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: OBJECT_CHANGES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033494
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ABBREVIATION_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033443
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ABBREVIATION_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033425
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033476
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033504
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BRAND_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033453
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BRAND_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033493
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_BE_LOCATED_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033442
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_BE_LOCATED_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033526
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_CONTRACT_IT_NOW_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033475
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_CONTRACT_IT_NOW_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033523
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_SELL_MICROCHIPS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033472
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_SELL_MICROCHIPS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033521
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_SELL_NAIL_TRIMS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033470
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_SELL_NAIL_TRIMS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033477
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033426
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033507
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CITY_SALES_TAX_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033456
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CITY_SALES_TAX_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033511
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY_TAX_CODE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033460
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY_TAX_CODE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033499
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_FREQUENCY_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033448
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_FREQUENCY_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033502
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_GOALS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033451
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_GOALS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033505
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUNTY_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033454
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUNTY_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033508
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: COUNTY_SALES_TAX_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033457
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: COUNTY_SALES_TAX_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033512
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUNTY_TAX_CODE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033461
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUNTY_TAX_CODE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033520
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_AD_HOC_PRESCRIPTION_PHARMACY_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033469
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_AD_HOC_PRESCRIPTION_PHARMACY_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033510
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: DISTRICT_SALES_TAX_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033459
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: DISTRICT_SALES_TAX_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033495
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXTERNAL_FACILITY_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033444
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXTERNAL_FACILITY_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033480
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FACILITY_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033429
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FACILITY_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033497
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FLYER_CONTENT_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033446
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FLYER_CONTENT_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033501
+              stepCounter: "200003794"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GOAL_END_ON_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033450
+              stepCounter: "200003794"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GOAL_END_ON_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033500
+              stepCounter: "200003794"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GOAL_START_ON_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033449
+              stepCounter: "200003794"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GOAL_START_ON_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033514
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAS_SALES_TAX_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033463
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAS_SALES_TAX_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033503
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HIDE_CREDIT_AMOUNTS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033452
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HIDE_CREDIT_AMOUNTS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033516
+              stepCounter: "200003794"
+            dataType: VARCHAR(500)
+            defaultValue: ""
+            description: ""
+            name: HOURS_OF_OPERATION_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033465
+              stepCounter: "200003794"
+            dataType: VARCHAR(500)
+            defaultValue: ""
+            description: ""
+            name: HOURS_OF_OPERATION_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033487
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033436
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033492
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_REPORTABLE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033441
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_REPORTABLE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033517
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_WELLNESS_CENTER_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033466
+              stepCounter: "200003794"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_WELLNESS_CENTER_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033483
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LATITUDE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033432
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LATITUDE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033498
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LIAISON_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033447
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LIAISON_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033491
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOCATION_DESCRIPTION_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033440
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOCATION_DESCRIPTION_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033484
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LONGITUDE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033433
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LONGITUDE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033486
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MESSAGE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033435
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MESSAGE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033519
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033468
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033515
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NUMBER_OF_FLYERS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033464
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NUMBER_OF_FLYERS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033524
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ORDER_FULFILLMENT_PHARMACY_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033473
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ORDER_FULFILLMENT_PHARMACY_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033489
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033438
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033518
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRICE_TYPE_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033467
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRICE_TYPE_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033525
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PROACTIVE_PRESCRIPTION_PHARMACY_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033474
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PROACTIVE_PRESCRIPTION_PHARMACY_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033481
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PUBLIC_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '    '
+          - columnReference:
+              columnCounter: 2000033430
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PUBLIC_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '    '
+          - columnReference:
+              columnCounter: 2000033496
+              stepCounter: "200003794"
+            dataType: VARCHAR(512)
+            defaultValue: ""
+            description: ""
+            name: PUBLIC_WEBSITE_CONTENT_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033445
+              stepCounter: "200003794"
+            dataType: VARCHAR(512)
+            defaultValue: ""
+            description: ""
+            name: PUBLIC_WEBSITE_CONTENT_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033506
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033455
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033479
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033427
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033509
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: STATE_SALES_TAX_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033458
+              stepCounter: "200003794"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: STATE_SALES_TAX_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033513
+              stepCounter: "200003794"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: TAXES_LAST_UPDATED_AT_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033462
+              stepCounter: "200003794"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: TAXES_LAST_UPDATED_AT_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033485
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TIME_ZONE_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033434
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TIME_ZONE_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033478
+              stepCounter: "200003794"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033428
+              stepCounter: "200003794"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033488
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '  '
+          - columnReference:
+              columnCounter: 2000033437
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '    '
+          - columnReference:
+              columnCounter: 2000033490
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WEBSITE_URL_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033439
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WEBSITE_URL_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033482
+              stepCounter: "200003794"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: ZIP_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033431
+              stepCounter: "200003794"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: ZIP_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033522
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE_RADIUS_OLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033471
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE_RADIUS_NEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033418
+              stepCounter: "200003794"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WHODUNNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINIC_LOCATION_VERSION_HISTORY: "200003792"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINIC_LOCATION_VERSION_HISTORY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINIC_LOCATION_VERSION_HISTORY')\
+                \ }} LOAD_CLINIC_LOCATION_VERSION_HISTORY  "
+            name: STAGE_CLINIC_LOCATION_VERSION_HISTORY
+            noLinkRefs: []
+      name: STAGE_CLINIC_LOCATION_VERSION_HISTORY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003794"

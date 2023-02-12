@@ -1,0 +1,110 @@
+steps:
+  STAGE_DISTRIBUTOR_ANDA-200001813:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021187
+              stepCounter: "200001813"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021188
+                stepCounter: "200001813"
+              - columnCounter: 2000021189
+                stepCounter: "200001813"
+            name: HK_H_DISTRIBUTOR_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021188
+              stepCounter: "200001813"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: DISTRIBUTORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ANDA'"
+          - columnReference:
+              columnCounter: 2000021189
+              stepCounter: "200001813"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021190
+              stepCounter: "200001813"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021191
+              stepCounter: "200001813"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021192
+              stepCounter: "200001813"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_ANDA: "200001811"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_INVENTORY_POS_ANDA') }} LOAD_INVENTORY_POS_ANDA\
+                \  "
+            name: STAGE_DISTRIBUTOR_ANDA
+            noLinkRefs: []
+      name: STAGE_DISTRIBUTOR_ANDA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001813"

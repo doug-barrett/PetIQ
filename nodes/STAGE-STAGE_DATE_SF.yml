@@ -1,0 +1,786 @@
+steps:
+  STAGE_DATE_SF-200000071:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032663
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: A unique Key for each week,year combinations, so we can do
+              subtractions for week across years
+            name: CALWEEKYEARKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ROW_NUMBER() OVER (PARTITION BY TO_NUMBER(TO_CHAR(CALENDAR_DATE,
+                  'YYYY'), '9999'), TO_NUMBER(TO_CHAR(DATE_PART('WK', CALENDAR_DATE)),
+                  '99') ORDER BY CALENDAR_DATE ASC)
+          - columnReference:
+              columnCounter: 2000000443
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: stage_date_rs.calendar_date=dim_date.calendar_date
+            name: DIM_DATE_KEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'YYYYMMDD'), '99999999')
+          - columnReference:
+              columnCounter: 2000000409
+              stepCounter: "200000071"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The calendar date for this row.
+            name: CALENDAR_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CALENDAR_DATE
+          - columnReference:
+              columnCounter: 2000000410
+              stepCounter: "200000071"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: 'The day in the week. Format DDD. Example: mon, tue, wed.'
+            name: CAL_DAY_IN_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_CHAR(CALENDAR_DATE, 'DY')  "
+          - columnReference:
+              columnCounter: 2000000411
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The day number in the week. 1-7 where Sunday is day 1.
+            name: CAL_DAY_IN_WEEK_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('DW', CALENDAR_DATE)), '9')+1\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000412
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The day in the month 1-31.
+            name: CAL_DAY_IN_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'DD'), '99')  "
+          - columnReference:
+              columnCounter: 2000000413
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The day in the year 1-366.
+            name: CAL_DAY_IN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('DOY',CALENDAR_DATE)), '999')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000414
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The week in the year 0-53.
+            name: CAL_WEEK_IN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('WK', CALENDAR_DATE)), '99')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000415
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The calendar month number 1-12.
+            name: CAL_MONTH_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'MM'), '99')  "
+          - columnReference:
+              columnCounter: 2000000416
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: 'The calendar month representation. Format YYYYMM. Example:
+              200206.'
+            name: CAL_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'YYYYMM'), '999999')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000417
+              stepCounter: "200000071"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: 'The calendar month name. Format MON. Examples: jan, feb,
+              mar.'
+            name: CAL_MONTH_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_CHAR(CALENDAR_DATE, 'MON')  "
+          - columnReference:
+              columnCounter: 2000000418
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The calendar quarter number 1-4.
+            name: CAL_QUARTER_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('Q',CALENDAR_DATE)), '9')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000419
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The calendar quarter representation. Format YYYYQQ. Example
+              200204.
+            name: CAL_QUARTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'YYYY') || '0' || TO_CHAR(DATE_PART('Q',CALENDAR_DATE)),\
+                  \ '999999')  "
+          - columnReference:
+              columnCounter: 2000000420
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: The calendar year. Format YYYY
+            name: CAL_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'YYYY'), '9999')  "
+          - columnReference:
+              columnCounter: 2000000421
+              stepCounter: "200000071"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: The financial date. Same as calendar date.
+            name: FINANCIAL_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: FINANCIAL_DATE
+          - columnReference:
+              columnCounter: 2000000422
+              stepCounter: "200000071"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: 'The financial day in the week. Format DDD. Example: mon,tue,wed.'
+            name: FIN_DAY_IN_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_CHAR(FINANCIAL_DATE, 'DY')  "
+          - columnReference:
+              columnCounter: 2000000423
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Day number in the current financial week.
+            name: FIN_DAY_IN_WEEK_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('DW', FINANCIAL_DATE)), '9')+1\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000424
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Financial day in the month. Normally the same as calendar
+              day in the month, unless the financial period starts mid calendar month.
+            name: FIN_DAY_IN_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(FINANCIAL_DATE, 'DD'), '99')  "
+          - columnReference:
+              columnCounter: 2000000425
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Financial day in the year. Number of days since the start
+              of the financial year.
+            name: FIN_DAY_IN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('DOY',FINANCIAL_DATE)), '999')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000426
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Financial week in the financial month.
+            name: FIN_WEEK_IN_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "ROW_NUMBER() OVER (PARTITION BY TO_NUMBER(TO_CHAR(FINANCIAL_DATE,\
+                  \ 'YYYYMM'), '999999') ORDER BY TO_NUMBER(TO_CHAR(DATE_PART('WK',\
+                  \ FINANCIAL_DATE)), '99'))  "
+          - columnReference:
+              columnCounter: 2000000427
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Financial week in the financial year. Number of weeks since
+              the start of the financial year
+            name: FIN_WEEK_IN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('WK', FINANCIAL_DATE)), '99')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000428
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: 'Financial month number. Format MM. Examples: 1,2,3.'
+            name: FIN_MONTH_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(FINANCIAL_DATE, 'MM'), '99')  "
+          - columnReference:
+              columnCounter: 2000000429
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: 'Financial month representation. Fromat YYYYMM. Examples:
+              200101, 200102.'
+            name: FIN_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(FINANCIAL_DATE, 'YYYYMM'), '999999')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000430
+              stepCounter: "200000071"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: 'Financial month. Format MON. Examples: jan, feb, mar.'
+            name: FIN_MONTH_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_CHAR(CALENDAR_DATE, 'MON')  "
+          - columnReference:
+              columnCounter: 2000000431
+              stepCounter: "200000071"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: 'Financial period. Format (YYYY-MM) MON-YYYY. Example: (2001-02)
+              Feb-2002.'
+            name: FIN_PERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'(' || TRIM(TO_CHAR(FINANCIAL_DATE, 'YYYY')) || '-' ||\
+                  \               TRIM(CAST(TO_NUMBER(TO_CHAR(FINANCIAL_DATE, 'MM'),'99')\
+                  \ AS VARCHAR(2))) || ')' || TO_CHAR(CALENDAR_DATE, 'MON') ||   \
+                  \            '-' || TRIM(TO_CHAR(CALENDAR_DATE, 'YYYY'))  "
+          - columnReference:
+              columnCounter: 2000000432
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Financial quarter number (1-4).
+            name: FIN_QUARTER_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(DATE_PART('Q',FINANCIAL_DATE)), '9')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000000433
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: 'Financial quarter representation. Format YYYYQQ. Example:
+              198901.'
+            name: FIN_QUARTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(FINANCIAL_DATE, 'YYYY') || '0' || TO_CHAR(DATE_PART('Q',FINANCIAL_DATE)),\
+                  \ '999999')  "
+          - columnReference:
+              columnCounter: 2000000434
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Financial year. Format YYYY.
+            name: FIN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "TO_NUMBER(TO_CHAR(FINANCIAL_DATE, 'YYYY'), '9999')  "
+          - columnReference:
+              columnCounter: 2000000444
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current day. Normally set to the last
+              day information was updated in the data warehouse.
+            name: CURRENT_CAL_DAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN DATE_PART('DAY',CALENDAR_DATE) = DATE_PART('DAY',CURRENT_DATE)
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000445
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current week. Set as per current_cal_day.
+            name: CURRENT_CAL_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(CALENDAR_DATE)=YEAR(GETDATE()) AND DATE_PART('WEEK',CALENDAR_DATE)=DATE_PART('WEEK',GETDATE())
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000447
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current year. Set as per current_cal_day.
+            name: CURRENT_CAL_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(CALENDAR_DATE) = YEAR(GETDATE()) THEN 'Y'
+                  ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000446
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current month. Set as per current_cal_day.
+            name: CURRENT_CAL_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN TO_NUMBER(TO_CHAR(CALENDAR_DATE, 'YYYYMM'), '999999')=TO_NUMBER(TO_CHAR(GETDATE(),
+                  'YYYYMM'), '999999') THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000448
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days in the current month to date. Set as
+              per current_cal_day.
+            name: CURRENT_CAL_MTD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(CALENDAR_DATE)=YEAR(GETDATE()) AND MONTH(CALENDAR_DATE)=MONTH(GETDATE())AND
+                  CALENDAR_DATE<=GETDATE() THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000449
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days in the current year to date. Set as
+              per current_cal_day.
+            name: CURRENT_CAL_YTD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(CALENDAR_DATE)=YEAR(GETDATE()) AND CALENDAR_DATE<=GETDATE()
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000450
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days that constitute a full year counting
+              back from the current day. Set as per current_cal_day.
+            name: MOVING_CAL_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN CALENDAR_DATE > DATEADD('DAY', -365, GETDATE())
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000451
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current financial day. Normally set
+              to the last financial day information was updated in the data warehouse.
+            name: CURRENT_FIN_DAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE WHEN DATE_PART('DAY',FINANCIAL_DATE) = DATE_PART('DAY',CURRENT_DATE)\
+                  \ THEN 'Y' ELSE 'N' END  "
+          - columnReference:
+              columnCounter: 2000000452
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current financial week. Set as per current_fin_day.
+            name: CURRENT_FIN_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(FINANCIAL_DATE)=YEAR(GETDATE()) AND DATE_PART('WEEK',FINANCIAL_DATE)=DATE_PART('WEEK',GETDATE())
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000453
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current financial month. Set as per
+              current_fin_day.
+            name: CURRENT_FIN_MONTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE WHEN YEAR(FINANCIAL_DATE) = YEAR(GETDATE()) AND MONTH(FINANCIAL_DATE)\
+                  \ = MONTH(GETDATE()) THEN 'Y' ELSE 'N' END  "
+          - columnReference:
+              columnCounter: 2000000454
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current financial quarter. Set as per
+              current_fin_day.
+            name: CURRENT_FIN_QUARTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(FINANCIAL_DATE)=YEAR(GETDATE()) AND DATE_PART('QUARTER',FINANCIAL_DATE)=DATE_PART('QUARTER',GETDATE())
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000455
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate the current financial year. Set as per current_fin_day.
+            name: CURRENT_FIN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(FINANCIAL_DATE) = YEAR(GETDATE()) THEN 'Y'
+                  ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000456
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days in the current financial month to date.
+              Set as per current_fin_day.
+            name: CURRENT_FIN_MTD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(FINANCIAL_DATE)=YEAR(GETDATE()) AND MONTH(FINANCIAL_DATE)=MONTH(GETDATE())AND
+                  FINANCIAL_DATE<=GETDATE() THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000457
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days in the current financial year to date.
+              Set as per current_fin_day.
+            name: CURRENT_FIN_YTD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN YEAR(FINANCIAL_DATE)=YEAR(GETDATE()) AND FINANCIAL_DATE<=GETDATE()
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000458
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days that constitute a quarter counting
+              back from the current financial day. Set as per current_fin_day.
+            name: MOVING_FIN_QUARTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN FINANCIAL_DATE>DATEADD('DAY', -90, GETDATE())
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000459
+              stepCounter: "200000071"
+            dataType: VARCHAR(8)
+            defaultValue: ""
+            description: Flag to indicate days that constitute a financial year counting
+              back from the current financial day. Set as per current_fin_day.
+            name: MOVING_FIN_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN FINANCIAL_DATE > DATEADD('DAY', -365, GETDATE())
+                  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000435
+              stepCounter: "200000071"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: Flag to indicate if a week day Y=week day N=week end.
+            name: WEEK_DAY_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE WHEN TO_CHAR(CALENDAR_DATE, 'DY') IN ('SAT','SUN')\
+                  \ THEN 'N' ELSE 'Y' END  "
+          - columnReference:
+              columnCounter: 2000000436
+              stepCounter: "200000071"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: Flag to indicate a week end day. Y=week end, N=week day.
+            name: WEEK_END_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE WHEN TO_CHAR(CALENDAR_DATE, 'DY') IN ('SAT','SUN')\
+                  \ THEN 'Y' ELSE 'N' END  "
+          - columnReference:
+              columnCounter: 2000000437
+              stepCounter: "200000071"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: Flag to indicate that the day in question is a holiday. Y=holiday,
+              N=normal.
+            name: HOLIDAY_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=1
+                  AND WEEK_END_FLAG='N')      OR (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=2
+                  AND DAYNAME(CALENDAR_DATE)='MON')      OR (MONTH(CALENDAR_DATE)=12
+                  AND DAY(CALENDAR_DATE)=31 AND DAYNAME(CALENDAR_DATE)='FRI')       OR
+                  (MONTH(CALENDAR_DATE)=1 AND CEIL(DAY(CALENDAR_DATE)/7)=3 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=2 AND CEIL(DAY(CALENDAR_DATE)/7)=3 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=5 AND DATE_PART('MONTH',DATEADD('DAY', 7,
+                  CALENDAR_DATE))=6 AND DAYNAME(CALENDAR_DATE)='MON')      OR (MONTH(CALENDAR_DATE)=6
+                  AND DAY(CALENDAR_DATE)=19 AND WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=6
+                  AND DAY(CALENDAR_DATE)=18 AND DAYNAME(CALENDAR_DATE)='FRI')          OR
+                  (MONTH(CALENDAR_DATE)=6 AND DAY(CALENDAR_DATE)=20 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=4 AND WEEK_END_FLAG='N')          OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=3 AND DAYNAME(CALENDAR_DATE)='FRI')          OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=5 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=9 AND CEIL(DAY(CALENDAR_DATE)/7)=1 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=10 AND CEIL(DAY(CALENDAR_DATE)/7)=2 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=11 AND DAY(CALENDAR_DATE)=11 AND WEEK_END_FLAG='N')          OR
+                  (MONTH(CALENDAR_DATE)=11 AND DAY(CALENDAR_DATE)=10 AND DAYNAME(CALENDAR_DATE)='FRI')          OR
+                  (MONTH(CALENDAR_DATE)=11 AND DAY(CALENDAR_DATE)=12 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4 AND DAYNAME(CALENDAR_DATE)='THU')      OR
+                  (MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4 AND DAYNAME(CALENDAR_DATE)='FRI')      OR
+                  (MONTH(CALENDAR_DATE)=12 AND DAY(CALENDAR_DATE)=24)      OR (MONTH(CALENDAR_DATE)=12
+                  AND DAY(CALENDAR_DATE)=25)  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000438
+              stepCounter: "200000071"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Description of the holiday when a holiday.
+            name: HOLIDAY_DESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=1
+                  AND WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=2
+                  AND DAYNAME(CALENDAR_DATE)='MON')          OR (MONTH(CALENDAR_DATE)=12
+                  AND DAY(CALENDAR_DATE)=31 AND DAYNAME(CALENDAR_DATE)='FRI') THEN
+                  'NEW YEARS DAY'   WHEN MONTH(CALENDAR_DATE)=1 AND CEIL(DAY(CALENDAR_DATE)/7)=3
+                  AND DAYNAME(CALENDAR_DATE)='MON' THEN 'MARTIN LUTHER KING JR. DAY'   WHEN
+                  MONTH(CALENDAR_DATE)=2 AND CEIL(DAY(CALENDAR_DATE)/7)=3 AND DAYNAME(CALENDAR_DATE)='MON'
+                  THEN 'PRESIDENTS DAY'   WHEN MONTH(CALENDAR_DATE)=5 AND DATE_PART('MONTH',DATEADD('DAY',
+                  7, CALENDAR_DATE))=6 AND DAYNAME(CALENDAR_DATE)='MON' THEN 'MEMORIAL
+                  DAY'   WHEN (MONTH(CALENDAR_DATE)=6 AND DAY(CALENDAR_DATE)=19 AND
+                  WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=6 AND DAY(CALENDAR_DATE)=18
+                  AND DAYNAME(CALENDAR_DATE)='FRI')          OR (MONTH(CALENDAR_DATE)=6
+                  AND DAY(CALENDAR_DATE)=20 AND DAYNAME(CALENDAR_DATE)='MON') THEN
+                  'JUNETEENTH'   WHEN (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=4
+                  AND WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=3
+                  AND DAYNAME(CALENDAR_DATE)='FRI')          OR (MONTH(CALENDAR_DATE)=7
+                  AND DAY(CALENDAR_DATE)=5 AND DAYNAME(CALENDAR_DATE)='MON') THEN
+                  'INDEPENDENCE DAY'   WHEN MONTH(CALENDAR_DATE)=9 AND CEIL(DAY(CALENDAR_DATE)/7)=1
+                  AND DAYNAME(CALENDAR_DATE)='MON' THEN 'LABOR DAY'   WHEN MONTH(CALENDAR_DATE)=10
+                  AND CEIL(DAY(CALENDAR_DATE)/7)=2 AND DAYNAME(CALENDAR_DATE)='MON'
+                  THEN 'COLUMBUS DAY'   WHEN (MONTH(CALENDAR_DATE)=11 AND DAY(CALENDAR_DATE)=11
+                  AND WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=11 AND
+                  DAY(CALENDAR_DATE)=10 AND DAYNAME(CALENDAR_DATE)='FRI')          OR
+                  (MONTH(CALENDAR_DATE)=11 AND DAY(CALENDAR_DATE)=12 AND DAYNAME(CALENDAR_DATE)='MON')
+                  THEN 'VETERANS DAY'   WHEN MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4
+                  AND DAYNAME(CALENDAR_DATE)='THU' THEN 'THANKSGIVING DAY'   WHEN
+                  MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4 AND DAYNAME(CALENDAR_DATE)='FRI'
+                  THEN 'DAY AFTER THANKSGIVING'   WHEN MONTH(CALENDAR_DATE)=12 AND
+                  DAY(CALENDAR_DATE)=24 THEN 'CHRISTMAS EVE'   WHEN MONTH(CALENDAR_DATE)=12
+                  AND DAY(CALENDAR_DATE)=25 THEN 'CHRISTMAS DAY' END
+          - columnReference:
+              columnCounter: 2000033257
+              stepCounter: "200000071"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: Flag to indicate that the day in question is a PAID holiday.
+              Y=holiday, N=normal.
+            name: PAID_HOLIDAY_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=1
+                  AND WEEK_END_FLAG='N')      OR (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=2
+                  AND DAYNAME(CALENDAR_DATE)='MON')      OR (MONTH(CALENDAR_DATE)=12
+                  AND DAY(CALENDAR_DATE)=31 AND DAYNAME(CALENDAR_DATE)='FRI')       OR
+                  (MONTH(CALENDAR_DATE)=1 AND CEIL(DAY(CALENDAR_DATE)/7)=3 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=5 AND DATE_PART('MONTH',DATEADD('DAY', 7,
+                  CALENDAR_DATE))=6 AND DAYNAME(CALENDAR_DATE)='MON')      OR (MONTH(CALENDAR_DATE)=7
+                  AND DAY(CALENDAR_DATE)=4 AND WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=7
+                  AND DAY(CALENDAR_DATE)=3 AND DAYNAME(CALENDAR_DATE)='FRI')          OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=5 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=9 AND CEIL(DAY(CALENDAR_DATE)/7)=1 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4 AND DAYNAME(CALENDAR_DATE)='THU')      OR
+                  (MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4 AND DAYNAME(CALENDAR_DATE)='FRI')      OR
+                  (MONTH(CALENDAR_DATE)=12 AND DAY(CALENDAR_DATE)=24)      OR (MONTH(CALENDAR_DATE)=12
+                  AND DAY(CALENDAR_DATE)=25)  THEN 'Y' ELSE 'N' END
+          - columnReference:
+              columnCounter: 2000000439
+              stepCounter: "200000071"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: Flag to indicate a trading day (weekdays and not holidays).
+              Y=trading, N=non trading.
+            name: TRADING_DAY_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE WHEN (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=1
+                  AND WEEK_END_FLAG='N')      OR (MONTH(CALENDAR_DATE)=1 AND DAY(CALENDAR_DATE)=2
+                  AND DAYNAME(CALENDAR_DATE)='MON')      OR (MONTH(CALENDAR_DATE)=1
+                  AND DAY(CALENDAR_DATE)=3 AND DAYNAME(CALENDAR_DATE)='MON')       OR
+                  (MONTH(CALENDAR_DATE)=1 AND CEIL(DAY(CALENDAR_DATE)/7)=3 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=2 AND CEIL(DAY(CALENDAR_DATE)/7)=3 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=5 AND DATE_PART('MONTH',DATEADD('DAY', 7,
+                  CALENDAR_DATE))=6 AND DAYNAME(CALENDAR_DATE)='MON')      OR (MONTH(CALENDAR_DATE)=6
+                  AND DAY(CALENDAR_DATE)=19 AND WEEK_END_FLAG='N')          OR (MONTH(CALENDAR_DATE)=6
+                  AND DAY(CALENDAR_DATE)=20 AND DAYNAME(CALENDAR_DATE)='MON')          OR
+                  (MONTH(CALENDAR_DATE)=6 AND DAY(CALENDAR_DATE)=21 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=4 AND WEEK_END_FLAG='N')          OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=5 AND DAYNAME(CALENDAR_DATE)='MON')          OR
+                  (MONTH(CALENDAR_DATE)=7 AND DAY(CALENDAR_DATE)=6 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=9 AND CEIL(DAY(CALENDAR_DATE)/7)=1 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  (MONTH(CALENDAR_DATE)=11 AND CEIL(DAY(CALENDAR_DATE)/7)=4 AND DAYNAME(CALENDAR_DATE)='THU')      OR
+                  (MONTH(CALENDAR_DATE)=12 AND DAY(CALENDAR_DATE)=25 AND WEEK_END_FLAG='N')          OR
+                  (MONTH(CALENDAR_DATE)=12 AND DAY(CALENDAR_DATE)=26 AND DAYNAME(CALENDAR_DATE)='MON')          OR
+                  (MONTH(CALENDAR_DATE)=12 AND DAY(CALENDAR_DATE)=27 AND DAYNAME(CALENDAR_DATE)='MON')      OR
+                  WEEK_END_FLAG='Y'  THEN 'N' ELSE 'Y' END
+          - columnReference:
+              columnCounter: 2000000440
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Number of trading days in this calendar month.
+            name: TRADING_DAYS_IN_MTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '0'
+          - columnReference:
+              columnCounter: 2000000441
+              stepCounter: "200000071"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Number of trading days in the month so far.
+            name: TRADING_DAYS_SO_FAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: '0'
+          - columnReference:
+              columnCounter: 2000000442
+              stepCounter: "200000071"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: "FROM ( SELECT DATEADD(DAY,CAST(D1.DIGIT*10000 + D2.DIGIT*1000\
+                \ + D3.DIGIT*100 +D4.DIGIT*10 +D5.DIGIT AS INTEGER)-10001,CAST(CURRENT_DATE\
+                \ AS DATE)) AS CALENDAR_DATE              , DATEADD(DAY,CAST(D1.DIGIT*10000\
+                \ + D2.DIGIT*1000 + D3.DIGIT*100 +D4.DIGIT*10 +D5.DIGIT AS INTEGER)-10001,CAST(CURRENT_DATE\
+                \ AS DATE)) AS FINANCIAL_DATE         FROM         ( SELECT '1' AS\
+                \ DIGIT UNION SELECT '2' UNION SELECT '3'              UNION SELECT\
+                \ '4' UNION SELECT '5' UNION SELECT '6'              UNION SELECT\
+                \ '7' UNION SELECT '8' UNION SELECT '9'               UNION SELECT\
+                \ '0') D1         CROSS JOIN         ( SELECT '1' AS DIGIT UNION SELECT\
+                \ '2' UNION SELECT '3'              UNION SELECT '4' UNION SELECT\
+                \ '5' UNION SELECT '6'              UNION SELECT '7' UNION SELECT\
+                \ '8' UNION SELECT '9'               UNION SELECT '0') D2        \
+                \ CROSS JOIN         ( SELECT '1' AS DIGIT UNION SELECT '2' UNION\
+                \ SELECT '3'              UNION SELECT '4' UNION SELECT '5' UNION\
+                \ SELECT '6'              UNION SELECT '7' UNION SELECT '8' UNION\
+                \ SELECT '9'               UNION SELECT '0') D3         CROSS JOIN\
+                \         ( SELECT '1' AS DIGIT UNION SELECT '2' UNION SELECT '3'\
+                \              UNION SELECT '4' UNION SELECT '5' UNION SELECT '6'\
+                \              UNION SELECT '7' UNION SELECT '8' UNION SELECT '9'\
+                \               UNION SELECT '0') D4         CROSS JOIN         (\
+                \ SELECT '1' AS DIGIT UNION SELECT '2' UNION SELECT '3'          \
+                \    UNION SELECT '4' UNION SELECT '5' UNION SELECT '6'          \
+                \    UNION SELECT '7' UNION SELECT '8' UNION SELECT '9'          \
+                \     UNION SELECT '0') D5         WHERE CAST(D1.DIGIT*10000 + D2.DIGIT*1000\
+                \ + D3.DIGIT*100 +D4.DIGIT*10 +D5.DIGIT AS INTEGER) <=20000      \
+                \ )  "
+            name: STAGE_DATE_SF
+            noLinkRefs: []
+      name: STAGE_DATE_SF
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200000071"

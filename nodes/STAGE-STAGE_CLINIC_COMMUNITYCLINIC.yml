@@ -1,0 +1,146 @@
+steps:
+  STAGE_CLINIC_COMMUNITYCLINIC-200002220:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030288
+              stepCounter: "200002220"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030289
+                stepCounter: "200002220"
+              - columnCounter: 2000030290
+                stepCounter: "200002220"
+            name: HK_H_CLINIC_COMMUNITYCLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030289
+              stepCounter: "200002220"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_COMMUNITYCLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030290
+              stepCounter: "200002220"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030291
+              stepCounter: "200002220"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030292
+              stepCounter: "200002220"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030291
+                stepCounter: "200002220"
+            name: DSS_CHANGE_HASH_CLINIC_COMMUNITYCLINIC_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030293
+              stepCounter: "200002220"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030294
+              stepCounter: "200002220"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030295
+              stepCounter: "200002220"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINICS_FT: "200003818"
+              LOAD_RIG_CODES_FT: "200004182"
+              LOAD_OFFICES_FT: "200004112"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINICS_FT
+              - locationName: STAGE
+                nodeName: LOAD_RIG_CODES_FT
+              - locationName: STAGE
+                nodeName: LOAD_OFFICES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINICS_FT') }} LOAD_CLINICS_FT\
+                \  INNER JOIN {{ ref('STAGE','LOAD_RIG_CODES_FT') }} LOAD_RIG_CODES_FT\
+                \  ON LOAD_CLINICS_FT.RIG_CODE_ID = LOAD_RIG_CODES_FT.ID  INNER JOIN\
+                \ {{ ref('STAGE','LOAD_OFFICES_FT') }} LOAD_OFFICES_FT  ON LOAD_RIG_CODES_FT.OFFICE_ID\
+                \ = LOAD_OFFICES_FT.ID WHERE LOAD_OFFICES_FT.OFFICE_TYPE_ID = 1 "
+            name: STAGE_CLINIC_COMMUNITYCLINIC
+            noLinkRefs: []
+      name: STAGE_CLINIC_COMMUNITYCLINIC
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002220"

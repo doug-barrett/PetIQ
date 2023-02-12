@@ -1,0 +1,250 @@
+steps:
+  STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE-200001986:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000022719
+              stepCounter: "200001986"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022720
+                stepCounter: "200001986"
+              - columnCounter: 2000022721
+                stepCounter: "200001986"
+              - columnCounter: 2000022722
+                stepCounter: "200001986"
+            name: HK_L_ITEM_INVOICE_ROW_INVOICE_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022720
+              stepCounter: "200001986"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022723
+                stepCounter: "200001986"
+              - columnCounter: 2000022724
+                stepCounter: "200001986"
+            name: HK_H_INVOICE_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022721
+              stepCounter: "200001986"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022725
+                stepCounter: "200001986"
+              - columnCounter: 2000022726
+                stepCounter: "200001986"
+            name: HK_H_INVOICE_ROW_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022722
+              stepCounter: "200001986"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022727
+                stepCounter: "200001986"
+              - columnCounter: 2000022728
+                stepCounter: "200001986"
+            name: HK_H_ITEM_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022723
+              stepCounter: "200001986"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: NUM_0_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022724
+              stepCounter: "200001986"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022725
+              stepCounter: "200001986"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: INVOICE_ROW_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(NUM_0, '|', SIDLIN_0)
+          - columnReference:
+              columnCounter: 2000022726
+              stepCounter: "200001986"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE_ROWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022727
+              stepCounter: "200001986"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ITMREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022728
+              stepCounter: "200001986"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022729
+              stepCounter: "200001986"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: NUM_0_INVOICE_ROWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022730
+              stepCounter: "200001986"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SIDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022731
+              stepCounter: "200001986"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022729
+                stepCounter: "200001986"
+              - columnCounter: 2000022730
+                stepCounter: "200001986"
+            name: DSS_CHANGE_HASH_ITEM_INVOICE_ROW_INVOICE_SAGE_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022732
+              stepCounter: "200001986"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022733
+              stepCounter: "200001986"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022734
+              stepCounter: "200001986"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SINVOICED_CX_SAGE: "200001970"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SINVOICED_CX_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SINVOICED_CX_SAGE') }} LOAD_SINVOICED_CX_SAGE\
+                \  "
+            name: STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE
+            noLinkRefs: []
+      name: STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001986"

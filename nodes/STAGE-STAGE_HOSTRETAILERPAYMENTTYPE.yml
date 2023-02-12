@@ -1,0 +1,215 @@
+steps:
+  STAGE_HOSTRETAILERPAYMENTTYPE-200003843:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032500
+              stepCounter: "200003843"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032501
+                stepCounter: "200003843"
+              - columnCounter: 2000032502
+                stepCounter: "200003843"
+            name: HK_H_HOSTRETAILERPAYMENTTYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032501
+              stepCounter: "200003843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_PAYMENT_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032502
+              stepCounter: "200003843"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032503
+              stepCounter: "200003843"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032504
+              stepCounter: "200003843"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: STATEMENT_FOOTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032505
+              stepCounter: "200003843"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032506
+              stepCounter: "200003843"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032507
+              stepCounter: "200003843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032508
+              stepCounter: "200003843"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032509
+              stepCounter: "200003843"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032510
+              stepCounter: "200003843"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032503
+                stepCounter: "200003843"
+              - columnCounter: 2000032504
+                stepCounter: "200003843"
+              - columnCounter: 2000032505
+                stepCounter: "200003843"
+              - columnCounter: 2000032506
+                stepCounter: "200003843"
+              - columnCounter: 2000032507
+                stepCounter: "200003843"
+              - columnCounter: 2000032508
+                stepCounter: "200003843"
+              - columnCounter: 2000032509
+                stepCounter: "200003843"
+            name: DSS_CHANGE_HASH_HOSTRETAILERPAYMENTTYPE_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032511
+              stepCounter: "200003843"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032512
+              stepCounter: "200003843"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032513
+              stepCounter: "200003843"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_HOST_PAYMENT_TYPES_FT: "200004118"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_HOST_PAYMENT_TYPES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_HOST_PAYMENT_TYPES_FT') }}\
+                \ LOAD_HOST_PAYMENT_TYPES_FT    "
+            name: STAGE_HOSTRETAILERPAYMENTTYPE
+            noLinkRefs: []
+      name: STAGE_HOSTRETAILERPAYMENTTYPE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003843"

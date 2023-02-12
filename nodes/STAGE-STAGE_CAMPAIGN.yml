@@ -1,0 +1,202 @@
+steps:
+  STAGE_CAMPAIGN-200003524:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: GA property from BQ
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029666
+              stepCounter: "200003524"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029667
+                stepCounter: "200003524"
+              - columnCounter: 2000029668
+                stepCounter: "200003524"
+            name: HK_H_CAMPAIGN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029667
+              stepCounter: "200003524"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGNBK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029668
+              stepCounter: "200003524"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029669
+              stepCounter: "200003524"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_CAMPAIGNCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029670
+              stepCounter: "200003524"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ISTRUEDIRECT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029671
+              stepCounter: "200003524"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_KEYWORD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029672
+              stepCounter: "200003524"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_MEDIUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029673
+              stepCounter: "200003524"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_REFERRALPATH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029674
+              stepCounter: "200003524"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029675
+              stepCounter: "200003524"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029669
+                stepCounter: "200003524"
+              - columnCounter: 2000029670
+                stepCounter: "200003524"
+              - columnCounter: 2000029671
+                stepCounter: "200003524"
+              - columnCounter: 2000029672
+                stepCounter: "200003524"
+              - columnCounter: 2000029673
+                stepCounter: "200003524"
+              - columnCounter: 2000029674
+                stepCounter: "200003524"
+            name: DSS_CHANGE_HASH_CAMPAIGN_MROC_DEFAULT_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029676
+              stepCounter: "200003524"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029677
+              stepCounter: "200003524"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029678
+              stepCounter: "200003524"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA: "200003521"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA')\
+                \ }} LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA  "
+            name: STAGE_CAMPAIGN
+            noLinkRefs: []
+      name: STAGE_CAMPAIGN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003524"

@@ -1,0 +1,250 @@
+steps:
+  STAGE_ITEM_RETURN_ROW_RETURN_SAGE-200001987:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000022735
+              stepCounter: "200001987"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022736
+                stepCounter: "200001987"
+              - columnCounter: 2000022737
+                stepCounter: "200001987"
+              - columnCounter: 2000022738
+                stepCounter: "200001987"
+            name: HK_L_ITEM_RETURN_ROW_RETURN_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022736
+              stepCounter: "200001987"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022739
+                stepCounter: "200001987"
+              - columnCounter: 2000022740
+                stepCounter: "200001987"
+            name: HK_H_RETURN_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022737
+              stepCounter: "200001987"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022741
+                stepCounter: "200001987"
+              - columnCounter: 2000022742
+                stepCounter: "200001987"
+            name: HK_H_RETURN_ROW_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022738
+              stepCounter: "200001987"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022743
+                stepCounter: "200001987"
+              - columnCounter: 2000022744
+                stepCounter: "200001987"
+            name: HK_H_ITEM_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022739
+              stepCounter: "200001987"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SRHNUM_0_RETURN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022740
+              stepCounter: "200001987"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETURN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022741
+              stepCounter: "200001987"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RETURN_ROW_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(SRHNUM_0, '|', SRDLIN_0)
+          - columnReference:
+              columnCounter: 2000022742
+              stepCounter: "200001987"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETURN_ROW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022743
+              stepCounter: "200001987"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ITMREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022744
+              stepCounter: "200001987"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000022745
+              stepCounter: "200001987"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SRHNUM_0_RETURN_ROW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022746
+              stepCounter: "200001987"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SRDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022747
+              stepCounter: "200001987"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000022745
+                stepCounter: "200001987"
+              - columnCounter: 2000022746
+                stepCounter: "200001987"
+            name: DSS_CHANGE_HASH_ITEM_RETURN_ROW_RETURN_SAGE_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022748
+              stepCounter: "200001987"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022749
+              stepCounter: "200001987"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022750
+              stepCounter: "200001987"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SRETURND_CX_SAGE: "200001976"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SRETURND_CX_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SRETURND_CX_SAGE') }} LOAD_SRETURND_CX_SAGE\
+                \  "
+            name: STAGE_ITEM_RETURN_ROW_RETURN_SAGE
+            noLinkRefs: []
+      name: STAGE_ITEM_RETURN_ROW_RETURN_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001987"

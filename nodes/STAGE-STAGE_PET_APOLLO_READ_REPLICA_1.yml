@@ -1,0 +1,241 @@
+steps:
+  STAGE_PET_APOLLO_READ_REPLICA_1-200003743:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030814
+              stepCounter: "200003743"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030815
+                stepCounter: "200003743"
+              - columnCounter: 2000030816
+                stepCounter: "200003743"
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030815
+              stepCounter: "200003743"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030816
+              stepCounter: "200003743"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030824
+              stepCounter: "200003743"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030822
+              stepCounter: "200003743"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MICROCHIP_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030823
+              stepCounter: "200003743"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_MICROCHIP_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030817
+              stepCounter: "200003743"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030818
+              stepCounter: "200003743"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030819
+              stepCounter: "200003743"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030820
+              stepCounter: "200003743"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030821
+              stepCounter: "200003743"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030825
+              stepCounter: "200003743"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: EXPORTED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030826
+              stepCounter: "200003743"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030817
+                stepCounter: "200003743"
+              - columnCounter: 2000030818
+                stepCounter: "200003743"
+              - columnCounter: 2000030819
+                stepCounter: "200003743"
+              - columnCounter: 2000030820
+                stepCounter: "200003743"
+              - columnCounter: 2000030821
+                stepCounter: "200003743"
+              - columnCounter: 2000030822
+                stepCounter: "200003743"
+              - columnCounter: 2000030823
+                stepCounter: "200003743"
+              - columnCounter: 2000030824
+                stepCounter: "200003743"
+              - columnCounter: 2000030825
+                stepCounter: "200003743"
+            name: DSS_CHANGE_HASH_PET_LROC_MICROCHIPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030827
+              stepCounter: "200003743"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030828
+              stepCounter: "200003743"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030829
+              stepCounter: "200003743"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PET_MICROCHIPS_FT: "200004197"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PET_MICROCHIPS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PET_MICROCHIPS_FT') }} LOAD_PET_MICROCHIPS_FT\
+                \    "
+            name: STAGE_PET_APOLLO_READ_REPLICA_1
+            noLinkRefs: []
+      name: STAGE_PET_APOLLO_READ_REPLICA_1
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003743"

@@ -1,0 +1,182 @@
+steps:
+  STAGE_PACKAGE_PRODUCT-200002976:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028262
+              stepCounter: "200002976"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028261
+                stepCounter: "200002976"
+              - columnCounter: 2000028260
+                stepCounter: "200002976"
+            name: HK_L_PACKAGEID_PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028261
+              stepCounter: "200002976"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028258
+                stepCounter: "200002976"
+            name: HK_H_PACKAGEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028260
+              stepCounter: "200002976"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028257
+                stepCounter: "200002976"
+              - columnCounter: 2000028258
+                stepCounter: "200002976"
+            name: HK_H_PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028257
+              stepCounter: "200002976"
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028258
+              stepCounter: "200002976"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033267
+              stepCounter: "200002976"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_PACKAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028263
+              stepCounter: "200002976"
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028264
+              stepCounter: "200002976"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028265
+              stepCounter: "200002976"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028255
+              stepCounter: "200002976"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028254
+              stepCounter: "200002976"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PACKAGES_PRODUCTS_FT: "200004193"
+              H_PRODUCT: "200001734"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PACKAGES_PRODUCTS_FT
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PACKAGES_PRODUCTS_FT') }}\
+                \ LOAD_PACKAGES_PRODUCTS_FT  JOIN {{ ref('STAGE','H_PRODUCT') }} H_PRODUCT\
+                \    ON LOAD_PACKAGES_PRODUCTS_FT.PRODUCT_ITEM_ID = H_PRODUCT.PRODUCTID\
+                \  "
+            name: STAGE_PACKAGE_PRODUCT
+            noLinkRefs: []
+      name: STAGE_PACKAGE_PRODUCT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002976"

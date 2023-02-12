@@ -1,0 +1,384 @@
+steps:
+  STAGE_ORDER_INNATRACK-200001884:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024847
+              stepCounter: "200001884"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024848
+                stepCounter: "200001884"
+              - columnCounter: 2000024849
+                stepCounter: "200001884"
+            name: HK_H_ORDER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024848
+              stepCounter: "200001884"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ORDERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024849
+              stepCounter: "200001884"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024850
+              stepCounter: "200001884"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: COHDBILLTO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024851
+              stepCounter: "200001884"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: COHDCUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024852
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDRECVDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024853
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDCSTSHPDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024854
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDCLOSEDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024855
+              stepCounter: "200001884"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: COHDDELMETH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024856
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDADDDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024857
+              stepCounter: "200001884"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COHDSHIPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024858
+              stepCounter: "200001884"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: COHDLOC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024859
+              stepCounter: "200001884"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: COHDORDSTAT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024860
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDCSTARRDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024861
+              stepCounter: "200001884"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: COHDCLOSERSN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024862
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDREQSHPDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024863
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDREQARRDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024864
+              stepCounter: "200001884"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: COHDCANCLDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024865
+              stepCounter: "200001884"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COHDTHDRKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024866
+              stepCounter: "200001884"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COHDDOCID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024867
+              stepCounter: "200001884"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: COHDSOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024868
+              stepCounter: "200001884"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: COHDOEHOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024869
+              stepCounter: "200001884"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: COHDCUSTPO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024870
+              stepCounter: "200001884"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024850
+                stepCounter: "200001884"
+              - columnCounter: 2000024851
+                stepCounter: "200001884"
+              - columnCounter: 2000024852
+                stepCounter: "200001884"
+              - columnCounter: 2000024853
+                stepCounter: "200001884"
+              - columnCounter: 2000024854
+                stepCounter: "200001884"
+              - columnCounter: 2000024855
+                stepCounter: "200001884"
+              - columnCounter: 2000024856
+                stepCounter: "200001884"
+              - columnCounter: 2000024857
+                stepCounter: "200001884"
+              - columnCounter: 2000024858
+                stepCounter: "200001884"
+              - columnCounter: 2000024859
+                stepCounter: "200001884"
+              - columnCounter: 2000024860
+                stepCounter: "200001884"
+              - columnCounter: 2000024861
+                stepCounter: "200001884"
+              - columnCounter: 2000024862
+                stepCounter: "200001884"
+              - columnCounter: 2000024863
+                stepCounter: "200001884"
+              - columnCounter: 2000024864
+                stepCounter: "200001884"
+              - columnCounter: 2000024865
+                stepCounter: "200001884"
+              - columnCounter: 2000024866
+                stepCounter: "200001884"
+              - columnCounter: 2000024867
+                stepCounter: "200001884"
+              - columnCounter: 2000024868
+                stepCounter: "200001884"
+              - columnCounter: 2000024869
+                stepCounter: "200001884"
+            name: DSS_CHANGE_HASH_ORDER_INNATRACK_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024871
+              stepCounter: "200001884"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024872
+              stepCounter: "200001884"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024873
+              stepCounter: "200001884"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_OECOHD_REC_CX_INNATRACK: "200001876"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_OECOHD_REC_CX_INNATRACK
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_OECOHD_REC_CX_INNATRACK')\
+                \ }} LOAD_OECOHD_REC_CX_INNATRACK  "
+            name: STAGE_ORDER_INNATRACK
+            noLinkRefs: []
+      name: STAGE_ORDER_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001884"

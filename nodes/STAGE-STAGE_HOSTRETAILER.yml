@@ -1,0 +1,363 @@
+steps:
+  STAGE_HOSTRETAILER-200003840:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032403
+              stepCounter: "200003840"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032404
+                stepCounter: "200003840"
+              - columnCounter: 2000032405
+                stepCounter: "200003840"
+            name: HK_H_HOSTRETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032404
+              stepCounter: "200003840"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032405
+              stepCounter: "200003840"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032406
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032407
+              stepCounter: "200003840"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PARENT_HOST_ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032408
+              stepCounter: "200003840"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032409
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032410
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032411
+              stepCounter: "200003840"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032412
+              stepCounter: "200003840"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032413
+              stepCounter: "200003840"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032414
+              stepCounter: "200003840"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032415
+              stepCounter: "200003840"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032416
+              stepCounter: "200003840"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032417
+              stepCounter: "200003840"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032418
+              stepCounter: "200003840"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_PAYMENT_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032419
+              stepCounter: "200003840"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_TYPE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032420
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ATTENTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032421
+              stepCounter: "200003840"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_METRIC_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032422
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OWNER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032423
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RECIPIENT_EMAILS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032424
+              stepCounter: "200003840"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032406
+                stepCounter: "200003840"
+              - columnCounter: 2000032407
+                stepCounter: "200003840"
+              - columnCounter: 2000032408
+                stepCounter: "200003840"
+              - columnCounter: 2000032409
+                stepCounter: "200003840"
+              - columnCounter: 2000032410
+                stepCounter: "200003840"
+              - columnCounter: 2000032411
+                stepCounter: "200003840"
+              - columnCounter: 2000032412
+                stepCounter: "200003840"
+              - columnCounter: 2000032413
+                stepCounter: "200003840"
+              - columnCounter: 2000032414
+                stepCounter: "200003840"
+              - columnCounter: 2000032415
+                stepCounter: "200003840"
+              - columnCounter: 2000032416
+                stepCounter: "200003840"
+              - columnCounter: 2000032417
+                stepCounter: "200003840"
+              - columnCounter: 2000032418
+                stepCounter: "200003840"
+              - columnCounter: 2000032419
+                stepCounter: "200003840"
+              - columnCounter: 2000032420
+                stepCounter: "200003840"
+              - columnCounter: 2000032421
+                stepCounter: "200003840"
+              - columnCounter: 2000032422
+                stepCounter: "200003840"
+              - columnCounter: 2000032423
+                stepCounter: "200003840"
+            name: DSS_CHANGE_HASH_HOSTRETAILER_MROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032425
+              stepCounter: "200003840"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032426
+              stepCounter: "200003840"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032427
+              stepCounter: "200003840"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_HOST_ACCOUNTS_FT: "200004114"
+              LOAD_HOST_PAYMENT_TYPES_FT: "200004118"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_HOST_ACCOUNTS_FT
+              - locationName: STAGE
+                nodeName: LOAD_HOST_PAYMENT_TYPES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_HOST_ACCOUNTS_FT') }} LOAD_HOST_ACCOUNTS_FT\
+                \  JOIN {{ ref('STAGE','LOAD_HOST_PAYMENT_TYPES_FT') }} LOAD_HOST_PAYMENT_TYPES_FT\
+                \    ON LOAD_HOST_ACCOUNTS_FT.HOST_PAYMENT_TYPE_ID = LOAD_HOST_PAYMENT_TYPES_FT.ID\
+                \    "
+            name: STAGE_HOSTRETAILER
+            noLinkRefs: []
+      name: STAGE_HOSTRETAILER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003840"

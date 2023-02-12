@@ -1,0 +1,276 @@
+steps:
+  STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK-200001879:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024684
+              stepCounter: "200001879"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024685
+                stepCounter: "200001879"
+              - columnCounter: 2000024686
+                stepCounter: "200001879"
+              - columnCounter: 2000024687
+                stepCounter: "200001879"
+            name: HK_L_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024685
+              stepCounter: "200001879"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024690
+                stepCounter: "200001879"
+              - columnCounter: 2000024691
+                stepCounter: "200001879"
+            name: HK_H_INVOICELINE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024686
+              stepCounter: "200001879"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024688
+                stepCounter: "200001879"
+              - columnCounter: 2000024689
+                stepCounter: "200001879"
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024687
+              stepCounter: "200001879"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024692
+                stepCounter: "200001879"
+              - columnCounter: 2000024693
+                stepCounter: "200001879"
+            name: HK_H_PRODUCT_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024688
+              stepCounter: "200001879"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVOICEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024689
+              stepCounter: "200001879"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024690
+              stepCounter: "200001879"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: INVOICELINEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(LINHINVMKEY,  '|', LINHAUTOSEQ)
+          - columnReference:
+              columnCounter: 2000024691
+              stepCounter: "200001879"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICELINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024692
+              stepCounter: "200001879"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(LINHPRODUCT,  '|', LINHUOMT)
+          - columnReference:
+              columnCounter: 2000024693
+              stepCounter: "200001879"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024694
+              stepCounter: "200001879"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHINVMKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024695
+              stepCounter: "200001879"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINHAUTOSEQ
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024696
+              stepCounter: "200001879"
+            dataType: CHAR(20)
+            defaultValue: ""
+            description: ""
+            name: LINHPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024697
+              stepCounter: "200001879"
+            dataType: CHAR(2)
+            defaultValue: ""
+            description: ""
+            name: LINHUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024698
+              stepCounter: "200001879"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024694
+                stepCounter: "200001879"
+              - columnCounter: 2000024695
+                stepCounter: "200001879"
+              - columnCounter: 2000024696
+                stepCounter: "200001879"
+              - columnCounter: 2000024697
+                stepCounter: "200001879"
+            name: DSS_CHANGE_HASH_INVOICE_INVOICELINE_PRODUCT_INNATRACK_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024699
+              stepCounter: "200001879"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024700
+              stepCounter: "200001879"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024701
+              stepCounter: "200001879"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ARLINH_REC_CX_INNATRACK: "200001872"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ARLINH_REC_CX_INNATRACK
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ARLINH_REC_CX_INNATRACK')\
+                \ }} LOAD_ARLINH_REC_CX_INNATRACK  "
+            name: STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+            noLinkRefs: []
+      name: STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001879"

@@ -1,0 +1,168 @@
+steps:
+  STAGE_MANUFACTURER_CLINICITEM-200002235:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030668
+              stepCounter: "200002235"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030669
+                stepCounter: "200002235"
+              - columnCounter: 2000030670
+                stepCounter: "200002235"
+            name: HK_L_MANUFACTURER_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030670
+              stepCounter: "200002235"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030673
+                stepCounter: "200002235"
+              - columnCounter: 2000030674
+                stepCounter: "200002235"
+            name: HK_H_MANUFACTURER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030669
+              stepCounter: "200002235"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030671
+                stepCounter: "200002235"
+              - columnCounter: 2000030672
+                stepCounter: "200002235"
+            name: HK_H_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030673
+              stepCounter: "200002235"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MANUFACTURER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030674
+              stepCounter: "200002235"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_MANUFACTURER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030671
+              stepCounter: "200002235"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINICITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030672
+              stepCounter: "200002235"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030675
+              stepCounter: "200002235"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030676
+              stepCounter: "200002235"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030677
+              stepCounter: "200002235"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PRODUCTS_FT: "200004187"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PRODUCTS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PRODUCTS_FT') }} LOAD_PRODUCTS_FT\
+                \    "
+            name: STAGE_MANUFACTURER_CLINICITEM
+            noLinkRefs: []
+      name: STAGE_MANUFACTURER_CLINICITEM
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002235"

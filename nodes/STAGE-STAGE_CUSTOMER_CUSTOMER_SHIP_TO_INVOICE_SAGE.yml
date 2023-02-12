@@ -1,0 +1,250 @@
+steps:
+  STAGE_CUSTOMER_CUSTOMER_SHIP_TO_INVOICE_SAGE-200001977:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021663
+              stepCounter: "200001977"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021664
+                stepCounter: "200001977"
+              - columnCounter: 2000021665
+                stepCounter: "200001977"
+              - columnCounter: 2000021666
+                stepCounter: "200001977"
+            name: HK_L_CUSTOMER_CUSTOMER_SHIP_TO_INVOICE_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021664
+              stepCounter: "200001977"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021671
+                stepCounter: "200001977"
+              - columnCounter: 2000021672
+                stepCounter: "200001977"
+            name: HK_H_CUSTOMER_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021665
+              stepCounter: "200001977"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021667
+                stepCounter: "200001977"
+              - columnCounter: 2000021668
+                stepCounter: "200001977"
+            name: HK_H_INVOICE_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021666
+              stepCounter: "200001977"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021669
+                stepCounter: "200001977"
+              - columnCounter: 2000021670
+                stepCounter: "200001977"
+            name: HK_H_CUSTOMER_SHIP_TO_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021667
+              stepCounter: "200001977"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: NUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021668
+              stepCounter: "200001977"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000021669
+              stepCounter: "200001977"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMER_SHIP_TO_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(BPCORD_0, '|', BPAADD_0)
+          - columnReference:
+              columnCounter: 2000021670
+              stepCounter: "200001977"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CUSTOMER_SHIP_TO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000021671
+              stepCounter: "200001977"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCORD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021672
+              stepCounter: "200001977"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAGE'"
+          - columnReference:
+              columnCounter: 2000021673
+              stepCounter: "200001977"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021674
+              stepCounter: "200001977"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BPAADD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021675
+              stepCounter: "200001977"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021673
+                stepCounter: "200001977"
+              - columnCounter: 2000021674
+                stepCounter: "200001977"
+            name: DSS_CHANGE_HASH_CUST_CUST_SHIP_TO_INV_SAGE_BOK_SINVOICEV
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021676
+              stepCounter: "200001977"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021677
+              stepCounter: "200001977"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021678
+              stepCounter: "200001977"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SINVOICEV_CX_SAGE: "200001971"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SINVOICEV_CX_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SINVOICEV_CX_SAGE') }} LOAD_SINVOICEV_CX_SAGE\
+                \  "
+            name: STAGE_CUSTOMER_CUSTOMER_SHIP_TO_INVOICE_SAGE
+            noLinkRefs: []
+      name: STAGE_CUSTOMER_CUSTOMER_SHIP_TO_INVOICE_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001977"

@@ -1,0 +1,384 @@
+steps:
+  STAGE_PET_APOLLO_READ_REPLICA-200002239:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030788
+              stepCounter: "200002239"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030789
+                stepCounter: "200002239"
+              - columnCounter: 2000030790
+                stepCounter: "200002239"
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030789
+              stepCounter: "200002239"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030790
+              stepCounter: "200002239"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030791
+              stepCounter: "200002239"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030792
+              stepCounter: "200002239"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SPECIES_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033268
+              stepCounter: "200002239"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: SPECIES_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033269
+              stepCounter: "200002239"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: SPECIES_FAMILY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030793
+              stepCounter: "200002239"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GENDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030794
+              stepCounter: "200002239"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BREED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030795
+              stepCounter: "200002239"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030796
+              stepCounter: "200002239"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030797
+              stepCounter: "200002239"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030798
+              stepCounter: "200002239"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030799
+              stepCounter: "200002239"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: WEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030800
+              stepCounter: "200002239"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ESTIMATED_BIRTHDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030801
+              stepCounter: "200002239"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DECEASED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030802
+              stepCounter: "200002239"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030803
+              stepCounter: "200002239"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030804
+              stepCounter: "200002239"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030806
+              stepCounter: "200002239"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: NEXT_PROMO_PRESCRIPTION_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030807
+              stepCounter: "200002239"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TEMPERAMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030808
+              stepCounter: "200002239"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAD_VACCINE_REACTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030809
+              stepCounter: "200002239"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ORIGINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030810
+              stepCounter: "200002239"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030791
+                stepCounter: "200002239"
+              - columnCounter: 2000030792
+                stepCounter: "200002239"
+              - columnCounter: 2000030793
+                stepCounter: "200002239"
+              - columnCounter: 2000030794
+                stepCounter: "200002239"
+              - columnCounter: 2000030795
+                stepCounter: "200002239"
+              - columnCounter: 2000030796
+                stepCounter: "200002239"
+              - columnCounter: 2000030797
+                stepCounter: "200002239"
+              - columnCounter: 2000030798
+                stepCounter: "200002239"
+              - columnCounter: 2000030799
+                stepCounter: "200002239"
+              - columnCounter: 2000030800
+                stepCounter: "200002239"
+              - columnCounter: 2000030801
+                stepCounter: "200002239"
+              - columnCounter: 2000030802
+                stepCounter: "200002239"
+              - columnCounter: 2000030803
+                stepCounter: "200002239"
+              - columnCounter: 2000030804
+                stepCounter: "200002239"
+              - columnCounter: 2000030806
+                stepCounter: "200002239"
+              - columnCounter: 2000030807
+                stepCounter: "200002239"
+              - columnCounter: 2000030808
+                stepCounter: "200002239"
+              - columnCounter: 2000030809
+                stepCounter: "200002239"
+            name: DSS_CHANGE_HASH_PET_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030811
+              stepCounter: "200002239"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030812
+              stepCounter: "200002239"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030813
+              stepCounter: "200002239"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PETS_FT: "200003929"
+              LOAD_SPECIES_FT: "200004199"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PETS_FT
+              - locationName: STAGE
+                nodeName: LOAD_SPECIES_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PETS_FT') }} LOAD_PETS_FT\
+                \  JOIN {{ ref('STAGE','LOAD_SPECIES_FT') }} LOAD_SPECIES_FT    ON\
+                \ LOAD_PETS_FT.SPECIES_ID = LOAD_SPECIES_FT.ID    "
+            name: STAGE_PET_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: STAGE_PET_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002239"

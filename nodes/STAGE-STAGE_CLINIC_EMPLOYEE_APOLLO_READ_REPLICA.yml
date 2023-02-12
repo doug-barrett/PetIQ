@@ -1,0 +1,273 @@
+steps:
+  STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA-200003736:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031369
+              stepCounter: "200003736"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031370
+                stepCounter: "200003736"
+              - columnCounter: 2000031371
+                stepCounter: "200003736"
+            name: HK_L_CLINIC_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031370
+              stepCounter: "200003736"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031374
+                stepCounter: "200003736"
+              - columnCounter: 2000031375
+                stepCounter: "200003736"
+            name: HK_H_USER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031371
+              stepCounter: "200003736"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031372
+                stepCounter: "200003736"
+              - columnCounter: 2000031373
+                stepCounter: "200003736"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031372
+              stepCounter: "200003736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031373
+              stepCounter: "200003736"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031374
+              stepCounter: "200003736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031375
+              stepCounter: "200003736"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031376
+              stepCounter: "200003736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROSTER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031377
+              stepCounter: "200003736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031378
+              stepCounter: "200003736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031379
+              stepCounter: "200003736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031380
+              stepCounter: "200003736"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031381
+              stepCounter: "200003736"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031382
+              stepCounter: "200003736"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031383
+              stepCounter: "200003736"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031376
+                stepCounter: "200003736"
+              - columnCounter: 2000031377
+                stepCounter: "200003736"
+              - columnCounter: 2000031378
+                stepCounter: "200003736"
+              - columnCounter: 2000031379
+                stepCounter: "200003736"
+              - columnCounter: 2000031380
+                stepCounter: "200003736"
+              - columnCounter: 2000031381
+                stepCounter: "200003736"
+              - columnCounter: 2000031382
+                stepCounter: "200003736"
+            name: DSS_CHANGE_HASH_CLINIC_EMPLOYEE_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031384
+              stepCounter: "200003736"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031385
+              stepCounter: "200003736"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031386
+              stepCounter: "200003736"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINIC_ROSTERS_FT: "200004125"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINIC_ROSTERS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINIC_ROSTERS_FT') }} LOAD_CLINIC_ROSTERS_FT\
+                \  "
+            name: STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003736"

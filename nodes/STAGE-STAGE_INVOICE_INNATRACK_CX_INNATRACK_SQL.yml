@@ -1,0 +1,214 @@
+steps:
+  STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL-200000595:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000008879
+              stepCounter: "200000595"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000008880
+                stepCounter: "200000595"
+              - columnCounter: 2000008881
+                stepCounter: "200000595"
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008880
+              stepCounter: "200000595"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMINVMKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008881
+              stepCounter: "200000595"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000008882
+              stepCounter: "200000595"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVMINVNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008883
+              stepCounter: "200000595"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMLOADKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008884
+              stepCounter: "200000595"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMSHIPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008885
+              stepCounter: "200000595"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVMORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008886
+              stepCounter: "200000595"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: INVMCUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008887
+              stepCounter: "200000595"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: INVMEFFDT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008888
+              stepCounter: "200000595"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: INVMCUSTPO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008889
+              stepCounter: "200000595"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000008882
+                stepCounter: "200000595"
+              - columnCounter: 2000008883
+                stepCounter: "200000595"
+              - columnCounter: 2000008884
+                stepCounter: "200000595"
+              - columnCounter: 2000008885
+                stepCounter: "200000595"
+              - columnCounter: 2000008886
+                stepCounter: "200000595"
+              - columnCounter: 2000008887
+                stepCounter: "200000595"
+              - columnCounter: 2000008888
+                stepCounter: "200000595"
+            name: DSS_CHANGE_HASH_INVOICE_INNATRACK_LROC_CX_INNATRACK_SQL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008890
+              stepCounter: "200000595"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008891
+              stepCounter: "200000595"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000008892
+              stepCounter: "200000595"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: UNKNOWN
+                nodeName: LOAD_ARINVM_REC_CX_INNATRACK_SQL
+            join:
+              joinCondition: FROM {{ ref('UNKNOWN','LOAD_ARINVM_REC_CX_INNATRACK_SQL')
+                }} LOAD_ARINVM_REC_CX_INNATRACK_SQL
+            name: STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL
+            noLinkRefs: []
+      name: STAGE_INVOICE_INNATRACK_CX_INNATRACK_SQL
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200000595"

@@ -1,0 +1,253 @@
+steps:
+  STAGE_AD-200003523:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: GA property from BQ
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029660
+              stepCounter: "200003523"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029661
+                stepCounter: "200003523"
+              - columnCounter: 2000029662
+                stepCounter: "200003523"
+            name: HK_H_AD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029661
+              stepCounter: "200003523"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADBK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029662
+              stepCounter: "200003523"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'GOOGLEANALYTICS'"
+          - columnReference:
+              columnCounter: 2000029663
+              stepCounter: "200003523"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029664
+              stepCounter: "200003523"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029665
+              stepCounter: "200003523"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029817
+              stepCounter: "200003523"
+            dataType: TEXT(9)
+            defaultValue: ""
+            description: ""
+            name: TABLEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029805
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADCONTENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029806
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_ADNETWORKTYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029807
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_CAMPAIGNID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029808
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_CREATIVEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029809
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_CRITERIAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029810
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_CRITERIAPARAMETERS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029811
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_CUSTOMERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029812
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_GCLID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029813
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_ISVIDEOAD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029814
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_PAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029815
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_SLOT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029816
+              stepCounter: "200003523"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ADWORDSCLICKINFO_TARGETINGCRITERIA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA: "200003521"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA')\
+                \ }} LOAD_COMBINEDUA_TRAFFICSOURCE_VIEW_CX_SNOWFLAKE_GA  "
+            name: STAGE_AD
+            noLinkRefs: []
+      name: STAGE_AD
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003523"

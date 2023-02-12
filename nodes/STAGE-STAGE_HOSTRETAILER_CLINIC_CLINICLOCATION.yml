@@ -1,0 +1,425 @@
+steps:
+  STAGE_HOSTRETAILER_CLINIC_CLINICLOCATION-200003906:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032428
+              stepCounter: "200003906"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032429
+                stepCounter: "200003906"
+              - columnCounter: 2000032430
+                stepCounter: "200003906"
+              - columnCounter: 2000032431
+                stepCounter: "200003906"
+            name: HK_L_HOSTRETAILER_CLINIC_CLINICLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032429
+              stepCounter: "200003906"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032432
+                stepCounter: "200003906"
+              - columnCounter: 2000032433
+                stepCounter: "200003906"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032430
+              stepCounter: "200003906"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032434
+                stepCounter: "200003906"
+              - columnCounter: 2000032435
+                stepCounter: "200003906"
+            name: HK_H_HOSTRETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032431
+              stepCounter: "200003906"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032436
+                stepCounter: "200003906"
+              - columnCounter: 2000032437
+                stepCounter: "200003906"
+            name: HK_H_CLINIC_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032432
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032433
+              stepCounter: "200003906"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032434
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HOST_RETAILER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032435
+              stepCounter: "200003906"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_HOST_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032436
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032437
+              stepCounter: "200003906"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032438
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032439
+              stepCounter: "200003906"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032440
+              stepCounter: "200003906"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_NUMBER(AMOUNT_IN_CENTS/100,9,5)
+          - columnReference:
+              columnCounter: 2000032441
+              stepCounter: "200003906"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032442
+              stepCounter: "200003906"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032443
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032444
+              stepCounter: "200003906"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAYOUT_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032445
+              stepCounter: "200003906"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAID_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032446
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PARENT_TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032447
+              stepCounter: "200003906"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032448
+              stepCounter: "200003906"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032449
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032450
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032451
+              stepCounter: "200003906"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032452
+              stepCounter: "200003906"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DEBIT_TRANSACTION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032453
+              stepCounter: "200003906"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032438
+                stepCounter: "200003906"
+              - columnCounter: 2000032439
+                stepCounter: "200003906"
+              - columnCounter: 2000032440
+                stepCounter: "200003906"
+              - columnCounter: 2000032441
+                stepCounter: "200003906"
+              - columnCounter: 2000032442
+                stepCounter: "200003906"
+              - columnCounter: 2000032443
+                stepCounter: "200003906"
+              - columnCounter: 2000032444
+                stepCounter: "200003906"
+              - columnCounter: 2000032445
+                stepCounter: "200003906"
+              - columnCounter: 2000032446
+                stepCounter: "200003906"
+              - columnCounter: 2000032447
+                stepCounter: "200003906"
+              - columnCounter: 2000032448
+                stepCounter: "200003906"
+              - columnCounter: 2000032449
+                stepCounter: "200003906"
+              - columnCounter: 2000032450
+                stepCounter: "200003906"
+              - columnCounter: 2000032451
+                stepCounter: "200003906"
+              - columnCounter: 2000032452
+                stepCounter: "200003906"
+            name: DSS_CHANGE_HASH_HOSTRETAILER_CLINIC_CLINICLOCATION_MROC_TRANS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032454
+              stepCounter: "200003906"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032455
+              stepCounter: "200003906"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032456
+              stepCounter: "200003906"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_HOST_TRANSACTIONS_FT: "200004119"
+              LOAD_CLINICS_FT: "200003818"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_HOST_TRANSACTIONS_FT
+              - locationName: STAGE
+                nodeName: LOAD_CLINICS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_HOST_TRANSACTIONS_FT') }}\
+                \ LOAD_HOST_TRANSACTIONS_FT  JOIN {{ ref('STAGE','LOAD_CLINICS_FT')\
+                \ }} LOAD_CLINICS_FT    ON LOAD_HOST_TRANSACTIONS_FT.CLINIC_LOCATION_ID\
+                \ = LOAD_CLINICS_FT.CLINIC_LOCATION_ID   AND LOAD_HOST_TRANSACTIONS_FT.DATE_ON\
+                \ = LOAD_CLINICS_FT.CLINIC_ON    "
+            name: STAGE_HOSTRETAILER_CLINIC_CLINICLOCATION
+            noLinkRefs: []
+      name: STAGE_HOSTRETAILER_CLINIC_CLINICLOCATION
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003906"

@@ -1,0 +1,267 @@
+steps:
+  STAGE_CLINIC_VERSIONS-200003887:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031754
+              stepCounter: "200003887"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031738
+                stepCounter: "200003887"
+              - columnCounter: 2000031753
+                stepCounter: "200003887"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031738
+              stepCounter: "200003887"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031753
+              stepCounter: "200003887"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000031739
+              stepCounter: "200003887"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031740
+              stepCounter: "200003887"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ITEM_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031741
+              stepCounter: "200003887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031742
+              stepCounter: "200003887"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: EVENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031743
+              stepCounter: "200003887"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WHODUNNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031744
+              stepCounter: "200003887"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: OBJECT_CHANGES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031745
+              stepCounter: "200003887"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: OBJECT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031746
+              stepCounter: "200003887"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031747
+              stepCounter: "200003887"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031748
+              stepCounter: "200003887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031755
+              stepCounter: "200003887"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000031738
+                stepCounter: "200003887"
+              - columnCounter: 2000031753
+                stepCounter: "200003887"
+              - columnCounter: 2000031739
+                stepCounter: "200003887"
+              - columnCounter: 2000031740
+                stepCounter: "200003887"
+              - columnCounter: 2000031741
+                stepCounter: "200003887"
+              - columnCounter: 2000031742
+                stepCounter: "200003887"
+              - columnCounter: 2000031743
+                stepCounter: "200003887"
+              - columnCounter: 2000031744
+                stepCounter: "200003887"
+              - columnCounter: 2000031745
+                stepCounter: "200003887"
+              - columnCounter: 2000031746
+                stepCounter: "200003887"
+              - columnCounter: 2000031747
+                stepCounter: "200003887"
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031749
+              stepCounter: "200003887"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031750
+              stepCounter: "200003887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031752
+              stepCounter: "200003887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031751
+              stepCounter: "200003887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINIC_VERSIONS_FT: "200003885"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINIC_VERSIONS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINIC_VERSIONS_FT') }} LOAD_CLINIC_VERSIONS_FT\
+                \  "
+            name: STAGE_CLINIC_VERSIONS
+            noLinkRefs: []
+      name: STAGE_CLINIC_VERSIONS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003887"

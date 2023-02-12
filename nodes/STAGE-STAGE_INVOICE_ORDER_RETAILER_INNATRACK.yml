@@ -1,0 +1,215 @@
+steps:
+  STAGE_INVOICE_ORDER_RETAILER_INNATRACK-200001880:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024702
+              stepCounter: "200001880"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024703
+                stepCounter: "200001880"
+              - columnCounter: 2000024704
+                stepCounter: "200001880"
+              - columnCounter: 2000024705
+                stepCounter: "200001880"
+            name: HK_L_INVOICE_ORDER_RETAILER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024703
+              stepCounter: "200001880"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024710
+                stepCounter: "200001880"
+              - columnCounter: 2000024711
+                stepCounter: "200001880"
+            name: HK_H_RETAILER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024704
+              stepCounter: "200001880"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024706
+                stepCounter: "200001880"
+              - columnCounter: 2000024707
+                stepCounter: "200001880"
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024705
+              stepCounter: "200001880"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024708
+                stepCounter: "200001880"
+              - columnCounter: 2000024709
+                stepCounter: "200001880"
+            name: HK_H_ORDER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024706
+              stepCounter: "200001880"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVOICEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024707
+              stepCounter: "200001880"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024708
+              stepCounter: "200001880"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024709
+              stepCounter: "200001880"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024710
+              stepCounter: "200001880"
+            dataType: CHAR(7)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024711
+              stepCounter: "200001880"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024712
+              stepCounter: "200001880"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024713
+              stepCounter: "200001880"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024714
+              stepCounter: "200001880"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_ARINVM_REC_CX_INNATRACK: "200001871"
+              LOAD_OECOHD_REC_CX_INNATRACK: "200001876"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_ARINVM_REC_CX_INNATRACK
+              - locationName: STAGE
+                nodeName: LOAD_OECOHD_REC_CX_INNATRACK
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_ARINVM_REC_CX_INNATRACK')\
+                \ }} LOAD_ARINVM_REC_CX_INNATRACK  INNER JOIN {{ ref('STAGE','LOAD_OECOHD_REC_CX_INNATRACK')\
+                \ }} LOAD_OECOHD_REC_CX_INNATRACK  ON LOAD_ARINVM_REC_CX_INNATRACK.INVMORDER\
+                \ = LOAD_OECOHD_REC_CX_INNATRACK.COHDORDER  "
+            name: STAGE_INVOICE_ORDER_RETAILER_INNATRACK
+            noLinkRefs: []
+      name: STAGE_INVOICE_ORDER_RETAILER_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001880"

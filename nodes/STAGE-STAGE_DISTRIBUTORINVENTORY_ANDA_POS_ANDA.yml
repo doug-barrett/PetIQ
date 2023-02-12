@@ -1,0 +1,365 @@
+steps:
+  STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA-200001814:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021196
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM_NO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021197
+              stepCounter: "200001814"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRIBUTORPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021198
+              stepCounter: "200001814"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: DISTRIBUTORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'ANDA'"
+          - columnReference:
+              columnCounter: 2000021199
+              stepCounter: "200001814"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_DISTRIBUTOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_ANDA'"
+          - columnReference:
+              columnCounter: 2000021200
+              stepCounter: "200001814"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RUNDATETIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021201
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20M2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021202
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20M1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021203
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20M0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021204
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20AVAILABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021205
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20RESERVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021206
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _20ONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021207
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41M2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021208
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41M1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021209
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41M0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021210
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41AVAILABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021211
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41RESERVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021212
+              stepCounter: "200001814"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: _41ONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021214
+              stepCounter: "200001814"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021215
+              stepCounter: "200001814"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021216
+              stepCounter: "200001814"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021294
+              stepCounter: "200001814"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021207
+                stepCounter: "200001814"
+              - columnCounter: 2000021208
+                stepCounter: "200001814"
+              - columnCounter: 2000021209
+                stepCounter: "200001814"
+              - columnCounter: 2000021210
+                stepCounter: "200001814"
+              - columnCounter: 2000021211
+                stepCounter: "200001814"
+              - columnCounter: 2000021212
+                stepCounter: "200001814"
+            name: DSS_CHANGE_HASH_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE41WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021213
+              stepCounter: "200001814"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021201
+                stepCounter: "200001814"
+              - columnCounter: 2000021202
+                stepCounter: "200001814"
+              - columnCounter: 2000021203
+                stepCounter: "200001814"
+              - columnCounter: 2000021204
+                stepCounter: "200001814"
+              - columnCounter: 2000021205
+                stepCounter: "200001814"
+              - columnCounter: 2000021206
+                stepCounter: "200001814"
+            name: DSS_CHANGE_HASH_DISTRIBUTORINVENTORY_ANDA_LROC_WAREHOUSE20WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021193
+              stepCounter: "200001814"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021194
+                stepCounter: "200001814"
+              - columnCounter: 2000021195
+                stepCounter: "200001814"
+              - columnCounter: 2000021200
+                stepCounter: "200001814"
+            name: HK_L_DISTRIBUTORINVENTORY_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021194
+              stepCounter: "200001814"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021196
+                stepCounter: "200001814"
+              - columnCounter: 2000021197
+                stepCounter: "200001814"
+            name: HK_H_DISTRIBUTORPRODUCT_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021195
+              stepCounter: "200001814"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021198
+                stepCounter: "200001814"
+              - columnCounter: 2000021199
+                stepCounter: "200001814"
+            name: HK_H_DISTRIBUTOR_ANDA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_ANDA: "200001811"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_INVENTORY_POS_ANDA') }} LOAD_INVENTORY_POS_ANDA\
+                \  "
+            name: STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA
+            noLinkRefs: []
+      name: STAGE_DISTRIBUTORINVENTORY_ANDA_POS_ANDA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001814"
