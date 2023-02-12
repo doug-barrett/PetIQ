@@ -1,0 +1,179 @@
+steps:
+  S_RETAILERPRODUCT_PRODUCT_LROC_DEFAULT_SOURCE-200002946:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031659
+              stepCounter: "200002946"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERPRODUCT_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031660
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031661
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: POSFILEDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031662
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION2COMPONENTBOM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031663
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMMASTERDESCRIPTIONREPORTINGDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031664
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRECORGIITEMNUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031665
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031666
+              stepCounter: "200002946"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031667
+              stepCounter: "200002946"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031668
+              stepCounter: "200002946"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031669
+              stepCounter: "200002946"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031670
+              stepCounter: "200002946"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031671
+              stepCounter: "200002946"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERPRODUCT_PRODUCT: "200002944"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERPRODUCT_PRODUCT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERPRODUCT_PRODUCT')\
+                \ }} STAGE_RETAILERPRODUCT_PRODUCT  "
+            name: S_RETAILERPRODUCT_PRODUCT_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERPRODUCT_PRODUCT_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002946"

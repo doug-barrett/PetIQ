@@ -1,0 +1,212 @@
+steps:
+  S_RETAILERSALES_MENARDS_LROC_WEEKLY-200001716:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024032
+              stepCounter: "200001716"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSALES_MENARDS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024033
+              stepCounter: "200001716"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: METRICS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024035
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024036
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTOTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024037
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTYLYVARIANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024038
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTYLYVARIANCE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024039
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024040
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTOTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024041
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTYLYVARIANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024042
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTYLYVARIANCE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024043
+              stepCounter: "200001716"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024044
+              stepCounter: "200001716"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024045
+              stepCounter: "200001716"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024046
+              stepCounter: "200001716"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024047
+              stepCounter: "200001716"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024048
+              stepCounter: "200001716"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSALES_MENARDS: "200001712"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSALES_MENARDS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERSALES_MENARDS') }}\
+                \ STAGE_RETAILERSALES_MENARDS  "
+            name: S_RETAILERSALES_MENARDS_LROC_WEEKLY
+            noLinkRefs: []
+      name: S_RETAILERSALES_MENARDS_LROC_WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001716"

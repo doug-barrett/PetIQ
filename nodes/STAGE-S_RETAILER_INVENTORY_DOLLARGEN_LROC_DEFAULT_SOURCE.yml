@@ -1,0 +1,190 @@
+steps:
+  S_RETAILER_INVENTORY_DOLLARGEN_LROC_DEFAULT_SOURCE-200002736:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030896
+              stepCounter: "200002736"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILER_INVENTORY_DOLLARGEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030897
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_DCINV_EXTRETAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030898
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_STOREINV_EXTRETAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030899
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_TOTALINV_EXTRETAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030900
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_DCINV_UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030901
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_STOREINV_UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030902
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_STOREINV_INTRANSITUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030903
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EOP_TOTALINV_UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030904
+              stepCounter: "200002736"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030905
+              stepCounter: "200002736"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030906
+              stepCounter: "200002736"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030907
+              stepCounter: "200002736"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030908
+              stepCounter: "200002736"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030909
+              stepCounter: "200002736"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILER_INVENTORY_DOLLARGEN: "200002731"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILER_INVENTORY_DOLLARGEN
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILER_INVENTORY_DOLLARGEN')
+                }} STAGE_RETAILER_INVENTORY_DOLLARGEN
+            name: S_RETAILER_INVENTORY_DOLLARGEN_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILER_INVENTORY_DOLLARGEN_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002736"

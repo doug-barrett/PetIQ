@@ -1,0 +1,135 @@
+steps:
+  S_PRODUCT_ITEM_INNATRACK_BOK_INFO-200001905:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028306
+              stepCounter: "200001905"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_PRODUCT_ITEM_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028307
+              stepCounter: "200001905"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PUPCPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028308
+              stepCounter: "200001905"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PUPCUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028309
+              stepCounter: "200001905"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028310
+              stepCounter: "200001905"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028311
+              stepCounter: "200001905"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028312
+              stepCounter: "200001905"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028313
+              stepCounter: "200001905"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028314
+              stepCounter: "200001905"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_PRODUCT_ITEM_INNATRACK: "200001887"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_PRODUCT_ITEM_INNATRACK
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_PRODUCT_ITEM_INNATRACK') }}
+                STAGE_PRODUCT_ITEM_INNATRACK
+            name: S_PRODUCT_ITEM_INNATRACK_BOK_INFO
+            noLinkRefs: []
+      name: S_PRODUCT_ITEM_INNATRACK_BOK_INFO
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001905"

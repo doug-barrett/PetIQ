@@ -1,0 +1,109 @@
+steps:
+  S_PRODUCT_RETAILERSTORE_SALES-200003099:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031717
+              stepCounter: "200003099"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSTOREPRODUCTSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031718
+              stepCounter: "200003099"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTUNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031719
+              stepCounter: "200003099"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COSTOFPRODUCTSSOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031720
+              stepCounter: "200003099"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031723
+              stepCounter: "200003099"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031722
+              stepCounter: "200003099"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031721
+              stepCounter: "200003099"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: S_PRODUCT_RETAILERSTORE_SALES
+            noLinkRefs: []
+      name: S_PRODUCT_RETAILERSTORE_SALES
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003099"

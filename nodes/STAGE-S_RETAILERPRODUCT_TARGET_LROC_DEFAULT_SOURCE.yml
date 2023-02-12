@@ -1,0 +1,146 @@
+steps:
+  S_RETAILERPRODUCT_TARGET_LROC_DEFAULT_SOURCE-200002573:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030358
+              stepCounter: "200002573"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERPRODUCT_TARGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030359
+              stepCounter: "200002573"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030360
+              stepCounter: "200002573"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030361
+              stepCounter: "200002573"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MFG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030362
+              stepCounter: "200002573"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030363
+              stepCounter: "200002573"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030364
+              stepCounter: "200002573"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030365
+              stepCounter: "200002573"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030366
+              stepCounter: "200002573"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030367
+              stepCounter: "200002573"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERPRODUCT_TARGET: "200002565"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERPRODUCT_TARGET
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERPRODUCT_TARGET')\
+                \ }} STAGE_RETAILERPRODUCT_TARGET  "
+            name: S_RETAILERPRODUCT_TARGET_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERPRODUCT_TARGET_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002573"

@@ -1,0 +1,157 @@
+steps:
+  S_RETAILERSTORE_WALMART_LROC_DEFAULT_SOURCE-200002648:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030309
+              stepCounter: "200002648"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERSTORE_WALMART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030310
+              stepCounter: "200002648"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STORETYPEDESCR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030311
+              stepCounter: "200002648"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030312
+              stepCounter: "200002648"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030313
+              stepCounter: "200002648"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030314
+              stepCounter: "200002648"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030315
+              stepCounter: "200002648"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030316
+              stepCounter: "200002648"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030317
+              stepCounter: "200002648"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030318
+              stepCounter: "200002648"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030319
+              stepCounter: "200002648"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSTORE_WALMART: "200002641"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSTORE_WALMART
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILERSTORE_WALMART') }}
+                STAGE_RETAILERSTORE_WALMART
+            name: S_RETAILERSTORE_WALMART_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERSTORE_WALMART_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002648"

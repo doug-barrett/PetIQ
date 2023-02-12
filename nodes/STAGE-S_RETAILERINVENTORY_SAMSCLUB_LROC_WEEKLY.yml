@@ -1,0 +1,135 @@
+steps:
+  S_RETAILERINVENTORY_SAMSCLUB_LROC_WEEKLY-200001795:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024304
+              stepCounter: "200001795"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERINVENTORY_SAMSCLUB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024305
+              stepCounter: "200001795"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTINVENTORYUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024306
+              stepCounter: "200001795"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTONORDERUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024307
+              stepCounter: "200001795"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024308
+              stepCounter: "200001795"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024309
+              stepCounter: "200001795"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024310
+              stepCounter: "200001795"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024311
+              stepCounter: "200001795"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024312
+              stepCounter: "200001795"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERINVENTORY_SAMSCLUB: "200001790"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERINVENTORY_SAMSCLUB
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILERINVENTORY_SAMSCLUB')
+                }} STAGE_RETAILERINVENTORY_SAMSCLUB
+            name: S_RETAILERINVENTORY_SAMSCLUB_LROC_WEEKLY
+            noLinkRefs: []
+      name: S_RETAILERINVENTORY_SAMSCLUB_LROC_WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001795"

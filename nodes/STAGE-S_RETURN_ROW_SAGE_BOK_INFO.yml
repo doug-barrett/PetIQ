@@ -1,0 +1,134 @@
+steps:
+  S_RETURN_ROW_SAGE_BOK_INFO-200002020:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026276
+              stepCounter: "200002020"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETURN_ROW_SAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026277
+              stepCounter: "200002020"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SRHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026278
+              stepCounter: "200002020"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SRDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026279
+              stepCounter: "200002020"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026280
+              stepCounter: "200002020"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026281
+              stepCounter: "200002020"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026282
+              stepCounter: "200002020"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026283
+              stepCounter: "200002020"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026284
+              stepCounter: "200002020"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETURN_ROW_SAGE: "200001991"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETURN_ROW_SAGE
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETURN_ROW_SAGE') }} STAGE_RETURN_ROW_SAGE
+            name: S_RETURN_ROW_SAGE_BOK_INFO
+            noLinkRefs: []
+      name: S_RETURN_ROW_SAGE_BOK_INFO
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002020"

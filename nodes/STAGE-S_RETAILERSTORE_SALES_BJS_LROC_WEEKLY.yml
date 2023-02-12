@@ -1,0 +1,146 @@
+steps:
+  S_RETAILERSTORE_SALES_BJS_LROC_WEEKLY-200001693:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031633
+              stepCounter: "200001693"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSTORE_SALES_BJS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031634
+              stepCounter: "200001693"
+            dataType: VARCHAR(16)
+            defaultValue: ""
+            description: ""
+            name: BJS_FISCAL_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031635
+              stepCounter: "200001693"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALES_UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031636
+              stepCounter: "200001693"
+            dataType: NUMBER(5,2)
+            defaultValue: ""
+            description: ""
+            name: SALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031640
+              stepCounter: "200001693"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031641
+              stepCounter: "200001693"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031642
+              stepCounter: "200001693"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031643
+              stepCounter: "200001693"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031644
+              stepCounter: "200001693"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031645
+              stepCounter: "200001693"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSTORE_SALES_BJS: "200001687"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSTORE_SALES_BJS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERSTORE_SALES_BJS')\
+                \ }} STAGE_RETAILERSTORE_SALES_BJS  "
+            name: S_RETAILERSTORE_SALES_BJS_LROC_WEEKLY
+            noLinkRefs: []
+      name: S_RETAILERSTORE_SALES_BJS_LROC_WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001693"

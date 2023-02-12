@@ -1,0 +1,168 @@
+steps:
+  S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE-200002737:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030910
+              stepCounter: "200002737"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILER_SALES_DOLLARGEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030911
+              stepCounter: "200002737"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030912
+              stepCounter: "200002737"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030913
+              stepCounter: "200002737"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELLTHROUGHPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030914
+              stepCounter: "200002737"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FISCAL_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030915
+              stepCounter: "200002737"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FISCAL_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030916
+              stepCounter: "200002737"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030917
+              stepCounter: "200002737"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030918
+              stepCounter: "200002737"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030919
+              stepCounter: "200002737"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030920
+              stepCounter: "200002737"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030921
+              stepCounter: "200002737"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILER_SALES_DOLLARGEN: "200002732"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILER_SALES_DOLLARGEN
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILER_SALES_DOLLARGEN')
+                }} STAGE_RETAILER_SALES_DOLLARGEN
+            name: S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002737"

@@ -1,0 +1,134 @@
+steps:
+  S_RETAILERPRODUCT_BJS_LROC_INFO-200001691:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031612
+              stepCounter: "200001691"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERPRODUCT_BJS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031613
+              stepCounter: "200001691"
+            dataType: VARCHAR(32)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031614
+              stepCounter: "200001691"
+            dataType: NUMBER(12)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031615
+              stepCounter: "200001691"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031616
+              stepCounter: "200001691"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031617
+              stepCounter: "200001691"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031618
+              stepCounter: "200001691"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031619
+              stepCounter: "200001691"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031620
+              stepCounter: "200001691"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERPRODUCT_BJS: "200001684"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERPRODUCT_BJS
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILERPRODUCT_BJS') }} STAGE_RETAILERPRODUCT_BJS
+            name: S_RETAILERPRODUCT_BJS_LROC_INFO
+            noLinkRefs: []
+      name: S_RETAILERPRODUCT_BJS_LROC_INFO
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001691"

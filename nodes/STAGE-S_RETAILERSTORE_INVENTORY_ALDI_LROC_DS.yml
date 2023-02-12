@@ -1,0 +1,146 @@
+steps:
+  S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS-200002904:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031535
+              stepCounter: "200002904"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSTORE_INVENTORY_ALDI
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031536
+              stepCounter: "200002904"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: STORESTOCKCASES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031537
+              stepCounter: "200002904"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSESTOCKCASES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031538
+              stepCounter: "200002904"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: TOTALDIVISIONSTOCKCASES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031539
+              stepCounter: "200002904"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031540
+              stepCounter: "200002904"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031541
+              stepCounter: "200002904"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031542
+              stepCounter: "200002904"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031543
+              stepCounter: "200002904"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031544
+              stepCounter: "200002904"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSTORE_INVENTORY_ALDI: "200002791"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSTORE_INVENTORY_ALDI
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILERSTORE_INVENTORY_ALDI')
+                }} STAGE_RETAILERSTORE_INVENTORY_ALDI
+            name: S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS
+            noLinkRefs: []
+      name: S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002904"

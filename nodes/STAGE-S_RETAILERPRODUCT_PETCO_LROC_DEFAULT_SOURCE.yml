@@ -1,0 +1,179 @@
+steps:
+  S_RETAILERPRODUCT_PETCO_LROC_DEFAULT_SOURCE-200002687:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030757
+              stepCounter: "200002687"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERPRODUCT_PETCO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030758
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MFR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030759
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUPPLIERSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030760
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030761
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUBCLASS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030762
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUBCLASSDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030763
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030764
+              stepCounter: "200002687"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030765
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030766
+              stepCounter: "200002687"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030767
+              stepCounter: "200002687"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030768
+              stepCounter: "200002687"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030769
+              stepCounter: "200002687"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERPRODUCT_PETCO: "200002679"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERPRODUCT_PETCO
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERPRODUCT_PETCO') }}\
+                \ STAGE_RETAILERPRODUCT_PETCO  "
+            name: S_RETAILERPRODUCT_PETCO_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERPRODUCT_PETCO_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002687"

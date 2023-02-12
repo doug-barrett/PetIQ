@@ -1,0 +1,245 @@
+steps:
+  S_RETAILERSALES_AMAZON_LROC_WEEKLY-200001771:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024206
+              stepCounter: "200001771"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSALES_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024207
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024208
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUEPERCENTOFTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024209
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUEPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024210
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUELASTYEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024211
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024212
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSPERCENTOFTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024213
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024214
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSLASTYEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024215
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERRETURNS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024216
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FREEREPLACEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024217
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AVERAGESALESPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024218
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AVERAGESALESPRICEPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024219
+              stepCounter: "200001771"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024220
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024221
+              stepCounter: "200001771"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024222
+              stepCounter: "200001771"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024223
+              stepCounter: "200001771"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024224
+              stepCounter: "200001771"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSALES_AMAZON: "200001765"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSALES_AMAZON
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERSALES_AMAZON') }}\
+                \ STAGE_RETAILERSALES_AMAZON  "
+            name: S_RETAILERSALES_AMAZON_LROC_WEEKLY
+            noLinkRefs: []
+      name: S_RETAILERSALES_AMAZON_LROC_WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001771"

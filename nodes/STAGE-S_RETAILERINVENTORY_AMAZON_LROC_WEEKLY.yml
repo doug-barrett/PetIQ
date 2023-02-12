@@ -1,0 +1,267 @@
+steps:
+  S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY-200001768:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024169
+              stepCounter: "200001768"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERINVENTORY_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024170
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: NETRECEIVED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024171
+              stepCounter: "200001768"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NETRECEIVEDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024172
+              stepCounter: "200001768"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SELLTHROUGHRATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024173
+              stepCounter: "200001768"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OPENPURCHASEORDERQUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024174
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024175
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDINVENTORYTRAILING30DAYAVERAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024176
+              stepCounter: "200001768"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024177
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: UNSELLABLEONHANDINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024178
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: UNSELLABLEONHANDINVENTORYTRAILING30DAYAVERAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024179
+              stepCounter: "200001768"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNSELLABLEONHANDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024180
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: AGED90DAYSSELLABLEINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024181
+              stepCounter: "200001768"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: AGED90DAYSSELLABLEINVENTORYTRAILING30DAYAVERAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024182
+              stepCounter: "200001768"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: AGED90DAYSSELLABLEUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024183
+              stepCounter: "200001768"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REPLENISHMENTCATEGORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024184
+              stepCounter: "200001768"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024185
+              stepCounter: "200001768"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024186
+              stepCounter: "200001768"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024187
+              stepCounter: "200001768"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024188
+              stepCounter: "200001768"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024189
+              stepCounter: "200001768"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERINVENTORY_AMAZON: "200001762"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERINVENTORY_AMAZON
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERINVENTORY_AMAZON')\
+                \ }} STAGE_RETAILERINVENTORY_AMAZON  "
+            name: S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY
+            noLinkRefs: []
+      name: S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200001768"

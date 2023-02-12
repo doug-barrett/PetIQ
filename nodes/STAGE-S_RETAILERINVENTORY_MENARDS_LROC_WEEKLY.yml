@@ -1,0 +1,124 @@
+steps:
+  S_RETAILERINVENTORY_MENARDS_LROC_WEEKLY-200003132:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031729
+              stepCounter: "200003132"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERINVENTORY_MENARDS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031730
+              stepCounter: "200003132"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTUNITSONHANDQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031731
+              stepCounter: "200003132"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031732
+              stepCounter: "200003132"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031733
+              stepCounter: "200003132"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031736
+              stepCounter: "200003132"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031735
+              stepCounter: "200003132"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031734
+              stepCounter: "200003132"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERINVENTORY_MENARDS: "200003129"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERINVENTORY_MENARDS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERINVENTORY_MENARDS')\
+                \ }} STAGE_RETAILERINVENTORY_MENARDS    "
+            name: S_RETAILERINVENTORY_MENARDS_LROC_WEEKLY
+            noLinkRefs: []
+      name: S_RETAILERINVENTORY_MENARDS_LROC_WEEKLY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003132"

@@ -1,0 +1,237 @@
+steps:
+  S_WORKER_MROC_INFO_CURRENT-200004057:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021884
+              stepCounter: "200004057"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_WORKER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021885
+              stepCounter: "200004057"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSOCIATE_OID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021886
+              stepCounter: "200004057"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_HIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021887
+              stepCounter: "200004057"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: REHIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021888
+              stepCounter: "200004057"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ADJUSTED_SERVICE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021889
+              stepCounter: "200004057"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021890
+              stepCounter: "200004057"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021891
+              stepCounter: "200004057"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ARPA_TERMINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021892
+              stepCounter: "200004057"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: POSITION_BUDGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021893
+              stepCounter: "200004057"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ROLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021894
+              stepCounter: "200004057"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PLANNER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021895
+              stepCounter: "200004057"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021896
+              stepCounter: "200004057"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021897
+              stepCounter: "200004057"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021898
+              stepCounter: "200004057"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021899
+              stepCounter: "200004057"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021900
+              stepCounter: "200004057"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021901
+              stepCounter: "200004057"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021902
+              stepCounter: "200004057"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_WORKER_MROC_INFO_CURRENT
+            noLinkRefs: []
+      name: S_WORKER_MROC_INFO_CURRENT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200004057"

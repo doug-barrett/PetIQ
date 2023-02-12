@@ -1,0 +1,289 @@
+steps:
+  S_RETAILER_SALES_MEIJER_LROC_DEFAULT_SOURCE-200002530:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029977
+              stepCounter: "200002530"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILER_SALES_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029978
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MDQPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029979
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MDQQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029980
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INSTOCKPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029981
+              stepCounter: "200002530"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: AVERAGEPRIMARYSELLUNITCOST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029982
+              stepCounter: "200002530"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: AVGRETAILWKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029983
+              stepCounter: "200002530"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SALESAVGDOLLARWKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029984
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYMRW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029985
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYMOSTRECENT2NDWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029986
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYMOSTRECENT3RDWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029987
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYMOSTRECENT4THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029988
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTY14WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029989
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYMOSTRECENT58WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029990
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYMOSTRECENT912WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029991
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: AVGSALESQTY4WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029992
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: AVGSALESQTY12WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029993
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTYYTD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029995
+              stepCounter: "200002530"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029996
+              stepCounter: "200002530"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029997
+              stepCounter: "200002530"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029998
+              stepCounter: "200002530"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029999
+              stepCounter: "200002530"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030000
+              stepCounter: "200002530"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILER_SALES_MEIJER: "200002521"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILER_SALES_MEIJER
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILER_SALES_MEIJER') }}\
+                \ STAGE_RETAILER_SALES_MEIJER  "
+            name: S_RETAILER_SALES_MEIJER_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILER_SALES_MEIJER_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002530"

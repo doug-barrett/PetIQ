@@ -1,0 +1,120 @@
+steps:
+  S_PRODUCT_RETAILERINVENTORY-200003229:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031826
+              stepCounter: "200003229"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_PRODUCT_RETAILERINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031827
+              stepCounter: "200003229"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TOTALINVENTORYUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031828
+              stepCounter: "200003229"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_PRODUCT_RETAILERINVENTORY_LROC_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031829
+              stepCounter: "200003229"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031830
+              stepCounter: "200003229"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031833
+              stepCounter: "200003229"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031832
+              stepCounter: "200003229"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031831
+              stepCounter: "200003229"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: S_PRODUCT_RETAILERINVENTORY
+            noLinkRefs: []
+      name: S_PRODUCT_RETAILERINVENTORY
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003229"

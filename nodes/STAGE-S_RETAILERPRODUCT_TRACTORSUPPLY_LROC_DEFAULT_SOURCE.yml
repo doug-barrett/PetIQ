@@ -1,0 +1,168 @@
+steps:
+  S_RETAILERPRODUCT_TRACTORSUPPLY_LROC_DEFAULT_SOURCE-200002607:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030650
+              stepCounter: "200002607"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERPRODUCT_TRACTORSUPPLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030651
+              stepCounter: "200002607"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VENDORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030652
+              stepCounter: "200002607"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030653
+              stepCounter: "200002607"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CATEGORYFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030654
+              stepCounter: "200002607"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORPARTNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030655
+              stepCounter: "200002607"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ARTICLEDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030656
+              stepCounter: "200002607"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030657
+              stepCounter: "200002607"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030658
+              stepCounter: "200002607"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030659
+              stepCounter: "200002607"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030660
+              stepCounter: "200002607"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030661
+              stepCounter: "200002607"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERPRODUCT_TRACTORSUPPLY: "200002600"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERPRODUCT_TRACTORSUPPLY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_RETAILERPRODUCT_TRACTORSUPPLY')\
+                \ }} STAGE_RETAILERPRODUCT_TRACTORSUPPLY  "
+            name: S_RETAILERPRODUCT_TRACTORSUPPLY_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERPRODUCT_TRACTORSUPPLY_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002607"

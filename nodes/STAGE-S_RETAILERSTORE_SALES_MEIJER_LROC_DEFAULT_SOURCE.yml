@@ -1,0 +1,157 @@
+steps:
+  S_RETAILERSTORE_SALES_MEIJER_LROC_DEFAULT_SOURCE-200002534:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030031
+              stepCounter: "200002534"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSTORE_SALES_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030032
+              stepCounter: "200002534"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030033
+              stepCounter: "200002534"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030034
+              stepCounter: "200002534"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: DMDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030035
+              stepCounter: "200002534"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DMPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030036
+              stepCounter: "200002534"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030037
+              stepCounter: "200002534"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030038
+              stepCounter: "200002534"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030039
+              stepCounter: "200002534"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030040
+              stepCounter: "200002534"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030041
+              stepCounter: "200002534"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSTORE_SALES_MEIJER: "200002525"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSTORE_SALES_MEIJER
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILERSTORE_SALES_MEIJER')
+                }} STAGE_RETAILERSTORE_SALES_MEIJER
+            name: S_RETAILERSTORE_SALES_MEIJER_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERSTORE_SALES_MEIJER_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002534"

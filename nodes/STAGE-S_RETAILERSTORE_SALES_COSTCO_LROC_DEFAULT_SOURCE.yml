@@ -1,0 +1,157 @@
+steps:
+  S_RETAILERSTORE_SALES_COSTCO_LROC_DEFAULT_SOURCE-200002495:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029571
+              stepCounter: "200002495"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSTORE_SALES_COSTCO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029572
+              stepCounter: "200002495"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029573
+              stepCounter: "200002495"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DOLLARSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029574
+              stepCounter: "200002495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REFUNDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029575
+              stepCounter: "200002495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REFUNDDOLLARS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029576
+              stepCounter: "200002495"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029577
+              stepCounter: "200002495"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029578
+              stepCounter: "200002495"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029579
+              stepCounter: "200002495"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029580
+              stepCounter: "200002495"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029581
+              stepCounter: "200002495"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_RETAILERSTORE_SALES_COSTCO: "200002488"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_RETAILERSTORE_SALES_COSTCO
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_RETAILERSTORE_SALES_COSTCO')
+                }} STAGE_RETAILERSTORE_SALES_COSTCO
+            name: S_RETAILERSTORE_SALES_COSTCO_LROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_RETAILERSTORE_SALES_COSTCO_LROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002495"
