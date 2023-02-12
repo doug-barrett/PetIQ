@@ -1,0 +1,312 @@
+steps:
+  STAGE_RETAILERSALES_MENARDS-200001712:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020906
+              stepCounter: "200001712"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020907
+                stepCounter: "200001712"
+              - columnCounter: 2000020908
+                stepCounter: "200001712"
+              - columnCounter: 2000020913
+                stepCounter: "200001712"
+            name: HK_L_RETAILERSALES_MENARDS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020907
+              stepCounter: "200001712"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020911
+                stepCounter: "200001712"
+              - columnCounter: 2000020912
+                stepCounter: "200001712"
+            name: HK_H_RETAILERPRODUCT_MENARDS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020908
+              stepCounter: "200001712"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020909
+                stepCounter: "200001712"
+              - columnCounter: 2000020910
+                stepCounter: "200001712"
+            name: HK_H_RETAILER_MENARDS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020909
+              stepCounter: "200001712"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'MENARDS'"
+          - columnReference:
+              columnCounter: 2000020910
+              stepCounter: "200001712"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MENARDS'"
+          - columnReference:
+              columnCounter: 2000020911
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020912
+              stepCounter: "200001712"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MENARDS'"
+          - columnReference:
+              columnCounter: 2000020913
+              stepCounter: "200001712"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020914
+              stepCounter: "200001712"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: METRICS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020916
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020917
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTOTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020918
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTYLYVARIANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020919
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTYLYVARIANCE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020920
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020921
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTOTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020922
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTYLYVARIANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020923
+              stepCounter: "200001712"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTYLYVARIANCE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020924
+              stepCounter: "200001712"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020914
+                stepCounter: "200001712"
+              - columnCounter: 2000020916
+                stepCounter: "200001712"
+              - columnCounter: 2000020917
+                stepCounter: "200001712"
+              - columnCounter: 2000020918
+                stepCounter: "200001712"
+              - columnCounter: 2000020919
+                stepCounter: "200001712"
+              - columnCounter: 2000020920
+                stepCounter: "200001712"
+              - columnCounter: 2000020921
+                stepCounter: "200001712"
+              - columnCounter: 2000020922
+                stepCounter: "200001712"
+              - columnCounter: 2000020923
+                stepCounter: "200001712"
+            name: DSS_CHANGE_HASH_RETAILERSALES_MENARDS_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020925
+              stepCounter: "200001712"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020926
+              stepCounter: "200001712"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020927
+              stepCounter: "200001712"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALESINVENTORY_POS_MENARDS: "200001709"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALESINVENTORY_POS_MENARDS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALESINVENTORY_POS_MENARDS')\
+                \ }} LOAD_SALESINVENTORY_POS_MENARDS  "
+            name: STAGE_RETAILERSALES_MENARDS
+            noLinkRefs: []
+      name: STAGE_RETAILERSALES_MENARDS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001712"

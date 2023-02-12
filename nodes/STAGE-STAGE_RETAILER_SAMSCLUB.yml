@@ -1,0 +1,110 @@
+steps:
+  STAGE_RETAILER_SAMSCLUB-200001789:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021144
+              stepCounter: "200001789"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021145
+                stepCounter: "200001789"
+              - columnCounter: 2000021146
+                stepCounter: "200001789"
+            name: HK_H_RETAILER_SAMSCLUB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021145
+              stepCounter: "200001789"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAMSCLUB'"
+          - columnReference:
+              columnCounter: 2000021146
+              stepCounter: "200001789"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_SAMSCLUB'"
+          - columnReference:
+              columnCounter: 2000021147
+              stepCounter: "200001789"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021148
+              stepCounter: "200001789"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021149
+              stepCounter: "200001789"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_DATA_POS_SAMSCLUB: "200001788"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_DATA_POS_SAMSCLUB
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_DATA_POS_SAMSCLUB') }} LOAD_DATA_POS_SAMSCLUB\
+                \  "
+            name: STAGE_RETAILER_SAMSCLUB
+            noLinkRefs: []
+      name: STAGE_RETAILER_SAMSCLUB
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001789"

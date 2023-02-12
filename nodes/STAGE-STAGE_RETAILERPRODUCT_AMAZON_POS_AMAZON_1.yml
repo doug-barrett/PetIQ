@@ -1,0 +1,137 @@
+steps:
+  STAGE_RETAILERPRODUCT_AMAZON_POS_AMAZON_1-200001764:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021069
+              stepCounter: "200001764"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021070
+                stepCounter: "200001764"
+              - columnCounter: 2000021071
+                stepCounter: "200001764"
+            name: HK_H_RETAILERPRODUCT_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021070
+              stepCounter: "200001764"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ASIN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021071
+              stepCounter: "200001764"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_AMAZON'"
+          - columnReference:
+              columnCounter: 2000021072
+              stepCounter: "200001764"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTTITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021073
+              stepCounter: "200001764"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021072
+                stepCounter: "200001764"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_AMAZON_LROC_INVENTORYHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021074
+              stepCounter: "200001764"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021075
+              stepCounter: "200001764"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021076
+              stepCounter: "200001764"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_AMAZON_INVENTORY: "200001760"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_AMAZON_INVENTORY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_AMAZON_INVENTORY') }} LOAD_AMAZON_INVENTORY\
+                \  "
+            name: STAGE_RETAILERPRODUCT_AMAZON_POS_AMAZON_1
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_AMAZON_POS_AMAZON_1
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001764"

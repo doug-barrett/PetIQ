@@ -1,0 +1,235 @@
+steps:
+  STAGE_PRODUCT_RETAILERINVENTORY_AMAZON-200003126:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028480
+              stepCounter: "200003126"
+            dataType: TEXT(255)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028481
+              stepCounter: "200003126"
+            dataType: TEXT(17)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028482
+              stepCounter: "200003126"
+            dataType: TEXT(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028483
+              stepCounter: "200003126"
+            dataType: TEXT(5)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PETIQ
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028493
+              stepCounter: "200003126"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SUM(S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY.SELLABLEONHANDUNITS)
+          - columnReference:
+              columnCounter: 2000028490
+              stepCounter: "200003126"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028491
+              stepCounter: "200003126"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028492
+              stepCounter: "200003126"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028486
+              stepCounter: "200003126"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028493
+                stepCounter: "200003126"
+            name: DSS_CHANGE_HASH_PRODUCT_RETAILERINVENTORY_LROC_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028477
+              stepCounter: "200003126"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028478
+                stepCounter: "200003126"
+              - columnCounter: 2000028479
+                stepCounter: "200003126"
+              - columnCounter: 2000028490
+                stepCounter: "200003126"
+            name: HK_L_PRODUCT_RETAILERINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028478
+              stepCounter: "200003126"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028482
+                stepCounter: "200003126"
+              - columnCounter: 2000028483
+                stepCounter: "200003126"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028479
+              stepCounter: "200003126"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028480
+                stepCounter: "200003126"
+              - columnCounter: 2000028481
+                stepCounter: "200003126"
+            name: HK_H_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028489
+              stepCounter: "200003126"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              L_RETAILERPRODUCT_PRODUCT: "200002960"
+              H_PRODUCT: "200001734"
+              H_RETAILERPRODUCT: "200001851"
+              L_RETAILER_INVENTORY: "200001861"
+              S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY: "200001768"
+              H_RETAILER: "200001845"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: L_RETAILERPRODUCT_PRODUCT
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: H_RETAILERPRODUCT
+              - locationName: STAGE
+                nodeName: L_RETAILER_INVENTORY
+              - locationName: STAGE
+                nodeName: S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY
+              - locationName: STAGE
+                nodeName: H_RETAILER
+            join:
+              joinCondition: "FROM {{ ref('STAGE','L_RETAILERPRODUCT_PRODUCT') }}\
+                \ L_RETAILERPRODUCT_PRODUCT  INNER JOIN {{ ref('STAGE','H_PRODUCT')\
+                \ }} H_PRODUCT  ON L_RETAILERPRODUCT_PRODUCT.HK_H_PRODUCT = H_PRODUCT.HK_H_PRODUCT\
+                \  INNER JOIN {{ ref('STAGE','H_RETAILERPRODUCT') }} H_RETAILERPRODUCT\
+                \  ON L_RETAILERPRODUCT_PRODUCT.HK_H_RETAILERPRODUCT = H_RETAILERPRODUCT.HK_H_RETAILERPRODUCT\
+                \  INNER JOIN {{ ref('STAGE','L_RETAILER_INVENTORY') }} L_RETAILER_INVENTORY\
+                \  ON L_RETAILER_INVENTORY.HK_H_RETAILERPRODUCT = H_RETAILERPRODUCT.HK_H_RETAILERPRODUCT\
+                \  INNER JOIN {{ ref('STAGE','S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY')\
+                \ }} S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY  ON L_RETAILER_INVENTORY.HK_L_RETAILERINVENTORY\
+                \ = S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY.HK_L_RETAILERINVENTORY_AMAZON\
+                \  INNER JOIN {{ ref('STAGE','H_RETAILER') }} H_RETAILER  ON L_RETAILER_INVENTORY.HK_H_RETAILER\
+                \ = H_RETAILER.HK_H_RETAILER  GROUP BY H_RETAILER.RETAILERID   , H_RETAILER.BKCC\
+                \          , H_PRODUCT.PRODUCTID   , H_PRODUCT.BKCC  , L_RETAILER_INVENTORY.INVENTORYDATE\
+                \   , L_RETAILER_INVENTORY.DSS_RECORD_SOURCE   , L_RETAILER_INVENTORY.DSS_LOAD_DATE "
+            name: STAGE_PRODUCT_RETAILERINVENTORY_AMAZON
+            noLinkRefs: []
+      name: STAGE_PRODUCT_RETAILERINVENTORY_AMAZON
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003126"

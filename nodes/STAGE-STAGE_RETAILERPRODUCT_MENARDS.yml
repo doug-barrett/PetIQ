@@ -1,0 +1,150 @@
+steps:
+  STAGE_RETAILERPRODUCT_MENARDS-200001711:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020897
+              stepCounter: "200001711"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020898
+                stepCounter: "200001711"
+              - columnCounter: 2000020899
+                stepCounter: "200001711"
+            name: HK_H_RETAILERPRODUCT_MENARDS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020898
+              stepCounter: "200001711"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020899
+              stepCounter: "200001711"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MENARDS'"
+          - columnReference:
+              columnCounter: 2000020900
+              stepCounter: "200001711"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020901
+              stepCounter: "200001711"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020902
+              stepCounter: "200001711"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020900
+                stepCounter: "200001711"
+              - columnCounter: 2000020901
+                stepCounter: "200001711"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_MENARDS_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020903
+              stepCounter: "200001711"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020904
+              stepCounter: "200001711"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020905
+              stepCounter: "200001711"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALESINVENTORY_POS_MENARDS: "200001709"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALESINVENTORY_POS_MENARDS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALESINVENTORY_POS_MENARDS')\
+                \ }} LOAD_SALESINVENTORY_POS_MENARDS  "
+            name: STAGE_RETAILERPRODUCT_MENARDS
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_MENARDS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001711"

@@ -1,0 +1,196 @@
+steps:
+  STAGE_PET_METRICS-200003632:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029885
+              stepCounter: "200003632"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029893
+              stepCounter: "200003632"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029889
+              stepCounter: "200003632"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APPLIED METRIC RULES FOR PETS'"
+          - columnReference:
+              columnCounter: 2000029890
+              stepCounter: "200003632"
+            dataType: NUMERIC(6,2)
+            defaultValue: ""
+            description: ""
+            name: WEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029892
+              stepCounter: "200003632"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE                  WHEN S_PET_LROC_INFO_CURRENT.WEIGHT\
+                  \ <= 10.999  THEN 'XS'                  WHEN S_PET_LROC_INFO_CURRENT.WEIGHT\
+                  \ BETWEEN 11                  AND 24.999    THEN 'S'           \
+                  \       WHEN S_PET_LROC_INFO_CURRENT.WEIGHT BETWEEN 25         \
+                  \         AND 49.999     THEN 'M'                  WHEN S_PET_LROC_INFO_CURRENT.WEIGHT\
+                  \ BETWEEN 50                  AND 99.999      THEN 'L'         \
+                  \         WHEN S_PET_LROC_INFO_CURRENT.WEIGHT >= 100     THEN 'XL'\
+                  \                    ELSE NULL  END        "
+          - columnReference:
+              columnCounter: 2000029891
+              stepCounter: "200003632"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SPECIES_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030088
+              stepCounter: "200003632"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: (DATEDIFF(DAY, S_PET_LROC_INFO_CURRENT.BIRTH, CURRENT_DATE())/365)
+          - columnReference:
+              columnCounter: 2000030087
+              stepCounter: "200003632"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BREED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029894
+              stepCounter: "200003632"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029893
+                stepCounter: "200003632"
+              - columnCounter: 2000029885
+                stepCounter: "200003632"
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029895
+              stepCounter: "200003632"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000029890
+                stepCounter: "200003632"
+              - columnCounter: 2000029891
+                stepCounter: "200003632"
+              - columnCounter: 2000029892
+                stepCounter: "200003632"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029887
+              stepCounter: "200003632"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029886
+              stepCounter: "200003632"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              H_PET: "200001557"
+              S_PET_LROC_INFO_CURRENT: "200003037"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_PET
+              - locationName: STAGE
+                nodeName: S_PET_LROC_INFO_CURRENT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','H_PET') }} H_PET  JOIN {{ ref('STAGE','S_PET_LROC_INFO_CURRENT')\
+                \ }} S_PET_LROC_INFO_CURRENT    ON H_PET.HK_H_PET = S_PET_LROC_INFO_CURRENT.HK_H_PET\
+                \ WHERE S_PET_LROC_INFO_CURRENT.SPECIES_NAME = 'DOG' "
+            name: STAGE_PET_METRICS
+            noLinkRefs: []
+      name: STAGE_PET_METRICS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003632"

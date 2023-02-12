@@ -1,0 +1,181 @@
+steps:
+  STAGE_PET_RABIES-200003696:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030070
+              stepCounter: "200003696"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: R.PET_ID
+          - columnReference:
+              columnCounter: 2000030074
+              stepCounter: "200003696"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: RABIES_MOST_RECENT_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: R.MOST_RECENT_VISIT_DATE
+          - columnReference:
+              columnCounter: 2000030078
+              stepCounter: "200003696"
+            dataType: DATETIME
+            defaultValue: ""
+            description: ""
+            name: RABIES_EXPIRATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: R.RABIES_EXPIRATION_DATE
+          - columnReference:
+              columnCounter: 2000030073
+              stepCounter: "200003696"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030076
+              stepCounter: "200003696"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'BR:MOST RECENT RABIES'"
+          - columnReference:
+              columnCounter: 2000030077
+              stepCounter: "200003696"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030070
+                stepCounter: "200003696"
+              - columnCounter: 2000030073
+                stepCounter: "200003696"
+            name: HK_H_PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030075
+              stepCounter: "200003696"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030074
+                stepCounter: "200003696"
+              - columnCounter: 2000030078
+                stepCounter: "200003696"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030072
+              stepCounter: "200003696"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030071
+              stepCounter: "200003696"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              H_PET: "200001557"
+              L_VISIT_VET_OWNER_PET_CLINIC: "200001586"
+              S_VISIT_LROC_INFO: "200002291"
+              L_VISIT_CLINICITEM: "200003390"
+              S_VISIT_CLINICITEM_LROC_INFO: "200003392"
+              S_CLINICITEM_LROC_INFO_CURRENT: "200003017"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_PET
+              - locationName: STAGE
+                nodeName: L_VISIT_VET_OWNER_PET_CLINIC
+              - locationName: STAGE
+                nodeName: S_VISIT_LROC_INFO
+              - locationName: STAGE
+                nodeName: L_VISIT_CLINICITEM
+              - locationName: STAGE
+                nodeName: S_VISIT_CLINICITEM_LROC_INFO
+              - locationName: STAGE
+                nodeName: S_CLINICITEM_LROC_INFO_CURRENT
+            join:
+              joinCondition: "FROM (               SELECT                     DISTINCT\
+                \ P.PET_ID                              , SVI.CREATED_AT AS MOST_RECENT_VISIT_DATE\
+                \                              , ROW_NUMBER()OVER(PARTITION BY P.PET_ID\
+                \ ORDER BY SVI.CREATED_AT DESC) AS DUPS                          \
+                \  , SVC.CALLBACK_AT  AS RABIES_EXPIRATION_DATE                  \
+                \                             FROM                         {{ ref('STAGE','H_PET')\
+                \ }} AS P                    JOIN {{ ref('STAGE','L_VISIT_VET_OWNER_PET_CLINIC')\
+                \ }} AS LPC ON P.HK_H_PET=LPC.HK_H_PET                    JOIN {{\
+                \ ref('STAGE','S_VISIT_LROC_INFO') }} AS SVI ON LPC.HK_H_VISIT= SVI.HK_H_VISIT\
+                \                    JOIN {{ ref('STAGE','L_VISIT_CLINICITEM') }}\
+                \ AS LVC ON LVC.HK_H_VISIT_APOLLO = LPC.HK_H_VISIT               \
+                \     JOIN {{ ref('STAGE','S_VISIT_CLINICITEM_LROC_INFO') }} AS SVC\
+                \ ON SVC.HK_L_VISIT_CLINICITEM = LVC.HK_L_VISIT_CLINICITEM       \
+                \             JOIN {{ ref('STAGE','S_CLINICITEM_LROC_INFO_CURRENT')\
+                \ }} AS CI ON CI.HK_H_CLINICITEM=LVC.HK_H_CLINICITEM             \
+                \        WHERE                           CI.PRODUCT_CATEGORY_NAME\
+                \ = 'VACCINATIONS'                     AND CI.PRODUCT_TYPE_NAME =\
+                \ 'RABIES'               ) R WHERE R.DUPS = 1 "
+            name: STAGE_PET_RABIES
+            noLinkRefs: []
+      name: STAGE_PET_RABIES
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003696"

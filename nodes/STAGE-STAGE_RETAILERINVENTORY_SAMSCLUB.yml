@@ -1,0 +1,221 @@
+steps:
+  STAGE_RETAILERINVENTORY_SAMSCLUB-200001790:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021150
+              stepCounter: "200001790"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021151
+                stepCounter: "200001790"
+              - columnCounter: 2000021152
+                stepCounter: "200001790"
+              - columnCounter: 2000021157
+                stepCounter: "200001790"
+            name: HK_L_RETAILERINVENTORY_SAMSCLUB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021151
+              stepCounter: "200001790"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021153
+                stepCounter: "200001790"
+              - columnCounter: 2000021154
+                stepCounter: "200001790"
+            name: HK_H_RETAILERPRODUCT_SAMSCLUB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021152
+              stepCounter: "200001790"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021155
+                stepCounter: "200001790"
+              - columnCounter: 2000021156
+                stepCounter: "200001790"
+            name: HK_H_RETAILER_SAMSCLUB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021153
+              stepCounter: "200001790"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEMNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021154
+              stepCounter: "200001790"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_SAMSCLUB'"
+          - columnReference:
+              columnCounter: 2000021155
+              stepCounter: "200001790"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'SAMSCLUB'"
+          - columnReference:
+              columnCounter: 2000021156
+              stepCounter: "200001790"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_SAMSCLUB'"
+          - columnReference:
+              columnCounter: 2000021157
+              stepCounter: "200001790"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021158
+              stepCounter: "200001790"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTINVENTORYUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021159
+              stepCounter: "200001790"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTONORDERUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021160
+              stepCounter: "200001790"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021158
+                stepCounter: "200001790"
+              - columnCounter: 2000021159
+                stepCounter: "200001790"
+            name: DSS_CHANGE_HASH_RETAILERINVENTORY_SAMSCLUB_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021161
+              stepCounter: "200001790"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021162
+              stepCounter: "200001790"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021163
+              stepCounter: "200001790"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_DATA_POS_SAMSCLUB: "200001788"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_DATA_POS_SAMSCLUB
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_DATA_POS_SAMSCLUB') }} LOAD_DATA_POS_SAMSCLUB\
+                \  "
+            name: STAGE_RETAILERINVENTORY_SAMSCLUB
+            noLinkRefs: []
+      name: STAGE_RETAILERINVENTORY_SAMSCLUB
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001790"

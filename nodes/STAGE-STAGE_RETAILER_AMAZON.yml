@@ -1,0 +1,109 @@
+steps:
+  STAGE_RETAILER_AMAZON-200001761:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021029
+              stepCounter: "200001761"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021030
+                stepCounter: "200001761"
+              - columnCounter: 2000021031
+                stepCounter: "200001761"
+            name: HK_H_RETAILER_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021030
+              stepCounter: "200001761"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'AMAZON'"
+          - columnReference:
+              columnCounter: 2000021031
+              stepCounter: "200001761"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_AMAZON'"
+          - columnReference:
+              columnCounter: 2000021032
+              stepCounter: "200001761"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021033
+              stepCounter: "200001761"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021034
+              stepCounter: "200001761"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_AMAZON_INVENTORY: "200001760"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_AMAZON_INVENTORY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_AMAZON_INVENTORY') }}    "
+            name: STAGE_RETAILER_AMAZON
+            noLinkRefs: []
+      name: STAGE_RETAILER_AMAZON
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001761"

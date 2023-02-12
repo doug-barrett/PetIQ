@@ -1,0 +1,182 @@
+steps:
+  STAGE_REGION_CLINIC-200002241:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030830
+              stepCounter: "200002241"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030831
+                stepCounter: "200002241"
+              - columnCounter: 2000030832
+                stepCounter: "200002241"
+            name: HK_L_REGION_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030832
+              stepCounter: "200002241"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030833
+                stepCounter: "200002241"
+              - columnCounter: 2000030834
+                stepCounter: "200002241"
+            name: HK_H_REGIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030831
+              stepCounter: "200002241"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000032810
+                stepCounter: "200002241"
+              - columnCounter: 2000030835
+                stepCounter: "200002241"
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030833
+              stepCounter: "200002241"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REGION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030834
+              stepCounter: "200002241"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_REGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000032810
+              stepCounter: "200002241"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030835
+              stepCounter: "200002241"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030836
+              stepCounter: "200002241"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030837
+              stepCounter: "200002241"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030838
+              stepCounter: "200002241"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_CLINICS_FT: "200003818"
+              LOAD_RIG_CODES_FT: "200004182"
+              LOAD_OFFICES_FT: "200004112"
+              LOAD_REGIONS_FT: "200004181"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_CLINICS_FT
+              - locationName: STAGE
+                nodeName: LOAD_RIG_CODES_FT
+              - locationName: STAGE
+                nodeName: LOAD_OFFICES_FT
+              - locationName: STAGE
+                nodeName: LOAD_REGIONS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_CLINICS_FT') }} LOAD_CLINICS_FT\
+                \  JOIN {{ ref('STAGE','LOAD_RIG_CODES_FT') }} LOAD_RIG_CODES_FT \
+                \   ON LOAD_CLINICS_FT.RIG_CODE_ID = LOAD_RIG_CODES_FT.ID  JOIN {{\
+                \ ref('STAGE','LOAD_OFFICES_FT') }} LOAD_OFFICES_FT    ON LOAD_RIG_CODES_FT.OFFICE_ID\
+                \ = LOAD_OFFICES_FT.ID  JOIN {{ ref('STAGE','LOAD_REGIONS_FT') }}\
+                \ LOAD_REGIONS_FT    ON LOAD_OFFICES_FT.REGION_ID = LOAD_REGIONS_FT.ID\
+                \  "
+            name: STAGE_REGION_CLINIC
+            noLinkRefs: []
+      name: STAGE_REGION_CLINIC
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002241"

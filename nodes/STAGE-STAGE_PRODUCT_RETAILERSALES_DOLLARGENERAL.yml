@@ -1,0 +1,246 @@
+steps:
+  STAGE_PRODUCT_RETAILERSALES_DOLLARGENERAL-200003156:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028653
+              stepCounter: "200003156"
+            dataType: TEXT(255)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028654
+              stepCounter: "200003156"
+            dataType: TEXT(17)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028655
+              stepCounter: "200003156"
+            dataType: TEXT(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028656
+              stepCounter: "200003156"
+            dataType: TEXT(5)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PETIQ
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028657
+              stepCounter: "200003156"
+            dataType: TIMESTAMP_NTZ(0)
+            defaultValue: ""
+            description: ""
+            name: SALESDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028664
+              stepCounter: "200003156"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028665
+              stepCounter: "200003156"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028660
+              stepCounter: "200003156"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028664
+                stepCounter: "200003156"
+              - columnCounter: 2000028665
+                stepCounter: "200003156"
+            name: DSS_CHANGE_HASH_PRODUCT_RETAILERSALES_LROC_DOLLARGENERAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028650
+              stepCounter: "200003156"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028651
+                stepCounter: "200003156"
+              - columnCounter: 2000028652
+                stepCounter: "200003156"
+              - columnCounter: 2000028657
+                stepCounter: "200003156"
+            name: HK_L_PRODUCT_RETAILERSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028651
+              stepCounter: "200003156"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028655
+                stepCounter: "200003156"
+              - columnCounter: 2000028656
+                stepCounter: "200003156"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028652
+              stepCounter: "200003156"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028653
+                stepCounter: "200003156"
+              - columnCounter: 2000028654
+                stepCounter: "200003156"
+            name: HK_H_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028661
+              stepCounter: "200003156"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028662
+              stepCounter: "200003156"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028663
+              stepCounter: "200003156"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              L_RETAILERPRODUCT_PRODUCT: "200002960"
+              H_PRODUCT: "200001734"
+              H_RETAILERPRODUCT: "200001851"
+              L_RETAILER_SALES: "200001864"
+              H_RETAILER: "200001845"
+              S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE: "200002737"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: L_RETAILERPRODUCT_PRODUCT
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: H_RETAILERPRODUCT
+              - locationName: STAGE
+                nodeName: L_RETAILER_SALES
+              - locationName: STAGE
+                nodeName: H_RETAILER
+              - locationName: STAGE
+                nodeName: S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','L_RETAILERPRODUCT_PRODUCT') }}\
+                \ L_RETAILERPRODUCT_PRODUCT  INNER JOIN {{ ref('STAGE','H_PRODUCT')\
+                \ }} H_PRODUCT  ON L_RETAILERPRODUCT_PRODUCT.HK_H_PRODUCT = H_PRODUCT.HK_H_PRODUCT\
+                \  INNER JOIN {{ ref('STAGE','H_RETAILERPRODUCT') }} H_RETAILERPRODUCT\
+                \  ON L_RETAILERPRODUCT_PRODUCT.HK_H_RETAILERPRODUCT = H_RETAILERPRODUCT.HK_H_RETAILERPRODUCT\
+                \  INNER JOIN {{ ref('STAGE','L_RETAILER_SALES') }} L_RETAILER_SALES\
+                \  ON L_RETAILER_SALES.HK_H_RETAILERPRODUCT = H_RETAILERPRODUCT.HK_H_RETAILERPRODUCT\
+                \  INNER JOIN {{ ref('STAGE','H_RETAILER') }} H_RETAILER  ON L_RETAILER_SALES.HK_H_RETAILER\
+                \ = H_RETAILER.HK_H_RETAILER  INNER JOIN {{ ref('STAGE','S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE')\
+                \ }} S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE  ON L_RETAILER_SALES.HK_L_RETAILERSALES\
+                \ = S_RETAILER_SALES_DOLLARGEN_LROC_DEFAULT_SOURCE.HK_L_RETAILER_SALES_DOLLARGEN\
+                \  "
+            name: STAGE_PRODUCT_RETAILERSALES_DOLLARGENERAL
+            noLinkRefs: []
+      name: STAGE_PRODUCT_RETAILERSALES_DOLLARGENERAL
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003156"

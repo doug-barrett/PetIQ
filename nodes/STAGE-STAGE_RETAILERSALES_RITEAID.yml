@@ -1,0 +1,844 @@
+steps:
+  STAGE_RETAILERSALES_RITEAID-200002758:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027697
+              stepCounter: "200002758"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027698
+                stepCounter: "200002758"
+              - columnCounter: 2000027699
+                stepCounter: "200002758"
+              - columnCounter: 2000027704
+                stepCounter: "200002758"
+            name: HK_L_RETAILERSALES_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027698
+              stepCounter: "200002758"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027700
+                stepCounter: "200002758"
+              - columnCounter: 2000027701
+                stepCounter: "200002758"
+            name: HK_H_RETAILERPRODUCT_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027699
+              stepCounter: "200002758"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027702
+                stepCounter: "200002758"
+              - columnCounter: 2000027703
+                stepCounter: "200002758"
+            name: HK_H_RETAILER_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027700
+              stepCounter: "200002758"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ACTITEMNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027701
+              stepCounter: "200002758"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_RITEAID'"
+          - columnReference:
+              columnCounter: 2000027702
+              stepCounter: "200002758"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'RITEAID'"
+          - columnReference:
+              columnCounter: 2000027703
+              stepCounter: "200002758"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_RITEAID'"
+          - columnReference:
+              columnCounter: 2000027704
+              stepCounter: "200002758"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027705
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027706
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYRPERCENTCONTRIBUTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027707
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027708
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYRPERCENTCONTRIBUTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027709
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027710
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027711
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027712
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027713
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027714
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027715
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027716
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027717
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027718
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027719
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027720
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027721
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027722
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027723
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027724
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027725
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027726
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027727
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027728
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027729
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027730
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027731
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027732
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027733
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027734
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027735
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027736
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027737
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027738
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027739
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027740
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027741
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027742
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027743
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027744
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027745
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027746
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027747
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027748
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027749
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VAR10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027750
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERCENTVAR10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027751
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027752
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027753
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTYR12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027754
+              stepCounter: "200002758"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRIORYR12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027755
+              stepCounter: "200002758"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027705
+                stepCounter: "200002758"
+              - columnCounter: 2000027706
+                stepCounter: "200002758"
+              - columnCounter: 2000027707
+                stepCounter: "200002758"
+              - columnCounter: 2000027708
+                stepCounter: "200002758"
+              - columnCounter: 2000027709
+                stepCounter: "200002758"
+              - columnCounter: 2000027710
+                stepCounter: "200002758"
+              - columnCounter: 2000027711
+                stepCounter: "200002758"
+              - columnCounter: 2000027712
+                stepCounter: "200002758"
+              - columnCounter: 2000027713
+                stepCounter: "200002758"
+              - columnCounter: 2000027714
+                stepCounter: "200002758"
+              - columnCounter: 2000027715
+                stepCounter: "200002758"
+              - columnCounter: 2000027716
+                stepCounter: "200002758"
+              - columnCounter: 2000027717
+                stepCounter: "200002758"
+              - columnCounter: 2000027718
+                stepCounter: "200002758"
+              - columnCounter: 2000027719
+                stepCounter: "200002758"
+              - columnCounter: 2000027720
+                stepCounter: "200002758"
+              - columnCounter: 2000027721
+                stepCounter: "200002758"
+              - columnCounter: 2000027722
+                stepCounter: "200002758"
+              - columnCounter: 2000027723
+                stepCounter: "200002758"
+              - columnCounter: 2000027724
+                stepCounter: "200002758"
+              - columnCounter: 2000027725
+                stepCounter: "200002758"
+              - columnCounter: 2000027726
+                stepCounter: "200002758"
+              - columnCounter: 2000027727
+                stepCounter: "200002758"
+              - columnCounter: 2000027728
+                stepCounter: "200002758"
+              - columnCounter: 2000027729
+                stepCounter: "200002758"
+              - columnCounter: 2000027730
+                stepCounter: "200002758"
+              - columnCounter: 2000027731
+                stepCounter: "200002758"
+              - columnCounter: 2000027732
+                stepCounter: "200002758"
+              - columnCounter: 2000027733
+                stepCounter: "200002758"
+              - columnCounter: 2000027734
+                stepCounter: "200002758"
+              - columnCounter: 2000027735
+                stepCounter: "200002758"
+              - columnCounter: 2000027736
+                stepCounter: "200002758"
+              - columnCounter: 2000027737
+                stepCounter: "200002758"
+              - columnCounter: 2000027738
+                stepCounter: "200002758"
+              - columnCounter: 2000027739
+                stepCounter: "200002758"
+              - columnCounter: 2000027740
+                stepCounter: "200002758"
+              - columnCounter: 2000027741
+                stepCounter: "200002758"
+              - columnCounter: 2000027742
+                stepCounter: "200002758"
+              - columnCounter: 2000027743
+                stepCounter: "200002758"
+              - columnCounter: 2000027744
+                stepCounter: "200002758"
+              - columnCounter: 2000027745
+                stepCounter: "200002758"
+              - columnCounter: 2000027746
+                stepCounter: "200002758"
+              - columnCounter: 2000027747
+                stepCounter: "200002758"
+              - columnCounter: 2000027748
+                stepCounter: "200002758"
+              - columnCounter: 2000027749
+                stepCounter: "200002758"
+              - columnCounter: 2000027750
+                stepCounter: "200002758"
+              - columnCounter: 2000027751
+                stepCounter: "200002758"
+              - columnCounter: 2000027752
+                stepCounter: "200002758"
+              - columnCounter: 2000027753
+                stepCounter: "200002758"
+              - columnCounter: 2000027754
+                stepCounter: "200002758"
+            name: DSS_CHANGE_HASH_RETAILERSALES_RITEAID_LROC_DS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027756
+              stepCounter: "200002758"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027757
+              stepCounter: "200002758"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027758
+              stepCounter: "200002758"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALES_POS_RITEAID: "200002754"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALES_POS_RITEAID
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_SALES_POS_RITEAID') }} LOAD_SALES_POS_RITEAID
+            name: STAGE_RETAILERSALES_RITEAID
+            noLinkRefs: []
+      name: STAGE_RETAILERSALES_RITEAID
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002758"

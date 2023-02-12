@@ -1,0 +1,754 @@
+steps:
+  STAGE_RETAILERPRODUCT_RETAILERSTORE_PETSMART-200001731:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020958
+              stepCounter: "200001731"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020959
+                stepCounter: "200001731"
+              - columnCounter: 2000020960
+                stepCounter: "200001731"
+              - columnCounter: 2000020965
+                stepCounter: "200001731"
+            name: HK_L_RETAILERPRODUCT_RETAILERSTORE_PETSMART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020959
+              stepCounter: "200001731"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020961
+                stepCounter: "200001731"
+              - columnCounter: 2000020962
+                stepCounter: "200001731"
+            name: HK_H_RETAILERSTORE_PETSMART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020960
+              stepCounter: "200001731"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020963
+                stepCounter: "200001731"
+              - columnCounter: 2000020964
+                stepCounter: "200001731"
+            name: HK_H_RETAILERPRODUCT_PETSMART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020961
+              stepCounter: "200001731"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: STORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020962
+              stepCounter: "200001731"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_PETSMART'"
+          - columnReference:
+              columnCounter: 2000020963
+              stepCounter: "200001731"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020964
+              stepCounter: "200001731"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_PETSMART'"
+          - columnReference:
+              columnCounter: 2000020965
+              stepCounter: "200001731"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: ENDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020966
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ACTIONREQUIREDPO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020967
+              stepCounter: "200001731"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: STARTDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020968
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020969
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PERIODENDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020970
+              stepCounter: "200001731"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYONHAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020971
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARONHAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020972
+              stepCounter: "200001731"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020973
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020974
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYSOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020975
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARSOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020976
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYCOMMITTED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020977
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARCOMMITTED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020978
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYBEGINNINGBALANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020979
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARBALANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020980
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYPLANNED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020981
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARPLANNED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020982
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYREQUESTED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020983
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARREQUESTED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020984
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYTOTALSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020985
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARTOTALSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020986
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYTRANSFERRED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020987
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARTRANSFERRED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020988
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYWITHDRAWNITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020989
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DOLLARWITHDRAWN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020990
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYOUTOFSTOCK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020991
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYRETURNED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020992
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYINTRANSIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020993
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYONHOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020994
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RETURNED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020995
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AVAILABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020996
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ONHAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020997
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020998
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020999
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYDAMAGED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021000
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYONHAND1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021001
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYRECEIVED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021002
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QUANTITYINTRANSIT1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021003
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OUTOFSTOCK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021004
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021005
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EAN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021006
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GTIN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021007
+              stepCounter: "200001731"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REQUESTEDRETAILPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021008
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TOTALSOLDDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021009
+              stepCounter: "200001731"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020966
+                stepCounter: "200001731"
+              - columnCounter: 2000020967
+                stepCounter: "200001731"
+              - columnCounter: 2000020968
+                stepCounter: "200001731"
+              - columnCounter: 2000020969
+                stepCounter: "200001731"
+              - columnCounter: 2000020970
+                stepCounter: "200001731"
+              - columnCounter: 2000020971
+                stepCounter: "200001731"
+              - columnCounter: 2000020972
+                stepCounter: "200001731"
+              - columnCounter: 2000020973
+                stepCounter: "200001731"
+              - columnCounter: 2000020974
+                stepCounter: "200001731"
+              - columnCounter: 2000020975
+                stepCounter: "200001731"
+              - columnCounter: 2000020976
+                stepCounter: "200001731"
+              - columnCounter: 2000020977
+                stepCounter: "200001731"
+              - columnCounter: 2000020978
+                stepCounter: "200001731"
+              - columnCounter: 2000020979
+                stepCounter: "200001731"
+              - columnCounter: 2000020980
+                stepCounter: "200001731"
+              - columnCounter: 2000020981
+                stepCounter: "200001731"
+              - columnCounter: 2000020982
+                stepCounter: "200001731"
+              - columnCounter: 2000020983
+                stepCounter: "200001731"
+              - columnCounter: 2000020984
+                stepCounter: "200001731"
+              - columnCounter: 2000020985
+                stepCounter: "200001731"
+              - columnCounter: 2000020986
+                stepCounter: "200001731"
+              - columnCounter: 2000020987
+                stepCounter: "200001731"
+              - columnCounter: 2000020988
+                stepCounter: "200001731"
+              - columnCounter: 2000020989
+                stepCounter: "200001731"
+              - columnCounter: 2000020990
+                stepCounter: "200001731"
+              - columnCounter: 2000020991
+                stepCounter: "200001731"
+              - columnCounter: 2000020992
+                stepCounter: "200001731"
+              - columnCounter: 2000020993
+                stepCounter: "200001731"
+              - columnCounter: 2000020994
+                stepCounter: "200001731"
+              - columnCounter: 2000020995
+                stepCounter: "200001731"
+              - columnCounter: 2000020996
+                stepCounter: "200001731"
+              - columnCounter: 2000020997
+                stepCounter: "200001731"
+              - columnCounter: 2000020998
+                stepCounter: "200001731"
+              - columnCounter: 2000020999
+                stepCounter: "200001731"
+              - columnCounter: 2000021000
+                stepCounter: "200001731"
+              - columnCounter: 2000021001
+                stepCounter: "200001731"
+              - columnCounter: 2000021002
+                stepCounter: "200001731"
+              - columnCounter: 2000021003
+                stepCounter: "200001731"
+              - columnCounter: 2000021004
+                stepCounter: "200001731"
+              - columnCounter: 2000021005
+                stepCounter: "200001731"
+              - columnCounter: 2000021006
+                stepCounter: "200001731"
+              - columnCounter: 2000021007
+                stepCounter: "200001731"
+              - columnCounter: 2000021008
+                stepCounter: "200001731"
+            name: DSS_CHANGE_HASH_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021010
+              stepCounter: "200001731"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021011
+              stepCounter: "200001731"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021012
+              stepCounter: "200001731"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART: "200001726"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART')\
+                \ }} LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART  "
+            name: STAGE_RETAILERPRODUCT_RETAILERSTORE_PETSMART
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_RETAILERSTORE_PETSMART
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001731"

@@ -1,0 +1,150 @@
+steps:
+  STAGE_RETAILERPRODUCT_BJS-200001684:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028060
+              stepCounter: "200001684"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028061
+                stepCounter: "200001684"
+              - columnCounter: 2000028062
+                stepCounter: "200001684"
+            name: HK_H_RETAILERPRODUCT_BJS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028061
+              stepCounter: "200001684"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: RETAILERPRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028062
+              stepCounter: "200001684"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_BJS'"
+          - columnReference:
+              columnCounter: 2000028063
+              stepCounter: "200001684"
+            dataType: VARCHAR(32)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028064
+              stepCounter: "200001684"
+            dataType: NUMBER(12)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028065
+              stepCounter: "200001684"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028063
+                stepCounter: "200001684"
+              - columnCounter: 2000028064
+                stepCounter: "200001684"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_BJS_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028066
+              stepCounter: "200001684"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028067
+              stepCounter: "200001684"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028068
+              stepCounter: "200001684"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SALESINVENTORY_POS_BJS: "200001682"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SALESINVENTORY_POS_BJS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SALESINVENTORY_POS_BJS') }}\
+                \ LOAD_SALESINVENTORY_POS_BJS  "
+            name: STAGE_RETAILERPRODUCT_BJS
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_BJS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001684"

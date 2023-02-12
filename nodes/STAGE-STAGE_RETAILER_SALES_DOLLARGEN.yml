@@ -1,0 +1,260 @@
+steps:
+  STAGE_RETAILER_SALES_DOLLARGEN-200002732:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027412
+              stepCounter: "200002732"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027413
+                stepCounter: "200002732"
+              - columnCounter: 2000027414
+                stepCounter: "200002732"
+              - columnCounter: 2000027419
+                stepCounter: "200002732"
+            name: HK_L_RETAILER_SALES_DOLLARGEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027413
+              stepCounter: "200002732"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027415
+                stepCounter: "200002732"
+              - columnCounter: 2000027416
+                stepCounter: "200002732"
+            name: HK_H_RETAILERPRODUCT_DOLLARGEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027414
+              stepCounter: "200002732"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027417
+                stepCounter: "200002732"
+              - columnCounter: 2000027418
+                stepCounter: "200002732"
+            name: HK_H_RETAILER_DOLLARGEN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027415
+              stepCounter: "200002732"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_SKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027416
+              stepCounter: "200002732"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_DOLLARGEN'"
+          - columnReference:
+              columnCounter: 2000027417
+              stepCounter: "200002732"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'DOLLARGENERAL'"
+          - columnReference:
+              columnCounter: 2000027418
+              stepCounter: "200002732"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_DOLLARGEN'"
+          - columnReference:
+              columnCounter: 2000027419
+              stepCounter: "200002732"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027420
+              stepCounter: "200002732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027421
+              stepCounter: "200002732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027422
+              stepCounter: "200002732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SELLTHROUGHPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027423
+              stepCounter: "200002732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FISCAL_WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027424
+              stepCounter: "200002732"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FISCAL_YEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027425
+              stepCounter: "200002732"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027420
+                stepCounter: "200002732"
+              - columnCounter: 2000027421
+                stepCounter: "200002732"
+              - columnCounter: 2000027422
+                stepCounter: "200002732"
+              - columnCounter: 2000027423
+                stepCounter: "200002732"
+              - columnCounter: 2000027424
+                stepCounter: "200002732"
+            name: DSS_CHANGE_HASH_RETAILER_SALES_DOLLARGEN_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027426
+              stepCounter: "200002732"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027427
+              stepCounter: "200002732"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027428
+              stepCounter: "200002732"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORYTRENDREPORT_POS_DOLLARGEN: "200002729"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORYTRENDREPORT_POS_DOLLARGEN
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_INVENTORYTRENDREPORT_POS_DOLLARGEN')
+                }} LOAD_INVENTORYTRENDREPORT_POS_DOLLARGEN
+            name: STAGE_RETAILER_SALES_DOLLARGEN
+            noLinkRefs: []
+      name: STAGE_RETAILER_SALES_DOLLARGEN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002732"

@@ -1,0 +1,110 @@
+steps:
+  STAGE_PRODUCT_PETSMART-200001727:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020928
+              stepCounter: "200001727"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000020929
+                stepCounter: "200001727"
+              - columnCounter: 2000020930
+                stepCounter: "200001727"
+            name: HK_H_PRODUCT_PETSMART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020929
+              stepCounter: "200001727"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: RETAILERPART
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020930
+              stepCounter: "200001727"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_PETSMART'"
+          - columnReference:
+              columnCounter: 2000020932
+              stepCounter: "200001727"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020933
+              stepCounter: "200001727"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020931
+              stepCounter: "200001727"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART: "200001726"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART')\
+                \ }} LOAD_PETSMART_SALES_FILE_CLEANED_POS_PETSMART  "
+            name: STAGE_PRODUCT_PETSMART
+            noLinkRefs: []
+      name: STAGE_PRODUCT_PETSMART
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001727"

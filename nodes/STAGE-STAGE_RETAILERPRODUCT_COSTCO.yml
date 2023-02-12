@@ -1,0 +1,150 @@
+steps:
+  STAGE_RETAILERPRODUCT_COSTCO-200002484:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026152
+              stepCounter: "200002484"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026153
+                stepCounter: "200002484"
+              - columnCounter: 2000026154
+                stepCounter: "200002484"
+            name: HK_H_RETAILERPRODUCT_COSTCO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026153
+              stepCounter: "200002484"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMNUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026154
+              stepCounter: "200002484"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_COSTCO'"
+          - columnReference:
+              columnCounter: 2000026155
+              stepCounter: "200002484"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026156
+              stepCounter: "200002484"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026157
+              stepCounter: "200002484"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026155
+                stepCounter: "200002484"
+              - columnCounter: 2000026156
+                stepCounter: "200002484"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_COSTCO_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026158
+              stepCounter: "200002484"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026159
+              stepCounter: "200002484"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026160
+              stepCounter: "200002484"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_FILEUPLOAD_POS_COSTCO: "200002482"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_FILEUPLOAD_POS_COSTCO
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_FILEUPLOAD_POS_COSTCO') }}\
+                \ LOAD_FILEUPLOAD_POS_COSTCO  "
+            name: STAGE_RETAILERPRODUCT_COSTCO
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_COSTCO
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002484"

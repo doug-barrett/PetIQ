@@ -1,0 +1,233 @@
+steps:
+  STAGE_PRODUCT_RETAILERINVENTORY_MEIJER-200003148:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028577
+              stepCounter: "200003148"
+            dataType: TEXT(255)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028578
+              stepCounter: "200003148"
+            dataType: TEXT(17)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028579
+              stepCounter: "200003148"
+            dataType: TEXT(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028580
+              stepCounter: "200003148"
+            dataType: TEXT(5)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PETIQ
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028587
+              stepCounter: "200003148"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDFQTYWEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028582
+              stepCounter: "200003148"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028583
+              stepCounter: "200003148"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028584
+              stepCounter: "200003148"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028585
+              stepCounter: "200003148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028587
+                stepCounter: "200003148"
+            name: DSS_CHANGE_HASH_RETAILERINVENTORY_MEIJER_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028574
+              stepCounter: "200003148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028575
+                stepCounter: "200003148"
+              - columnCounter: 2000028576
+                stepCounter: "200003148"
+              - columnCounter: 2000028582
+                stepCounter: "200003148"
+            name: HK_L_PRODUCT_RETAILERINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028575
+              stepCounter: "200003148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028579
+                stepCounter: "200003148"
+              - columnCounter: 2000028580
+                stepCounter: "200003148"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028576
+              stepCounter: "200003148"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028577
+                stepCounter: "200003148"
+              - columnCounter: 2000028578
+                stepCounter: "200003148"
+            name: HK_H_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028581
+              stepCounter: "200003148"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              L_RETAILERPRODUCT_PRODUCT: "200002960"
+              H_PRODUCT: "200001734"
+              H_RETAILERPRODUCT: "200001851"
+              L_RETAILER_INVENTORY: "200001861"
+              S_RETAILER_INVENTORY_MEIJER_LROC_DEFAULT_SOURCE: "200002529"
+              H_RETAILER: "200001845"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: L_RETAILERPRODUCT_PRODUCT
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: H_RETAILERPRODUCT
+              - locationName: STAGE
+                nodeName: L_RETAILER_INVENTORY
+              - locationName: STAGE
+                nodeName: S_RETAILER_INVENTORY_MEIJER_LROC_DEFAULT_SOURCE
+              - locationName: STAGE
+                nodeName: H_RETAILER
+            join:
+              joinCondition: "FROM {{ ref('STAGE','L_RETAILERPRODUCT_PRODUCT') }}\
+                \ L_RETAILERPRODUCT_PRODUCT  INNER JOIN {{ ref('STAGE','H_PRODUCT')\
+                \ }} H_PRODUCT  ON L_RETAILERPRODUCT_PRODUCT.HK_H_PRODUCT = H_PRODUCT.HK_H_PRODUCT\
+                \  INNER JOIN {{ ref('STAGE','H_RETAILERPRODUCT') }} H_RETAILERPRODUCT\
+                \  ON L_RETAILERPRODUCT_PRODUCT.HK_H_RETAILERPRODUCT = H_RETAILERPRODUCT.HK_H_RETAILERPRODUCT\
+                \  INNER JOIN {{ ref('STAGE','L_RETAILER_INVENTORY') }} L_RETAILER_INVENTORY\
+                \  ON L_RETAILER_INVENTORY.HK_H_RETAILERPRODUCT = H_RETAILERPRODUCT.HK_H_RETAILERPRODUCT\
+                \  INNER JOIN {{ ref('STAGE','S_RETAILER_INVENTORY_MEIJER_LROC_DEFAULT_SOURCE')\
+                \ }} S_RETAILER_INVENTORY_MEIJER_LROC_DEFAULT_SOURCE  ON L_RETAILER_INVENTORY.HK_L_RETAILERINVENTORY\
+                \ = S_RETAILER_INVENTORY_MEIJER_LROC_DEFAULT_SOURCE.HK_L_RETAILER_INVENTORY_MEIJER\
+                \  INNER JOIN {{ ref('STAGE','H_RETAILER') }} H_RETAILER  ON L_RETAILER_INVENTORY.HK_H_RETAILER\
+                \ = H_RETAILER.HK_H_RETAILER  "
+            name: STAGE_PRODUCT_RETAILERINVENTORY_MEIJER
+            noLinkRefs: []
+      name: STAGE_PRODUCT_RETAILERINVENTORY_MEIJER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003148"

@@ -1,0 +1,228 @@
+steps:
+  STAGE_PRODUCT_RETAILERSTOREINVENTORY_AGG-200003218:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028862
+              stepCounter: "200003218"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: TOTALINVENTORYUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: SUM(S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY.TOTALINVENTORYUNITS)
+          - columnReference:
+              columnCounter: 2000028861
+              stepCounter: "200003218"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028849
+              stepCounter: "200003218"
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028850
+              stepCounter: "200003218"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028851
+              stepCounter: "200003218"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028852
+              stepCounter: "200003218"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028853
+              stepCounter: "200003218"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - columnReference:
+              columnCounter: 2000028855
+              stepCounter: "200003218"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: 'NULL'
+          - columnReference:
+              columnCounter: 2000028856
+              stepCounter: "200003218"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028849
+                stepCounter: "200003218"
+              - columnCounter: 2000028850
+                stepCounter: "200003218"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028857
+              stepCounter: "200003218"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028851
+                stepCounter: "200003218"
+              - columnCounter: 2000028852
+                stepCounter: "200003218"
+            name: HK_H_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028858
+              stepCounter: "200003218"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028857
+                stepCounter: "200003218"
+              - columnCounter: 2000028856
+                stepCounter: "200003218"
+              - columnCounter: 2000028861
+                stepCounter: "200003218"
+            name: HK_L_RETAILER_PRODUCT_INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028859
+              stepCounter: "200003218"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028862
+                stepCounter: "200003218"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028854
+              stepCounter: "200003218"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases:
+              S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY: "200003203"
+              L_PRODUCT_RETAILERSTORE_INVENTORY: "200003189"
+              L_RETAILERSTORE_RETAILER: "200001868"
+              H_PRODUCT: "200001734"
+              H_RETAILER: "200001845"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY
+              - locationName: STAGE
+                nodeName: L_PRODUCT_RETAILERSTORE_INVENTORY
+              - locationName: STAGE
+                nodeName: L_RETAILERSTORE_RETAILER
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: H_RETAILER
+            join:
+              joinCondition: FROM {{ ref('STAGE','S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY')
+                }} S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY  JOIN {{ ref('STAGE','L_PRODUCT_RETAILERSTORE_INVENTORY')
+                }} L_PRODUCT_RETAILERSTORE_INVENTORY    ON S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY.HK_L_RETAILERSTOREPRODUCTINVENTORY
+                = L_PRODUCT_RETAILERSTORE_INVENTORY.HK_L_RETAILERSTOREPRODUCTINVENTORY  JOIN
+                {{ ref('STAGE','L_RETAILERSTORE_RETAILER') }} L_RETAILERSTORE_RETAILER    ON
+                L_PRODUCT_RETAILERSTORE_INVENTORY.HK_H_RETAILERSTORE = L_RETAILERSTORE_RETAILER.HK_H_RETAILERSTORE  JOIN
+                {{ ref('STAGE','H_PRODUCT') }} H_PRODUCT    ON L_PRODUCT_RETAILERSTORE_INVENTORY.HK_H_PRODUCT
+                = H_PRODUCT.HK_H_PRODUCT  JOIN {{ ref('STAGE','H_RETAILER') }} H_RETAILER    ON
+                L_RETAILERSTORE_RETAILER.HK_H_RETAILER = H_RETAILER.HK_H_RETAILER  GROUP
+                BY H_PRODUCT.HK_H_PRODUCT,H_RETAILER.HK_H_RETAILER,L_PRODUCT_RETAILERSTORE_INVENTORY.INVENTORYDATE,H_PRODUCT.PRODUCTID,H_PRODUCT.BKCC,H_RETAILER.RETAILERID,H_RETAILER.BKCC
+            name: STAGE_PRODUCT_RETAILERSTOREINVENTORY_AGG
+            noLinkRefs: []
+      name: STAGE_PRODUCT_RETAILERSTOREINVENTORY_AGG
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003218"

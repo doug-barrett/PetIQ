@@ -1,0 +1,168 @@
+steps:
+  STAGE_RETAILERPRODUCT_RETAILER-200002945:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028144
+              stepCounter: "200002945"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028145
+                stepCounter: "200002945"
+              - columnCounter: 2000028146
+                stepCounter: "200002945"
+            name: HK_L_RETAILERPRODUCT_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028145
+              stepCounter: "200002945"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028147
+                stepCounter: "200002945"
+              - columnCounter: 2000028148
+                stepCounter: "200002945"
+            name: HK_H_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028146
+              stepCounter: "200002945"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028149
+                stepCounter: "200002945"
+              - columnCounter: 2000028150
+                stepCounter: "200002945"
+            name: HK_H_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028147
+              stepCounter: "200002945"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028148
+              stepCounter: "200002945"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'PETIQ'"
+          - columnReference:
+              columnCounter: 2000028149
+              stepCounter: "200002945"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028150
+              stepCounter: "200002945"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'PETIQ'"
+          - columnReference:
+              columnCounter: 2000028151
+              stepCounter: "200002945"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028152
+              stepCounter: "200002945"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028153
+              stepCounter: "200002945"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              VIEW_LOAD_LOOKUP_CLEAN: "200002956"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: VIEW_LOAD_LOOKUP_CLEAN
+            join:
+              joinCondition: "FROM {{ ref('STAGE','VIEW_LOAD_LOOKUP_CLEAN') }} VIEW_LOAD_LOOKUP_CLEAN\
+                \  "
+            name: STAGE_RETAILERPRODUCT_RETAILER
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_RETAILER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002945"

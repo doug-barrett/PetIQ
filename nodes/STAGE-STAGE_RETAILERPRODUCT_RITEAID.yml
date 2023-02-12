@@ -1,0 +1,154 @@
+steps:
+  STAGE_RETAILERPRODUCT_RITEAID-200002757:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027688
+              stepCounter: "200002757"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027689
+                stepCounter: "200002757"
+              - columnCounter: 2000027690
+                stepCounter: "200002757"
+            name: HK_H_RETAILERPRODUCT_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027689
+              stepCounter: "200002757"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027690
+              stepCounter: "200002757"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_RITEAID'"
+          - columnReference:
+              columnCounter: 2000027691
+              stepCounter: "200002757"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027692
+              stepCounter: "200002757"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEM_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027693
+              stepCounter: "200002757"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027691
+                stepCounter: "200002757"
+              - columnCounter: 2000027692
+                stepCounter: "200002757"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_RITEAID_LROC_DS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027694
+              stepCounter: "200002757"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027695
+              stepCounter: "200002757"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027696
+              stepCounter: "200002757"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_RITEAID: "200002753"
+              LOAD_SALES_POS_RITEAID: "200002754"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_RITEAID
+              - locationName: STAGE
+                nodeName: LOAD_SALES_POS_RITEAID
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_INVENTORY_POS_RITEAID') }}\
+                \ LOAD_INVENTORY_POS_RITEAID  , {{ ref('STAGE','LOAD_SALES_POS_RITEAID')\
+                \ }} LOAD_SALES_POS_RITEAID  "
+            name: STAGE_RETAILERPRODUCT_RITEAID
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_RITEAID
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002757"

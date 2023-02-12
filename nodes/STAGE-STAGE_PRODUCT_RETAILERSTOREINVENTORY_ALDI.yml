@@ -1,0 +1,208 @@
+steps:
+  STAGE_PRODUCT_RETAILERSTOREINVENTORY_ALDI-200003166:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028677
+              stepCounter: "200003166"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028678
+              stepCounter: "200003166"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: RETAILERSTOREID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028679
+              stepCounter: "200003166"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028680
+              stepCounter: "200003166"
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028681
+              stepCounter: "200003166"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028682
+              stepCounter: "200003166"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERPRODUCT_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028687
+              stepCounter: "200003166"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: TOTALDIVISIONSTOCKCASES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS.TOTALDIVISIONSTOCKCASES
+                  * 24
+          - columnReference:
+              columnCounter: 2000028683
+              stepCounter: "200003166"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028678
+                stepCounter: "200003166"
+              - columnCounter: 2000028679
+                stepCounter: "200003166"
+            name: HK_H_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028684
+              stepCounter: "200003166"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028680
+                stepCounter: "200003166"
+              - columnCounter: 2000028681
+                stepCounter: "200003166"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028685
+              stepCounter: "200003166"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028684
+                stepCounter: "200003166"
+              - columnCounter: 2000028683
+                stepCounter: "200003166"
+              - columnCounter: 2000028677
+                stepCounter: "200003166"
+            name: HK_L_RETAILERSTOREPRODUCTINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028686
+              stepCounter: "200003166"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028687
+                stepCounter: "200003166"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              L_RETAILERSTORE_INVENTORY: "200002921"
+              H_RETAILERSTORE: "200001858"
+              L_RETAILERPRODUCT_PRODUCT: "200002960"
+              H_PRODUCT: "200001734"
+              S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS: "200002904"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: L_RETAILERSTORE_INVENTORY
+              - locationName: STAGE
+                nodeName: H_RETAILERSTORE
+              - locationName: STAGE
+                nodeName: L_RETAILERPRODUCT_PRODUCT
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','L_RETAILERSTORE_INVENTORY') }}\
+                \ L_RETAILERSTORE_INVENTORY  JOIN {{ ref('STAGE','H_RETAILERSTORE')\
+                \ }} H_RETAILERSTORE    ON L_RETAILERSTORE_INVENTORY.HK_H_RETAILERSTORE\
+                \ = H_RETAILERSTORE.HK_H_RETAILERSTORE  JOIN {{ ref('STAGE','L_RETAILERPRODUCT_PRODUCT')\
+                \ }} L_RETAILERPRODUCT_PRODUCT    ON L_RETAILERSTORE_INVENTORY.HK_H_RETAILERPRODUCT\
+                \ = L_RETAILERPRODUCT_PRODUCT.HK_H_RETAILERPRODUCT  JOIN {{ ref('STAGE','H_PRODUCT')\
+                \ }} H_PRODUCT    ON L_RETAILERPRODUCT_PRODUCT.HK_H_PRODUCT = H_PRODUCT.HK_H_PRODUCT\
+                \  JOIN {{ ref('STAGE','S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS') }}\
+                \ S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS    ON L_RETAILERSTORE_INVENTORY.HK_L_RETAILERSTORE_INVENTORY\
+                \ = S_RETAILERSTORE_INVENTORY_ALDI_LROC_DS.HK_L_RETAILERSTORE_INVENTORY_ALDI\
+                \  "
+            name: STAGE_PRODUCT_RETAILERSTOREINVENTORY_ALDI
+            noLinkRefs: []
+      name: STAGE_PRODUCT_RETAILERSTOREINVENTORY_ALDI
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003166"

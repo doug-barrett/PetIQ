@@ -1,0 +1,352 @@
+steps:
+  STAGE_RETAILERSALES_AMAZON-200001765:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021077
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021078
+                stepCounter: "200001765"
+              - columnCounter: 2000021079
+                stepCounter: "200001765"
+              - columnCounter: 2000021084
+                stepCounter: "200001765"
+            name: HK_L_RETAILERSALES_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021078
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021080
+                stepCounter: "200001765"
+              - columnCounter: 2000021081
+                stepCounter: "200001765"
+            name: HK_H_RETAILERPRODUCT_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021079
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021082
+                stepCounter: "200001765"
+              - columnCounter: 2000021083
+                stepCounter: "200001765"
+            name: HK_H_RETAILER_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021080
+              stepCounter: "200001765"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ASIN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021081
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_AMAZON'"
+          - columnReference:
+              columnCounter: 2000021082
+              stepCounter: "200001765"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'AMAZON'"
+          - columnReference:
+              columnCounter: 2000021083
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_AMAZON'"
+          - columnReference:
+              columnCounter: 2000021084
+              stepCounter: "200001765"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021085
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021086
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUEPERCENTOFTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021087
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUEPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: REPLACE(LOAD_AMAZON_SALES.SHIPPEDREVENUEPRIORPERIOD,'?','')
+          - columnReference:
+              columnCounter: 2000021088
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUELASTYEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: REPLACE(LOAD_AMAZON_SALES.SHIPPEDREVENUELASTYEAR,'?','')
+          - columnReference:
+              columnCounter: 2000021089
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021090
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSPERCENTOFTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021091
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: REPLACE(LOAD_AMAZON_SALES.SHIPPEDUNITSPRIORPERIOD,'?','')
+          - columnReference:
+              columnCounter: 2000021092
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSLASTYEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "REPLACE(LOAD_AMAZON_SALES.SHIPPEDUNITSLASTYEAR,'?','')\
+                  \  "
+          - columnReference:
+              columnCounter: 2000021093
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERRETURNS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021094
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: FREEREPLACEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021095
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AVERAGESALESPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021096
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AVERAGESALESPRICEPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021097
+              stepCounter: "200001765"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021085
+                stepCounter: "200001765"
+              - columnCounter: 2000021086
+                stepCounter: "200001765"
+              - columnCounter: 2000021087
+                stepCounter: "200001765"
+              - columnCounter: 2000021088
+                stepCounter: "200001765"
+              - columnCounter: 2000021089
+                stepCounter: "200001765"
+              - columnCounter: 2000021090
+                stepCounter: "200001765"
+              - columnCounter: 2000021091
+                stepCounter: "200001765"
+              - columnCounter: 2000021092
+                stepCounter: "200001765"
+              - columnCounter: 2000021093
+                stepCounter: "200001765"
+              - columnCounter: 2000021094
+                stepCounter: "200001765"
+              - columnCounter: 2000021095
+                stepCounter: "200001765"
+              - columnCounter: 2000021096
+                stepCounter: "200001765"
+            name: DSS_CHANGE_HASH_RETAILERSALES_AMAZON_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021098
+              stepCounter: "200001765"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021100
+              stepCounter: "200001765"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021099
+              stepCounter: "200001765"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_AMAZON_SALES: "200001759"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_AMAZON_SALES
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_AMAZON_SALES') }} LOAD_AMAZON_SALES\
+                \  "
+            name: STAGE_RETAILERSALES_AMAZON
+            noLinkRefs: []
+      name: STAGE_RETAILERSALES_AMAZON
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001765"

@@ -1,0 +1,110 @@
+steps:
+  STAGE_RETAILER_RITEAID-200002755:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027655
+              stepCounter: "200002755"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027656
+                stepCounter: "200002755"
+              - columnCounter: 2000027657
+                stepCounter: "200002755"
+            name: HK_H_RETAILER_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027656
+              stepCounter: "200002755"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'RITEAID'"
+          - columnReference:
+              columnCounter: 2000027657
+              stepCounter: "200002755"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_RITEAID'"
+          - columnReference:
+              columnCounter: 2000027658
+              stepCounter: "200002755"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027659
+              stepCounter: "200002755"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027660
+              stepCounter: "200002755"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_RITEAID: "200002753"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_RITEAID
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_INVENTORY_POS_RITEAID') }}\
+                \ LOAD_INVENTORY_POS_RITEAID  "
+            name: STAGE_RETAILER_RITEAID
+            noLinkRefs: []
+      name: STAGE_RETAILER_RITEAID
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002755"

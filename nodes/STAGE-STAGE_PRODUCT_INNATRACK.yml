@@ -1,0 +1,333 @@
+steps:
+  STAGE_PRODUCT_INNATRACK-200001886:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024884
+              stepCounter: "200001886"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024885
+                stepCounter: "200001886"
+              - columnCounter: 2000024886
+                stepCounter: "200001886"
+            name: HK_H_PRODUCT_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024885
+              stepCounter: "200001886"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(PUPCPRODUCT, '|', PUPCUOMT)
+          - columnReference:
+              columnCounter: 2000024886
+              stepCounter: "200001886"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024887
+              stepCounter: "200001886"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PUPCPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024888
+              stepCounter: "200001886"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PUPCUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024889
+              stepCounter: "200001886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PUPCSELLUNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024890
+              stepCounter: "200001886"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PUPCINNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024891
+              stepCounter: "200001886"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PUPCUPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024892
+              stepCounter: "200001886"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: PUPCPALLPAT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024893
+              stepCounter: "200001886"
+            dataType: NUMBER(10,3)
+            defaultValue: ""
+            description: ""
+            name: PUPCEQIVQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024894
+              stepCounter: "200001886"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: PUPCPACKSIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024895
+              stepCounter: "200001886"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: PUPCGWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024896
+              stepCounter: "200001886"
+            dataType: NUMBER(12,3)
+            defaultValue: ""
+            description: ""
+            name: PUPCNWGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024897
+              stepCounter: "200001886"
+            dataType: NUMBER(13,7)
+            defaultValue: ""
+            description: ""
+            name: PUPCCUBE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024898
+              stepCounter: "200001886"
+            dataType: NUMBER(11,5)
+            defaultValue: ""
+            description: ""
+            name: PUPCHEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024899
+              stepCounter: "200001886"
+            dataType: NUMBER(11,5)
+            defaultValue: ""
+            description: ""
+            name: PUPCWIDTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024900
+              stepCounter: "200001886"
+            dataType: NUMBER(11,5)
+            defaultValue: ""
+            description: ""
+            name: PUPCDEPTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024901
+              stepCounter: "200001886"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: PUPCUSERDEF
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024902
+              stepCounter: "200001886"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024887
+                stepCounter: "200001886"
+              - columnCounter: 2000024888
+                stepCounter: "200001886"
+            name: DSS_CHANGE_HASH_PRODUCT_INNATRACK_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024903
+              stepCounter: "200001886"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024889
+                stepCounter: "200001886"
+              - columnCounter: 2000024890
+                stepCounter: "200001886"
+              - columnCounter: 2000024891
+                stepCounter: "200001886"
+              - columnCounter: 2000024892
+                stepCounter: "200001886"
+              - columnCounter: 2000024893
+                stepCounter: "200001886"
+              - columnCounter: 2000024894
+                stepCounter: "200001886"
+              - columnCounter: 2000024895
+                stepCounter: "200001886"
+              - columnCounter: 2000024896
+                stepCounter: "200001886"
+              - columnCounter: 2000024897
+                stepCounter: "200001886"
+              - columnCounter: 2000024898
+                stepCounter: "200001886"
+              - columnCounter: 2000024899
+                stepCounter: "200001886"
+              - columnCounter: 2000024900
+                stepCounter: "200001886"
+              - columnCounter: 2000024901
+                stepCounter: "200001886"
+            name: DSS_CHANGE_HASH_PRODUCT_INNATRACK_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024904
+              stepCounter: "200001886"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024905
+              stepCounter: "200001886"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024906
+              stepCounter: "200001886"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_IVPUPC_REC_CX_INNATRACK: "200001874"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_IVPUPC_REC_CX_INNATRACK
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_IVPUPC_REC_CX_INNATRACK')\
+                \ }} LOAD_IVPUPC_REC_CX_INNATRACK  "
+            name: STAGE_PRODUCT_INNATRACK
+            noLinkRefs: []
+      name: STAGE_PRODUCT_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001886"

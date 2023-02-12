@@ -1,0 +1,637 @@
+steps:
+  STAGE_RETAILER_INVENTORY_MEIJER-200002518:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026497
+              stepCounter: "200002518"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026498
+                stepCounter: "200002518"
+              - columnCounter: 2000026499
+                stepCounter: "200002518"
+              - columnCounter: 2000026504
+                stepCounter: "200002518"
+            name: HK_L_RETAILER_INVENTORY_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026498
+              stepCounter: "200002518"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026500
+                stepCounter: "200002518"
+              - columnCounter: 2000026501
+                stepCounter: "200002518"
+            name: HK_H_RETAILERPRODUCT_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026499
+              stepCounter: "200002518"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026502
+                stepCounter: "200002518"
+              - columnCounter: 2000026503
+                stepCounter: "200002518"
+            name: HK_H_RETAILER_MEIJER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026500
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTIDID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026501
+              stepCounter: "200002518"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MEIJER'"
+          - columnReference:
+              columnCounter: 2000026502
+              stepCounter: "200002518"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'MEIJER'"
+          - columnReference:
+              columnCounter: 2000026503
+              stepCounter: "200002518"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_MEIJER'"
+          - columnReference:
+              columnCounter: 2000026504
+              stepCounter: "200002518"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026505
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVSTOREQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026506
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDFQTYWEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026507
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TOTALONORDERQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026508
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TOTALINVENTORYONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026509
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: WOSBASEDONMRWSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026510
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: WOSBASEDON4WEEKSSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026511
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: WOSBASEDON12WEEKSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026512
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT4WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026513
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT5TO8WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026514
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXTWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026515
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT2NDWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026516
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT3RDWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026517
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT4THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026518
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT5THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026519
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYPROMONEXT6THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026520
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT4WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026521
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT5TO8WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026522
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT9TO12WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026523
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT13TO16WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026524
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT17TO20WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026525
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT21TO24WEEKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026526
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXTWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026527
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT2NDWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026528
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT3RDWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026529
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT4THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026530
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT5THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026531
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT6THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026532
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT7THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026533
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT8THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026534
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT9THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026535
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT10THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026536
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT11THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026537
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCSTSTOREQTYREGULARNEXT12THWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026538
+              stepCounter: "200002518"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVSTOREWKSOFSUPPLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026539
+              stepCounter: "200002518"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000026505
+                stepCounter: "200002518"
+              - columnCounter: 2000026506
+                stepCounter: "200002518"
+              - columnCounter: 2000026507
+                stepCounter: "200002518"
+              - columnCounter: 2000026508
+                stepCounter: "200002518"
+              - columnCounter: 2000026509
+                stepCounter: "200002518"
+              - columnCounter: 2000026510
+                stepCounter: "200002518"
+              - columnCounter: 2000026511
+                stepCounter: "200002518"
+              - columnCounter: 2000026512
+                stepCounter: "200002518"
+              - columnCounter: 2000026513
+                stepCounter: "200002518"
+              - columnCounter: 2000026514
+                stepCounter: "200002518"
+              - columnCounter: 2000026515
+                stepCounter: "200002518"
+              - columnCounter: 2000026516
+                stepCounter: "200002518"
+              - columnCounter: 2000026517
+                stepCounter: "200002518"
+              - columnCounter: 2000026518
+                stepCounter: "200002518"
+              - columnCounter: 2000026519
+                stepCounter: "200002518"
+              - columnCounter: 2000026520
+                stepCounter: "200002518"
+              - columnCounter: 2000026521
+                stepCounter: "200002518"
+              - columnCounter: 2000026522
+                stepCounter: "200002518"
+              - columnCounter: 2000026523
+                stepCounter: "200002518"
+              - columnCounter: 2000026524
+                stepCounter: "200002518"
+              - columnCounter: 2000026525
+                stepCounter: "200002518"
+              - columnCounter: 2000026526
+                stepCounter: "200002518"
+              - columnCounter: 2000026527
+                stepCounter: "200002518"
+              - columnCounter: 2000026528
+                stepCounter: "200002518"
+              - columnCounter: 2000026529
+                stepCounter: "200002518"
+              - columnCounter: 2000026530
+                stepCounter: "200002518"
+              - columnCounter: 2000026531
+                stepCounter: "200002518"
+              - columnCounter: 2000026532
+                stepCounter: "200002518"
+              - columnCounter: 2000026533
+                stepCounter: "200002518"
+              - columnCounter: 2000026534
+                stepCounter: "200002518"
+              - columnCounter: 2000026535
+                stepCounter: "200002518"
+              - columnCounter: 2000026536
+                stepCounter: "200002518"
+              - columnCounter: 2000026537
+                stepCounter: "200002518"
+              - columnCounter: 2000026538
+                stepCounter: "200002518"
+            name: DSS_CHANGE_HASH_RETAILER_INVENTORY_MEIJER_LROC_DEFAULT_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026540
+              stepCounter: "200002518"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026541
+              stepCounter: "200002518"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026542
+              stepCounter: "200002518"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_TOW_POS_MEIJER: "200002517"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_TOW_POS_MEIJER
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_TOW_POS_MEIJER') }} LOAD_TOW_POS_MEIJER\
+                \  "
+            name: STAGE_RETAILER_INVENTORY_MEIJER
+            noLinkRefs: []
+      name: STAGE_RETAILER_INVENTORY_MEIJER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002518"

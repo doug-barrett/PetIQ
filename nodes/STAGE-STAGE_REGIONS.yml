@@ -1,0 +1,228 @@
+steps:
+  STAGE_REGIONS-200002243:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030849
+              stepCounter: "200002243"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030850
+                stepCounter: "200002243"
+              - columnCounter: 2000030851
+                stepCounter: "200002243"
+            name: HK_H_REGIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030850
+              stepCounter: "200002243"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REGION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030851
+              stepCounter: "200002243"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030852
+              stepCounter: "200002243"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030853
+              stepCounter: "200002243"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REGIONAL_MANAGER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030854
+              stepCounter: "200002243"
+            dataType: VARCHAR(7)
+            defaultValue: ""
+            description: ""
+            name: COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030855
+              stepCounter: "200002243"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030856
+              stepCounter: "200002243"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030857
+              stepCounter: "200002243"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030858
+              stepCounter: "200002243"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030859
+              stepCounter: "200002243"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030860
+              stepCounter: "200002243"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030852
+                stepCounter: "200002243"
+              - columnCounter: 2000030853
+                stepCounter: "200002243"
+              - columnCounter: 2000030854
+                stepCounter: "200002243"
+              - columnCounter: 2000030855
+                stepCounter: "200002243"
+              - columnCounter: 2000030856
+                stepCounter: "200002243"
+              - columnCounter: 2000030857
+                stepCounter: "200002243"
+              - columnCounter: 2000030858
+                stepCounter: "200002243"
+              - columnCounter: 2000030859
+                stepCounter: "200002243"
+            name: DSS_CHANGE_HASH_REGIONS_LROC_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030861
+              stepCounter: "200002243"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030862
+              stepCounter: "200002243"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030863
+              stepCounter: "200002243"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_REGIONS_FT: "200004181"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_REGIONS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_REGIONS_FT') }} LOAD_REGIONS_FT\
+                \    "
+            name: STAGE_REGIONS
+            noLinkRefs: []
+      name: STAGE_REGIONS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002243"

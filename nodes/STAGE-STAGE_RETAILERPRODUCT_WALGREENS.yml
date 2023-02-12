@@ -1,0 +1,488 @@
+steps:
+  STAGE_RETAILERPRODUCT_WALGREENS-200002850:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027956
+              stepCounter: "200002850"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027957
+                stepCounter: "200002850"
+              - columnCounter: 2000027958
+                stepCounter: "200002850"
+            name: HK_H_RETAILERPRODUCT_WALGREENS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027957
+              stepCounter: "200002850"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ALLCONTROLWICNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027958
+              stepCounter: "200002850"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_WALGREENS'"
+          - columnReference:
+              columnCounter: 2000027959
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ALLCONTROLWICNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027960
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRIVATELABEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027961
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LIFECYCLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027962
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXITDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027963
+              stepCounter: "200002850"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: NEWITEMDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027964
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: IMPORTIND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027965
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CMMNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027966
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CMMNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027967
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RBNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027968
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: RBNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027969
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: GMMNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027970
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GMMNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027971
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DMMNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027972
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DMMNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027973
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SCMNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027974
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCMNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027975
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FCTNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027976
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FCTNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027977
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SLSCATNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027978
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SLSCATNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027979
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRDCATNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027980
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRDCATNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027981
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OPSNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027982
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: OPSNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027983
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BRANDNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027984
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BRANDNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027985
+              stepCounter: "200002850"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VENDORNBR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027986
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027987
+              stepCounter: "200002850"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027959
+                stepCounter: "200002850"
+              - columnCounter: 2000027960
+                stepCounter: "200002850"
+              - columnCounter: 2000027961
+                stepCounter: "200002850"
+              - columnCounter: 2000027962
+                stepCounter: "200002850"
+              - columnCounter: 2000027963
+                stepCounter: "200002850"
+              - columnCounter: 2000027964
+                stepCounter: "200002850"
+              - columnCounter: 2000027965
+                stepCounter: "200002850"
+              - columnCounter: 2000027966
+                stepCounter: "200002850"
+              - columnCounter: 2000027967
+                stepCounter: "200002850"
+              - columnCounter: 2000027968
+                stepCounter: "200002850"
+              - columnCounter: 2000027969
+                stepCounter: "200002850"
+              - columnCounter: 2000027970
+                stepCounter: "200002850"
+              - columnCounter: 2000027971
+                stepCounter: "200002850"
+              - columnCounter: 2000027972
+                stepCounter: "200002850"
+              - columnCounter: 2000027973
+                stepCounter: "200002850"
+              - columnCounter: 2000027974
+                stepCounter: "200002850"
+              - columnCounter: 2000027975
+                stepCounter: "200002850"
+              - columnCounter: 2000027976
+                stepCounter: "200002850"
+              - columnCounter: 2000027977
+                stepCounter: "200002850"
+              - columnCounter: 2000027978
+                stepCounter: "200002850"
+              - columnCounter: 2000027979
+                stepCounter: "200002850"
+              - columnCounter: 2000027980
+                stepCounter: "200002850"
+              - columnCounter: 2000027981
+                stepCounter: "200002850"
+              - columnCounter: 2000027982
+                stepCounter: "200002850"
+              - columnCounter: 2000027983
+                stepCounter: "200002850"
+              - columnCounter: 2000027984
+                stepCounter: "200002850"
+              - columnCounter: 2000027985
+                stepCounter: "200002850"
+              - columnCounter: 2000027986
+                stepCounter: "200002850"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_WALGREENS_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027988
+              stepCounter: "200002850"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027989
+              stepCounter: "200002850"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027990
+              stepCounter: "200002850"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_POS_WALGREENS: "200003370"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_POS_WALGREENS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_POS_WALGREENS') }} LOAD_POS_WALGREENS\
+                \  "
+            name: STAGE_RETAILERPRODUCT_WALGREENS
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_WALGREENS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002850"

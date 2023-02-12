@@ -1,0 +1,110 @@
+steps:
+  STAGE_PRODUCT-200002969:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028174
+              stepCounter: "200002969"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028175
+                stepCounter: "200002969"
+              - columnCounter: 2000028176
+                stepCounter: "200002969"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028175
+              stepCounter: "200002969"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028176
+              stepCounter: "200002969"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'PETIQ'"
+          - columnReference:
+              columnCounter: 2000028177
+              stepCounter: "200002969"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028178
+              stepCounter: "200002969"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028179
+              stepCounter: "200002969"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_SHEET2_PRODUCT_LOOKUP: "200002940"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SHEET2_PRODUCT_LOOKUP
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_SHEET2_PRODUCT_LOOKUP') }}\
+                \ LOAD_SHEET2_PRODUCT_LOOKUP WHERE PRODUCTID IS NOT NULL "
+            name: STAGE_PRODUCT
+            noLinkRefs: []
+      name: STAGE_PRODUCT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002969"

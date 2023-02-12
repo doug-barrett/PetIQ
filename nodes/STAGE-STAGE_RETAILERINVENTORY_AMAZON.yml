@@ -1,0 +1,376 @@
+steps:
+  STAGE_RETAILERINVENTORY_AMAZON-200001762:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021035
+              stepCounter: "200001762"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021036
+                stepCounter: "200001762"
+              - columnCounter: 2000021037
+                stepCounter: "200001762"
+              - columnCounter: 2000021042
+                stepCounter: "200001762"
+            name: HK_L_RETAILERINVENTORY_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021036
+              stepCounter: "200001762"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021038
+                stepCounter: "200001762"
+              - columnCounter: 2000021039
+                stepCounter: "200001762"
+            name: HK_H_RETAILERPRODUCT_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021037
+              stepCounter: "200001762"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021040
+                stepCounter: "200001762"
+              - columnCounter: 2000021041
+                stepCounter: "200001762"
+            name: HK_H_RETAILER_AMAZON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021038
+              stepCounter: "200001762"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ASIN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021039
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_AMAZON'"
+          - columnReference:
+              columnCounter: 2000021040
+              stepCounter: "200001762"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'AMAZON'"
+          - columnReference:
+              columnCounter: 2000021041
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_AMAZON'"
+          - columnReference:
+              columnCounter: 2000021042
+              stepCounter: "200001762"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021043
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: NETRECEIVED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021044
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: NETRECEIVEDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021045
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SELLTHROUGHRATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021046
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: OPENPURCHASEORDERQUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021047
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021048
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDINVENTORYTRAILING30DAYAVERAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021049
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SELLABLEONHANDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021050
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: UNSELLABLEONHANDINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021051
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: UNSELLABLEONHANDINVENTORYTRAILING30DAYAVERAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021052
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: UNSELLABLEONHANDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021053
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AGED90DAYSSELLABLEINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021054
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AGED90DAYSSELLABLEINVENTORYTRAILING30DAYAVERAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021055
+              stepCounter: "200001762"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AGED90DAYSSELLABLEUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021056
+              stepCounter: "200001762"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REPLENISHMENTCATEGORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021057
+              stepCounter: "200001762"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000021043
+                stepCounter: "200001762"
+              - columnCounter: 2000021044
+                stepCounter: "200001762"
+              - columnCounter: 2000021045
+                stepCounter: "200001762"
+              - columnCounter: 2000021046
+                stepCounter: "200001762"
+              - columnCounter: 2000021047
+                stepCounter: "200001762"
+              - columnCounter: 2000021048
+                stepCounter: "200001762"
+              - columnCounter: 2000021049
+                stepCounter: "200001762"
+              - columnCounter: 2000021050
+                stepCounter: "200001762"
+              - columnCounter: 2000021051
+                stepCounter: "200001762"
+              - columnCounter: 2000021052
+                stepCounter: "200001762"
+              - columnCounter: 2000021053
+                stepCounter: "200001762"
+              - columnCounter: 2000021054
+                stepCounter: "200001762"
+              - columnCounter: 2000021055
+                stepCounter: "200001762"
+              - columnCounter: 2000021056
+                stepCounter: "200001762"
+            name: DSS_CHANGE_HASH_RETAILERINVENTORY_AMAZON_LROC_WEEKLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021058
+              stepCounter: "200001762"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021059
+              stepCounter: "200001762"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021060
+              stepCounter: "200001762"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_AMAZON_INVENTORY: "200001760"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_AMAZON_INVENTORY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_AMAZON_INVENTORY') }}  "
+            name: STAGE_RETAILERINVENTORY_AMAZON
+            noLinkRefs: []
+      name: STAGE_RETAILERINVENTORY_AMAZON
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001762"

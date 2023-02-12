@@ -1,0 +1,390 @@
+steps:
+  STAGE_RETAILERINVENTORY_RITEAID-200002756:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027661
+              stepCounter: "200002756"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027662
+                stepCounter: "200002756"
+              - columnCounter: 2000027663
+                stepCounter: "200002756"
+              - columnCounter: 2000027668
+                stepCounter: "200002756"
+            name: HK_L_RETAILERINVENTORY_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027662
+              stepCounter: "200002756"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027664
+                stepCounter: "200002756"
+              - columnCounter: 2000027665
+                stepCounter: "200002756"
+            name: HK_H_RETAILERPRODUCT_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027663
+              stepCounter: "200002756"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027666
+                stepCounter: "200002756"
+              - columnCounter: 2000027667
+                stepCounter: "200002756"
+            name: HK_H_RETAILER_RITEAID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027664
+              stepCounter: "200002756"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ITEMNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027665
+              stepCounter: "200002756"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_RITEAID'"
+          - columnReference:
+              columnCounter: 2000027666
+              stepCounter: "200002756"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: RETAILERID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'RITEAID'"
+          - columnReference:
+              columnCounter: 2000027667
+              stepCounter: "200002756"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_RITEAID'"
+          - columnReference:
+              columnCounter: 2000027668
+              stepCounter: "200002756"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027669
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TOTALOHUNITS_INSTORES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027670
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CAL_00088
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027671
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CAW_00081
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027672
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MD_00010
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027673
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MI_00029
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027674
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NYL_00055
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027675
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OR_00080
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027676
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DC_TOTALUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027677
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: GRANDTOTAL_ONHANDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027678
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNIT_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027679
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EXTENDED_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027680
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RATEOFSALE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027681
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: WEEKSSUPPLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027682
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SPECIAL_RATEOFSALE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027683
+              stepCounter: "200002756"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SPECIALWEEKSSUPPLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027684
+              stepCounter: "200002756"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027669
+                stepCounter: "200002756"
+              - columnCounter: 2000027670
+                stepCounter: "200002756"
+              - columnCounter: 2000027671
+                stepCounter: "200002756"
+              - columnCounter: 2000027672
+                stepCounter: "200002756"
+              - columnCounter: 2000027673
+                stepCounter: "200002756"
+              - columnCounter: 2000027674
+                stepCounter: "200002756"
+              - columnCounter: 2000027675
+                stepCounter: "200002756"
+              - columnCounter: 2000027676
+                stepCounter: "200002756"
+              - columnCounter: 2000027677
+                stepCounter: "200002756"
+              - columnCounter: 2000027678
+                stepCounter: "200002756"
+              - columnCounter: 2000027679
+                stepCounter: "200002756"
+              - columnCounter: 2000027680
+                stepCounter: "200002756"
+              - columnCounter: 2000027681
+                stepCounter: "200002756"
+              - columnCounter: 2000027682
+                stepCounter: "200002756"
+              - columnCounter: 2000027683
+                stepCounter: "200002756"
+            name: DSS_CHANGE_HASH_RETAILERINVENTORY_RITEAID_LROC_DS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027685
+              stepCounter: "200002756"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027686
+              stepCounter: "200002756"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027687
+              stepCounter: "200002756"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_INVENTORY_POS_RITEAID: "200002753"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_INVENTORY_POS_RITEAID
+            join:
+              joinCondition: FROM {{ ref('STAGE','LOAD_INVENTORY_POS_RITEAID') }}
+                LOAD_INVENTORY_POS_RITEAID
+            name: STAGE_RETAILERINVENTORY_RITEAID
+            noLinkRefs: []
+      name: STAGE_RETAILERINVENTORY_RITEAID
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002756"

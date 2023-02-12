@@ -1,0 +1,202 @@
+steps:
+  STAGE_RETAILERPRODUCT_PETCO-200002679:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027268
+              stepCounter: "200002679"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027269
+                stepCounter: "200002679"
+              - columnCounter: 2000027270
+                stepCounter: "200002679"
+            name: HK_H_RETAILERPRODUCT_PETCO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027269
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PETCOSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027270
+              stepCounter: "200002679"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_PETCO'"
+          - columnReference:
+              columnCounter: 2000027271
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MFR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027272
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUPPLIERSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027273
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027274
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUBCLASS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027275
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUBCLASSDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027276
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027277
+              stepCounter: "200002679"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027271
+                stepCounter: "200002679"
+              - columnCounter: 2000027272
+                stepCounter: "200002679"
+              - columnCounter: 2000027273
+                stepCounter: "200002679"
+              - columnCounter: 2000027274
+                stepCounter: "200002679"
+              - columnCounter: 2000027275
+                stepCounter: "200002679"
+              - columnCounter: 2000027276
+                stepCounter: "200002679"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_PETCO_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027278
+              stepCounter: "200002679"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027279
+              stepCounter: "200002679"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027280
+              stepCounter: "200002679"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_DATA_POS_PETCO: "200002677"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_DATA_POS_PETCO
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_DATA_POS_PETCO') }} LOAD_DATA_POS_PETCO\
+                \  "
+            name: STAGE_RETAILERPRODUCT_PETCO
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_PETCO
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002679"

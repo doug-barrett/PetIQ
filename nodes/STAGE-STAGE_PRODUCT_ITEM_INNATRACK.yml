@@ -1,0 +1,208 @@
+steps:
+  STAGE_PRODUCT_ITEM_INNATRACK-200001887:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024907
+              stepCounter: "200001887"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024908
+                stepCounter: "200001887"
+              - columnCounter: 2000024909
+                stepCounter: "200001887"
+            name: HK_L_PRODUCT_ITEM_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024908
+              stepCounter: "200001887"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024910
+                stepCounter: "200001887"
+              - columnCounter: 2000024911
+                stepCounter: "200001887"
+            name: HK_H_PRODUCT_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024909
+              stepCounter: "200001887"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024912
+                stepCounter: "200001887"
+              - columnCounter: 2000024913
+                stepCounter: "200001887"
+            name: HK_H_ITEM_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024910
+              stepCounter: "200001887"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONCAT(PUPCPRODUCT, '|', PUPCUOMT)
+          - columnReference:
+              columnCounter: 2000024911
+              stepCounter: "200001887"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024912
+              stepCounter: "200001887"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ITEMID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024913
+              stepCounter: "200001887"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'INNATRACK'"
+          - columnReference:
+              columnCounter: 2000024914
+              stepCounter: "200001887"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PUPCPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024915
+              stepCounter: "200001887"
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: PUPCUOMT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024916
+              stepCounter: "200001887"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000024914
+                stepCounter: "200001887"
+              - columnCounter: 2000024915
+                stepCounter: "200001887"
+            name: DSS_CHANGE_HASH_PRODUCT_ITEM_INNATRACK_BOK_INFO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024917
+              stepCounter: "200001887"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024918
+              stepCounter: "200001887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024919
+              stepCounter: "200001887"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_IVPUPC_REC_CX_INNATRACK: "200001874"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_IVPUPC_REC_CX_INNATRACK
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_IVPUPC_REC_CX_INNATRACK')\
+                \ }} LOAD_IVPUPC_REC_CX_INNATRACK  "
+            name: STAGE_PRODUCT_ITEM_INNATRACK
+            noLinkRefs: []
+      name: STAGE_PRODUCT_ITEM_INNATRACK
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001887"

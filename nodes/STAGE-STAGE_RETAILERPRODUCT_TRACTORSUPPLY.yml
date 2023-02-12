@@ -1,0 +1,189 @@
+steps:
+  STAGE_RETAILERPRODUCT_TRACTORSUPPLY-200002600:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027139
+              stepCounter: "200002600"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027140
+                stepCounter: "200002600"
+              - columnCounter: 2000027141
+                stepCounter: "200002600"
+            name: HK_H_RETAILERPRODUCT_TRACTORSUPPLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027140
+              stepCounter: "200002600"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ARTICLENO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027141
+              stepCounter: "200002600"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_TRACTORSUPPLY'"
+          - columnReference:
+              columnCounter: 2000027142
+              stepCounter: "200002600"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VENDORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027143
+              stepCounter: "200002600"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027144
+              stepCounter: "200002600"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CATEGORYFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027145
+              stepCounter: "200002600"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORPARTNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027146
+              stepCounter: "200002600"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ARTICLEDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027147
+              stepCounter: "200002600"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000027142
+                stepCounter: "200002600"
+              - columnCounter: 2000027143
+                stepCounter: "200002600"
+              - columnCounter: 2000027144
+                stepCounter: "200002600"
+              - columnCounter: 2000027145
+                stepCounter: "200002600"
+              - columnCounter: 2000027146
+                stepCounter: "200002600"
+            name: DSS_CHANGE_HASH_RETAILERPRODUCT_TRACTORSUPPLY_LROC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027148
+              stepCounter: "200002600"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027149
+              stepCounter: "200002600"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027150
+              stepCounter: "200002600"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_TSC_POS_TRACTORSUPPLY: "200002597"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_TSC_POS_TRACTORSUPPLY
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_TSC_POS_TRACTORSUPPLY') }}\
+                \ LOAD_TSC_POS_TRACTORSUPPLY  "
+            name: STAGE_RETAILERPRODUCT_TRACTORSUPPLY
+            noLinkRefs: []
+      name: STAGE_RETAILERPRODUCT_TRACTORSUPPLY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002600"

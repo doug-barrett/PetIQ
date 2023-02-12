@@ -1,0 +1,219 @@
+steps:
+  STAGE_PRODUCT_RETAILERSTORESALES_TARGET-200003088:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028411
+              stepCounter: "200003088"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: SALESDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028412
+              stepCounter: "200003088"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: RETAILERSTOREID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028413
+              stepCounter: "200003088"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028414
+              stepCounter: "200003088"
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028415
+              stepCounter: "200003088"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028416
+              stepCounter: "200003088"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERPRODUCT_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028453
+              stepCounter: "200003088"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028452
+              stepCounter: "200003088"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLARS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028417
+              stepCounter: "200003088"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028412
+                stepCounter: "200003088"
+              - columnCounter: 2000028413
+                stepCounter: "200003088"
+            name: HK_H_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028418
+              stepCounter: "200003088"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028414
+                stepCounter: "200003088"
+              - columnCounter: 2000028415
+                stepCounter: "200003088"
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028419
+              stepCounter: "200003088"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028418
+                stepCounter: "200003088"
+              - columnCounter: 2000028417
+                stepCounter: "200003088"
+              - columnCounter: 2000028411
+                stepCounter: "200003088"
+            name: HK_L_RETAILERSTOREPRODUCTSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028454
+              stepCounter: "200003088"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000028452
+                stepCounter: "200003088"
+              - columnCounter: 2000028453
+                stepCounter: "200003088"
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              L_RETAILERSTORE_SALES: "200001695"
+              H_RETAILERSTORE: "200001858"
+              L_RETAILERPRODUCT_PRODUCT: "200002960"
+              H_PRODUCT: "200001734"
+              S_RETAILERSTORE_SALES_TARGET_LROC_DEFAULT_SOURCE: "200002575"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: L_RETAILERSTORE_SALES
+              - locationName: STAGE
+                nodeName: H_RETAILERSTORE
+              - locationName: STAGE
+                nodeName: L_RETAILERPRODUCT_PRODUCT
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: S_RETAILERSTORE_SALES_TARGET_LROC_DEFAULT_SOURCE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','L_RETAILERSTORE_SALES') }} L_RETAILERSTORE_SALES\
+                \  JOIN {{ ref('STAGE','H_RETAILERSTORE') }} H_RETAILERSTORE    ON\
+                \ L_RETAILERSTORE_SALES.HK_H_RETAILERSTORE = H_RETAILERSTORE.HK_H_RETAILERSTORE\
+                \  JOIN {{ ref('STAGE','L_RETAILERPRODUCT_PRODUCT') }} L_RETAILERPRODUCT_PRODUCT\
+                \    ON L_RETAILERSTORE_SALES.HK_H_RETAILERPRODUCT = L_RETAILERPRODUCT_PRODUCT.HK_H_RETAILERPRODUCT\
+                \  JOIN {{ ref('STAGE','H_PRODUCT') }} H_PRODUCT    ON L_RETAILERPRODUCT_PRODUCT.HK_H_PRODUCT\
+                \ = H_PRODUCT.HK_H_PRODUCT  JOIN {{ ref('STAGE','S_RETAILERSTORE_SALES_TARGET_LROC_DEFAULT_SOURCE')\
+                \ }} S_RETAILERSTORE_SALES_TARGET_LROC_DEFAULT_SOURCE    ON L_RETAILERSTORE_SALES.HK_L_RETAILERSTORE_SALES\
+                \ = S_RETAILERSTORE_SALES_TARGET_LROC_DEFAULT_SOURCE.HK_L_RETAILERSTORE_SALES_TARGET\
+                \    "
+            name: STAGE_PRODUCT_RETAILERSTORESALES_TARGET
+            noLinkRefs: []
+      name: STAGE_PRODUCT_RETAILERSTORESALES_TARGET
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003088"

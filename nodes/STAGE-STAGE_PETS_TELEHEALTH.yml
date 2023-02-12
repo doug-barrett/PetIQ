@@ -1,0 +1,179 @@
+steps:
+  STAGE_PETS_TELEHEALTH-200003671:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000030053
+              stepCounter: "200003671"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030052
+                stepCounter: "200003671"
+              - columnCounter: 2000030047
+                stepCounter: "200003671"
+            name: HK_L_PET_TELEHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030052
+              stepCounter: "200003671"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030040
+                stepCounter: "200003671"
+              - columnCounter: 2000030048
+                stepCounter: "200003671"
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030047
+              stepCounter: "200003671"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            hashDetails:
+              hashAlgorithm: MD5
+            hashedColumns:
+              - columnCounter: 2000030039
+                stepCounter: "200003671"
+              - columnCounter: 2000030046
+                stepCounter: "200003671"
+            name: HK_H_TELEHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030040
+              stepCounter: "200003671"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030048
+              stepCounter: "200003671"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BKCC_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030039
+              stepCounter: "200003671"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TELEHEALTH_RECORDS_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030046
+              stepCounter: "200003671"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: BKCC_TELEHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO'"
+          - columnReference:
+              columnCounter: 2000030042
+              stepCounter: "200003671"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030043
+              stepCounter: "200003671"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030045
+              stepCounter: "200003671"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000030044
+              stepCounter: "200003671"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was updated in the data warehouse.
+            name: DSS_UPDATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_TELEHEALTH_RECORDS_FT: "200004200"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_TELEHEALTH_RECORDS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_TELEHEALTH_RECORDS_FT') }}\
+                \ LOAD_TELEHEALTH_RECORDS_FT    "
+            name: STAGE_PETS_TELEHEALTH
+            noLinkRefs: []
+      name: STAGE_PETS_TELEHEALTH
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003671"
