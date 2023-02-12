@@ -1,0 +1,109 @@
+steps:
+  L_ITEM_ORDER_ROW_ORDER-200002034:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027192
+              stepCounter: "200002034"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_ITEM_ORDER_ROW_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027193
+              stepCounter: "200002034"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027194
+              stepCounter: "200002034"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ORDER_ROW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027195
+              stepCounter: "200002034"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027196
+              stepCounter: "200002034"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027197
+              stepCounter: "200002034"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027198
+              stepCounter: "200002034"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: '  '
+            name: L_ITEM_ORDER_ROW_ORDER
+            noLinkRefs: []
+      name: L_ITEM_ORDER_ROW_ORDER
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002034"

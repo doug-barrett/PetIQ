@@ -1,0 +1,539 @@
+steps:
+  LOAD_CLINICS_FT-200003818:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029111
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029112
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CLINIC_DEPARTED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029113
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: NON_PAYMENT_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029114
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: DISCOUNT_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029115
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CLINIC_SETUP_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029116
+              stepCounter: "200003818"
+            dataType: VARCHAR(400)
+            defaultValue: ""
+            description: ""
+            name: PUBLIC_WEBSITE_CONTENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029117
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029118
+              stepCounter: "200003818"
+            dataType: VARCHAR(32768)
+            defaultValue: ""
+            description: ""
+            name: BIO_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029119
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: CHECK_PAYMENT_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029120
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_CODE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029121
+              stepCounter: "200003818"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: WEATHER_ICON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029122
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: VACCERT_TALLY_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029123
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029124
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029125
+              stepCounter: "200003818"
+            dataType: VARCHAR(2000)
+            defaultValue: ""
+            description: ""
+            name: INTERNAL_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029126
+              stepCounter: "200003818"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ARE_CREDITS_APPLIED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029127
+              stepCounter: "200003818"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_CANCELED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029128
+              stepCounter: "200003818"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX_RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029129
+              stepCounter: "200003818"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEATHER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029130
+              stepCounter: "200003818"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: TEMPERATURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029131
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029132
+              stepCounter: "200003818"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: HUMIDITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029133
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029134
+              stepCounter: "200003818"
+            dataType: VARCHAR(400)
+            defaultValue: ""
+            description: ""
+            name: FLYER_CONTENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029135
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: CREDIT_CARD_PAYMENT_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029136
+              stepCounter: "200003818"
+            dataType: VARCHAR(144)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029137
+              stepCounter: "200003818"
+            dataType: VARCHAR(1024)
+            defaultValue: ""
+            description: ""
+            name: SUMMARY_REPORT_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029138
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029139
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: RIG_RUN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029140
+              stepCounter: "200003818"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: SEQUENCE_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029141
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BIO_NOTES_AUTHOR_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029142
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CLINIC_END_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029143
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_PET_COUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029144
+              stepCounter: "200003818"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: CANCELLATION_REASON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029145
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CLINIC_START_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029146
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SALES_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029147
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029148
+              stepCounter: "200003818"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: WINDSPEED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029149
+              stepCounter: "200003818"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: CASH_PAYMENT_TOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029150
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029151
+              stepCounter: "200003818"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029152
+              stepCounter: "200003818"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: PROMOTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029153
+              stepCounter: "200003818"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029154
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000029110
+              stepCounter: "200003818"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.APOLLO_PUBLIC.CLINICS'"
+          - columnReference:
+              columnCounter: 2000029109
+              stepCounter: "200003818"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_CLINICS_FT
+            noLinkRefs: []
+      name: LOAD_CLINICS_FT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003818"

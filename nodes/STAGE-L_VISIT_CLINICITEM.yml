@@ -1,0 +1,112 @@
+steps:
+  L_VISIT_CLINICITEM-200003390:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034269
+              stepCounter: "200003390"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_VISIT_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034270
+              stepCounter: "200003390"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034271
+              stepCounter: "200003390"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034272
+              stepCounter: "200003390"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034273
+              stepCounter: "200003390"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034274
+              stepCounter: "200003390"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034275
+              stepCounter: "200003390"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_VISIT_CLINICITEM: "200003388"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_VISIT_CLINICITEM
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_VISIT_CLINICITEM') }} STAGE_VISIT_CLINICITEM
+            name: L_VISIT_CLINICITEM
+            noLinkRefs: []
+      name: L_VISIT_CLINICITEM
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200003390"

@@ -1,0 +1,87 @@
+steps:
+  L_PRODUCT_RETAILERSTORE_INVENTORY-200003189:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031747
+              stepCounter: "200003189"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERSTOREPRODUCTINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031748
+              stepCounter: "200003189"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031749
+              stepCounter: "200003189"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERSTORE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031750
+              stepCounter: "200003189"
+            dataType: VARCHAR(80)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031751
+              stepCounter: "200003189"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: L_PRODUCT_RETAILERSTORE_INVENTORY
+            noLinkRefs: []
+      name: L_PRODUCT_RETAILERSTORE_INVENTORY
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200003189"

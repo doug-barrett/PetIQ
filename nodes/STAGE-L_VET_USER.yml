@@ -1,0 +1,101 @@
+steps:
+  L_VET_USER-200001582:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034256
+              stepCounter: "200001582"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_VET_USER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034257
+              stepCounter: "200001582"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_USER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034258
+              stepCounter: "200001582"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034259
+              stepCounter: "200001582"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034260
+              stepCounter: "200001582"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034261
+              stepCounter: "200001582"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_VET_USER: "200002249"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_VET_USER
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_VET_USER') }} STAGE_VET_USER
+            name: L_VET_USER
+            noLinkRefs: []
+      name: L_VET_USER
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200001582"

@@ -1,0 +1,146 @@
+steps:
+  L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION-200003805:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034348
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034349
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034350
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034351
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034352
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034353
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034354
+              stepCounter: "200003805"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINICLOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034355
+              stepCounter: "200003805"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034356
+              stepCounter: "200003805"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034357
+              stepCounter: "200003805"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION: "200003803"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION')\
+                \ }} STAGE_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION    "
+            name: L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION
+            noLinkRefs: []
+      name: L_VISIT_VET_OWNER_PET_CLINIC_CLINICLOCATION
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200003805"

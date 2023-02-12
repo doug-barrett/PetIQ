@@ -1,0 +1,220 @@
+steps:
+  LOAD_AMAZON_SALES-200001759:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000021023
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ASIN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021024
+              stepCounter: "200001759"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTTITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021025
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021026
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUEPERCENTOFTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021027
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUEPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021028
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDREVENUELASTYEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021029
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021030
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSPERCENTOFTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021031
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021032
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: SHIPPEDUNITSLASTYEAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021033
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERRETURNS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021034
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: FREEREPLACEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021035
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AVERAGESALESPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021036
+              stepCounter: "200001759"
+            dataType: NVARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AVERAGESALESPRICEPRIORPERIOD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021037
+              stepCounter: "200001759"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000021038
+              stepCounter: "200001759"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'WS_POS_DEV.DBO.AMAZON_SALES_STG'"
+          - columnReference:
+              columnCounter: 2000021039
+              stepCounter: "200001759"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_AMAZON_SALES
+            noLinkRefs: []
+      name: LOAD_AMAZON_SALES
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001759"

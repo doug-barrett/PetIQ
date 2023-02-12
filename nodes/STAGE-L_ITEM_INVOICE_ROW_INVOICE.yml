@@ -1,0 +1,113 @@
+steps:
+  L_ITEM_INVOICE_ROW_INVOICE-200002032:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027178
+              stepCounter: "200002032"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_ITEM_INVOICE_ROW_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027179
+              stepCounter: "200002032"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027180
+              stepCounter: "200002032"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_ROW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027181
+              stepCounter: "200002032"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027182
+              stepCounter: "200002032"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027183
+              stepCounter: "200002032"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027184
+              stepCounter: "200002032"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE: "200001986"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE')\
+                \ }} STAGE_ITEM_INVOICE_ROW_INVOICE_SAGE  "
+            name: L_ITEM_INVOICE_ROW_INVOICE
+            noLinkRefs: []
+      name: L_ITEM_INVOICE_ROW_INVOICE
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002032"

@@ -1,0 +1,113 @@
+steps:
+  L_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT-200004171:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000035975
+              stepCounter: "200004171"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035979
+              stepCounter: "200004171"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_WORK_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035977
+              stepCounter: "200004171"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DEPARTMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035976
+              stepCounter: "200004171"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_BUSINESS_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035980
+              stepCounter: "200004171"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035981
+              stepCounter: "200004171"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000035982
+              stepCounter: "200004171"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT: "200004169"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT')\
+                \ }} STAGE_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT  "
+            name: L_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+            noLinkRefs: []
+      name: L_WORKASSIGNMENT_DEPARTMENT_BUSINESSUNIT
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200004171"

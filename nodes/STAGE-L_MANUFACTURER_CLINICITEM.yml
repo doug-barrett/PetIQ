@@ -1,0 +1,102 @@
+steps:
+  L_MANUFACTURER_CLINICITEM-200002297:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034218
+              stepCounter: "200002297"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_MANUFACTURER_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034219
+              stepCounter: "200002297"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINICITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034220
+              stepCounter: "200002297"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_MANUFACTURER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034221
+              stepCounter: "200002297"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034222
+              stepCounter: "200002297"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034223
+              stepCounter: "200002297"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_MANUFACTURER_CLINICITEM: "200002235"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_MANUFACTURER_CLINICITEM
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_MANUFACTURER_CLINICITEM')
+                }} STAGE_MANUFACTURER_CLINICITEM
+            name: L_MANUFACTURER_CLINICITEM
+            noLinkRefs: []
+      name: L_MANUFACTURER_CLINICITEM
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002297"

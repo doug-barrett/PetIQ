@@ -1,0 +1,102 @@
+steps:
+  L_OWNERS_TELEHEALTH-200003675:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032829
+              stepCounter: "200003675"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_OWNER_TELEHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032830
+              stepCounter: "200003675"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032831
+              stepCounter: "200003675"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_TELEHEALTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032832
+              stepCounter: "200003675"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032833
+              stepCounter: "200003675"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032834
+              stepCounter: "200003675"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_OWNERS_TELEHEALTH: "200003669"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_OWNERS_TELEHEALTH
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_OWNERS_TELEHEALTH') }} STAGE_OWNERS_TELEHEALTH\
+                \    "
+            name: L_OWNERS_TELEHEALTH
+            noLinkRefs: []
+      name: L_OWNERS_TELEHEALTH
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200003675"

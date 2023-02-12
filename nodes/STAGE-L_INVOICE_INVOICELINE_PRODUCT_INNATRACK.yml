@@ -1,0 +1,113 @@
+steps:
+  L_INVOICE_INVOICELINE_PRODUCT_INNATRACK-200001908:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028369
+              stepCounter: "200001908"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028370
+              stepCounter: "200001908"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICELINE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028371
+              stepCounter: "200001908"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028372
+              stepCounter: "200001908"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PRODUCT_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028373
+              stepCounter: "200001908"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028374
+              stepCounter: "200001908"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028375
+              stepCounter: "200001908"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK: "200001879"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK')
+                }} STAGE_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+            name: L_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+            noLinkRefs: []
+      name: L_INVOICE_INVOICELINE_PRODUCT_INNATRACK
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200001908"

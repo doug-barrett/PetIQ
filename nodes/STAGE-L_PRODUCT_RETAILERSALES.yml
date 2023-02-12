@@ -1,0 +1,109 @@
+steps:
+  L_PRODUCT_RETAILERSALES-200003071:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031708
+              stepCounter: "200003071"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_PRODUCT_RETAILERSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031709
+              stepCounter: "200003071"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031710
+              stepCounter: "200003071"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031711
+              stepCounter: "200003071"
+            dataType: TIMESTAMP_NTZ(0)
+            defaultValue: ""
+            description: ""
+            name: SALESDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031714
+              stepCounter: "200003071"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031715
+              stepCounter: "200003071"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031716
+              stepCounter: "200003071"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: L_PRODUCT_RETAILERSALES
+            noLinkRefs: []
+      name: L_PRODUCT_RETAILERSALES
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200003071"

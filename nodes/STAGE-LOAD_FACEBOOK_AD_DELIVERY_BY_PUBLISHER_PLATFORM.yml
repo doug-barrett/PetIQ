@@ -1,0 +1,550 @@
+steps:
+  LOAD_FACEBOOK_AD_DELIVERY_BY_PUBLISHER_PLATFORM-200003471:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027013
+              stepCounter: "200003471"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027014
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027015
+              stepCounter: "200003471"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027016
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027017
+              stepCounter: "200003471"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027018
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADSET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027019
+              stepCounter: "200003471"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: ADSET_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027020
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027021
+              stepCounter: "200003471"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: AD_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027022
+              stepCounter: "200003471"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: OBJECTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027023
+              stepCounter: "200003471"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PUBLISHER_PLATFORM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027024
+              stepCounter: "200003471"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: IMPRESSION_DEVICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027025
+              stepCounter: "200003471"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PLATFORM_POSITION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027026
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027027
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027028
+              stepCounter: "200003471"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SPEND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027029
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027030
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027031
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: INLINE_LINK_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027032
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: BUTTON_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027033
+              stepCounter: "200003471"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: CANVAS_AVG_VIEW_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027034
+              stepCounter: "200003471"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: CANVAS_AVG_VIEW_PERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027035
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ESTIMATED_AD_RECALLERS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027036
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_10S
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027037
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_30S
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027038
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_25P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027039
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_50P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027040
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_75P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027041
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_95P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027042
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_100P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027043
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_THRUPLAYS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027044
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LIKES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027045
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNLIKES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027046
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LINK_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027047
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PHOTO_VIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027048
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_PLAYS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027049
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_VIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027050
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PAGE_ENGAGEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027051
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: POSTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027052
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: POST_ENGAGEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027053
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: POST_LIKES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027054
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: COMMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027055
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: MENTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027056
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CHECKINS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027057
+              stepCounter: "200003471"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: RSVPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027012
+              stepCounter: "200003471"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.FACEBOOK_AD_DELIVERY_BY_PUBLISHER_PLATFORM'"
+          - columnReference:
+              columnCounter: 2000027011
+              stepCounter: "200003471"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_FACEBOOK_AD_DELIVERY_BY_PUBLISHER_PLATFORM
+            noLinkRefs: []
+      name: LOAD_FACEBOOK_AD_DELIVERY_BY_PUBLISHER_PLATFORM
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003471"

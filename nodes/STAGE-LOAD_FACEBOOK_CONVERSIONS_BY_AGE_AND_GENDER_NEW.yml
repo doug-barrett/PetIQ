@@ -1,0 +1,330 @@
+steps:
+  LOAD_FACEBOOK_CONVERSIONS_BY_AGE_AND_GENDER_NEW-200003479:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027188
+              stepCounter: "200003479"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027189
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027190
+              stepCounter: "200003479"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027191
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027192
+              stepCounter: "200003479"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027193
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADSET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027194
+              stepCounter: "200003479"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: ADSET_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027195
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027196
+              stepCounter: "200003479"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: AD_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027197
+              stepCounter: "200003479"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: OBJECTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027198
+              stepCounter: "200003479"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: AGE_GROUP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027199
+              stepCounter: "200003479"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: GENDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027200
+              stepCounter: "200003479"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027201
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_CLICK1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027202
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_CLICK7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027203
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_CLICK28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027204
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_VIEW1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027205
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_VIEW7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027206
+              stepCounter: "200003479"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_VIEW28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027207
+              stepCounter: "200003479"
+            dataType: NUMBER(12,4)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_CLICK1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027208
+              stepCounter: "200003479"
+            dataType: NUMBER(12,4)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_CLICK7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027209
+              stepCounter: "200003479"
+            dataType: NUMBER(12,4)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_CLICK28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027210
+              stepCounter: "200003479"
+            dataType: NUMBER(12,4)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_VIEW1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027211
+              stepCounter: "200003479"
+            dataType: NUMBER(12,4)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_VIEW7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027212
+              stepCounter: "200003479"
+            dataType: NUMBER(12,4)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_VIEW28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027187
+              stepCounter: "200003479"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.FACEBOOK_CONVERSIONS_BY_AGE_AND_GENDER_NEW'"
+          - columnReference:
+              columnCounter: 2000027186
+              stepCounter: "200003479"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_FACEBOOK_CONVERSIONS_BY_AGE_AND_GENDER_NEW
+            noLinkRefs: []
+      name: LOAD_FACEBOOK_CONVERSIONS_BY_AGE_AND_GENDER_NEW
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003479"

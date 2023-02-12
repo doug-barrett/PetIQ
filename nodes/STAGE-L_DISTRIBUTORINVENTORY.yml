@@ -1,0 +1,109 @@
+steps:
+  L_DISTRIBUTORINVENTORY-200001825:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024436
+              stepCounter: "200001825"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_DISTRIBUTORINVENTORY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024437
+              stepCounter: "200001825"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTORPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024438
+              stepCounter: "200001825"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024439
+              stepCounter: "200001825"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INVENTORYDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024440
+              stepCounter: "200001825"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024441
+              stepCounter: "200001825"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024442
+              stepCounter: "200001825"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: L_DISTRIBUTORINVENTORY
+            noLinkRefs: []
+      name: L_DISTRIBUTORINVENTORY
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200001825"

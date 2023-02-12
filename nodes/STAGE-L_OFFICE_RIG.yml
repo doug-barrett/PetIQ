@@ -1,0 +1,102 @@
+steps:
+  L_OFFICE_RIG-200002293:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029433
+              stepCounter: "200002293"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_OFFICE_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029434
+              stepCounter: "200002293"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RIG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029435
+              stepCounter: "200002293"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OFFICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029436
+              stepCounter: "200002293"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029437
+              stepCounter: "200002293"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029438
+              stepCounter: "200002293"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_OFFICE_RIG: "200002228"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_OFFICE_RIG
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_OFFICE_RIG') }} STAGE_OFFICE_RIG\
+                \  "
+            name: L_OFFICE_RIG
+            noLinkRefs: []
+      name: L_OFFICE_RIG
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002293"

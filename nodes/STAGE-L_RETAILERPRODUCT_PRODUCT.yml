@@ -1,0 +1,102 @@
+steps:
+  L_RETAILERPRODUCT_PRODUCT-200002960:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031678
+              stepCounter: "200002960"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_RETAILERPRODUCT_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031679
+              stepCounter: "200002960"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILERPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031680
+              stepCounter: "200002960"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_PRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031681
+              stepCounter: "200002960"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031682
+              stepCounter: "200002960"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031683
+              stepCounter: "200002960"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_SAL_PRODUCT_LOOKUP: "200002957"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_SAL_PRODUCT_LOOKUP
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_SAL_PRODUCT_LOOKUP') }} STAGE_SAL_PRODUCT_LOOKUP\
+                \    "
+            name: L_RETAILERPRODUCT_PRODUCT
+            noLinkRefs: []
+      name: L_RETAILERPRODUCT_PRODUCT
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002960"

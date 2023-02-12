@@ -1,0 +1,124 @@
+steps:
+  L_DISTRIBUTORSALES_DAY-200001826:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000024443
+              stepCounter: "200001826"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_DISTRIBUTORSALES_DAY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024444
+              stepCounter: "200001826"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTORPRODUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024445
+              stepCounter: "200001826"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRIBUTOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024446
+              stepCounter: "200001826"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024447
+              stepCounter: "200001826"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: SALESDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024448
+              stepCounter: "200001826"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024449
+              stepCounter: "200001826"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000024450
+              stepCounter: "200001826"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_DISTRIBUTORSALES_DAY_ANDA: "200001818"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_DISTRIBUTORSALES_DAY_ANDA
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_DISTRIBUTORSALES_DAY_ANDA')\
+                \ }} STAGE_DISTRIBUTORSALES_DAY_ANDA  "
+            name: L_DISTRIBUTORSALES_DAY
+            noLinkRefs: []
+      name: L_DISTRIBUTORSALES_DAY
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200001826"

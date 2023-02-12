@@ -1,0 +1,113 @@
+steps:
+  L_SALESORDER_OWNER_DISTRICT-200002300:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034242
+              stepCounter: "200002300"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_SALESORDER_OWNER_DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034243
+              stepCounter: "200002300"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_SALESORDER_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034244
+              stepCounter: "200002300"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_OWNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034245
+              stepCounter: "200002300"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034246
+              stepCounter: "200002300"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034247
+              stepCounter: "200002300"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034248
+              stepCounter: "200002300"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_SALESORDER_OWNER_DISTRICT: "200002246"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_SALESORDER_OWNER_DISTRICT
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_SALESORDER_OWNER_DISTRICT')
+                }} STAGE_SALESORDER_OWNER_DISTRICT
+            name: L_SALESORDER_OWNER_DISTRICT
+            noLinkRefs: []
+      name: L_SALESORDER_OWNER_DISTRICT
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002300"

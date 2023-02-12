@@ -1,0 +1,113 @@
+steps:
+  L_INVOICE_ORDER_RETAILER_INNATRACK-200001909:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028376
+              stepCounter: "200001909"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_INVOICE_ORDER_RETAILER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028377
+              stepCounter: "200001909"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_RETAILER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028378
+              stepCounter: "200001909"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028379
+              stepCounter: "200001909"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ORDER_INNATRACK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028380
+              stepCounter: "200001909"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028381
+              stepCounter: "200001909"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028382
+              stepCounter: "200001909"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_INVOICE_ORDER_RETAILER_INNATRACK: "200001880"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_INVOICE_ORDER_RETAILER_INNATRACK
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_INVOICE_ORDER_RETAILER_INNATRACK')
+                }} STAGE_INVOICE_ORDER_RETAILER_INNATRACK
+            name: L_INVOICE_ORDER_RETAILER_INNATRACK
+            noLinkRefs: []
+      name: L_INVOICE_ORDER_RETAILER_INNATRACK
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200001909"

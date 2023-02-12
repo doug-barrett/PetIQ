@@ -1,0 +1,101 @@
+steps:
+  L_REGION_CLINIC-200002298:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034230
+              stepCounter: "200002298"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_REGION_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034231
+              stepCounter: "200002298"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034232
+              stepCounter: "200002298"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_REGIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034233
+              stepCounter: "200002298"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034234
+              stepCounter: "200002298"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034235
+              stepCounter: "200002298"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_REGION_CLINIC: "200002241"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_REGION_CLINIC
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_REGION_CLINIC') }} STAGE_REGION_CLINIC
+            name: L_REGION_CLINIC
+            noLinkRefs: []
+      name: L_REGION_CLINIC
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002298"

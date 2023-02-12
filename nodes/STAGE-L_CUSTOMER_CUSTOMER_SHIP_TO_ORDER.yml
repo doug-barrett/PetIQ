@@ -1,0 +1,113 @@
+steps:
+  L_CUSTOMER_CUSTOMER_SHIP_TO_ORDER-200002030:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027165
+              stepCounter: "200002030"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_CUSTOMER_CUSTOMER_SHIP_TO_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027166
+              stepCounter: "200002030"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CUSTOMER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027167
+              stepCounter: "200002030"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_ORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027168
+              stepCounter: "200002030"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CUSTOMER_SHIP_TO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027169
+              stepCounter: "200002030"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027170
+              stepCounter: "200002030"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027171
+              stepCounter: "200002030"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_CUSTOMER_CUSTOMER_SHIP_TO_SALES_ORDER_SAGE: "200001979"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_CUSTOMER_CUSTOMER_SHIP_TO_SALES_ORDER_SAGE
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_CUSTOMER_CUSTOMER_SHIP_TO_SALES_ORDER_SAGE')\
+                \ }} STAGE_CUSTOMER_CUSTOMER_SHIP_TO_SALES_ORDER_SAGE  "
+            name: L_CUSTOMER_CUSTOMER_SHIP_TO_ORDER
+            noLinkRefs: []
+      name: L_CUSTOMER_CUSTOMER_SHIP_TO_ORDER
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002030"

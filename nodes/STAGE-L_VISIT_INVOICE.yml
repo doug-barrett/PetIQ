@@ -1,0 +1,101 @@
+steps:
+  L_VISIT_INVOICE-200002301:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034276
+              stepCounter: "200002301"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_VISIT_INVOICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034277
+              stepCounter: "200002301"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_INVOICE_APOLLO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034278
+              stepCounter: "200002301"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_VISIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034279
+              stepCounter: "200002301"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034280
+              stepCounter: "200002301"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034281
+              stepCounter: "200002301"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_VISIT_INVOICE: "200002252"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_VISIT_INVOICE
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_VISIT_INVOICE') }} STAGE_VISIT_INVOICE
+            name: L_VISIT_INVOICE
+            noLinkRefs: []
+      name: L_VISIT_INVOICE
+      overrideSQL: false
+      sqlType: Link
+      type: sql
+    stepCounter: "200002301"
