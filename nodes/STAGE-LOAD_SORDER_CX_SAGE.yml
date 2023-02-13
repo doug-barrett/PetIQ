@@ -1,0 +1,4609 @@
+steps:
+  LOAD_SORDER_CX_SAGE-200001972:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000022611
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDTICK_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022612
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SOHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022613
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CPY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022614
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: SOHTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022615
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOHCAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022616
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: SALFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022617
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCORD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022618
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCINV_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022619
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCPYR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022620
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BPAPYR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022621
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCGRU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022622
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BPAADD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022623
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: CUSORDREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022624
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: PJT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022625
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: ORDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),ORDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022626
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: VLYDATCON_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),VLYDATCON_0,120)
+          - columnReference:
+              columnCounter: 2000022627
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SHIDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),SHIDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022628
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: DEMDLVDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),DEMDLVDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022629
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: LNDRTNDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),LNDRTNDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022630
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DAYLTI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022631
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPCNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022632
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPCNAM_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022633
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BPAORD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022634
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPCADDLIG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022635
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPCADDLIG_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022636
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPCADDLIG_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022637
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: BPCPOSCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022638
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BPCCTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022639
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPCSAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022640
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: BPCCRY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022641
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BPCCRYNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022642
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CNTNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022643
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPINAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022644
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPINAM_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022645
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BPAINV_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022646
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPIADDLIG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022647
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPIADDLIG_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022648
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPIADDLIG_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022649
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: BPIPOSCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022650
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BPICTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022651
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPISAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022652
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: BPICRY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022653
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BPICRYNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022654
+              stepCounter: "200001972"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: BPIEECNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022655
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CNINAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022656
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPDNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022657
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPDNAM_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022658
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPDADDLIG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022659
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPDADDLIG_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022660
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BPDADDLIG_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022661
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: BPDPOSCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022662
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BPDCTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022663
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: BPDSAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022664
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: BPDCRY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022665
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: BPDCRYNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022666
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CNDNAM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022667
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: REP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022668
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: REP_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022669
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: CUR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022670
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CHGTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022671
+              stepCounter: "200001972"
+            dataType: NUMBER(18,7)
+            defaultValue: ""
+            description: ""
+            name: CHGRAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022672
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022673
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022674
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022675
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022676
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022677
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022678
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022679
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022680
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022681
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022682
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022683
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022684
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022685
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022686
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022687
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022688
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022689
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022690
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022691
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DIE_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022692
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022693
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022694
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022695
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022696
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022697
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022698
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022699
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022700
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022701
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022702
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022703
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022704
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022705
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022706
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022707
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022708
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022709
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022710
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022711
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: CCE_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022712
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: LAN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022713
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: VACBPR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022714
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SSTENTCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022715
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: PTE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022716
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TSCCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022717
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TSCCOD_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022718
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TSCCOD_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022719
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TSCCOD_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022720
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: TSCCOD_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022721
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: DEP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022722
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPTNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022723
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: MDL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022724
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: STOFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022725
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DRN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022726
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVPIO_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022727
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDCLE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022728
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ODL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022729
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DME_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022730
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: IME_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022731
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OCNFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022732
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OCNPRN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022733
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COPNBR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022734
+              stepCounter: "200001972"
+            dataType: VARCHAR(17)
+            defaultValue: ""
+            description: ""
+            name: SOHTEX1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022735
+              stepCounter: "200001972"
+            dataType: VARCHAR(17)
+            defaultValue: ""
+            description: ""
+            name: SOHTEX2_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022736
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SQHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022737
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BETFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022738
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BETCPY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022739
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: ORIFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022740
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRFNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022741
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: LASDLVNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022742
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: LASDLVDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),LASDLVDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022743
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: LASINVNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022744
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: LASINVDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),LASINVDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022745
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022746
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022747
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022748
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022749
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022750
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022751
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022752
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022753
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022754
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022755
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022756
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022757
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022758
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022759
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022760
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022761
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022762
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022763
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022764
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022765
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_20
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022766
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_21
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022767
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_22
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022768
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_23
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022769
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_24
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022770
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_25
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022771
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_26
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022772
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_27
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022773
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022774
+              stepCounter: "200001972"
+            dataType: NUMBER(20,5)
+            defaultValue: ""
+            description: ""
+            name: INVDTAAMT_29
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022775
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022776
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022777
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022778
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022779
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022780
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022781
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022782
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022783
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022784
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022785
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022786
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022787
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022788
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022789
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022790
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022791
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022792
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022793
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022794
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022795
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_20
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022796
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_21
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022797
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_22
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022798
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_23
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022799
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_24
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022800
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_25
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022801
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_26
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022802
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_27
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022803
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022804
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTATYP_29
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022805
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022806
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022807
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022808
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022809
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022810
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022811
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022812
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022813
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022814
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022815
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022816
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022817
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022818
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022819
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022820
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022821
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022822
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022823
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022824
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022825
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_20
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022826
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_21
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022827
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_22
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022828
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_23
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022829
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_24
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022830
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_25
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022831
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_26
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022832
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_27
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022833
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022834
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: INVDTADSP_29
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022835
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022836
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022837
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022838
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022839
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022840
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022841
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022842
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022843
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022844
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022845
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022846
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022847
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022848
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022849
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022850
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022851
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022852
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022853
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022854
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022855
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_20
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022856
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_21
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022857
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_22
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022858
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_23
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022859
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_24
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022860
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_25
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022861
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_26
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022862
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_27
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022863
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022864
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTA_29
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022865
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022866
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022867
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022868
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022869
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022870
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022871
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022872
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022873
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022874
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_9
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022875
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_10
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022876
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_11
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022877
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_12
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022878
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_13
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022879
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_14
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022880
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_15
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022881
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_16
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022882
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_17
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022883
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_18
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022884
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_19
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022885
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_20
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022886
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_21
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022887
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_22
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022888
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_23
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022889
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_24
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022890
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_25
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022891
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_26
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022892
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_27
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022893
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_28
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022894
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SFISSTCOD_29
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022895
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRITYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022896
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDNOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022897
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDATI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022898
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDNOTL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022899
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDATIL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022900
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDINVNOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022901
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDINVATI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022902
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDINVNOTL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022903
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: ORDINVATIL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022904
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DLRNOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022905
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DLRATI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022906
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: PFMTOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022907
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022908
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022909
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022910
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022911
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022912
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022913
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022914
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022915
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DISCRGTYP_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022916
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022917
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022918
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022919
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022920
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022921
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022922
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022923
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022924
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDTALIN_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022925
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ALLTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022926
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022927
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINNBR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022928
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLELINNBR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022929
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ALLLINNBR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022930
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVLINNBR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022931
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVLINNBR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022932
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022933
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ALLSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022934
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022935
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022936
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CDTSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022937
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: APPFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022938
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REVNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022939
+              stepCounter: "200001972"
+            dataType: VARCHAR(35)
+            defaultValue: ""
+            description: ""
+            name: SHIADECOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022940
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: EECICT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022941
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EECLOC_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022942
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: ICTCTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022943
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: FFWNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022944
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: FFWADD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022945
+              stepCounter: "200001972"
+            dataType: VARCHAR(9)
+            defaultValue: ""
+            description: ""
+            name: GEOCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022946
+              stepCounter: "200001972"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INSCTYFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022947
+              stepCounter: "200001972"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: VTT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022948
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: AMTTAX_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022949
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: BASTAX_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022950
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: CCLREN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022951
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CCLDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),CCLDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022952
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SRENUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022953
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: CMGNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022954
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: OPGNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022955
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: OPGTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022956
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: PLISTC_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022957
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EXPNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022958
+              stepCounter: "200001972"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: SINUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022959
+              stepCounter: "200001972"
+            dataType: NUMBER(22,7)
+            defaultValue: ""
+            description: ""
+            name: DSPTOTQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022960
+              stepCounter: "200001972"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DSPTOTWEI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022961
+              stepCounter: "200001972"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DSPTOTVOL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022962
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DSPWEU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022963
+              stepCounter: "200001972"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DSPVOU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022964
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: SDHTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022965
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CREUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022966
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),CREDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022967
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: UPDUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022968
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),UPDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022969
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: HLDSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022970
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: HLDCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022971
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: HLDUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022972
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: HLDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),HLDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022973
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: XA_TENDTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022974
+              stepCounter: "200001972"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: HLDTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022975
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: HLDCODP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022976
+              stepCounter: "200001972"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: HLDUSRP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022977
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: HLDDATP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),HLDDATP_0,120)
+          - columnReference:
+              columnCounter: 2000022978
+              stepCounter: "200001972"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: HLDTIMP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022979
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CDTSTAP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022980
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ADRVAL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022981
+              stepCounter: "200001972"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: DEMDLVHOU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022982
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),CREDATTIM_0,120)
+          - columnReference:
+              columnCounter: 2000022983
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),UPDDATTIM_0,120)
+          - columnReference:
+              columnCounter: 2000022984
+              stepCounter: "200001972"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AUUID_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022985
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: INVCND_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022986
+              stepCounter: "200001972"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: VCRINVCNDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),VCRINVCNDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000022987
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: INRNOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022988
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: INRATI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022989
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: INRSCHNOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022990
+              stepCounter: "200001972"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: INRSCHATI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022991
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DRAFTSTATUS_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022992
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_DCCODE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022993
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DRAFTREJ_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022994
+              stepCounter: "200001972"
+            dataType: VARCHAR(60)
+            defaultValue: ""
+            description: ""
+            name: DRAFTREJREN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022995
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOHCFMFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022996
+              stepCounter: "200001972"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: SOHNUMEND_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022997
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_STORE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022998
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_DCCODE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000022999
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_STORE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023000
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_MARKFOR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023001
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_MARKFOR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023002
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023003
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF2_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023004
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF3_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023005
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF1_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023006
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF4_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023007
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF5_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023008
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF6_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023009
+              stepCounter: "200001972"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: XX4S_UDF7_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023010
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF2_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023011
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF3_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023012
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF4_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023013
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF5_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023014
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF6_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023015
+              stepCounter: "200001972"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: XJB_UDF7_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023016
+              stepCounter: "200001972"
+            dataType: NUMBER(13,1)
+            defaultValue: ""
+            description: ""
+            name: YMARKETS_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023017
+              stepCounter: "200001972"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: YSPEINST_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023018
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: YPAL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023019
+              stepCounter: "200001972"
+            dataType: VARCHAR(60)
+            defaultValue: ""
+            description: ""
+            name: YPICKNOTE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023020
+              stepCounter: "200001972"
+            dataType: NUMBER(14,3)
+            defaultValue: ""
+            description: ""
+            name: YSHPQUOTE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023021
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: YSHPSITEC_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023022
+              stepCounter: "200001972"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ZMBOL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023023
+              stepCounter: "200001972"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: XCRATE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023024
+              stepCounter: "200001972"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROWID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023025
+              stepCounter: "200001972"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SAGE.PROD.SORDER'"
+          - columnReference:
+              columnCounter: 2000023026
+              stepCounter: "200001972"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SORDER_CX_SAGE
+            noLinkRefs: []
+      name: LOAD_SORDER_CX_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001972"

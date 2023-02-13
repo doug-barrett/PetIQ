@@ -1,0 +1,124 @@
+steps:
+  S_CLINIC_RTS-200003378:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032111
+              stepCounter: "200003378"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032112
+              stepCounter: "200003378"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REMOVED_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032113
+              stepCounter: "200003378"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032114
+              stepCounter: "200003378"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032115
+              stepCounter: "200003378"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032118
+              stepCounter: "200003378"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032117
+              stepCounter: "200003378"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032116
+              stepCounter: "200003378"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_CLINIC_APOLLO_READ_REPLICA_RTS: "200003155"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_CLINIC_APOLLO_READ_REPLICA_RTS
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_CLINIC_APOLLO_READ_REPLICA_RTS')\
+                \ }} STAGE_CLINIC_APOLLO_READ_REPLICA_RTS    "
+            name: S_CLINIC_RTS
+            noLinkRefs: []
+      name: S_CLINIC_RTS
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003378"

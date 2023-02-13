@@ -1,0 +1,418 @@
+steps:
+  LOAD_VET_PROPERTIES_APOLLO_READ_REPLICA-200003571:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028750
+              stepCounter: "200003571"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028751
+              stepCounter: "200003571"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028752
+              stepCounter: "200003571"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028753
+              stepCounter: "200003571"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028754
+              stepCounter: "200003571"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028755
+              stepCounter: "200003571"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028756
+              stepCounter: "200003571"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028757
+              stepCounter: "200003571"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_ISSUE_HEALTH_CERTIFICATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028758
+              stepCounter: "200003571"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_DAILY_RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028759
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCHEDULING_RESTRICTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028760
+              stepCounter: "200003571"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_W2_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028761
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WORK_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028762
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCHOOL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028763
+              stepCounter: "200003571"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE_OF_GRADUATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE_OF_GRADUATION, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028764
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: USDA_HEALTH_CERTIFICATION_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028765
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AVMA_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028766
+              stepCounter: "200003571"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: VET_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028767
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_COMPANY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028768
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_POLICY_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028769
+              stepCounter: "200003571"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_EXPIRES_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(INSURANCE_EXPIRES_ON, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028770
+              stepCounter: "200003571"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INSURANCE_MINIMUM_COVERAGE_AMOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028771
+              stepCounter: "200003571"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_CONTRACTOR_AGREEMENT_COMPLETE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028772
+              stepCounter: "200003571"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028773
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SCRUB_TOP_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028774
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LAB_COAT_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028775
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028776
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028777
+              stepCounter: "200003571"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028778
+              stepCounter: "200003571"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SIGNATURE_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(SIGNATURE_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028779
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PAYMENT_LEVEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028780
+              stepCounter: "200003571"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: BASE64_SIGNATURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028781
+              stepCounter: "200003571"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: LAB_COAT_SLEEVE_LENGTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028782
+              stepCounter: "200003571"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_CONTRACT_IT_NOW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028783
+              stepCounter: "200003571"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO_READ_REPLICA.PUBLIC.VET_PROPERTIES'"
+          - columnReference:
+              columnCounter: 2000028784
+              stepCounter: "200003571"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_VET_PROPERTIES_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: LOAD_VET_PROPERTIES_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003571"

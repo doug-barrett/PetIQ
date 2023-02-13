@@ -1,0 +1,1540 @@
+steps:
+  LOAD_SORDERQ_CX_SAGE-200001974:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000023135
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDTICK_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023136
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SOHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023137
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOPLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023138
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOQSEQ_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023139
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CPY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023140
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOHCAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023141
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: SALFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023142
+              stepCounter: "200001974"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPCORD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023143
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: BPAADD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023144
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ITMREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023145
+              stepCounter: "200001974"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: ECCVALMAJ_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023146
+              stepCounter: "200001974"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: ECCVALMIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023147
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: STOFCY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023148
+              stepCounter: "200001974"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: USEPLC_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023149
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CAD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023150
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: YEA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023151
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MON_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023152
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVDAY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023153
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: WEE_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023154
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: ORDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),ORDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023155
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: DEMDLVDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),DEMDLVDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023156
+              stepCounter: "200001974"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: DEMDLVHOU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023157
+              stepCounter: "200001974"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: MAXDLVHOU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023158
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: MAXDLVDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),MAXDLVDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023159
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: DEMDLVREF_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023160
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: IMPNUMLIG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023161
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: SHIDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),SHIDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023162
+              stepCounter: "200001974"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: SHIHOU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023163
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: EXTDLVDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),EXTDLVDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023164
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOQSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023165
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023166
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DEMSTA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023167
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: DEMNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023168
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: STOMGTCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023169
+              stepCounter: "200001974"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: LOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023170
+              stepCounter: "200001974"
+            dataType: VARCHAR(12)
+            defaultValue: ""
+            description: ""
+            name: STA_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023171
+              stepCounter: "200001974"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: LOC_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023172
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ALLTYP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023173
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DSPLINFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023174
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023175
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023176
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023177
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023178
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023179
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023180
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023181
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023182
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DDTANUM_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023183
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023184
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023185
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023186
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023187
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023188
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023189
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_6
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023190
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_7
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023191
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: DDTANOT_8
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023192
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: ORIQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023193
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: QTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023194
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: SHTQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023195
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: ALLQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023196
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: ODLQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023197
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DLVQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023198
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: INVQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023199
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: TDLQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023200
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: LPRQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023201
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: OPRQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023202
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: PREQTY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023203
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: QTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023204
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: SHTQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023205
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: ALLQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023206
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: ODLQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023207
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DLVQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023208
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: INVQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023209
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: TDLQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023210
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: LPRQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023211
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: OPRQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023212
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: PREQTYSTU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023213
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PRECOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023214
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DRN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023215
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVPIO_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023216
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVPIOCMP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023217
+              stepCounter: "200001974"
+            dataType: VARCHAR(15)
+            defaultValue: ""
+            description: ""
+            name: BPTNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023218
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: MDL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023219
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DAYLTI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023220
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: PCK_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023221
+              stepCounter: "200001974"
+            dataType: NUMBER(18,7)
+            defaultValue: ""
+            description: ""
+            name: PCKCAP_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023222
+              stepCounter: "200001974"
+            dataType: VARCHAR(17)
+            defaultValue: ""
+            description: ""
+            name: SOQTEX_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023223
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: SDHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023224
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SDDLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023225
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FMI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023226
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: FMINUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023227
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FMILIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023228
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FMISEQ_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023229
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: POHNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023230
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: POPLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023231
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: POQSEQ_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023232
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PERSTRDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),PERSTRDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023233
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PERENDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),PERENDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023234
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PERNBRDAY_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023235
+              stepCounter: "200001974"
+            dataType: VARCHAR(9)
+            defaultValue: ""
+            description: ""
+            name: GEOCOD_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023236
+              stepCounter: "200001974"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: INSCTYFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023237
+              stepCounter: "200001974"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: VTS_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023238
+              stepCounter: "200001974"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: VTC_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023239
+              stepCounter: "200001974"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: TAXGEOFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023240
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TAXFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023241
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TAXREGFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023242
+              stepCounter: "200001974"
+            dataType: NUMBER(8,3)
+            defaultValue: ""
+            description: ""
+            name: RATTAXLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023243
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: BASTAXLIN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023244
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OCNPRNBOM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023245
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NDEPRNBOM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023246
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVPRNBOM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023247
+              stepCounter: "200001974"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: CCLREN_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023248
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CCLDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),CCLDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023249
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: PITFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023250
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EXPNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023251
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DSPLINWEI_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023252
+              stepCounter: "200001974"
+            dataType: NUMBER(28,13)
+            defaultValue: ""
+            description: ""
+            name: DSPLINVOL_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023253
+              stepCounter: "200001974"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DSPWEU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023254
+              stepCounter: "200001974"
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: DSPVOU_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023255
+              stepCounter: "200001974"
+            dataType: VARCHAR(40)
+            defaultValue: ""
+            description: ""
+            name: PJT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023256
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LINORDNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023257
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: USELIMDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),USELIMDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023258
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: CREUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023259
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),CREDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023260
+              stepCounter: "200001974"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: UPDUSR_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023261
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDAT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),UPDDAT_0,120)
+          - columnReference:
+              columnCounter: 2000023262
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),CREDATTIM_0,120)
+          - columnReference:
+              columnCounter: 2000023263
+              stepCounter: "200001974"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDDATTIM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),UPDDATTIM_0,120)
+          - columnReference:
+              columnCounter: 2000023264
+              stepCounter: "200001974"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: AUUID_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023265
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DLVFLG_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023266
+              stepCounter: "200001974"
+            dataType: NUMBER(27,13)
+            defaultValue: ""
+            description: ""
+            name: INVAMT_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023267
+              stepCounter: "200001974"
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: SOQPSONUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023268
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SOQSEQNUM_0
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023269
+              stepCounter: "200001974"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ROWID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000023270
+              stepCounter: "200001974"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SAGE.PROD.SORDERQ'"
+          - columnReference:
+              columnCounter: 2000023271
+              stepCounter: "200001974"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SORDERQ_CX_SAGE
+            noLinkRefs: []
+      name: LOAD_SORDERQ_CX_SAGE
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001974"

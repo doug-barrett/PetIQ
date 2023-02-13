@@ -1,0 +1,220 @@
+steps:
+  LOAD_VISITS_APOLLO_READ_REPLICA-200003663:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000028002
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028003
+              stepCounter: "200003663"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028004
+              stepCounter: "200003663"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000028005
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028006
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028007
+              stepCounter: "200003663"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028008
+              stepCounter: "200003663"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MEDICAL_RECORD_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028009
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: MEDICAL_RECORD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028010
+              stepCounter: "200003663"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VISIT_REFERENCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028011
+              stepCounter: "200003663"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: VISIT_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(VISIT_DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000028012
+              stepCounter: "200003663"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VISIT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028013
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028014
+              stepCounter: "200003663"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VISIT_LOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028015
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLINIC_LOCATION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028016
+              stepCounter: "200003663"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000028001
+              stepCounter: "200003663"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO_READ_REPLICA.PUBLIC.VISITS'"
+          - columnReference:
+              columnCounter: 2000028000
+              stepCounter: "200003663"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_VISITS_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: LOAD_VISITS_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003663"

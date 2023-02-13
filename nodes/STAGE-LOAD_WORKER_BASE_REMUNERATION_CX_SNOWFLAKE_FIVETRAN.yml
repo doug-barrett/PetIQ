@@ -1,0 +1,1441 @@
+steps:
+  LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN-200004041:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032044
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ASSIGNMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032045
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032046
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032047
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RECORDING_BASIS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032048
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RECORDING_BASIS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032049
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RECORDING_BASIS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032050
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: RECORDING_BASIS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032051
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032052
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032053
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032054
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032055
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032056
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032057
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032058
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032059
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032060
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032061
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032062
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032063
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOURLY_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032064
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032065
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032066
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032067
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032068
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032069
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032070
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032071
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032072
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032073
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032074
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032075
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032076
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: DAILY_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032077
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032078
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032079
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032080
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032081
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032082
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032083
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032084
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032085
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032086
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032087
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032088
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032089
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032090
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032091
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032092
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032093
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032094
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032095
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032096
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032097
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032098
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032099
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032100
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032101
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032102
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MONTHLY_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032103
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032104
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032105
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032106
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032107
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032108
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032109
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032110
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032111
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032112
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032113
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032114
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032115
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032116
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032117
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032118
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032119
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032120
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032121
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032122
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032123
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032124
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032125
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032126
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032127
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032128
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: COMMISSION_RATE_PERCENTAGE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032129
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032130
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032131
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032132
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032133
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032134
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032135
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032136
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032137
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032138
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032139
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032140
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032141
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BIWEEKLY_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032142
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032143
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032144
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032145
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032146
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032147
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032148
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032149
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032150
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032151
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032152
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032153
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032154
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SEMI_MONTHLY_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032155
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032156
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032157
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032158
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032159
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032160
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032161
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032162
+              stepCounter: "200004041"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032163
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032164
+              stepCounter: "200004041"
+            dataType: DECIMAL(38,2)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032165
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032166
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032167
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_PERIOD_RATE_AMOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032168
+              stepCounter: "200004041"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: RECORDING_BASIS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032169
+              stepCounter: "200004041"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000032170
+              stepCounter: "200004041"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.WORKER_BASE_REMUNERATION'"
+          - columnReference:
+              columnCounter: 2000032171
+              stepCounter: "200004041"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_WORKER_BASE_REMUNERATION_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004041"

@@ -1,0 +1,198 @@
+steps:
+  LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN-200004067:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032328
+              stepCounter: "200004067"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032329
+              stepCounter: "200004067"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: FOLDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032330
+              stepCounter: "200004067"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032331
+              stepCounter: "200004067"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NICKNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032332
+              stepCounter: "200004067"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: FOOTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032333
+              stepCounter: "200004067"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(UPDATED_AT)
+          - columnReference:
+              columnCounter: 2000032334
+              stepCounter: "200004067"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CATEGORY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032335
+              stepCounter: "200004067"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(CREATED_AT)
+          - columnReference:
+              columnCounter: 2000032336
+              stepCounter: "200004067"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032337
+              stepCounter: "200004067"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000032338
+              stepCounter: "200004067"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_START
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_START)
+          - columnReference:
+              columnCounter: 2000032339
+              stepCounter: "200004067"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_END
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_END)
+          - columnReference:
+              columnCounter: 2000032340
+              stepCounter: "200004067"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032341
+              stepCounter: "200004067"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.SURVEY_MONKEY.SURVEY_HISTORY'"
+          - columnReference:
+              columnCounter: 2000032342
+              stepCounter: "200004067"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_SURVEY_HISTORY_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004067"

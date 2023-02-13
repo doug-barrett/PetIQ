@@ -1,0 +1,659 @@
+steps:
+  S_BRAND_LROC_INFO_PIT-200003251:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000017127
+              stepCounter: "200003251"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_BRAND
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017194
+              stepCounter: "200003251"
+            dataType: TGT_VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CASE      WHEN LEAD(DSS_START_DATE, 1, NULL) OVER(PARTITION
+                  BY HK_H_BRAND                                              ORDER
+                  BY DSS_START_DATE) IS NULL     THEN 'Y'     ELSE 'N'  END
+          - columnReference:
+              columnCounter: 2000017128
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017129
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017130
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017131
+              stepCounter: "200003251"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017132
+              stepCounter: "200003251"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017133
+              stepCounter: "200003251"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017134
+              stepCounter: "200003251"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017135
+              stepCounter: "200003251"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017136
+              stepCounter: "200003251"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: SECONDARY_COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017137
+              stepCounter: "200003251"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: TERTIARY_COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017138
+              stepCounter: "200003251"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: FONT_COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017139
+              stepCounter: "200003251"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: SEND_REMINDERS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017140
+              stepCounter: "200003251"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: WEBSITE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017141
+              stepCounter: "200003251"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017142
+              stepCounter: "200003251"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017143
+              stepCounter: "200003251"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017144
+              stepCounter: "200003251"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017145
+              stepCounter: "200003251"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017146
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FACEBOOK_LINK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017147
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TWITTER_LINK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017148
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GOOGLE_LINK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017149
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: INSTAGRAM_LINK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017150
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PINTEREST_LINK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017151
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOGO_01_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017152
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOGO_01_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017153
+              stepCounter: "200003251"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LOGO_01_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017154
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: LOGO_01_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017155
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DASHBOARD_IMAGE_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017156
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DASHBOARD_IMAGE_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017157
+              stepCounter: "200003251"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: DASHBOARD_IMAGE_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017158
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: DASHBOARD_IMAGE_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017159
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRINTER_IMAGE_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017160
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PRINTER_IMAGE_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017161
+              stepCounter: "200003251"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PRINTER_IMAGE_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017162
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: PRINTER_IMAGE_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017163
+              stepCounter: "200003251"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: BASE64_DASHBOARD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017164
+              stepCounter: "200003251"
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: BASE64_PRINTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017165
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NO_REPLY_EMAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017166
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONETIC_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017167
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONETIC_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017168
+              stepCounter: "200003251"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: FAX_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017169
+              stepCounter: "200003251"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CONDITIONAL_PRESCRIPTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017170
+              stepCounter: "200003251"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PROMOTIONAL_PRESCRIPTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017171
+              stepCounter: "200003251"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: VET_ADD_HOC_PRESCRIPTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017172
+              stepCounter: "200003251"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: EXCLUDE_FROM_GLOBAL_CLINIC_SEARCH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017173
+              stepCounter: "200003251"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: WEEKLY_FLYER_BACKGROUND_COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017174
+              stepCounter: "200003251"
+            dataType: VARCHAR(6)
+            defaultValue: ""
+            description: ""
+            name: NON_WEEKLY_FLYER_BACKGROUND_COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017193
+              stepCounter: "200003251"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: LEAD(DSS_START_DATE, 1, '9999-12-31') OVER (PARTITION BY
+                  HK_H_BRAND                                              ORDER BY
+                  DSS_START_DATE)
+          - columnReference:
+              columnCounter: 2000017175
+              stepCounter: "200003251"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SLUG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017176
+              stepCounter: "200003251"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: DSS_CHANGE_HASH_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017177
+              stepCounter: "200003251"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017178
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017179
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Datetime a business key was started.
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017180
+              stepCounter: "200003251"
+            dataType: INTEGER
+            defaultValue: ""
+            description: Version number of a business key.
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000017181
+              stepCounter: "200003251"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was created in the data warehouse.
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: 'NULL'
+            name: S_BRAND_LROC_INFO_PIT
+            noLinkRefs: []
+      name: S_BRAND_LROC_INFO_PIT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003251"

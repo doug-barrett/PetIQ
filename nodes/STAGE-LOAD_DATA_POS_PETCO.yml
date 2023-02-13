@@ -1,0 +1,264 @@
+steps:
+  LOAD_DATA_POS_PETCO-200002677:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000025340
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MFR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025341
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PETCOSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025342
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUPPLIERSKU
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025343
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025344
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUBCLASS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025345
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: SUBCLASSDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025346
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025347
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025348
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025349
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STREET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025350
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025351
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025352
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025353
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ZONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025354
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTRICT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025355
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: QOH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025356
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: UNITSSOLD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025357
+              stepCounter: "200002677"
+            dataType: NVARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COSTOFSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025358
+              stepCounter: "200002677"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025359
+              stepCounter: "200002677"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_PETCO.DATA$'"
+          - columnReference:
+              columnCounter: 2000025360
+              stepCounter: "200002677"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DATA_POS_PETCO
+            noLinkRefs: []
+      name: LOAD_DATA_POS_PETCO
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002677"

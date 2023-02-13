@@ -1,0 +1,286 @@
+steps:
+  LOAD_DCM_CONVERSIONS-200003423:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026555
+              stepCounter: "200003423"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026556
+              stepCounter: "200003423"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: COUNTRY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026557
+              stepCounter: "200003423"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026558
+              stepCounter: "200003423"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: DMA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026559
+              stepCounter: "200003423"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026560
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026561
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026562
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026563
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026564
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ACTIVITY_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026565
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ACTIVITY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026566
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026567
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026568
+              stepCounter: "200003423"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: AD_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026569
+              stepCounter: "200003423"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026570
+              stepCounter: "200003423"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_COST_STRUCTURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026571
+              stepCounter: "200003423"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: PLATFORM_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026572
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026573
+              stepCounter: "200003423"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026574
+              stepCounter: "200003423"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026575
+              stepCounter: "200003423"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026554
+              stepCounter: "200003423"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_CONVERSIONS'"
+          - columnReference:
+              columnCounter: 2000026553
+              stepCounter: "200003423"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DCM_CONVERSIONS
+            noLinkRefs: []
+      name: LOAD_DCM_CONVERSIONS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003423"

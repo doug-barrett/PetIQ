@@ -1,0 +1,330 @@
+steps:
+  LOAD_DCM_VIDEO_VIEW-200003503:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027475
+              stepCounter: "200003503"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027476
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027477
+              stepCounter: "200003503"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027478
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027479
+              stepCounter: "200003503"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: SITE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027480
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027481
+              stepCounter: "200003503"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027482
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027483
+              stepCounter: "200003503"
+            dataType: VARCHAR(300)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027484
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027485
+              stepCounter: "200003503"
+            dataType: VARCHAR(300)
+            defaultValue: ""
+            description: ""
+            name: AD_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027486
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027487
+              stepCounter: "200003503"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027488
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027489
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027490
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_PLAYS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027491
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_25P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027492
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_50P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027493
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_75P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027494
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_COMPLETES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027495
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_FULL_SCREENS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027496
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_MUTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027497
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_PAUSES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027498
+              stepCounter: "200003503"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_UNMUTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027499
+              stepCounter: "200003503"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027474
+              stepCounter: "200003503"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_VIDEO_VIEW'"
+          - columnReference:
+              columnCounter: 2000027473
+              stepCounter: "200003503"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DCM_VIDEO_VIEW
+            noLinkRefs: []
+      name: LOAD_DCM_VIDEO_VIEW
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003503"

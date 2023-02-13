@@ -1,0 +1,638 @@
+steps:
+  LOAD_SALES_POS_RITEAID-200002754:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026113
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ACTITEMNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026114
+              stepCounter: "200002754"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: ITEMDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026115
+              stepCounter: "200002754"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: ITEMNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026116
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALESCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026117
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALESCURRENTYRPERCENTCONTRIBUTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026118
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALESPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026119
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALESPRIORYRPERCENTCONTRIBUTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026120
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALESVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026121
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: SALESPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026122
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNITSCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026123
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNITSPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026124
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNITSVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026125
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: UNITSPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026126
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PROMOSALESCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026127
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: PROMOSALESPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026128
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: PROMOSALESVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026129
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PROMOSALESPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026130
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PROMOUNITSCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026131
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PROMOUNITSPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026132
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PROMOUNITSVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026133
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PROMOUNITSPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026134
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: AVGRETAILPRICECURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026135
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: AVGRETAILPRICEPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026136
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: AVGRETAILPRICEVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026137
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: AVGRETAILPRICEPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026138
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026139
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026140
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026141
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026142
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINRATECURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026143
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINRATEPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026144
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: MARGINRATEVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026145
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SCANDOLLARSCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026146
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SCANDOLLARSPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026147
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SCANDOLLARSVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026148
+              stepCounter: "200002754"
+            dataType: VARCHAR(250)
+            defaultValue: ""
+            description: ""
+            name: SCANDOLLARSPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026149
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJGROSSMARGINCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026150
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJGROSSMARGINPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026151
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJGROSSMARGINVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026152
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJGROSSMARGINPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026153
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJMARGINRATECURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026154
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJMARGINRATEPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026155
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ADJMARGINRATEVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026156
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: COSTCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026157
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: COSTPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026158
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: COSTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026159
+              stepCounter: "200002754"
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: COSTPERCENTVAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026160
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNIQUESELLINGSTORESCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026161
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: UNIQUESELLINGSTORESPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026162
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLANOGRAMSTORESCURRENTYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026163
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLANOGRAMSTORESPRIORYR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026164
+              stepCounter: "200002754"
+            dataType: VARCHAR(4000)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026165
+              stepCounter: "200002754"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ROWID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025643
+              stepCounter: "200002754"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_POS_DEV.DBO.RITEAID_SALES_STG'"
+          - columnReference:
+              columnCounter: 2000025644
+              stepCounter: "200002754"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SALES_POS_RITEAID
+            noLinkRefs: []
+      name: LOAD_SALES_POS_RITEAID
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002754"

@@ -1,0 +1,198 @@
+steps:
+  LOAD_SALES_POS_MEIJER-200002516:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026110
+              stepCounter: "200002516"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: WEEKENDDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),WEEKENDINGDATE,120)
+          - columnReference:
+              columnCounter: 2000025028
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025029
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: MANUFACTURERITEMCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025030
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025031
+              stepCounter: "200002516"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025032
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025033
+              stepCounter: "200002516"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025034
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVSTOREQTYWEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025035
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: INVDFANDSTOREQTYWEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025036
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025037
+              stepCounter: "200002516"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025038
+              stepCounter: "200002516"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: DMDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025039
+              stepCounter: "200002516"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DMPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025040
+              stepCounter: "200002516"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_POS_DEV.DBO.MEIJER_SALES_STG'"
+          - columnReference:
+              columnCounter: 2000025041
+              stepCounter: "200002516"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SALES_POS_MEIJER
+            noLinkRefs: []
+      name: LOAD_SALES_POS_MEIJER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002516"

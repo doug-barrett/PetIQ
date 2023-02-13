@@ -1,0 +1,231 @@
+steps:
+  LOAD_SALESINVENTORY_POS_BJS-200001682:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000025707
+              stepCounter: "200001682"
+            dataType: VARCHAR(16)
+            defaultValue: ""
+            description: ""
+            name: BJSFISCALWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026108
+              stepCounter: "200001682"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: WEEKENDING
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CONVERT(VARCHAR(19),WEEKENDING,120)
+          - columnReference:
+              columnCounter: 2000025709
+              stepCounter: "200001682"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: BJSARTICLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025710
+              stepCounter: "200001682"
+            dataType: VARCHAR(32)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025711
+              stepCounter: "200001682"
+            dataType: NUMBER(12)
+            defaultValue: ""
+            description: ""
+            name: UPC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025712
+              stepCounter: "200001682"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLUB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025713
+              stepCounter: "200001682"
+            dataType: VARCHAR(16)
+            defaultValue: ""
+            description: ""
+            name: SITE_CLUBTYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025714
+              stepCounter: "200001682"
+            dataType: VARCHAR(32)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025715
+              stepCounter: "200001682"
+            dataType: VARCHAR(4)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025716
+              stepCounter: "200001682"
+            dataType: VARCHAR(16)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025717
+              stepCounter: "200001682"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025718
+              stepCounter: "200001682"
+            dataType: NUMBER(5,2)
+            defaultValue: ""
+            description: ""
+            name: SALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025719
+              stepCounter: "200001682"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLUBOHUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025720
+              stepCounter: "200001682"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLUBONORDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025721
+              stepCounter: "200001682"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ONORDERFROMVENDOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025722
+              stepCounter: "200001682"
+            dataType: VARCHAR(32)
+            defaultValue: ""
+            description: ""
+            name: CLUBSUPLLIEDBY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025723
+              stepCounter: "200001682"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS BJS.REPORT1$'"
+          - columnReference:
+              columnCounter: 2000025724
+              stepCounter: "200001682"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SALESINVENTORY_POS_BJS
+            noLinkRefs: []
+      name: LOAD_SALESINVENTORY_POS_BJS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001682"

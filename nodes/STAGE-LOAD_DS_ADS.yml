@@ -1,0 +1,374 @@
+steps:
+  LOAD_DS_ADS-200003457:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026781
+              stepCounter: "200003457"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026782
+              stepCounter: "200003457"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026783
+              stepCounter: "200003457"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026784
+              stepCounter: "200003457"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026785
+              stepCounter: "200003457"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026786
+              stepCounter: "200003457"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026787
+              stepCounter: "200003457"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026788
+              stepCounter: "200003457"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026789
+              stepCounter: "200003457"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: DEVICE_SEGMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026790
+              stepCounter: "200003457"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026791
+              stepCounter: "200003457"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: AD_GROUP_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026792
+              stepCounter: "200003457"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026793
+              stepCounter: "200003457"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: AD_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026794
+              stepCounter: "200003457"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: AD_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026795
+              stepCounter: "200003457"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: AD_HEADLINE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026796
+              stepCounter: "200003457"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: AD_HEADLINE2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026797
+              stepCounter: "200003457"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: AD_DESCRIPTION1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026798
+              stepCounter: "200003457"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: AD_DESCRIPTION2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026799
+              stepCounter: "200003457"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026800
+              stepCounter: "200003457"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026801
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026802
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: VISITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026803
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: ACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026804
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: TRANSACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026805
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: REVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026806
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: WEIGHTED_ACTIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026807
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: AVG_POSITION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026808
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026809
+              stepCounter: "200003457"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026780
+              stepCounter: "200003457"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DS_ADS'"
+          - columnReference:
+              columnCounter: 2000026779
+              stepCounter: "200003457"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DS_ADS
+            noLinkRefs: []
+      name: LOAD_DS_ADS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003457"

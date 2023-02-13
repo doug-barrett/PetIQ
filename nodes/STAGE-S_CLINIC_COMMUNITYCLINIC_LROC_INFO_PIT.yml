@@ -1,0 +1,144 @@
+steps:
+  S_CLINIC_COMMUNITYCLINIC_LROC_INFO_PIT-200003010:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000014588
+              stepCounter: "200003010"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINIC_COMMUNITYCLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014589
+              stepCounter: "200003010"
+            dataType: INT4
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014590
+              stepCounter: "200003010"
+            dataType: TGT_CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014591
+              stepCounter: "200003010"
+            dataType: TGT_VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014592
+              stepCounter: "200003010"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014593
+              stepCounter: "200003010"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014594
+              stepCounter: "200003010"
+            dataType: TGT_INTEGER
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014595
+              stepCounter: "200003010"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000014596
+              stepCounter: "200003010"
+            dataType: TGT_DATETIME
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "LEAD(DSS_START_DATE, 1, '9999-12-31') OVER (PARTITION\
+                  \ BY HK_H_CLINIC_COMMUNITYCLINIC                               \
+                  \              ORDER BY DSS_START_DATE)                         "
+          - columnReference:
+              columnCounter: 2000014597
+              stepCounter: "200003010"
+            dataType: TGT_VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "CASE     WHEN LEAD(DSS_START_DATE, 1, NULL) OVER(PARTITION\
+                  \ BY HK_H_CLINIC_COMMUNITYCLINIC                               \
+                  \              ORDER BY DSS_START_DATE) IS NULL    THEN 'Y'    ELSE\
+                  \ 'N' END                         "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_CLINIC_COMMUNITYCLINIC_LROC_INFO_PIT
+            noLinkRefs: []
+      name: S_CLINIC_COMMUNITYCLINIC_LROC_INFO_PIT
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003010"

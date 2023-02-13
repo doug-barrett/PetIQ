@@ -1,0 +1,209 @@
+steps:
+  LOAD_DS_CAMPAIGNS_SOV_VIEW-200003505:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000027502
+              stepCounter: "200003505"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000027503
+              stepCounter: "200003505"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027504
+              stepCounter: "200003505"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027505
+              stepCounter: "200003505"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027506
+              stepCounter: "200003505"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027507
+              stepCounter: "200003505"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027508
+              stepCounter: "200003505"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027509
+              stepCounter: "200003505"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027510
+              stepCounter: "200003505"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027511
+              stepCounter: "200003505"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027512
+              stepCounter: "200003505"
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027513
+              stepCounter: "200003505"
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: IMPRESSION_SHARE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027514
+              stepCounter: "200003505"
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: BUDGET_LOST_IMPRESSION_SHARE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027515
+              stepCounter: "200003505"
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: RANK_LOST_IMPRESSION_SHARE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000027501
+              stepCounter: "200003505"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DS_CAMPAIGNS_SOV_VIEW'"
+          - columnReference:
+              columnCounter: 2000027500
+              stepCounter: "200003505"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DS_CAMPAIGNS_SOV_VIEW
+            noLinkRefs: []
+      name: LOAD_DS_CAMPAIGNS_SOV_VIEW
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003505"

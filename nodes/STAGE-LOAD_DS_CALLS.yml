@@ -1,0 +1,231 @@
+steps:
+  LOAD_DS_CALLS-200003459:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026812
+              stepCounter: "200003459"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026813
+              stepCounter: "200003459"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026814
+              stepCounter: "200003459"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026815
+              stepCounter: "200003459"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026816
+              stepCounter: "200003459"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026817
+              stepCounter: "200003459"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026818
+              stepCounter: "200003459"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026819
+              stepCounter: "200003459"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026820
+              stepCounter: "200003459"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026821
+              stepCounter: "200003459"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: AD_GROUP_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026822
+              stepCounter: "200003459"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: CALL_PHONE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026823
+              stepCounter: "200003459"
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: CALL_IS_TRACKED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026824
+              stepCounter: "200003459"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CALL_CONVERSION_TRACKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026825
+              stepCounter: "200003459"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: CALL_CONVERSION_TRACKER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026826
+              stepCounter: "200003459"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026827
+              stepCounter: "200003459"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026811
+              stepCounter: "200003459"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DS_CALLS'"
+          - columnReference:
+              columnCounter: 2000026810
+              stepCounter: "200003459"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DS_CALLS
+            noLinkRefs: []
+      name: LOAD_DS_CALLS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003459"

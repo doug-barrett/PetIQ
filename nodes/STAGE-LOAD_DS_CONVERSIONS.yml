@@ -1,0 +1,396 @@
+steps:
+  LOAD_DS_CONVERSIONS-200003463:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026860
+              stepCounter: "200003463"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026861
+              stepCounter: "200003463"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: TIMESTAMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR("TIMESTAMP", 'YYYY-MM-DD HH:MI:SS')
+          - columnReference:
+              columnCounter: 2000026862
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026863
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026864
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026865
+              stepCounter: "200003463"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026866
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026867
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026868
+              stepCounter: "200003463"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ACCOUNT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026869
+              stepCounter: "200003463"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: DEVICE_SEGMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026870
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026871
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: AD_GROUP_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026872
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026873
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: AD_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026874
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: KEYWORD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026875
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: KEYWORD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026876
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: CLEAN_KEYWORD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026877
+              stepCounter: "200003463"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: KEYWORD_MATCH_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026878
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: FLOODLIGHT_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026879
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: FLOODLIGHT_GROUP_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026880
+              stepCounter: "200003463"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: FLOODLIGHT_GROUP_CONVERSION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026881
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: FLOODLIGHT_ACTIVITY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026882
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: FLOODLIGHT_ACTIVITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026883
+              stepCounter: "200003463"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: PRODUCT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026884
+              stepCounter: "200003463"
+            dataType: VARCHAR(500)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_SEARCH_TERM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026885
+              stepCounter: "200003463"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026886
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026887
+              stepCounter: "200003463"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_CONVERSION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026888
+              stepCounter: "200003463"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026889
+              stepCounter: "200003463"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026890
+              stepCounter: "200003463"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: CONVERSION_REVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026859
+              stepCounter: "200003463"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DS_CONVERSIONS'"
+          - columnReference:
+              columnCounter: 2000026858
+              stepCounter: "200003463"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DS_CONVERSIONS
+            noLinkRefs: []
+      name: LOAD_DS_CONVERSIONS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003463"

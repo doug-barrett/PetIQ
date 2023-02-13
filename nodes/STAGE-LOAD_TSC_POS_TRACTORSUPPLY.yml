@@ -1,0 +1,539 @@
+steps:
+  LOAD_TSC_POS_TRACTORSUPPLY-200002597:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000025294
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VENDORID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025295
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025296
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CATEGORYFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025297
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: VENDORPARTNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025298
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ARTICLENO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025299
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ARTICLEDESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025300
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTCHANNELDESC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025301
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: REGIONNO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025302
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MARKETINGREGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025303
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DISTFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025304
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: STORENO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025305
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STOREFULL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025306
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: YEARWEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025307
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESUNITS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025308
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESUNITSCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025309
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LYSALESUNITSCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025310
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESUNITSCOMPINCRPERCENTTOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025311
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025312
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLARCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025313
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: LYSALESDOLLARCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025314
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALESDOLLARCOMPINCRPERCENTTOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025315
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: GMDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025316
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: GMDOLLARCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025317
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: LYGMDOLLARCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025318
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: GMDOLLARCOMPINCRPERCENTTOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025319
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: GMPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025320
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LYGMPERCENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025321
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: GMPERCENTDELTATOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025322
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: COSTDOLLAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025323
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: COSTDOLLARCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025324
+              stepCounter: "200002597"
+            dataType: NUMBER(19,4)
+            defaultValue: ""
+            description: ""
+            name: LYCOSTDOLLARCOMP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025325
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COSTDOLLARCOMPINCRPERCENTTOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025326
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVUNITSSTRWK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025327
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVUNITSCOMPSTRWK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025328
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVUNITSCOMPLYSTRWK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025329
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVUNITSCOMPINCRPERCENTTOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025330
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVDOLLARSTRWK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025331
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVDOLLARCOMPSTRWK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025332
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVDOLLARCOMPLYSTRWK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025333
+              stepCounter: "200002597"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FININVDOLLARCOMPINCRPERCENTTOLY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025334
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GEOREGION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025335
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GEOREGIONZONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025336
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025337
+              stepCounter: "200002597"
+            dataType: DATETIME(0)
+            defaultValue: ""
+            description: ""
+            name: WEEKENDINGDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000025338
+              stepCounter: "200002597"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'POS_TRACTORSUPPLY.TSC$'"
+          - columnReference:
+              columnCounter: 2000025339
+              stepCounter: "200002597"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_TSC_POS_TRACTORSUPPLY
+            noLinkRefs: []
+      name: LOAD_TSC_POS_TRACTORSUPPLY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200002597"

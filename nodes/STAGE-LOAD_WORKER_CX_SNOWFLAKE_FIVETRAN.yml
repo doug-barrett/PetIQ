@@ -1,0 +1,451 @@
+steps:
+  LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN-200003939:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032172
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032173
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSOCIATE_OID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032174
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SCHEME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032175
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SCHEME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032176
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SCHEME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032177
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SCHEME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032178
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: SCHEME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032179
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ORIGINAL_HIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032180
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: REHIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032181
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ADJUSTED_SERVICE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032182
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ACQUISITION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032183
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: RETIREMENT_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032184
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032185
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EXPECTED_TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032186
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032187
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032188
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032189
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032190
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_REASON_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032191
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_REASON_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032192
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_REASON_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032193
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: STATUS_REASON_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032194
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_REASON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032195
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STATUS_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032196
+              stepCounter: "200003939"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_HSA_ACCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032197
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_SIGN_ON_BONUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032198
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ARPA_TERMINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032199
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_RELOCATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032200
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ARPA
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032201
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_POSITION_BUDGET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032202
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ROLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032203
+              stepCounter: "200003939"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_NY_SICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032204
+              stepCounter: "200003939"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PLANNER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032205
+              stepCounter: "200003939"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_ENROLLEE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032206
+              stepCounter: "200003939"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000032207
+              stepCounter: "200003939"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032208
+              stepCounter: "200003939"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.WORKER'"
+          - columnReference:
+              columnCounter: 2000032209
+              stepCounter: "200003939"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_WORKER_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003939"

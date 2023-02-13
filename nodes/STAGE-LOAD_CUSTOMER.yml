@@ -1,0 +1,66 @@
+steps:
+  LOAD_CUSTOMER-200000129:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000001
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000000276
+              stepCounter: "200000129"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000277
+              stepCounter: "200000129"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: FIRSTNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000278
+              stepCounter: "200000129"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: LASTNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_CUSTOMER
+            noLinkRefs: []
+      name: LOAD_CUSTOMER
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200000129"

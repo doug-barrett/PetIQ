@@ -1,0 +1,2937 @@
+steps:
+  LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN-200003936:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000031768
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031769
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031770
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PRIMARY_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031771
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: WORKER_PROBATION_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031772
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: VIP_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031773
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: EXECUTIVE_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031774
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: OFFICER_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031775
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: MANAGEMENT_POSITION_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031776
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HIGHLY_COMPENSATED_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031777
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: STOCK_OWNER_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031778
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: OFFER_EXTENSION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031779
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: OFFER_ACCEPTANCE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031780
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HIRE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031781
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: SENIORITY_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031782
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EXPECTED_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031783
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ACTUAL_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031784
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031785
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EXPECTED_TERMINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031786
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: NEXT_PAY_GRADE_STEP_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031787
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LEGAL_ENTITY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031788
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031789
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: POSITION_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031790
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: POSITION_TITLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031791
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_GROUP_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031792
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_SCHEDULE_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031793
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_FILE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031794
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_REGION_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031795
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: MINIMUM_PAY_GRADE_STEP_DURATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031796
+              stepCounter: "200003936"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: STOCK_OWNER_PERCENTAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031797
+              stepCounter: "200003936"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: FULL_TIME_EQUIVALENCE_RATIO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031798
+              stepCounter: "200003936"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: COMPA_RATIO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031799
+              stepCounter: "200003936"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: GEOGRAPHIC_PAY_DIFFERENTIAL_PERCENTAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031800
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031801
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031802
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031803
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031804
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031805
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031806
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031807
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031808
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_REASON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031809
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_STATUS_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031810
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PROBATION_PERIOD_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031811
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PROBATION_PERIOD_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031812
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031813
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031814
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031815
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WORKER_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031816
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_TERM_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031817
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_TERM_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031818
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_TERM_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031819
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_TERM_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031820
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LEVEL_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031821
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LEVEL_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031822
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LEVEL_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031823
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WORK_LEVEL_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031824
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY_CONTEXT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031825
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY_CONTEXT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031826
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY_CONTEXT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031827
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY_CONTEXT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031828
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: EXECUTIVE_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031829
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: EXECUTIVE_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031830
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: EXECUTIVE_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031831
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: EXECUTIVE_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031832
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: OFFICER_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031833
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: OFFICER_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031834
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: OFFICER_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031835
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: OFFICER_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031836
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHLY_COMPENSATED_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031837
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHLY_COMPENSATED_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031838
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHLY_COMPENSATED_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031839
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HIGHLY_COMPENSATED_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031840
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_SHIFT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031841
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_SHIFT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031842
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_SHIFT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031843
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WORK_SHIFT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031844
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_ARRANGEMENT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031845
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_ARRANGEMENT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031846
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_ARRANGEMENT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031847
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WORK_ARRANGEMENT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031848
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: REMUNERATION_BASIS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031849
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: REMUNERATION_BASIS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031850
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: REMUNERATION_BASIS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031851
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: REMUNERATION_BASIS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031852
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_CYCLE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031853
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_CYCLE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031854
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_CYCLE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031855
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_CYCLE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031856
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031857
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031858
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031859
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: JOB_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031860
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_PROCESSING_STATUS_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031861
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_PROCESSING_STATUS_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031862
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_PROCESSING_STATUS_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031863
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_PROCESSING_STATUS_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031864
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_SCALE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031865
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_SCALE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031866
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_SCALE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031867
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_SCALE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031868
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031869
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031870
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031871
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031872
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031873
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031874
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031875
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031876
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031877
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_BASE_MULTIPLIER_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031878
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031879
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031880
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031881
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031882
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031883
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031884
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031885
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031886
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031887
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031888
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP_PAY_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031889
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GEOGRAPHIC_PAY_DIFFERENTIAL_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031890
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GEOGRAPHIC_PAY_DIFFERENTIAL_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031891
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GEOGRAPHIC_PAY_DIFFERENTIAL_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031892
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GEOGRAPHIC_PAY_DIFFERENTIAL_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031893
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031894
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031895
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031896
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031897
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031898
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031899
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031900
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031901
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031902
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WAGE_LAW_COVERAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031903
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LABOR_UNION_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031904
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LABOR_UNION_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031905
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LABOR_UNION_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031906
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LABOR_UNION_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031907
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LABOR_UNION_SENIORITY_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031908
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: LABOR_UNION_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031909
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BARGAINING_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031910
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BARGAINING_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031911
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BARGAINING_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031912
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BARGAINING_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031913
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BARGAINING_UNIT_SENIORITY_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031914
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: BARGAINING_UNIT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031915
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_HOURS_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031916
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031917
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031918
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031919
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031920
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_HOUR_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031921
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_HOURS_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031922
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031923
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031924
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031925
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031926
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: STANDARD_PAY_PERIOD_HOUR_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031927
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031928
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031929
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031930
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031931
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_ATTENTION_OF_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031932
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_CARE_OF_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031933
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_LINE_ONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031934
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_LINE_TWO
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031935
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_LINE_THREE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031936
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_LINE_FOUR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031937
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_LINE_FIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031938
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_BUILDING_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031939
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_BUILDING_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031940
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_BLOCK_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031941
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STREET_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031942
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_CITY_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031943
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_COUNTRY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031944
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_POSTAL_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031945
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031946
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_FLOOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031947
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STAIR_CASE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031948
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_DOOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031949
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_POST_OFFICE_BOX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031950
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_DELIVERY_POINT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031951
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_PLOT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031952
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_FORMATTED_BIRTH_PLACE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031953
+              stepCounter: "200003936"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_SAME_AS_ADDRESS_INDICATOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031954
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031955
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031956
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031957
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031958
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_SCRIPT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031959
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_SCRIPT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031960
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_SCRIPT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031961
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_SCRIPT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031962
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STREET_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031963
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STREET_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031964
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STREET_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031965
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STREET_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031966
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_TYPE_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031967
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_TYPE_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031968
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_TYPE_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031969
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_TYPE_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031970
+              stepCounter: "200003936"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_GEO_COORDINATE_LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031971
+              stepCounter: "200003936"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_GEO_COORDINATE_LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031972
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031973
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_COUNTRY_SUBDIVISION_LEVEL_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031974
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_COUNTRY_SUBDIVISION_LEVEL_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031975
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_STREET_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031976
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_SCRIPT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031977
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031978
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_ADDRESS_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031979
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HOME_WORK_LOCATION_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031980
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_NAME_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031981
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_NAME_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031982
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_NAME_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031983
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_NAME_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031984
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031985
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031986
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031987
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031988
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031989
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_PERCENTAGE_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031990
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031991
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031992
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_BENEFIT_BASE_RATE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031993
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_AMOUNT_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031994
+              stepCounter: "200003936"
+            dataType: DECIMAL(38,0)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_BASE_MULTIPLIER_VALUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031995
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_CURRENCY_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031996
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031997
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031998
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000031999
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032000
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_BASE_UNIT_SHORT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032001
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_BASE_UNIT_LONG_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032002
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_BASE_UNIT_SUBDIVISION_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032003
+              stepCounter: "200003936"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_BASE_UNIT_EFFECTIVE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032004
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032005
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_RATE_BASE_UNIT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032006
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORKER_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032007
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_TERM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032008
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_LEVEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032009
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY_CONTEXT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032010
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: EXECUTIVE_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032011
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: OFFICER_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032012
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: HIGHLY_COMPENSATED_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032013
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_SHIFT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032014
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: WORK_ARRANGEMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032015
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: REMUNERATION_BASIS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032016
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_CYCLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032017
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: JOB
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032018
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAYROLL_PROCESSING_STATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032019
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_SCALE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032020
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032021
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: PAY_GRADE_STEP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032022
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: GEOGRAPHIC_PAY_DIFFERENTIAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032023
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CLOCK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032024
+              stepCounter: "200003936"
+            dataType: TIMESTAMP(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000032025
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032026
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032027
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032028
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_CUSTOM_AREA_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032029
+              stepCounter: "200003936"
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: CUSTOM_PAYROLL_DATA_CONTROL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032030
+              stepCounter: "200003936"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.WORK_ASSIGNMENT'"
+          - columnReference:
+              columnCounter: 2000032031
+              stepCounter: "200003936"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN
+            noLinkRefs: []
+      name: LOAD_WORK_ASSIGNMENT_CX_SNOWFLAKE_FIVETRAN
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003936"

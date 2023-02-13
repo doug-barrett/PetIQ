@@ -1,0 +1,178 @@
+steps:
+  S_CAMPAIGN_MROC_DEFAULT_SOURCE-200003536:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032584
+              stepCounter: "200003536"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CAMPAIGN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032585
+              stepCounter: "200003536"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_CAMPAIGNCODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032586
+              stepCounter: "200003536"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_ISTRUEDIRECT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032587
+              stepCounter: "200003536"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_KEYWORD
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032588
+              stepCounter: "200003536"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_MEDIUM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032589
+              stepCounter: "200003536"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_REFERRALPATH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032590
+              stepCounter: "200003536"
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: TRAFFICSOURCE_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032591
+              stepCounter: "200003536"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032592
+              stepCounter: "200003536"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032593
+              stepCounter: "200003536"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032594
+              stepCounter: "200003536"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032595
+              stepCounter: "200003536"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032596
+              stepCounter: "200003536"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_CAMPAIGN: "200003524"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_CAMPAIGN
+            join:
+              joinCondition: FROM {{ ref('STAGE','STAGE_CAMPAIGN') }} STAGE_CAMPAIGN
+            name: S_CAMPAIGN_MROC_DEFAULT_SOURCE
+            noLinkRefs: []
+      name: S_CAMPAIGN_MROC_DEFAULT_SOURCE
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003536"

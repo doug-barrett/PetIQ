@@ -1,0 +1,165 @@
+steps:
+  LOAD_DCM_META_PLACEMENT_COST-200003445:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026666
+              stepCounter: "200003445"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026667
+              stepCounter: "200003445"
+            dataType: VARCHAR(300)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026668
+              stepCounter: "200003445"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PACKAGE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026669
+              stepCounter: "200003445"
+            dataType: VARCHAR(300)
+            defaultValue: ""
+            description: ""
+            name: PACKAGE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026670
+              stepCounter: "200003445"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: PACKAGE_TOTAL_PLANNED_MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026671
+              stepCounter: "200003445"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_COST_STRUCTURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026672
+              stepCounter: "200003445"
+            dataType: NUMBER(10,2)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_RATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026673
+              stepCounter: "200003445"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(PLACEMENT_START_DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026674
+              stepCounter: "200003445"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(PLACEMENT_END_DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026675
+              stepCounter: "200003445"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: PLANNED_MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026665
+              stepCounter: "200003445"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_META_PLACEMENT_COST'"
+          - columnReference:
+              columnCounter: 2000026664
+              stepCounter: "200003445"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DCM_META_PLACEMENT_COST
+            noLinkRefs: []
+      name: LOAD_DCM_META_PLACEMENT_COST
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003445"

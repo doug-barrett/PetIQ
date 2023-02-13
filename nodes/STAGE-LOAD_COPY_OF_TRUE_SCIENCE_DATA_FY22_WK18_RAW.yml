@@ -1,0 +1,55 @@
+steps:
+  LOAD_COPY_OF_TRUE_SCIENCE_DATA_FY22_WK18_RAW-200000272:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000001
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000006915
+              stepCounter: "200000272"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'COPY OF TRUE_SCIENCE_DATA FY22 WK18 RAW.CSV'"
+          - columnReference:
+              columnCounter: 2000006914
+              stepCounter: "200000272"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_COPY_OF_TRUE_SCIENCE_DATA_FY22_WK18_RAW
+            noLinkRefs: []
+      name: LOAD_COPY_OF_TRUE_SCIENCE_DATA_FY22_WK18_RAW
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200000272"

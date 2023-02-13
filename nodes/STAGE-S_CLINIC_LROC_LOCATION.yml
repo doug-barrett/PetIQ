@@ -1,0 +1,773 @@
+steps:
+  S_CLINIC_LROC_LOCATION-200002272:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000033295
+              stepCounter: "200002272"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_H_CLINIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033296
+              stepCounter: "200002272"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033297
+              stepCounter: "200002272"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033298
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033299
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033301
+              stepCounter: "200002272"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: FLYER_CONTENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033302
+              stepCounter: "200002272"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033303
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033304
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033305
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033306
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033307
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: FACILITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033308
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PUBLIC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033309
+              stepCounter: "200002272"
+            dataType: VARCHAR(5)
+            defaultValue: ""
+            description: ""
+            name: ZIP
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033310
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LATITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033311
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: LONGITUDE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033312
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TIME_ZONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033313
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: MESSAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033314
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033315
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033316
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: WEBSITE_URL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033317
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LOCATION_DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033318
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_REPORTABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033319
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_BE_LOCATED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033320
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ABBREVIATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033321
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: EXTERNAL_FACILITY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033322
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: LIAISON_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033323
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONETIC_CITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033324
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONETIC_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033325
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHONETIC_FACILITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033326
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_FREQUENCY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033327
+              stepCounter: "200002272"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GOAL_START_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033328
+              stepCounter: "200002272"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: GOAL_END_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033329
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_GOALS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033330
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HIDE_CREDIT_AMOUNTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033331
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: BRAND_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033332
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: FLYER_ADVERTISEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033333
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUNTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033334
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033335
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: CITY_SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033336
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: COUNTY_SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033337
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: STATE_SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033338
+              stepCounter: "200002272"
+            dataType: DOUBLE
+            defaultValue: ""
+            description: ""
+            name: DISTRICT_SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033339
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY_TAX_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033340
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COUNTY_TAX_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033341
+              stepCounter: "200002272"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: TAXES_LAST_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033342
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAS_SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033343
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NUMBER_OF_FLYERS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033344
+              stepCounter: "200002272"
+            dataType: VARCHAR(500)
+            defaultValue: ""
+            description: ""
+            name: HOURS_OF_OPERATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033345
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: LANDMARK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033346
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: TIER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033347
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_WELLNESS_CENTER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033348
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PRICE_TYPE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033349
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: NET_SUITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033350
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: DEFAULT_AD_HOC_PRESCRIPTION_PHARMACY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033351
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_SELL_NAIL_TRIMS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033353
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ZIPCODE_RADIUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033354
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_SELL_MICROCHIPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033355
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDER_FULFILLMENT_PHARMACY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033356
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PROACTIVE_PRESCRIPTION_PHARMACY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033357
+              stepCounter: "200002272"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_CONTRACT_IT_NOW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033358
+              stepCounter: "200002272"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033359
+              stepCounter: "200002272"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033360
+              stepCounter: "200002272"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033361
+              stepCounter: "200002272"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033362
+              stepCounter: "200002272"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000033363
+              stepCounter: "200002272"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_CLINIC_APOLLO_READ_REPLICA_1: "200002219"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_CLINIC_APOLLO_READ_REPLICA_1
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_CLINIC_APOLLO_READ_REPLICA_1')\
+                \ }} STAGE_CLINIC_APOLLO_READ_REPLICA_1  "
+            name: S_CLINIC_LROC_LOCATION
+            noLinkRefs: []
+      name: S_CLINIC_LROC_LOCATION
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200002272"

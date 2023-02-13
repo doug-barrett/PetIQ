@@ -1,0 +1,242 @@
+steps:
+  LOAD_DCM_IMPRESSIONS_CONDENSED-200003427:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026600
+              stepCounter: "200003427"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026601
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026602
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026603
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026604
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026605
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026606
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026607
+              stepCounter: "200003427"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: AD_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026608
+              stepCounter: "200003427"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026609
+              stepCounter: "200003427"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_COST_STRUCTURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026610
+              stepCounter: "200003427"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: PLATFORM_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026611
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026612
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026613
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMP_ELIGIBLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026614
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMP_MEASURABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026615
+              stepCounter: "200003427"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMP_VIEWABLE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026616
+              stepCounter: "200003427"
+            dataType: NUMBER(18,9)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026599
+              stepCounter: "200003427"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_IMPRESSIONS_CONDENSED'"
+          - columnReference:
+              columnCounter: 2000026598
+              stepCounter: "200003427"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DCM_IMPRESSIONS_CONDENSED
+            noLinkRefs: []
+      name: LOAD_DCM_IMPRESSIONS_CONDENSED
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003427"

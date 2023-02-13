@@ -1,0 +1,253 @@
+steps:
+  LOAD_SISENSEPROD_GETUSERS-200003408:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026391
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026392
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: CREATED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026393
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: EMAIL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026394
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: FIRSTNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026395
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: GROUPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026396
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: INTERNALGROUPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026397
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: LASTACTIVITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026398
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: LASTLOGIN
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026399
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: LASTNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026400
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: LASTUPDATED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026401
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: MANIFEST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026402
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PREFERENCES_LANGUAGE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026403
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: PREFERENCES_LOCALEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026404
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: ROLEID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026405
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: TENANTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026406
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: UISETTINGS_ECMNEXT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026407
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: USERNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026408
+              stepCounter: "200003408"
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            name: _ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026390
+              stepCounter: "200003408"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'API_SISENSE.API'"
+          - columnReference:
+              columnCounter: 2000026389
+              stepCounter: "200003408"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SISENSEPROD_GETUSERS
+            noLinkRefs: []
+      name: LOAD_SISENSEPROD_GETUSERS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003408"

@@ -1,0 +1,693 @@
+steps:
+  LOAD_VACCERTS_FT-200003821:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000029190
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029191
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SALE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029192
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAS_SIGNS_OF_ILLNESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029193
+              stepCounter: "200003821"
+            dataType: VARCHAR(8000)
+            defaultValue: ""
+            description: ""
+            name: ILLNESSES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029194
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ON_MEDICATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029195
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: OWNER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029196
+              stepCounter: "200003821"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: RESPIRATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029197
+              stepCounter: "200003821"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: PET_TOTALS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029198
+              stepCounter: "200003821"
+            dataType: VARCHAR(8192)
+            defaultValue: ""
+            description: ""
+            name: PHYSICAL_EXAM_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029199
+              stepCounter: "200003821"
+            dataType: VARCHAR(8000)
+            defaultValue: ""
+            description: ""
+            name: MEDICATIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029200
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_PREGNANT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029201
+              stepCounter: "200003821"
+            dataType: VARCHAR(144)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029202
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ON_FLEA_TICK_PREVENTATIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029203
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: FELINE_LEUKEMIA_VACCINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029204
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_FIXED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029205
+              stepCounter: "200003821"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: SKIN_COAT_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029206
+              stepCounter: "200003821"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: PET_TOTALS_DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029207
+              stepCounter: "200003821"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: EYE_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029208
+              stepCounter: "200003821"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: EAR_NOTE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029209
+              stepCounter: "200003821"
+            dataType: VARCHAR(65536)
+            defaultValue: ""
+            description: ""
+            name: VET_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029210
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029211
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: REFERRED_TO_EXTERNAL_VET
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029212
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029213
+              stepCounter: "200003821"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: EXISTING_MICROCHIP_CODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029214
+              stepCounter: "200003821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: FELINE_LEUKEMIA_VACCINATION_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029215
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029216
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029217
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: ON_HEARTWORM_PREVENTATIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029218
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LIVES_BOTH_INDOORS_AND_OUTDOORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029219
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: WEIGHT_IS_ESTIMATED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029220
+              stepCounter: "200003821"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: PET_TOTALS_PRE_DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029221
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_MICROCHIPPED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029222
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_RESPONSIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029223
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAD_VACCINE_REACTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029224
+              stepCounter: "200003821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029225
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_HEALTHY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029226
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_HEALTHY_ENOUGH_TO_VACCINATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029227
+              stepCounter: "200003821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029228
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: VET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029229
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: NEEDS_ANNUAL_VACCINES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029230
+              stepCounter: "200003821"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: TEMPERATURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029231
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PET_IS_BAR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029232
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029233
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PET_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029234
+              stepCounter: "200003821"
+            dataType: VARCHAR(8192)
+            defaultValue: ""
+            description: ""
+            name: VIP_NOTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029235
+              stepCounter: "200003821"
+            dataType: VARCHAR(1020)
+            defaultValue: ""
+            description: ""
+            name: VACCERT_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029236
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LIVES_INDOORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029237
+              stepCounter: "200003821"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: HEARTWORM_PRODUCT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029238
+              stepCounter: "200003821"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: FLEA_TICK_PRODUCT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029239
+              stepCounter: "200003821"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: PET_WEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029240
+              stepCounter: "200003821"
+            dataType: NUMBER(8,2)
+            defaultValue: ""
+            description: ""
+            name: SALES_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029241
+              stepCounter: "200003821"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TEMPERAMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029242
+              stepCounter: "200003821"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: PULSE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029243
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: PREVIOUS_REACTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029244
+              stepCounter: "200003821"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ANNUAL_VACCINES_LICENSE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029245
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: LIVES_OUTDOORS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029246
+              stepCounter: "200003821"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000029247
+              stepCounter: "200003821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
+          - columnReference:
+              columnCounter: 2000029189
+              stepCounter: "200003821"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_SNOWFLAKE_FIVETRAN.APOLLO_PUBLIC.VACCERTS'"
+          - columnReference:
+              columnCounter: 2000029188
+              stepCounter: "200003821"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_VACCERTS_FT
+            noLinkRefs: []
+      name: LOAD_VACCERTS_FT
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003821"

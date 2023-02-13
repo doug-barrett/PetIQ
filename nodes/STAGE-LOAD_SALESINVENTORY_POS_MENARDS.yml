@@ -1,0 +1,209 @@
+steps:
+  LOAD_SALESINVENTORY_POS_MENARDS-200001709:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000020955
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ITEM
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020956
+              stepCounter: "200001709"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020957
+              stepCounter: "200001709"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: DESCRIPTION2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020958
+              stepCounter: "200001709"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: METRICS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020959
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CURRENTUNITSONHANDQTY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020960
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020961
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTOTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020962
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTYLYVARIANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020963
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: COGSTYLYVARIANCE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020964
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020965
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTOTOTAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020966
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTYLYVARIANCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020967
+              stepCounter: "200001709"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UNITSALESTYLYVARIANCE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020968
+              stepCounter: "200001709"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: WEEK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000020969
+              stepCounter: "200001709"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'CX_POS_DEV.DBO.MENARDS_SALES_STG'"
+          - columnReference:
+              columnCounter: 2000020970
+              stepCounter: "200001709"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_SALESINVENTORY_POS_MENARDS
+            noLinkRefs: []
+      name: LOAD_SALESINVENTORY_POS_MENARDS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200001709"

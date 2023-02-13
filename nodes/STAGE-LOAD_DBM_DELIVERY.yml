@@ -1,0 +1,550 @@
+steps:
+  LOAD_DBM_DELIVERY-200003419:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026484
+              stepCounter: "200003419"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026485
+              stepCounter: "200003419"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026486
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026487
+              stepCounter: "200003419"
+            dataType: VARCHAR(200)
+            defaultValue: ""
+            description: ""
+            name: INSERTION_ORDER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026488
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: INSERTION_ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026489
+              stepCounter: "200003419"
+            dataType: VARCHAR(500)
+            defaultValue: ""
+            description: ""
+            name: LINE_ITEM_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026490
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LINE_ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026491
+              stepCounter: "200003419"
+            dataType: VARCHAR(300)
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026492
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026493
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026494
+              stepCounter: "200003419"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: CREATIVE_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026495
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026496
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: BILLABLE_IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026497
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026498
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TOTAL_CONVERSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026499
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026500
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026501
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: REVENUE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026502
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026503
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026504
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: DATA_FEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026505
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: BILLABLE_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026506
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: PLATFORM_FEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026507
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_STARTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026508
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_25P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026509
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_50P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026510
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_75P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026511
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_100P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026512
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_MUTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026513
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_PAUSES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026514
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_FULLSCREENS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026515
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_SKIPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026516
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_COMPANION_IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026517
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIDEO_COMPANION_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026518
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AUDIO_COMPANION_CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026519
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AUDIO_COMPANION_IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026520
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AUDIO_COMPLETE_LISTENS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026521
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AUDIO_STARTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026522
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AUDIO_STOPS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026523
+              stepCounter: "200003419"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AUDIO_MUTES
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026524
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_FEE_1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026525
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_FEE_2
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026526
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_FEE_3
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026527
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_FEE_4
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026528
+              stepCounter: "200003419"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_FEE_5
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026483
+              stepCounter: "200003419"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DBM_DELIVERY'"
+          - columnReference:
+              columnCounter: 2000026482
+              stepCounter: "200003419"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DBM_DELIVERY
+            noLinkRefs: []
+      name: LOAD_DBM_DELIVERY
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003419"

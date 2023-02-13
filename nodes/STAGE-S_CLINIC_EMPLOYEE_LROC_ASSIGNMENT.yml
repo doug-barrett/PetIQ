@@ -1,0 +1,135 @@
+steps:
+  S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT-200003754:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000004
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000034303
+              stepCounter: "200003754"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_CLINIC_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034304
+              stepCounter: "200003754"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034305
+              stepCounter: "200003754"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: TYPE_OF_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034306
+              stepCounter: "200003754"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034307
+              stepCounter: "200003754"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034308
+              stepCounter: "200003754"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034309
+              stepCounter: "200003754"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034310
+              stepCounter: "200003754"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000034311
+              stepCounter: "200003754"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA_1: "200003737"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA_1
+            join:
+              joinCondition: "FROM {{ ref('STAGE','STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA_1')\
+                \ }} STAGE_CLINIC_EMPLOYEE_APOLLO_READ_REPLICA_1  "
+            name: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT
+            noLinkRefs: []
+      name: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT
+      overrideSQL: false
+      sqlType: Satellite
+      type: sql
+    stepCounter: "200003754"

@@ -1,0 +1,286 @@
+steps:
+  LOAD_EMPLOYEE_PROPERTIES_APOLLO_READ_REPLICA-200004144:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000002
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000032749
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032750
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: USER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032751
+              stepCounter: "200004144"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_FILE_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032752
+              stepCounter: "200004144"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_CONTENT_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032753
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_FILE_SIZE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032754
+              stepCounter: "200004144"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: PHOTO_UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(PHOTO_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000032755
+              stepCounter: "200004144"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ACTIVE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032756
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032757
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032758
+              stepCounter: "200004144"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000032759
+              stepCounter: "200004144"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
+          - columnReference:
+              columnCounter: 2000032760
+              stepCounter: "200004144"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: CAN_MANAGE_ENGAGEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032761
+              stepCounter: "200004144"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_A_COMMUNITY_LIAISON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032762
+              stepCounter: "200004144"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032763
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CLINIC_TRAINING_LEVEL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032764
+              stepCounter: "200004144"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: ADP_FILE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032765
+              stepCounter: "200004144"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_PHONE_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032766
+              stepCounter: "200004144"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_PHONE_EXTENSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032767
+              stepCounter: "200004144"
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: OFFICE_FAX_NUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032768
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_JOB_TITLE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032769
+              stepCounter: "200004144"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: EMPLOYEE_DEPARTMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000032770
+              stepCounter: "200004144"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'APOLLO_READ_REPLICA.PUBLIC.EMPLOYEE_PROPERTIES'"
+          - columnReference:
+              columnCounter: 2000032771
+              stepCounter: "200004144"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_EMPLOYEE_PROPERTIES_APOLLO_READ_REPLICA
+            noLinkRefs: []
+      name: LOAD_EMPLOYEE_PROPERTIES_APOLLO_READ_REPLICA
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200004144"

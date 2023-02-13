@@ -1,0 +1,297 @@
+steps:
+  LOAD_DBM_TRUEVIEW-200003421:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026531
+              stepCounter: "200003421"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026532
+              stepCounter: "200003421"
+            dataType: VARCHAR(100)
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026533
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026534
+              stepCounter: "200003421"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: INSERTION_ORDER_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026535
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: INSERTION_ORDER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026536
+              stepCounter: "200003421"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: LINE_ITEM_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026537
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: LINE_ITEM_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026538
+              stepCounter: "200003421"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: TRUEVIEW_AD_GROUP_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026539
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TRUEVIEW_AD_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026540
+              stepCounter: "200003421"
+            dataType: VARCHAR(150)
+            defaultValue: ""
+            description: ""
+            name: TRUEVIEW_AD_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026541
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: TRUEVIEW_AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026542
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: IMPRESSIONS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026543
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CLICKS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026544
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026545
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: EARNED_VIEWS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026546
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ENGAGEMENTS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026547
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIEWS_25P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026548
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIEWS_50P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026549
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIEWS_75P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026550
+              stepCounter: "200003421"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: VIEWS_100P
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026551
+              stepCounter: "200003421"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026552
+              stepCounter: "200003421"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_MEDIA_COST
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026530
+              stepCounter: "200003421"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DBM_TRUEVIEW'"
+          - columnReference:
+              columnCounter: 2000026529
+              stepCounter: "200003421"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DBM_TRUEVIEW
+            noLinkRefs: []
+      name: LOAD_DBM_TRUEVIEW
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003421"

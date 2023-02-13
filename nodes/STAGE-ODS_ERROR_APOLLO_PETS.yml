@@ -1,0 +1,267 @@
+steps:
+  ODS_ERROR_APOLLO_PETS-200003602:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000014
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000000001
+              stepCounter: "200003602"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000002
+              stepCounter: "200003602"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000003
+              stepCounter: "200003602"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: SPECIES_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000004
+              stepCounter: "200003602"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: GENDER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000005
+              stepCounter: "200003602"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: BREED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000006
+              stepCounter: "200003602"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: COLOR
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000007
+              stepCounter: "200003602"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: BIRTH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000008
+              stepCounter: "200003602"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: CREATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000009
+              stepCounter: "200003602"
+            dataType: TIMESTAMP(3)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_AT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000010
+              stepCounter: "200003602"
+            dataType: NUMBER(6,2)
+            defaultValue: ""
+            description: ""
+            name: WEIGHT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000011
+              stepCounter: "200003602"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_ESTIMATED_BIRTHDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000012
+              stepCounter: "200003602"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IS_DECEASED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000013
+              stepCounter: "200003602"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: CREATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000014
+              stepCounter: "200003602"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000015
+              stepCounter: "200003602"
+            dataType: VARCHAR(36)
+            defaultValue: ""
+            description: ""
+            name: UNIQUE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000016
+              stepCounter: "200003602"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: NEXT_PROMO_PRESCRIPTION_ON
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000017
+              stepCounter: "200003602"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: ""
+            name: TEMPERAMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000018
+              stepCounter: "200003602"
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: HAD_VACCINE_REACTION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000019
+              stepCounter: "200003602"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: ORIGINATION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000020
+              stepCounter: "200003602"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000000021
+              stepCounter: "200003602"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        sourceMapping:
+          - aliases:
+              LOAD_PETS_FT: "200003929"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_PETS_FT
+            join:
+              joinCondition: "FROM {{ ref('STAGE','LOAD_PETS_FT') }} LOAD_PETS_FT\
+                \    "
+            name: ODS_ERROR_APOLLO_PETS
+            noLinkRefs: []
+      name: ODS_ERROR_APOLLO_PETS
+      overrideSQL: false
+      sqlType: persistentStage
+      type: sql
+    stepCounter: "200003602"

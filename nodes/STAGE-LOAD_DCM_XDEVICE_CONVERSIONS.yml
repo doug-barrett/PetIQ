@@ -1,0 +1,264 @@
+steps:
+  LOAD_DCM_XDEVICE_CONVERSIONS-200003451:
+    operation:
+      config:
+        insertStrategy: INSERT
+        preSQL: ""
+        postSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000030
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000026703
+              stepCounter: "200003451"
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
+          - columnReference:
+              columnCounter: 2000026704
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ADVERTISER_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026705
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CAMPAIGN_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026706
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: SITE_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026707
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026708
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ACTIVITY_GROUP_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026709
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: ACTIVITY_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026710
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: AD_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026711
+              stepCounter: "200003451"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: AD_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026712
+              stepCounter: "200003451"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: PLACEMENT_COST_STRUCTURE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026713
+              stepCounter: "200003451"
+            dataType: VARCHAR(30)
+            defaultValue: ""
+            description: ""
+            name: PLATFORM_TYPE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026714
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026715
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: XDEVICE_CONVERSIONS_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026716
+              stepCounter: "200003451"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026717
+              stepCounter: "200003451"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: XDEVICE_REVENUE_CLICK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026718
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: CONVERSIONS_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026719
+              stepCounter: "200003451"
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            name: XDEVICE_CONVERSIONS_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026720
+              stepCounter: "200003451"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: REVENUE_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026721
+              stepCounter: "200003451"
+            dataType: NUMBER(16,6)
+            defaultValue: ""
+            description: ""
+            name: XDEVICE_REVENUE_VIEW
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000026702
+              stepCounter: "200003451"
+            dataType: VARCHAR(64)
+            defaultValue: ""
+            description: Record source.
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_XDEVICE_CONVERSIONS'"
+          - columnReference:
+              columnCounter: 2000026701
+              stepCounter: "200003451"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Load date.
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: LOAD_DCM_XDEVICE_CONVERSIONS
+            noLinkRefs: []
+      name: LOAD_DCM_XDEVICE_CONVERSIONS
+      overrideSQL: false
+      sqlType: Stage
+      type: sql
+    stepCounter: "200003451"

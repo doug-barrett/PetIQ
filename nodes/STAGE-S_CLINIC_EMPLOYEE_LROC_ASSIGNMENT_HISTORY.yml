@@ -1,0 +1,154 @@
+steps:
+  S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT_HISTORY-200003881:
+    operation:
+      config: {}
+      customOverride: false
+      dependencies: []
+      deployEnabled: false
+      description: ""
+      isMultisource: false
+      locationID: 20000006
+      locationName: STAGE
+      materializationType: view
+      metadata:
+        columns:
+          - columnReference:
+              columnCounter: 2000019358
+              stepCounter: "200003881"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: ""
+            name: HK_L_CLINIC_EMPLOYEE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019359
+              stepCounter: "200003881"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: ASSIGNMENT_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019360
+              stepCounter: "200003881"
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: TYPE_OF_ASSIGNMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019361
+              stepCounter: "200003881"
+            dataType: CHAR(32)
+            defaultValue: ""
+            description: The changing hash
+            name: DSS_CHANGE_HASH
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019362
+              stepCounter: "200003881"
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: Record source
+            name: DSS_RECORD_SOURCE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019363
+              stepCounter: "200003881"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was loaded in the data vault
+            name: DSS_LOAD_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019364
+              stepCounter: "200003881"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row started in the data vault
+            name: DSS_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019365
+              stepCounter: "200003881"
+            dataType: NUMBER(38)
+            defaultValue: ""
+            description: Version number of a business key in the data vault
+            name: DSS_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019366
+              stepCounter: "200003881"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: Date and time the row was inserted in the data vault
+            name: DSS_CREATE_TIME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 2000019367
+              stepCounter: "200003881"
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: End date determined by the next Satellite change record dss_start_date
+            name: DSS_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                LEAD(DSS_START_DATE, 1,\
+                  \ '9999-12-31') OVER(PARTITION BY HK_L_CLINIC_EMPLOYEE ORDER BY\
+                  \ DSS_START_DATE)                             "
+          - columnReference:
+              columnCounter: 2000019368
+              stepCounter: "200003881"
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: CurrentFlag 'N' unless next Satellite change record dss_start_date
+              is null, indicating this is the most current record.
+            name: DSS_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: "                                CASE WHEN LEAD(DSS_START_DATE,\
+                  \ 1, NULL) OVER(PARTITION BY HK_L_CLINIC_EMPLOYEE ORDER BY DSS_START_DATE)\
+                  \ IS NULL THEN 'Y' ELSE 'N' END                             "
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies: []
+            join:
+              joinCondition: ''
+            name: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT_HISTORY
+            noLinkRefs: []
+      name: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT_HISTORY
+      overrideSQL: false
+      sqlType: View
+      type: sql
+    stepCounter: "200003881"
