@@ -21,7 +21,9 @@ steps:
             name: HK_H_VETCLINICCONTRACT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032778
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019251
@@ -32,7 +34,9 @@ steps:
             name: VET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032779
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019252
@@ -43,7 +47,9 @@ steps:
             name: WORK_ON_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032780
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019253
@@ -54,7 +60,9 @@ steps:
             name: RATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032781
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019254
@@ -65,7 +73,9 @@ steps:
             name: STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032782
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019255
@@ -76,7 +86,9 @@ steps:
             name: ENGAGEMENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032783
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019256
@@ -87,7 +99,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032784
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019257
@@ -98,7 +112,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032785
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019258
@@ -109,7 +125,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032786
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019259
@@ -120,7 +138,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032787
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019260
@@ -131,7 +151,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032788
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019261
@@ -142,7 +164,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032789
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019262
@@ -153,7 +177,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032790
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019263
@@ -164,7 +190,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032791
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019264
@@ -175,7 +203,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032792
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019265
@@ -186,7 +216,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032793
+                    stepCounter: "200003613"
                 transform: ""
           - columnReference:
               columnCounter: 2000019266
@@ -197,13 +229,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032794
+                    stepCounter: "200003613"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_VETCLINICCONTRACT_LROC_INFO
             join:
               joinCondition: ''
             name: S_VETCLINICCONTRACT_LROC_INFO_CURRENT

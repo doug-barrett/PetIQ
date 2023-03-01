@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: MFR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025341
               stepCounter: "200002677"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: PETCOSKU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025342
               stepCounter: "200002677"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: SUPPLIERSKU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025343
               stepCounter: "200002677"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: DESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025344
               stepCounter: "200002677"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: SUBCLASS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025345
               stepCounter: "200002677"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: SUBCLASSDESC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025346
               stepCounter: "200002677"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025347
               stepCounter: "200002677"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: LOC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025348
               stepCounter: "200002677"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025349
               stepCounter: "200002677"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: STREET
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025350
               stepCounter: "200002677"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025351
               stepCounter: "200002677"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: ST
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025352
               stepCounter: "200002677"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: ZIP
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025353
               stepCounter: "200002677"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: ZONE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025354
               stepCounter: "200002677"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: DISTRICT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025355
               stepCounter: "200002677"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: QOH
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025356
               stepCounter: "200002677"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: UNITSSOLD
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025357
               stepCounter: "200002677"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: COSTOFSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025358
               stepCounter: "200002677"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: WEEKENDINGDATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025359
               stepCounter: "200002677"
@@ -234,9 +176,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'POS_PETCO.DATA$'"
           - columnReference:
               columnCounter: 2000025360
               stepCounter: "200002677"
@@ -245,9 +184,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -259,6 +195,6 @@ steps:
             noLinkRefs: []
       name: LOAD_DATA_POS_PETCO
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002677"

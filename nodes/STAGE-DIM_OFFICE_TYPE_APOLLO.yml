@@ -21,7 +21,9 @@ steps:
             name: OFFICE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032056
+                    stepCounter: "200003335"
                 transform: ""
           - columnReference:
               columnCounter: 2000017914
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017858
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017915
@@ -43,7 +47,9 @@ steps:
             name: CODE_MINIMUM
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017859
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017916
@@ -54,7 +60,9 @@ steps:
             name: CODE_MAXIMUM
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017860
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017917
@@ -65,7 +73,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017861
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017918
@@ -76,7 +86,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017862
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017919
@@ -87,7 +99,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017863
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017920
@@ -98,7 +112,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017864
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017921
@@ -109,7 +125,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017865
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017922
@@ -120,7 +138,9 @@ steps:
             name: IS_WELLNESS_CENTER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017866
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017923
@@ -131,7 +151,9 @@ steps:
             name: DSS_CHANGE_HASH_1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017867
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017924
@@ -142,7 +164,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017868
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017925
@@ -153,7 +177,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017869
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017926
@@ -164,7 +190,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017870
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017927
@@ -175,7 +203,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017871
+                    stepCounter: "200003341"
                 transform: ""
           - columnReference:
               columnCounter: 2000017928
@@ -186,13 +216,19 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000017872
+                    stepCounter: "200003341"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_OFFICE_TYPE
+              - locationName: STAGE
+                nodeName: S_OFFICE_TYPE_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_OFFICE_TYPE_APOLLO

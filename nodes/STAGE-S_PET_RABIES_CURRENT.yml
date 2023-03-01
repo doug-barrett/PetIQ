@@ -21,7 +21,9 @@ steps:
             name: HK_H_PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032967
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018971
@@ -32,7 +34,9 @@ steps:
             name: RABIES_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032968
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018972
@@ -43,7 +47,9 @@ steps:
             name: RABIES_EXPIRATION_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032969
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018973
@@ -54,7 +60,9 @@ steps:
             name: DSS_CHANGE_HASH_1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032970
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018974
@@ -65,7 +73,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032971
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018975
@@ -76,7 +86,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032974
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018976
@@ -87,7 +99,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032973
+                    stepCounter: "200003721"
                 transform: ""
           - columnReference:
               columnCounter: 2000018977
@@ -98,13 +112,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032972
+                    stepCounter: "200003721"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_PET_RABIES
             join:
               joinCondition: 'NULL'
             name: S_PET_RABIES_CURRENT

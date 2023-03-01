@@ -21,7 +21,9 @@ steps:
             name: WORKER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035992
+                    stepCounter: "200003952"
                 transform: ""
           - columnReference:
               columnCounter: 2000020433
@@ -32,7 +34,9 @@ steps:
             name: ASSOCIATE_OID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021885
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020434
@@ -43,7 +47,9 @@ steps:
             name: ORIGINAL_HIRE_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021886
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020435
@@ -54,7 +60,9 @@ steps:
             name: REHIRE_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021887
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020436
@@ -65,7 +73,9 @@ steps:
             name: ADJUSTED_SERVICE_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021888
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020437
@@ -76,7 +86,9 @@ steps:
             name: TERMINATION_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021889
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020438
@@ -87,7 +99,9 @@ steps:
             name: STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021890
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020439
@@ -98,7 +112,9 @@ steps:
             name: ARPA_TERMINATION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021891
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020440
@@ -109,7 +125,9 @@ steps:
             name: POSITION_BUDGET
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021892
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020441
@@ -120,7 +138,9 @@ steps:
             name: CUSTOM_ROLE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021893
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020442
@@ -131,7 +151,9 @@ steps:
             name: PLANNER_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021894
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020443
@@ -142,7 +164,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021895
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020444
@@ -153,7 +177,9 @@ steps:
             name: _FIVETRAN_DELETED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021896
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020446
@@ -164,7 +190,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021898
+                    stepCounter: "200004057"
                 transform: ""
           - columnReference:
               columnCounter: 2000020447
@@ -175,13 +203,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021899
+                    stepCounter: "200004057"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_WORKER
+              - locationName: STAGE
+                nodeName: S_WORKER_MROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: FACT_WORKER_ADP

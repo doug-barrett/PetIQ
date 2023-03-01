@@ -21,7 +21,9 @@ steps:
             name: PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033070
+                    stepCounter: "200001557"
                 transform: ""
           - columnReference:
               columnCounter: 2000018185
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033733
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018186
@@ -43,7 +47,9 @@ steps:
             name: SPECIES_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033734
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018189
@@ -54,7 +60,9 @@ steps:
             name: GENDER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033735
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018190
@@ -65,7 +73,9 @@ steps:
             name: BREED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033736
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018191
@@ -76,7 +86,9 @@ steps:
             name: COLOR
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033737
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018192
@@ -87,7 +99,9 @@ steps:
             name: BIRTH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033738
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018193
@@ -98,7 +112,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033739
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018194
@@ -109,7 +125,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033740
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018195
@@ -120,7 +138,9 @@ steps:
             name: WEIGHT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033741
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018196
@@ -131,7 +151,9 @@ steps:
             name: IS_ESTIMATED_BIRTHDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033742
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018197
@@ -142,7 +164,9 @@ steps:
             name: IS_DECEASED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033743
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018198
@@ -153,7 +177,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033744
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018199
@@ -164,7 +190,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033745
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018200
@@ -175,7 +203,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033746
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018201
@@ -186,7 +216,9 @@ steps:
             name: NEXT_PROMO_PRESCRIPTION_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033748
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018202
@@ -197,7 +229,9 @@ steps:
             name: TEMPERAMENT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033749
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018203
@@ -208,7 +242,9 @@ steps:
             name: HAD_VACCINE_REACTION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033750
+                    stepCounter: "200002284"
                 transform: ""
           - columnReference:
               columnCounter: 2000018204
@@ -219,13 +255,19 @@ steps:
             name: ORIGINATION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033751
+                    stepCounter: "200002284"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_PET
+              - locationName: STAGE
+                nodeName: S_PET_LROC_INFO
             join:
               joinCondition: 'NULL'
             name: APOLLO_PETS

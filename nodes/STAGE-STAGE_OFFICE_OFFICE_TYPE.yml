@@ -80,7 +80,9 @@ steps:
             name: OFFICE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032406
+                    stepCounter: "200004112"
                 transform: ""
           - columnReference:
               columnCounter: 2000029258
@@ -102,7 +104,9 @@ steps:
             name: OFFICE_TYPE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032425
+                    stepCounter: "200004112"
                 transform: ""
           - columnReference:
               columnCounter: 2000029259
@@ -124,7 +128,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032834
+                    stepCounter: "200004112"
                 transform: ""
           - columnReference:
               columnCounter: 2000029265
@@ -135,7 +141,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032835
+                    stepCounter: "200004112"
                 transform: ""
           - columnReference:
               columnCounter: 2000029253
@@ -156,6 +164,8 @@ steps:
             dependencies:
               - locationName: STAGE
                 nodeName: LOAD_OFFICES_APOLLO_READ_REPLICA
+              - locationName: STAGE
+                nodeName: LOAD_OFFICES_FT
             join:
               joinCondition: "FROM {{ ref('STAGE','LOAD_OFFICES_APOLLO_READ_REPLICA')\
                 \ }} LOAD_OFFICES_APOLLO_READ_REPLICA  "

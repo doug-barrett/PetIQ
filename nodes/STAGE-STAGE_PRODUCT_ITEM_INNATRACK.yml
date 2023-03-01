@@ -102,7 +102,10 @@ steps:
             name: ITEMID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - &id001
+                    columnCounter: 2000024130
+                    stepCounter: "200001874"
                 transform: ""
           - columnReference:
               columnCounter: 2000024913
@@ -124,7 +127,8 @@ steps:
             name: PUPCPRODUCT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - *id001
                 transform: ""
           - columnReference:
               columnCounter: 2000024915
@@ -135,7 +139,9 @@ steps:
             name: PUPCUOMT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024135
+                    stepCounter: "200001874"
                 transform: ""
           - columnReference:
               columnCounter: 2000024916
@@ -164,7 +170,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024145
+                    stepCounter: "200001874"
                 transform: ""
           - columnReference:
               columnCounter: 2000024918
@@ -175,7 +183,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024146
+                    stepCounter: "200001874"
                 transform: ""
           - columnReference:
               columnCounter: 2000024919

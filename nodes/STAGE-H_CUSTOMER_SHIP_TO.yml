@@ -25,7 +25,9 @@ steps:
             name: HK_H_CUSTOMER_SHIP_TO
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021934
+                    stepCounter: "200001982"
                 transform: ""
           - columnReference:
               columnCounter: 2000024913
@@ -36,7 +38,9 @@ steps:
             name: CUSTOMERSHIPTOID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021935
+                    stepCounter: "200001982"
                 transform: CONCAT(BPCNUM_0, '|', BPAADD_0)
           - columnReference:
               columnCounter: 2000024914
@@ -47,7 +51,9 @@ steps:
             name: BKCC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021936
+                    stepCounter: "200001982"
                 transform: ""
           - columnReference:
               columnCounter: 2000024915
@@ -58,7 +64,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021992
+                    stepCounter: "200001982"
                 transform: ""
           - columnReference:
               columnCounter: 2000024916
@@ -69,7 +77,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021993
+                    stepCounter: "200001982"
                 transform: ""
           - columnReference:
               columnCounter: 2000024917

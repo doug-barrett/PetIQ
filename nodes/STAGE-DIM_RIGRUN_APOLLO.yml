@@ -21,7 +21,9 @@ steps:
             name: RIG_RUN_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033088
+                    stepCounter: "200003704"
                 transform: ""
           - columnReference:
               columnCounter: 2000018819
@@ -32,7 +34,9 @@ steps:
             name: RIG_CODE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019426
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018820
@@ -43,7 +47,9 @@ steps:
             name: STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019427
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018821
@@ -54,7 +60,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019428
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018822
@@ -65,7 +73,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019429
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018826
@@ -76,7 +86,9 @@ steps:
             name: LATITUDE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019433
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018827
@@ -87,7 +99,9 @@ steps:
             name: LONGITUDE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019434
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018828
@@ -98,7 +112,9 @@ steps:
             name: RUN_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019435
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018829
@@ -109,7 +125,9 @@ steps:
             name: CONTRACT_IT_NOW_RATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019436
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018831
@@ -120,7 +138,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019438
+                    stepCounter: "200003896"
                 transform: ""
           - columnReference:
               columnCounter: 2000018832
@@ -131,13 +151,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019439
+                    stepCounter: "200003896"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_RIGRUN
+              - locationName: STAGE
+                nodeName: S_RIGRUN_MROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_RIGRUN_APOLLO

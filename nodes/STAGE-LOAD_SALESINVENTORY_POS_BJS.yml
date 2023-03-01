@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: BJSFISCALWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026108
               stepCounter: "200001682"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: WEEKENDING
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),WEEKENDING,120)
           - columnReference:
               columnCounter: 2000025709
               stepCounter: "200001682"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: BJSARTICLE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025710
               stepCounter: "200001682"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PRODUCTDESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025711
               stepCounter: "200001682"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025712
               stepCounter: "200001682"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: CLUB
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025713
               stepCounter: "200001682"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: SITE_CLUBTYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025714
               stepCounter: "200001682"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025715
               stepCounter: "200001682"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: STATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025716
               stepCounter: "200001682"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: ZIPCODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025717
               stepCounter: "200001682"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: SALESUNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025718
               stepCounter: "200001682"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: SALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025719
               stepCounter: "200001682"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: CLUBOHUNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025720
               stepCounter: "200001682"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: CLUBONORDER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025721
               stepCounter: "200001682"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: ONORDERFROMVENDOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025722
               stepCounter: "200001682"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: CLUBSUPLLIEDBY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025723
               stepCounter: "200001682"
@@ -201,9 +152,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'POS BJS.REPORT1$'"
           - columnReference:
               columnCounter: 2000025724
               stepCounter: "200001682"
@@ -212,9 +160,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -226,6 +171,6 @@ steps:
             noLinkRefs: []
       name: LOAD_SALESINVENTORY_POS_BJS
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200001682"

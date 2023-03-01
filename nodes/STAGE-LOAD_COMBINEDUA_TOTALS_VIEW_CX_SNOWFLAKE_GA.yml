@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: TABLEID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027853
               stepCounter: "200003520"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: SITENAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027854
               stepCounter: "200003520"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: VISITID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027855
               stepCounter: "200003520"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: FULLVISITORID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027856
               stepCounter: "200003520"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CLIENTID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027857
               stepCounter: "200003520"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: TOTALS_BOUNCES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027858
               stepCounter: "200003520"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: HITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027859
               stepCounter: "200003520"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: TOTALS_NEWVISITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027860
               stepCounter: "200003520"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: TOTALS_PAGEVIEWS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027861
               stepCounter: "200003520"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: TOTALS_SCREENVIEWS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027862
               stepCounter: "200003520"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: TOTALS_SESSIONQUALITYDIM
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027863
               stepCounter: "200003520"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: TOTALS_TIMEONSCREEN
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027864
               stepCounter: "200003520"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: TOTALS_TIMEONSITE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027865
               stepCounter: "200003520"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: TOTALS_TOTALTRANSACTIONREVENUE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027866
               stepCounter: "200003520"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: TOTALS_TRANSACTIONREVENUE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027867
               stepCounter: "200003520"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: TOTALS_TRANSACTIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027868
               stepCounter: "200003520"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: TOTALS_UNIQUESCREENVIEWS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027869
               stepCounter: "200003520"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: TOTALS_VISITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027870
               stepCounter: "200003520"
@@ -223,9 +168,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027871
               stepCounter: "200003520"
@@ -234,9 +176,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -248,6 +187,6 @@ steps:
             noLinkRefs: []
       name: LOAD_COMBINEDUA_TOTALS_VIEW_CX_SNOWFLAKE_GA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003520"

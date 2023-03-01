@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028018
               stepCounter: "200003700"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: PRODUCT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028019
               stepCounter: "200003700"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: VACCERT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028020
               stepCounter: "200003700"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: QUANTITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028021
               stepCounter: "200003700"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028022
               stepCounter: "200003700"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028023
               stepCounter: "200003700"
@@ -91,11 +72,6 @@ steps:
             description: ""
             name: CALLBACK_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CASE WHEN DATE_PART('YEAR',CALLBACK_AT)> '3000' THEN TO_CHAR(PRODUCTS_VACCERTS.CREATED_AT
-                  + INTERVAL '1 YEAR', 'YYYY-MM-DD HH24:MI:SS') ELSE TO_CHAR(CALLBACK_AT,
-                  'YYYY-MM-DD HH24:MI:SS') END
           - columnReference:
               columnCounter: 2000028024
               stepCounter: "200003700"
@@ -104,9 +80,6 @@ steps:
             description: ""
             name: RABIES_LOT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028025
               stepCounter: "200003700"
@@ -115,9 +88,6 @@ steps:
             description: ""
             name: TEXT_1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028026
               stepCounter: "200003700"
@@ -126,9 +96,6 @@ steps:
             description: ""
             name: TEXT_2
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028027
               stepCounter: "200003700"
@@ -137,9 +104,6 @@ steps:
             description: ""
             name: TEXT_3
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028028
               stepCounter: "200003700"
@@ -148,9 +112,6 @@ steps:
             description: ""
             name: POSTCARD_SENT_ON
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(POSTCARD_SENT_ON, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028029
               stepCounter: "200003700"
@@ -159,9 +120,6 @@ steps:
             description: ""
             name: PRODUCT_INTERVAL_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028030
               stepCounter: "200003700"
@@ -170,9 +128,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028031
               stepCounter: "200003700"
@@ -181,9 +136,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028032
               stepCounter: "200003700"
@@ -192,9 +144,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028033
               stepCounter: "200003700"
@@ -203,9 +152,6 @@ steps:
             description: ""
             name: UNIT_PRICE_IN_CENTS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028034
               stepCounter: "200003700"
@@ -214,9 +160,6 @@ steps:
             description: ""
             name: INJECTION_SITE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028035
               stepCounter: "200003700"
@@ -225,9 +168,6 @@ steps:
             description: ""
             name: DOSAGE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028036
               stepCounter: "200003700"
@@ -236,9 +176,6 @@ steps:
             description: ""
             name: ORIGINAL_VACCERT_NUMBER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028037
               stepCounter: "200003700"
@@ -247,9 +184,6 @@ steps:
             description: ""
             name: SELLER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028038
               stepCounter: "200003700"
@@ -258,9 +192,6 @@ steps:
             description: ""
             name: ROUTE_OF_ADMINISTRATION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028039
               stepCounter: "200003700"
@@ -269,9 +200,6 @@ steps:
             description: ""
             name: BACKORDER_QUANTITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028040
               stepCounter: "200003700"
@@ -280,9 +208,6 @@ steps:
             description: ""
             name: REFILL_QUANTITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028041
               stepCounter: "200003700"
@@ -291,9 +216,6 @@ steps:
             description: ""
             name: DOSAGE_INSTRUCTIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028042
               stepCounter: "200003700"
@@ -302,9 +224,6 @@ steps:
             description: ""
             name: PRESCRIPTION_DOSES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028043
               stepCounter: "200003700"
@@ -313,9 +232,6 @@ steps:
             description: ""
             name: PRESCRIPTION_EXPIRES_ON
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(PRESCRIPTION_EXPIRES_ON, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028044
               stepCounter: "200003700"
@@ -324,9 +240,6 @@ steps:
             description: ""
             name: PARENT_KIT_LINE_UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028045
               stepCounter: "200003700"
@@ -335,9 +248,6 @@ steps:
             description: ""
             name: CONTRACT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028046
               stepCounter: "200003700"
@@ -346,9 +256,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.PRODUCTS_VACCERTS'"
           - columnReference:
               columnCounter: 2000028047
               stepCounter: "200003700"
@@ -357,9 +264,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -371,6 +275,6 @@ steps:
             noLinkRefs: []
       name: LOAD_PRODUCTS_VACCERTS_APOLLO_HISTORICAL_LOAD
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003700"

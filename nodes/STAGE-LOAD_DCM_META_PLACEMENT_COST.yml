@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: PLACEMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026667
               stepCounter: "200003445"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: PLACEMENT_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026668
               stepCounter: "200003445"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: PACKAGE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026669
               stepCounter: "200003445"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PACKAGE_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026670
               stepCounter: "200003445"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: PACKAGE_TOTAL_PLANNED_MEDIA_COST
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026671
               stepCounter: "200003445"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PLACEMENT_COST_STRUCTURE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026672
               stepCounter: "200003445"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: PLACEMENT_RATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026673
               stepCounter: "200003445"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: PLACEMENT_START_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(PLACEMENT_START_DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000026674
               stepCounter: "200003445"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: PLACEMENT_END_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(PLACEMENT_END_DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000026675
               stepCounter: "200003445"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: PLANNED_MEDIA_COST
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026665
               stepCounter: "200003445"
@@ -135,9 +104,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_META_PLACEMENT_COST'"
           - columnReference:
               columnCounter: 2000026664
               stepCounter: "200003445"
@@ -146,9 +112,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -160,6 +123,6 @@ steps:
             noLinkRefs: []
       name: LOAD_DCM_META_PLACEMENT_COST
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003445"

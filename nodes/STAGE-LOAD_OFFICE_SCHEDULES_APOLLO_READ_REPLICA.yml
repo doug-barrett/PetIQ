@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032786
               stepCounter: "200004146"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: DATE_ON
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DATE_ON, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000032787
               stepCounter: "200004146"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: OFFICE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032788
               stepCounter: "200004146"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: STATUS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032789
               stepCounter: "200004146"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: NOTES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032790
               stepCounter: "200004146"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032791
               stepCounter: "200004146"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032792
               stepCounter: "200004146"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000032793
               stepCounter: "200004146"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000032794
               stepCounter: "200004146"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032795
               stepCounter: "200004146"
@@ -135,9 +104,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.OFFICE_SCHEDULES'"
           - columnReference:
               columnCounter: 2000032796
               stepCounter: "200004146"
@@ -146,9 +112,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -160,6 +123,6 @@ steps:
             noLinkRefs: []
       name: LOAD_OFFICE_SCHEDULES_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004146"

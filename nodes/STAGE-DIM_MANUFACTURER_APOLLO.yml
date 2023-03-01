@@ -21,7 +21,9 @@ steps:
             name: MANUFACTURER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033052
+                    stepCounter: "200002263"
                 transform: ""
           - columnReference:
               columnCounter: 2000012382
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015311
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012383
@@ -43,7 +47,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015312
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012384
@@ -54,7 +60,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015313
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012385
@@ -65,7 +73,9 @@ steps:
             name: CODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015314
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012386
@@ -76,7 +86,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015315
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012387
@@ -87,7 +99,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015316
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012388
@@ -98,7 +112,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015317
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012389
@@ -109,7 +125,9 @@ steps:
             name: NET_SUITE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015318
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012390
@@ -120,7 +138,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015319
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012391
@@ -131,7 +151,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015320
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012392
@@ -142,7 +164,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015321
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012393
@@ -153,7 +177,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015322
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012394
@@ -164,7 +190,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015323
+                    stepCounter: "200003029"
                 transform: ""
           - columnReference:
               columnCounter: 2000012395
@@ -175,13 +203,19 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015324
+                    stepCounter: "200003029"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_MANUFACTURER
+              - locationName: STAGE
+                nodeName: S_MANUFACTURER_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_MANUFACTURER_APOLLO

@@ -49,7 +49,9 @@ steps:
             name: CUSTOMER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025725
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011802
@@ -60,7 +62,9 @@ steps:
             name: CUSTOMERSKU
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025726
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011803
@@ -71,7 +75,9 @@ steps:
             name: PETIQITEMNUMBER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025727
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011813
@@ -93,7 +99,9 @@ steps:
             name: UPC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025728
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011805
@@ -104,7 +112,9 @@ steps:
             name: POSFILEDESCRIPTION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025729
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011806
@@ -115,7 +125,9 @@ steps:
             name: DESCRIPTION2COMPONENTBOM
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025730
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011807
@@ -126,7 +138,9 @@ steps:
             name: ITEMMASTERDESCRIPTIONREPORTINGDESC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025731
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011808
@@ -137,7 +151,9 @@ steps:
             name: PRECORGIITEMNUMBER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025732
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011809
@@ -148,7 +164,9 @@ steps:
             name: NOTES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025733
+                    stepCounter: "200002940"
                 transform: ""
           - columnReference:
               columnCounter: 2000011810
@@ -159,7 +177,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025734
+                    stepCounter: "200002940"
                 transform: "'VIEW_LOAD_LOOKUP_CLEAN'"
           - columnReference:
               columnCounter: 2000011811
@@ -170,13 +190,17 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000025735
+                    stepCounter: "200002940"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: LOAD_SHEET2_PRODUCT_LOOKUP
             join:
               joinCondition: 'NULL'
             name: VIEW_LOAD_LOOKUP_CLEAN

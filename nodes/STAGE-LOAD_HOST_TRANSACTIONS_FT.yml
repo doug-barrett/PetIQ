@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032512
               stepCounter: "200004119"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: HOST_ACCOUNT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032513
               stepCounter: "200004119"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: PAYOUT_EXPIRES_ON
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032514
               stepCounter: "200004119"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: NOTES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032515
               stepCounter: "200004119"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032516
               stepCounter: "200004119"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PAID_ON
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032517
               stepCounter: "200004119"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CLINIC_LOCATION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032518
               stepCounter: "200004119"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032519
               stepCounter: "200004119"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: TRANSACTION_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032520
               stepCounter: "200004119"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: PET_COUNT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032521
               stepCounter: "200004119"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: AMOUNT_IN_CENTS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032522
               stepCounter: "200004119"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032523
               stepCounter: "200004119"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: DATE_ON
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032524
               stepCounter: "200004119"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: DEBIT_TRANSACTION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032525
               stepCounter: "200004119"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032526
               stepCounter: "200004119"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: PARENT_TRANSACTION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032527
               stepCounter: "200004119"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032528
               stepCounter: "200004119"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: _FIVETRAN_DELETED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032529
               stepCounter: "200004119"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000032830
               stepCounter: "200004119"
@@ -234,9 +176,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.APOLLO_PUBLIC.LOAD_HOST_TRANSACTIONS_FT'"
           - columnReference:
               columnCounter: 2000032831
               stepCounter: "200004119"
@@ -245,9 +184,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -259,6 +195,6 @@ steps:
             noLinkRefs: []
       name: LOAD_HOST_TRANSACTIONS_FT
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004119"

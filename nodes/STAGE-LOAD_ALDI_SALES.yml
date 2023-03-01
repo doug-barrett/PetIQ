@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: SALESPERIODSTART
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025694
               stepCounter: "200002789"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: SALESPERIODEND
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025695
               stepCounter: "200002789"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: SUPPLIERNAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025696
               stepCounter: "200002789"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: ALDIREPRESENTATIVE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025697
               stepCounter: "200002789"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: PRODUCTCODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025698
               stepCounter: "200002789"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PRODUCTDESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025699
               stepCounter: "200002789"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: DIVISION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025700
               stepCounter: "200002789"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: WEEKLYUNITSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025701
               stepCounter: "200002789"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: WEEKLYCASESSOLD
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025702
               stepCounter: "200002789"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: STORESTOCKCASES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025703
               stepCounter: "200002789"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: WAREHOUSESTOCKCASES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025704
               stepCounter: "200002789"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: TOTALDIVISIONSTOCKCASES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025705
               stepCounter: "200002789"
@@ -157,9 +120,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'WS_POS_DEV.DBO.ALDI_SALES_STG'"
           - columnReference:
               columnCounter: 2000025706
               stepCounter: "200002789"
@@ -168,9 +128,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -182,6 +139,6 @@ steps:
             noLinkRefs: []
       name: LOAD_ALDI_SALES
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002789"

@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: WORKER_ASSIGNMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032039
               stepCounter: "200003938"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: WORKER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032040
               stepCounter: "200003938"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032041
               stepCounter: "200003938"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000032042
               stepCounter: "200003938"
@@ -69,9 +56,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.WORKER_ASSIGNED_ORGANIZATIONAL_UNIT'"
           - columnReference:
               columnCounter: 2000032043
               stepCounter: "200003938"
@@ -80,9 +64,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -94,6 +75,6 @@ steps:
             noLinkRefs: []
       name: LOAD_WORKER_ASSIGNED_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003938"

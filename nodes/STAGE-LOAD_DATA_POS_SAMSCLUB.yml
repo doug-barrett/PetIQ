@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ITEMNBR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021071
               stepCounter: "200001788"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: ITEMDESC1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021072
               stepCounter: "200001788"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021073
               stepCounter: "200001788"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: VENDORSTOCKNUMBER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026166
               stepCounter: "200001788"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: WEEKENDINGDATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),WEEKENDINGDATE,120)
           - columnReference:
               columnCounter: 2000021075
               stepCounter: "200001788"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: USALESLW
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021076
               stepCounter: "200001788"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: SALESLW
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021077
               stepCounter: "200001788"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: CURRENTINVENTORYUNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021078
               stepCounter: "200001788"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CURRENTONORDERUNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000021079
               stepCounter: "200001788"
@@ -124,9 +96,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_POS_DEV.DBO.SAMSCLUB_SALES_STG'"
           - columnReference:
               columnCounter: 2000021080
               stepCounter: "200001788"
@@ -135,9 +104,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -149,6 +115,6 @@ steps:
             noLinkRefs: []
       name: LOAD_DATA_POS_SAMSCLUB
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200001788"

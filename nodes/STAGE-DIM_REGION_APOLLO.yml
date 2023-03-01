@@ -21,7 +21,9 @@ steps:
             name: REGION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000028515
+                    stepCounter: "200002265"
                 transform: ""
           - columnReference:
               columnCounter: 2000012417
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015649
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012418
@@ -43,7 +47,9 @@ steps:
             name: REGIONAL_MANAGER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015650
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012419
@@ -54,7 +60,9 @@ steps:
             name: COLOR
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015651
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012420
@@ -65,7 +73,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015652
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012421
@@ -76,7 +86,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015653
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012423
@@ -87,7 +99,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015655
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012424
@@ -98,7 +112,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015656
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012422
@@ -109,7 +125,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015654
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012425
@@ -120,7 +138,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015657
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012426
@@ -131,7 +151,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015658
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012427
@@ -142,7 +164,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015659
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012428
@@ -153,7 +177,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015660
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012429
@@ -164,7 +190,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015661
+                    stepCounter: "200003041"
                 transform: ""
           - columnReference:
               columnCounter: 2000012430
@@ -175,13 +203,19 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015662
+                    stepCounter: "200003041"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_REGION
+              - locationName: STAGE
+                nodeName: S_REGIONS_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_REGION_APOLLO

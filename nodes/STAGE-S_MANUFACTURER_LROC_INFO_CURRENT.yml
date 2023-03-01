@@ -21,7 +21,9 @@ steps:
             name: HK_H_MANUFACTURER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033611
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015311
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033612
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015312
@@ -43,7 +47,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033613
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015313
@@ -54,7 +60,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033614
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015314
@@ -65,7 +73,9 @@ steps:
             name: CODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033615
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015315
@@ -76,7 +86,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033616
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015316
@@ -87,7 +99,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033617
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015317
@@ -98,7 +112,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033618
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015318
@@ -109,7 +125,9 @@ steps:
             name: NET_SUITE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033619
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015319
@@ -120,7 +138,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033620
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015320
@@ -131,7 +151,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033621
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015321
@@ -142,7 +164,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033622
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015322
@@ -153,7 +177,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033623
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015323
@@ -164,7 +190,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033624
+                    stepCounter: "200002280"
                 transform: ""
           - columnReference:
               columnCounter: 2000015324
@@ -175,13 +203,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033625
+                    stepCounter: "200002280"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_MANUFACTURER_LROC_INFO
             join:
               joinCondition: ''
             name: S_MANUFACTURER_LROC_INFO_CURRENT

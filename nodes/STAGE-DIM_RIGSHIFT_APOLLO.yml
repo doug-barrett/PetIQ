@@ -21,7 +21,9 @@ steps:
             name: RIG_RUN_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033088
+                    stepCounter: "200003704"
                 transform: ""
           - columnReference:
               columnCounter: 2000019731
@@ -32,7 +34,9 @@ steps:
             name: RIG_CODE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019464
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019737
@@ -43,7 +47,9 @@ steps:
             name: LEAVE_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019470
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019738
@@ -54,7 +60,9 @@ steps:
             name: RETURN_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019471
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019739
@@ -65,7 +73,9 @@ steps:
             name: NOTES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019472
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019732
@@ -76,7 +86,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019465
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019733
@@ -87,7 +99,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019466
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019741
@@ -98,7 +112,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019474
+                    stepCounter: "200003834"
                 transform: ""
           - columnReference:
               columnCounter: 2000019742
@@ -109,13 +125,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019475
+                    stepCounter: "200003834"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_RIGRUN
+              - locationName: STAGE
+                nodeName: S_RIGRUN_MROC_SHIFT_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_RIGSHIFT_APOLLO

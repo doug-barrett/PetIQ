@@ -21,7 +21,9 @@ steps:
             name: CLINIC_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033004
+                    stepCounter: "200001552"
                 transform: ""
           - columnReference:
               columnCounter: 2000019002
@@ -32,7 +34,9 @@ steps:
             name: USER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033139
+                    stepCounter: "200001560"
                 transform: ""
           - columnReference:
               columnCounter: 2000019337
@@ -43,7 +47,9 @@ steps:
             name: ASSIGNMENT_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019350
+                    stepCounter: "200003880"
                 transform: ""
           - columnReference:
               columnCounter: 2000019338
@@ -54,7 +60,9 @@ steps:
             name: TYPE_OF_ASSIGNMENT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019351
+                    stepCounter: "200003880"
                 transform: ""
           - columnReference:
               columnCounter: 2000019422
@@ -65,7 +73,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019374
+                    stepCounter: "200003882"
                 transform: ""
           - columnReference:
               columnCounter: 2000019423
@@ -76,7 +86,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019375
+                    stepCounter: "200003882"
                 transform: ""
           - columnReference:
               columnCounter: 2000019340
@@ -87,7 +99,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019353
+                    stepCounter: "200003880"
                 transform: ""
           - columnReference:
               columnCounter: 2000019341
@@ -98,13 +112,23 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019354
+                    stepCounter: "200003880"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_CLINIC
+              - locationName: STAGE
+                nodeName: H_USER_APOLLO
+              - locationName: STAGE
+                nodeName: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT_CURRENT
+              - locationName: STAGE
+                nodeName: S_CLINIC_EMPLOYEE_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: FACT_CLINIC_EMPLOYEE

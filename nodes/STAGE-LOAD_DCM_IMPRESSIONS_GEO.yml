@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000026620
               stepCounter: "200003429"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: COUNTRY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026621
               stepCounter: "200003429"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: STATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026622
               stepCounter: "200003429"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: DMA
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026623
               stepCounter: "200003429"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: ADVERTISER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026624
               stepCounter: "200003429"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: CAMPAIGN_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026625
               stepCounter: "200003429"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: SITE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026626
               stepCounter: "200003429"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: PLACEMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026627
               stepCounter: "200003429"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CREATIVE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026628
               stepCounter: "200003429"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: PLACEMENT_COST_STRUCTURE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026629
               stepCounter: "200003429"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: PLATFORM_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026630
               stepCounter: "200003429"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: IMPRESSIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026631
               stepCounter: "200003429"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: CLICKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026632
               stepCounter: "200003429"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: IMP_ELIGIBLE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026633
               stepCounter: "200003429"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: IMP_MEASURABLE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026634
               stepCounter: "200003429"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: IMP_VIEWABLE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026635
               stepCounter: "200003429"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: MEDIA_COST
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026618
               stepCounter: "200003429"
@@ -212,9 +160,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_IMPRESSIONS_GEO'"
           - columnReference:
               columnCounter: 2000026617
               stepCounter: "200003429"
@@ -223,9 +168,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -237,6 +179,6 @@ steps:
             noLinkRefs: []
       name: LOAD_DCM_IMPRESSIONS_GEO
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003429"

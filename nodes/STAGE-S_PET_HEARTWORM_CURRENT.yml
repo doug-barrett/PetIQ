@@ -21,7 +21,9 @@ steps:
             name: HK_H_PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032908
+                    stepCounter: "200003694"
                 transform: ""
           - columnReference:
               columnCounter: 2000018964
@@ -32,7 +34,9 @@ steps:
             name: HEARTWORM_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032909
+                    stepCounter: "200003694"
                 transform: ""
           - columnReference:
               columnCounter: 2000018965
@@ -43,7 +47,9 @@ steps:
             name: DSS_CHANGE_HASH_1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032910
+                    stepCounter: "200003694"
                 transform: ""
           - columnReference:
               columnCounter: 2000018966
@@ -54,7 +60,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032911
+                    stepCounter: "200003694"
                 transform: ""
           - columnReference:
               columnCounter: 2000018967
@@ -65,7 +73,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032914
+                    stepCounter: "200003694"
                 transform: ""
           - columnReference:
               columnCounter: 2000018968
@@ -76,7 +86,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032913
+                    stepCounter: "200003694"
                 transform: ""
           - columnReference:
               columnCounter: 2000018969
@@ -87,13 +99,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032912
+                    stepCounter: "200003694"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_PET_HEARTWORM
             join:
               joinCondition: 'NULL'
             name: S_PET_HEARTWORM_CURRENT

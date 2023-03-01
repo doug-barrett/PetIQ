@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: CUSTOMER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025726
               stepCounter: "200002940"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: CUSTOMERSKU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025727
               stepCounter: "200002940"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: PETIQITEMNUMBER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025728
               stepCounter: "200002940"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025729
               stepCounter: "200002940"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: POSFILEDESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025730
               stepCounter: "200002940"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: DESCRIPTION2COMPONENTBOM
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025731
               stepCounter: "200002940"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: ITEMMASTERDESCRIPTIONREPORTINGDESC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025732
               stepCounter: "200002940"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: PRECORGIITEMNUMBER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025733
               stepCounter: "200002940"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: NOTES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025734
               stepCounter: "200002940"
@@ -124,9 +96,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'PRODUCT_LOOKUP.SHEET2$'"
           - columnReference:
               columnCounter: 2000025735
               stepCounter: "200002940"
@@ -135,9 +104,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -149,6 +115,6 @@ steps:
             noLinkRefs: []
       name: LOAD_SHEET2_PRODUCT_LOOKUP
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002940"

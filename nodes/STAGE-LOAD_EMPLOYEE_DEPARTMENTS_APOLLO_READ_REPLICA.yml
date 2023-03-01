@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032727
               stepCounter: "200004142"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032728
               stepCounter: "200004142"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: IS_ACTIVE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032729
               stepCounter: "200004142"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: SORT_ORDER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032730
               stepCounter: "200004142"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032731
               stepCounter: "200004142"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032732
               stepCounter: "200004142"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000032733
               stepCounter: "200004142"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000032734
               stepCounter: "200004142"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032735
               stepCounter: "200004142"
@@ -124,9 +96,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.EMPLOYEE_DEPARTMENTS'"
           - columnReference:
               columnCounter: 2000032736
               stepCounter: "200004142"
@@ -135,9 +104,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -149,6 +115,6 @@ steps:
             noLinkRefs: []
       name: LOAD_EMPLOYEE_DEPARTMENTS_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004142"

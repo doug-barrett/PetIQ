@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: COHDORDER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024166
               stepCounter: "200001876"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: COHDBILLTO
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024167
               stepCounter: "200001876"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: COHDCUSTOMER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024168
               stepCounter: "200001876"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: COHDRECVDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDRECVDT,120)
           - columnReference:
               columnCounter: 2000024169
               stepCounter: "200001876"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: COHDCSTSHPDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDCSTSHPDT,120)
           - columnReference:
               columnCounter: 2000024170
               stepCounter: "200001876"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: COHDCLOSEDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDCLOSEDT,120)
           - columnReference:
               columnCounter: 2000024171
               stepCounter: "200001876"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: COHDDELMETH
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024172
               stepCounter: "200001876"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: COHDADDDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDADDDT,120)
           - columnReference:
               columnCounter: 2000024173
               stepCounter: "200001876"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: COHDSHIPKEY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024174
               stepCounter: "200001876"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: COHDLOC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024175
               stepCounter: "200001876"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: COHDORDSTAT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024176
               stepCounter: "200001876"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: COHDCSTARRDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDCSTARRDT,120)
           - columnReference:
               columnCounter: 2000024177
               stepCounter: "200001876"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: COHDCLOSERSN
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024178
               stepCounter: "200001876"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: COHDREQSHPDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDREQSHPDT,120)
           - columnReference:
               columnCounter: 2000024179
               stepCounter: "200001876"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: COHDREQARRDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDREQARRDT,120)
           - columnReference:
               columnCounter: 2000024180
               stepCounter: "200001876"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: COHDCANCLDT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),COHDCANCLDT,120)
           - columnReference:
               columnCounter: 2000024181
               stepCounter: "200001876"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: COHDTHDRKEY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024182
               stepCounter: "200001876"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: COHDDOCID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024183
               stepCounter: "200001876"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: COHDSOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024184
               stepCounter: "200001876"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: COHDOEHOLD
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024185
               stepCounter: "200001876"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: COHDCUSTPO
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024186
               stepCounter: "200001876"
@@ -256,9 +192,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_INNATRACK.DBO.OECOHD_REC'"
           - columnReference:
               columnCounter: 2000024187
               stepCounter: "200001876"
@@ -267,9 +200,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -281,6 +211,6 @@ steps:
             noLinkRefs: []
       name: LOAD_OECOHD_REC_CX_INNATRACK
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200001876"

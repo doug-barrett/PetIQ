@@ -100,7 +100,10 @@ steps:
             name: INVOICEID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - &id001
+                    columnCounter: 2000024021
+                    stepCounter: "200001872"
                 transform: ""
           - columnReference:
               columnCounter: 2000024689
@@ -166,7 +169,8 @@ steps:
             name: LINHINVMKEY
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - *id001
                 transform: ""
           - columnReference:
               columnCounter: 2000024695
@@ -177,7 +181,9 @@ steps:
             name: LINHAUTOSEQ
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024022
+                    stepCounter: "200001872"
                 transform: ""
           - columnReference:
               columnCounter: 2000024696
@@ -188,7 +194,9 @@ steps:
             name: LINHPRODUCT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024026
+                    stepCounter: "200001872"
                 transform: ""
           - columnReference:
               columnCounter: 2000024697
@@ -199,7 +207,9 @@ steps:
             name: LINHUOMT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024027
+                    stepCounter: "200001872"
                 transform: ""
           - columnReference:
               columnCounter: 2000024698
@@ -232,7 +242,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024065
+                    stepCounter: "200001872"
                 transform: ""
           - columnReference:
               columnCounter: 2000024700
@@ -243,7 +255,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024066
+                    stepCounter: "200001872"
                 transform: ""
           - columnReference:
               columnCounter: 2000024701

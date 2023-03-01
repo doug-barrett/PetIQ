@@ -21,7 +21,9 @@ steps:
             name: HK_H_SURVEY_ANSWER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035808
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020544
@@ -32,7 +34,9 @@ steps:
             name: QUESTION_OPTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035809
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020545
@@ -43,7 +47,9 @@ steps:
             name: RESPONSE_PAGE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035810
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020546
@@ -54,7 +60,9 @@ steps:
             name: INDEX
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035811
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020547
@@ -65,7 +73,9 @@ steps:
             name: OTHER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035812
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020548
@@ -76,7 +86,9 @@ steps:
             name: ANSWER_TEXT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035813
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020549
@@ -87,7 +99,9 @@ steps:
             name: DOWNLOAD_URL
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035814
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020550
@@ -98,7 +112,9 @@ steps:
             name: CONTENT_TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035815
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020551
@@ -109,7 +125,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035816
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020552
@@ -120,7 +138,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035817
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020553
@@ -131,7 +151,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035818
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020554
@@ -142,7 +164,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035819
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020555
@@ -153,7 +177,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035820
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020556
@@ -164,7 +190,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035821
+                    stepCounter: "200004077"
                 transform: ""
           - columnReference:
               columnCounter: 2000020557
@@ -175,13 +203,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035822
+                    stepCounter: "200004077"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_SURVEY_ANSWER_MROC_INFO
             join:
               joinCondition: ''
             name: S_SURVEY_ANSWER_MROC_INFO_CURRENT

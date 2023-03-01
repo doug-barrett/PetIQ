@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ITEM_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029464
               stepCounter: "200003885"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: CLINIC_LOCATION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029465
               stepCounter: "200003885"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ITEM_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029466
               stepCounter: "200003885"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029467
               stepCounter: "200003885"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: EVENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029468
               stepCounter: "200003885"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: WHODUNNIT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029469
               stepCounter: "200003885"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: OBJECT_CHANGES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029470
               stepCounter: "200003885"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: OBJECT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029460
               stepCounter: "200003885"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029461
               stepCounter: "200003885"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: _FIVETRAN_DELETED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000029462
               stepCounter: "200003885"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000029459
               stepCounter: "200003885"
@@ -146,9 +112,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.APOLLO_PUBLIC.CLINIC_VERSIONS'"
           - columnReference:
               columnCounter: 2000029458
               stepCounter: "200003885"
@@ -157,9 +120,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -171,6 +131,6 @@ steps:
             noLinkRefs: []
       name: LOAD_CLINIC_VERSIONS_FT
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003885"

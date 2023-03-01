@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: FISCAL_YEAR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025396
               stepCounter: "200002729"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: FISCAL_WEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025397
               stepCounter: "200002729"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: CLASS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025398
               stepCounter: "200002729"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: CLASS_DESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025399
               stepCounter: "200002729"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: PRIMARY_SKU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025400
               stepCounter: "200002729"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PRIMARYSKU_DESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025401
               stepCounter: "200002729"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: SALESDOLLAR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025402
               stepCounter: "200002729"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025403
               stepCounter: "200002729"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: EOP_DCINV_EXTRETAIL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025404
               stepCounter: "200002729"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: EOP_STOREINV_EXTRETAIL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025405
               stepCounter: "200002729"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: EOP_TOTALINV_EXTRETAIL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025406
               stepCounter: "200002729"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: EOP_DCINV_UNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025407
               stepCounter: "200002729"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: EOP_STOREINV_UNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025408
               stepCounter: "200002729"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: EOP_STOREINV_INTRANSITUNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025409
               stepCounter: "200002729"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: EOP_TOTALINV_UNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025410
               stepCounter: "200002729"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: SELLTHROUGHPERCENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025411
               stepCounter: "200002729"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: WEEKENDINGDATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025412
               stepCounter: "200002729"
@@ -212,9 +160,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'POS_DOLLARGEN.INVENTORYTRENDREPORT$'"
           - columnReference:
               columnCounter: 2000025413
               stepCounter: "200002729"
@@ -223,9 +168,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -237,6 +179,6 @@ steps:
             noLinkRefs: []
       name: LOAD_INVENTORYTRENDREPORT_POS_DOLLARGEN
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002729"

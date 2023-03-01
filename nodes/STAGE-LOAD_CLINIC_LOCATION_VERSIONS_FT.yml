@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033120
               stepCounter: "200004196"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: ITEM_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033121
               stepCounter: "200004196"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ITEM_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033122
               stepCounter: "200004196"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033123
               stepCounter: "200004196"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: EVENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033124
               stepCounter: "200004196"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: WHODUNNIT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033125
               stepCounter: "200004196"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: OBJECT_CHANGES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033119
               stepCounter: "200004196"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000033118
               stepCounter: "200004196"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: _FIVETRAN_DELETED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000033116
               stepCounter: "200004196"
@@ -124,9 +96,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.APOLLO_PUBLIC.CLINIC_LOCATION_VERSIONS'"
           - columnReference:
               columnCounter: 2000033115
               stepCounter: "200004196"
@@ -135,9 +104,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -149,6 +115,6 @@ steps:
             noLinkRefs: []
       name: LOAD_CLINIC_LOCATION_VERSIONS_FT
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004196"

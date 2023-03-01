@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032619
               stepCounter: "200004123"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: DECLINED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032620
               stepCounter: "200004123"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032621
               stepCounter: "200004123"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: RIG_RUN_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032622
               stepCounter: "200004123"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032623
               stepCounter: "200004123"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: DECLINED_BY_USER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032624
               stepCounter: "200004123"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: VET_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032625
               stepCounter: "200004123"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032626
               stepCounter: "200004123"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: RATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032627
               stepCounter: "200004123"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: MANUAL_BID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032628
               stepCounter: "200004123"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: SELECTED_BY_USER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032629
               stepCounter: "200004123"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: ENGAGEMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032630
               stepCounter: "200004123"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032631
               stepCounter: "200004123"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032632
               stepCounter: "200004123"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: SELECTED_BY_OFFICE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032633
               stepCounter: "200004123"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: STATUS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032634
               stepCounter: "200004123"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: _FIVETRAN_DELETED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032635
               stepCounter: "200004123"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000032923
               stepCounter: "200004123"
@@ -223,9 +168,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.APOLLO_PUBLIC.LOAD_VET_BIDS_FT'"
           - columnReference:
               columnCounter: 2000032924
               stepCounter: "200004123"
@@ -234,9 +176,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -248,6 +187,6 @@ steps:
             noLinkRefs: []
       name: LOAD_VET_BIDS_FT
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004123"

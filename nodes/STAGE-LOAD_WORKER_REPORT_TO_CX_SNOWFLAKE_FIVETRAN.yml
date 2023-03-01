@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: WORKER_ASSIGNMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032211
               stepCounter: "200004042"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: WORKER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032212
               stepCounter: "200004042"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032213
               stepCounter: "200004042"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: REPORT_TO_WORKER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032214
               stepCounter: "200004042"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: POSITION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032215
               stepCounter: "200004042"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: POSITION_TITLE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032216
               stepCounter: "200004042"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: REPORTS_TO_RELATIONSHIP_SHORT_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032217
               stepCounter: "200004042"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: REPORTS_TO_RELATIONSHIP_LONG_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032218
               stepCounter: "200004042"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: REPORTS_TO_RELATIONSHIP_SUBDIVISION_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032219
               stepCounter: "200004042"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: REPORTS_TO_RELATIONSHIP_EFFECTIVE_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032220
               stepCounter: "200004042"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: REPORTS_TO_RELATIONSHIP
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032221
               stepCounter: "200004042"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000032222
               stepCounter: "200004042"
@@ -157,9 +120,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.ADP_WORKFORCE_NOW.WORKER_REPORT_TO'"
           - columnReference:
               columnCounter: 2000032223
               stepCounter: "200004042"
@@ -168,9 +128,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -182,6 +139,6 @@ steps:
             noLinkRefs: []
       name: LOAD_WORKER_REPORT_TO_CX_SNOWFLAKE_FIVETRAN
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004042"

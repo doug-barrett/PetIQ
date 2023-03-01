@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028587
               stepCounter: "200001526"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: OWNER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028588
               stepCounter: "200001526"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: SALE_DATE_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(SALE_DATE_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028589
               stepCounter: "200001526"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028590
               stepCounter: "200001526"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028591
               stepCounter: "200001526"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028592
               stepCounter: "200001526"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028593
               stepCounter: "200001526"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028594
               stepCounter: "200001526"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CLINIC_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028596
               stepCounter: "200001526"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: IS_CANCELED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028597
               stepCounter: "200001526"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: EXTERNALLY_UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028598
               stepCounter: "200001526"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: ASTA_META
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028599
               stepCounter: "200001526"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: SUB_TOTAL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028600
               stepCounter: "200001526"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: TAX
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028601
               stepCounter: "200001526"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: TOTAL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028602
               stepCounter: "200001526"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: IS_PAID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028604
               stepCounter: "200001526"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: EMAIL_RECEIPT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028605
               stepCounter: "200001526"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: TIME_PAYMENT_COMPLETED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(TIME_PAYMENT_COMPLETED, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028606
               stepCounter: "200001526"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: TIME_VET_COMPLETED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(TIME_VET_COMPLETED, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028607
               stepCounter: "200001526"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: CANCELED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028608
               stepCounter: "200001526"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: ADMINISTRATOR_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028609
               stepCounter: "200001526"
@@ -256,9 +192,6 @@ steps:
             description: ""
             name: DECISION_MADE_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DECISION_MADE_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028610
               stepCounter: "200001526"
@@ -267,9 +200,6 @@ steps:
             description: ""
             name: CANCELLATION_APPROVED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028611
               stepCounter: "200001526"
@@ -278,9 +208,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.SALES'"
           - columnReference:
               columnCounter: 2000028612
               stepCounter: "200001526"
@@ -289,9 +216,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -303,6 +227,6 @@ steps:
             noLinkRefs: []
       name: LOAD_SALES_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200001526"

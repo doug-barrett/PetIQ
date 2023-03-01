@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030813
               stepCounter: "200003838"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: HOST_LOCATION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030814
               stepCounter: "200003838"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: MINIMUM_PET_COUNT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030815
               stepCounter: "200003838"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PAYMENT_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030816
               stepCounter: "200003838"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: FIXED_AMOUNT_IN_CENTS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030817
               stepCounter: "200003838"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PERCENTAGE_OF_NET
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030818
               stepCounter: "200003838"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000030819
               stepCounter: "200003838"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000030820
               stepCounter: "200003838"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030821
               stepCounter: "200003838"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030822
               stepCounter: "200003838"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030823
               stepCounter: "200003838"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: MINIMUM_VACCERT_TALLY_TOTAL_IN_CENTS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030824
               stepCounter: "200003838"
@@ -157,9 +120,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.HOST_METRICS'"
           - columnReference:
               columnCounter: 2000030825
               stepCounter: "200003838"
@@ -168,9 +128,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -182,6 +139,6 @@ steps:
             noLinkRefs: []
       name: LOAD_HOST_METRICS_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003838"

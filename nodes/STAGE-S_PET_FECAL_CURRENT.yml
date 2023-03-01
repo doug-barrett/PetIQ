@@ -21,7 +21,9 @@ steps:
             name: HK_H_PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032975
+                    stepCounter: "200003723"
                 transform: ""
           - columnReference:
               columnCounter: 2000018950
@@ -32,7 +34,9 @@ steps:
             name: FECAL_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032976
+                    stepCounter: "200003723"
                 transform: ""
           - columnReference:
               columnCounter: 2000018951
@@ -43,7 +47,9 @@ steps:
             name: DSS_CHANGE_HASH_1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032977
+                    stepCounter: "200003723"
                 transform: ""
           - columnReference:
               columnCounter: 2000018952
@@ -54,7 +60,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032978
+                    stepCounter: "200003723"
                 transform: ""
           - columnReference:
               columnCounter: 2000018953
@@ -65,7 +73,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032981
+                    stepCounter: "200003723"
                 transform: ""
           - columnReference:
               columnCounter: 2000018954
@@ -76,7 +86,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032980
+                    stepCounter: "200003723"
                 transform: ""
           - columnReference:
               columnCounter: 2000018955
@@ -87,13 +99,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032979
+                    stepCounter: "200003723"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_PET_FECAL
             join:
               joinCondition: 'NULL'
             name: S_PET_FECAL_CURRENT

@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000027958
               stepCounter: "200003637"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: TIME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027959
               stepCounter: "200003637"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: RETAILER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027960
               stepCounter: "200003637"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PRODUCT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027961
               stepCounter: "200003637"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: PRODUCT_CARTED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027962
               stepCounter: "200003637"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: TOTAL_PRICE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027956
               stepCounter: "200003637"
@@ -91,9 +72,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.PETARMOR_VALASSIS_2022_DAILYCART'"
           - columnReference:
               columnCounter: 2000027955
               stepCounter: "200003637"
@@ -102,9 +80,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -116,6 +91,6 @@ steps:
             noLinkRefs: []
       name: LOAD_PETARMOR_VALASSIS_2022_DAILYCART
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003637"

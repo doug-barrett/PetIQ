@@ -100,7 +100,10 @@ steps:
             name: NUM_0_INVOICE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - &id001
+                    columnCounter: 2000022151
+                    stepCounter: "200001970"
                 transform: ""
           - columnReference:
               columnCounter: 2000022724
@@ -144,7 +147,9 @@ steps:
             name: ITMREF_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000022168
+                    stepCounter: "200001970"
                 transform: ""
           - columnReference:
               columnCounter: 2000022728
@@ -166,7 +171,8 @@ steps:
             name: NUM_0_INVOICE_ROWS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - *id001
                 transform: ""
           - columnReference:
               columnCounter: 2000022730
@@ -177,7 +183,9 @@ steps:
             name: SIDLIN_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000022152
+                    stepCounter: "200001970"
                 transform: ""
           - columnReference:
               columnCounter: 2000022731
@@ -206,7 +214,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000022318
+                    stepCounter: "200001970"
                 transform: ""
           - columnReference:
               columnCounter: 2000022733
@@ -217,7 +227,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000022319
+                    stepCounter: "200001970"
                 transform: ""
           - columnReference:
               columnCounter: 2000022734

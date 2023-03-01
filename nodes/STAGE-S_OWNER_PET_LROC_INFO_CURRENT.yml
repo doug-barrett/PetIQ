@@ -21,7 +21,9 @@ steps:
             name: HK_L_OWNER_PET
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033663
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015419
@@ -32,7 +34,9 @@ steps:
             name: ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033664
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015420
@@ -43,7 +47,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033665
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015421
@@ -54,7 +60,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033666
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015422
@@ -65,7 +73,9 @@ steps:
             name: IS_ATTACHED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033667
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015423
@@ -76,7 +86,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033668
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015424
@@ -87,7 +99,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033669
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015425
@@ -98,7 +112,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033670
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015426
@@ -109,7 +125,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033671
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015427
@@ -120,7 +138,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033672
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015428
@@ -131,7 +151,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033673
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015429
@@ -142,7 +164,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033674
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015430
@@ -153,7 +177,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033675
+                    stepCounter: "200002282"
                 transform: ""
           - columnReference:
               columnCounter: 2000015431
@@ -164,13 +190,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033676
+                    stepCounter: "200002282"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_OWNER_PET_LROC_INFO
             join:
               joinCondition: ''
             name: S_OWNER_PET_LROC_INFO_CURRENT

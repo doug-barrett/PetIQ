@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: PUPCPRODUCT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024131
               stepCounter: "200001874"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: PUPCSELLUNIT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024132
               stepCounter: "200001874"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: PUPCINNER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024133
               stepCounter: "200001874"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PUPCUPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024134
               stepCounter: "200001874"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: PUPCPALLPAT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024135
               stepCounter: "200001874"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PUPCUOMT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024136
               stepCounter: "200001874"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: PUPCEQIVQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024137
               stepCounter: "200001874"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: PUPCPACKSIZE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024138
               stepCounter: "200001874"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: PUPCGWGHT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024139
               stepCounter: "200001874"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: PUPCNWGHT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024140
               stepCounter: "200001874"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: PUPCCUBE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024141
               stepCounter: "200001874"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: PUPCHEIGHT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024142
               stepCounter: "200001874"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: PUPCWIDTH
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024143
               stepCounter: "200001874"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: PUPCDEPTH
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024144
               stepCounter: "200001874"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: PUPCUSERDEF
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024145
               stepCounter: "200001874"
@@ -190,9 +144,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_INNATRACK.DBO.IVPUPC_REC'"
           - columnReference:
               columnCounter: 2000024146
               stepCounter: "200001874"
@@ -201,9 +152,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -215,6 +163,6 @@ steps:
             noLinkRefs: []
       name: LOAD_IVPUPC_REC_CX_INNATRACK
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200001874"

@@ -21,7 +21,9 @@ steps:
             name: HK_L_HOSTRETAILER_CLINICLOCATION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034564
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019544
@@ -32,7 +34,9 @@ steps:
             name: HOST_LOCATION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034565
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019545
@@ -43,7 +47,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034566
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019546
@@ -54,7 +60,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034567
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019547
@@ -65,7 +73,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034568
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019548
@@ -76,7 +86,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034569
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019549
@@ -87,7 +99,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034570
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019550
@@ -98,7 +112,9 @@ steps:
             name: HOST_METRIC_TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034571
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019551
@@ -109,7 +125,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034572
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019552
@@ -120,7 +138,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034573
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019553
@@ -131,7 +151,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034574
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019554
@@ -142,7 +164,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034575
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019555
@@ -153,7 +177,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034576
+                    stepCounter: "200003846"
                 transform: ""
           - columnReference:
               columnCounter: 2000019556
@@ -164,13 +190,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034577
+                    stepCounter: "200003846"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_HOSTRETAILER_CLINICLOCATION_MROC_INFO
             join:
               joinCondition: ''
             name: S_HOSTRETAILER_CLINICLOCATION_MROC_INFO_CURRENT

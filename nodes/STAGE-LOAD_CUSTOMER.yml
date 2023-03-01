@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000000277
               stepCounter: "200000129"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: FIRSTNAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000000278
               stepCounter: "200000129"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: LASTNAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -61,6 +51,6 @@ steps:
             noLinkRefs: []
       name: LOAD_CUSTOMER
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200000129"

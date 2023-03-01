@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: WEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026167
               stepCounter: "200002563"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: WEEKENDING
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),WEEKENDING,120)
           - columnReference:
               columnCounter: 2000025187
               stepCounter: "200002563"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ITEM
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025188
               stepCounter: "200002563"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: DESCRIPTIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025189
               stepCounter: "200002563"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025190
               stepCounter: "200002563"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: MFG
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025191
               stepCounter: "200002563"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: STORE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025192
               stepCounter: "200002563"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: STORETYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025193
               stepCounter: "200002563"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: ADDRESSES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025194
               stepCounter: "200002563"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025195
               stepCounter: "200002563"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: STATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025196
               stepCounter: "200002563"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: SALESDOLLARS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025197
               stepCounter: "200002563"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: SALESU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025198
               stepCounter: "200002563"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: EOHU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025199
               stepCounter: "200002563"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: DCEOHU
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025200
               stepCounter: "200002563"
@@ -190,9 +144,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_POS_DEV.DBO.TARGET_SALES_STG'"
           - columnReference:
               columnCounter: 2000025201
               stepCounter: "200002563"
@@ -201,9 +152,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -215,6 +163,6 @@ steps:
             noLinkRefs: []
       name: LOAD_SALESINVENTORY_POS_TARGET
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002563"

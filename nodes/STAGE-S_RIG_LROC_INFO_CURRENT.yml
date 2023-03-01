@@ -21,7 +21,9 @@ steps:
             name: HK_H_RIG
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033789
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015681
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033790
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015682
@@ -43,7 +47,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033791
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015683
@@ -54,7 +60,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033792
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015684
@@ -65,7 +73,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033793
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015685
@@ -76,7 +86,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033794
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015686
@@ -87,7 +99,9 @@ steps:
             name: OFFICE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033795
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015687
@@ -98,7 +112,9 @@ steps:
             name: RETIRED_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033796
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015688
@@ -109,7 +125,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033797
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015689
@@ -120,7 +138,9 @@ steps:
             name: CAN_BE_BID_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033798
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015690
@@ -131,7 +151,9 @@ steps:
             name: NET_SUITE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033799
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015691
@@ -142,7 +164,9 @@ steps:
             name: CARD_CONNECT_TERMINAL_SERIAL_NUMBER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033800
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015692
@@ -153,7 +177,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033801
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015693
@@ -164,7 +190,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033802
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015694
@@ -175,7 +203,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033803
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015695
@@ -186,7 +216,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033804
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015696
@@ -197,7 +229,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033805
+                    stepCounter: "200002287"
                 transform: ""
           - columnReference:
               columnCounter: 2000015697
@@ -208,13 +242,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033806
+                    stepCounter: "200002287"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_RIG_LROC_INFO
             join:
               joinCondition: ''
             name: S_RIG_LROC_INFO_CURRENT

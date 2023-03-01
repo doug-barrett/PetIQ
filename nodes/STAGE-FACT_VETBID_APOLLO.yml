@@ -21,7 +21,9 @@ steps:
             name: VETBID_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033151
+                    stepCounter: "200003610"
                 transform: ""
           - columnReference:
               columnCounter: 2000018217
@@ -32,7 +34,9 @@ steps:
             name: VET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019205
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018218
@@ -43,7 +47,9 @@ steps:
             name: RIG_RUN_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019206
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018219
@@ -54,7 +60,9 @@ steps:
             name: STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019207
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018220
@@ -65,7 +73,9 @@ steps:
             name: RATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019208
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018221
@@ -76,7 +86,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019209
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018222
@@ -87,7 +99,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019210
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018226
@@ -98,7 +112,9 @@ steps:
             name: ENGAGEMENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019214
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018227
@@ -109,7 +125,9 @@ steps:
             name: SELECTED_BY_USER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019215
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018228
@@ -120,7 +138,9 @@ steps:
             name: SELECTED_BY_OFFICE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019216
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018229
@@ -131,7 +151,9 @@ steps:
             name: DECLINED_BY_USER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019217
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018230
@@ -142,7 +164,9 @@ steps:
             name: DECLINED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019218
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018231
@@ -153,7 +177,9 @@ steps:
             name: MANUAL_BID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019219
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000018234
@@ -164,7 +190,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019222
+                    stepCounter: "200003876"
                 transform: ""
           - columnReference:
               columnCounter: 2000019729
@@ -175,13 +203,19 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019221
+                    stepCounter: "200003876"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_VETCLINICBID
+              - locationName: STAGE
+                nodeName: S_VETCLINICBID_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: FACT_VETBID_APOLLO

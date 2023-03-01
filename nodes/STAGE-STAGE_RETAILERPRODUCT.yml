@@ -44,7 +44,9 @@ steps:
             name: RETAILERPRODUCTID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000011802
+                    stepCounter: "200002956"
                 transform: ""
           - columnReference:
               columnCounter: 2000028123
@@ -55,7 +57,9 @@ steps:
             name: BKCC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000011812
+                    stepCounter: "200002956"
                 transform: VIEW_LOAD_LOOKUP_CLEAN.CUSTOMER
           - columnReference:
               columnCounter: 2000028124
@@ -66,7 +70,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000011810
+                    stepCounter: "200002956"
                 transform: ""
           - columnReference:
               columnCounter: 2000028125
@@ -77,7 +83,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000011811
+                    stepCounter: "200002956"
                 transform: ""
           - columnReference:
               columnCounter: 2000028126

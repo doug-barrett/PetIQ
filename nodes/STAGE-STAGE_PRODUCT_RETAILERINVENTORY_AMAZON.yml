@@ -26,7 +26,9 @@ steps:
             name: RETAILERID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024465
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028481
@@ -37,7 +39,9 @@ steps:
             name: BKCC_RETAILER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024466
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028482
@@ -48,7 +52,9 @@ steps:
             name: PRODUCTID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024057
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028483
@@ -59,7 +65,9 @@ steps:
             name: BKCC_PETIQ
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024058
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028493
@@ -70,7 +78,9 @@ steps:
             name: SELLABLEONHANDUNITS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024176
+                    stepCounter: "200001768"
                 transform: SUM(S_RETAILERINVENTORY_AMAZON_LROC_WEEKLY.SELLABLEONHANDUNITS)
           - columnReference:
               columnCounter: 2000028490
@@ -81,7 +91,9 @@ steps:
             name: INVENTORYDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024485
+                    stepCounter: "200001861"
                 transform: ""
           - columnReference:
               columnCounter: 2000028491
@@ -92,7 +104,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024486
+                    stepCounter: "200001861"
                 transform: ""
           - columnReference:
               columnCounter: 2000028492
@@ -103,7 +117,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024487
+                    stepCounter: "200001861"
                 transform: ""
           - columnReference:
               columnCounter: 2000028486

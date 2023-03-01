@@ -21,7 +21,9 @@ steps:
             name: HK_L_SURVEY_QUESTION_RESPONSE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035883
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020702
@@ -32,7 +34,9 @@ steps:
             name: COLLECTOR_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035884
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020703
@@ -43,7 +47,9 @@ steps:
             name: RECIPIENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035885
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020704
@@ -54,7 +60,9 @@ steps:
             name: TOTAL_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035886
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020705
@@ -65,7 +73,9 @@ steps:
             name: CUSTOM_VALUE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035887
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020706
@@ -76,7 +86,9 @@ steps:
             name: IP_ADDRESS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035888
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020707
@@ -87,7 +99,9 @@ steps:
             name: RESPONSE_STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035889
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020708
@@ -98,7 +112,9 @@ steps:
             name: COLLECTION_MODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035890
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020709
@@ -109,7 +125,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035891
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020710
@@ -120,7 +138,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035892
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020711
@@ -131,7 +151,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035893
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020713
@@ -142,7 +164,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035895
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020714
@@ -153,7 +177,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035896
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020715
@@ -164,7 +190,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035897
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020716
@@ -175,7 +203,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035898
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020717
@@ -186,7 +216,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035899
+                    stepCounter: "200004081"
                 transform: ""
           - columnReference:
               columnCounter: 2000020718
@@ -197,13 +229,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035900
+                    stepCounter: "200004081"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_SURVEY_QUESTION_RESPONSE_MROC_INFO
             join:
               joinCondition: ''
             name: S_SURVEY_QUESTION_RESPONSE_MROC_INFO_CURRENT

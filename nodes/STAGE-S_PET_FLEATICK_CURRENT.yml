@@ -21,7 +21,9 @@ steps:
             name: HK_H_PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032946
+                    stepCounter: "200003715"
                 transform: ""
           - columnReference:
               columnCounter: 2000018957
@@ -32,7 +34,9 @@ steps:
             name: FLEA_TICK_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032947
+                    stepCounter: "200003715"
                 transform: ""
           - columnReference:
               columnCounter: 2000018958
@@ -43,7 +47,9 @@ steps:
             name: DSS_CHANGE_HASH_1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032948
+                    stepCounter: "200003715"
                 transform: ""
           - columnReference:
               columnCounter: 2000018959
@@ -54,7 +60,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032949
+                    stepCounter: "200003715"
                 transform: ""
           - columnReference:
               columnCounter: 2000018960
@@ -65,7 +73,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032952
+                    stepCounter: "200003715"
                 transform: ""
           - columnReference:
               columnCounter: 2000018961
@@ -76,7 +86,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032951
+                    stepCounter: "200003715"
                 transform: ""
           - columnReference:
               columnCounter: 2000018962
@@ -87,13 +99,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032950
+                    stepCounter: "200003715"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_PET_FLEATICK
             join:
               joinCondition: 'NULL'
             name: S_PET_FLEATICK_CURRENT

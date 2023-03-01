@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,10 +24,6 @@ steps:
             description: ""
             name: DATEYYYYMMDD
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST( CAST(COSTCO_SALES_STG.DATEYYYYMMDD AS VARCHAR) AS
-                  DATE  )
           - columnReference:
               columnCounter: 2000024855
               stepCounter: "200002482"
@@ -37,9 +32,6 @@ steps:
             description: ""
             name: WEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024856
               stepCounter: "200002482"
@@ -48,9 +40,6 @@ steps:
             description: ""
             name: ITEMNUMBER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024858
               stepCounter: "200002482"
@@ -59,9 +48,6 @@ steps:
             description: ""
             name: ITEMDESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024857
               stepCounter: "200002482"
@@ -70,9 +56,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024859
               stepCounter: "200002482"
@@ -81,9 +64,6 @@ steps:
             description: ""
             name: UNITSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024860
               stepCounter: "200002482"
@@ -92,9 +72,6 @@ steps:
             description: ""
             name: DOLLARSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024861
               stepCounter: "200002482"
@@ -103,9 +80,6 @@ steps:
             description: ""
             name: REFUNDUNITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024862
               stepCounter: "200002482"
@@ -114,9 +88,6 @@ steps:
             description: ""
             name: REFUNDDOLLARS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024863
               stepCounter: "200002482"
@@ -125,9 +96,6 @@ steps:
             description: ""
             name: INVENTORYONHAND
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024864
               stepCounter: "200002482"
@@ -136,9 +104,6 @@ steps:
             description: ""
             name: ONORDER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024865
               stepCounter: "200002482"
@@ -147,9 +112,6 @@ steps:
             description: ""
             name: WAREHOUSECODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024866
               stepCounter: "200002482"
@@ -158,9 +120,6 @@ steps:
             description: ""
             name: WAREHOUSENAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024867
               stepCounter: "200002482"
@@ -169,9 +128,6 @@ steps:
             description: ""
             name: ADDRESS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024868
               stepCounter: "200002482"
@@ -180,9 +136,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024869
               stepCounter: "200002482"
@@ -191,9 +144,6 @@ steps:
             description: ""
             name: STATEORPROVINCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024870
               stepCounter: "200002482"
@@ -202,9 +152,6 @@ steps:
             description: ""
             name: POSTALCODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000024871
               stepCounter: "200002482"
@@ -213,9 +160,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_POS_DEV.DBO.COSTCO_SALES_STG'"
           - columnReference:
               columnCounter: 2000024872
               stepCounter: "200002482"
@@ -224,9 +168,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -238,6 +179,6 @@ steps:
             noLinkRefs: []
       name: LOAD_FILEUPLOAD_POS_COSTCO
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002482"

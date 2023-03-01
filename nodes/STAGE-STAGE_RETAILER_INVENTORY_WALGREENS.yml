@@ -26,7 +26,9 @@ steps:
             name: ALLCONTROLWICNBR
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026172
+                    stepCounter: "200003370"
                 transform: ""
           - columnReference:
               columnCounter: 2000027940
@@ -48,7 +50,9 @@ steps:
             name: RETAILERID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026174
+                    stepCounter: "200003370"
                 transform: "'WALGREENS'"
           - columnReference:
               columnCounter: 2000027942
@@ -70,7 +74,9 @@ steps:
             name: WEEKENDINGDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026203
+                    stepCounter: "200003370"
                 transform: ""
           - columnReference:
               columnCounter: 2000027944
@@ -81,7 +87,9 @@ steps:
             name: TYDCREGIOH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026183
+                    stepCounter: "200003370"
                 transform: REPLACE(LOAD_POS_WALGREENS.TYDCREGIOH,'-','')
           - columnReference:
               columnCounter: 2000027945
@@ -92,7 +100,9 @@ steps:
             name: TYSTRTOTALIOH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026184
+                    stepCounter: "200003370"
                 transform: REPLACE(LOAD_POS_WALGREENS.TYSTRTOTALIOH,'-','')
           - columnReference:
               columnCounter: 2000027947
@@ -103,7 +113,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026171
+                    stepCounter: "200003370"
                 transform: ""
           - columnReference:
               columnCounter: 2000027948
@@ -114,7 +126,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026170
+                    stepCounter: "200003370"
                 transform: ""
           - columnReference:
               columnCounter: 2000027949

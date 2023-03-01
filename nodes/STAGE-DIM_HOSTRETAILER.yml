@@ -21,7 +21,9 @@ steps:
             name: HOST_RETAILER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034531
+                    stepCounter: "200003844"
                 transform: ""
           - columnReference:
               columnCounter: 2000019176
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019614
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019177
@@ -43,7 +47,9 @@ steps:
             name: PARENT_HOST_ACCOUNT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019615
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019178
@@ -54,7 +60,9 @@ steps:
             name: PHONE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019616
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019179
@@ -65,7 +73,9 @@ steps:
             name: ADDRESS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019617
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019180
@@ -76,7 +86,9 @@ steps:
             name: CITY
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019618
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019181
@@ -87,7 +99,9 @@ steps:
             name: STATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019619
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019182
@@ -98,7 +112,9 @@ steps:
             name: ZIP
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019620
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019183
@@ -109,7 +125,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019621
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019184
@@ -120,7 +138,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019622
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019188
@@ -131,7 +151,9 @@ steps:
             name: HOST_PAYMENT_TYPE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019626
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019189
@@ -142,7 +164,9 @@ steps:
             name: PAYMENT_TYPE_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019627
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019190
@@ -153,7 +177,9 @@ steps:
             name: ATTENTION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019628
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019191
@@ -164,7 +190,9 @@ steps:
             name: HOST_METRIC_TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019629
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019192
@@ -175,7 +203,9 @@ steps:
             name: OWNER_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019630
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019193
@@ -186,7 +216,9 @@ steps:
             name: RECIPIENT_EMAILS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019631
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019195
@@ -197,7 +229,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019633
+                    stepCounter: "200003871"
                 transform: ""
           - columnReference:
               columnCounter: 2000019196
@@ -208,13 +242,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019634
+                    stepCounter: "200003871"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_HOSTRETAILER
+              - locationName: STAGE
+                nodeName: S_HOSTRETAILER_MROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_HOSTRETAILER

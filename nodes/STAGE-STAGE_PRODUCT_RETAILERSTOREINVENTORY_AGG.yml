@@ -26,7 +26,9 @@ steps:
             name: TOTALINVENTORYUNITS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031760
+                    stepCounter: "200003203"
                 transform: SUM(S_PRODUCT_RETAILERSTORE_INVENTORY_LROC_WEEKLY.TOTALINVENTORYUNITS)
           - columnReference:
               columnCounter: 2000028861
@@ -37,7 +39,9 @@ steps:
             name: INVENTORYDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031750
+                    stepCounter: "200003189"
                 transform: ""
           - columnReference:
               columnCounter: 2000028849
@@ -48,7 +52,9 @@ steps:
             name: PRODUCTID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024057
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028850
@@ -59,7 +65,9 @@ steps:
             name: BKCC_PRODUCT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024058
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028851
@@ -70,7 +78,9 @@ steps:
             name: RETAILERID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024465
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028852
@@ -81,7 +91,9 @@ steps:
             name: BKCC_RETAILER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024466
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028853

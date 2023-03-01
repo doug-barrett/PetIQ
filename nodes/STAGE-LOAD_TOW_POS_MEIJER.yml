@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: PRODUCTIDID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025044
               stepCounter: "200002517"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: PRODUCTSTATUS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025045
               stepCounter: "200002517"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: COUNTOFELIGIBLESTORES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025046
               stepCounter: "200002517"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: RANK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026111
               stepCounter: "200002517"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: OUTDATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CONVERT(VARCHAR(19),OUTDATE,120)
           - columnReference:
               columnCounter: 2000025048
               stepCounter: "200002517"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: MANUFACTURERITEMCODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025049
               stepCounter: "200002517"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: UPCID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025050
               stepCounter: "200002517"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UPCDESC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025051
               stepCounter: "200002517"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: MDQPERCENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025052
               stepCounter: "200002517"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: MDQQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025053
               stepCounter: "200002517"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: INSTOCKPERCENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025054
               stepCounter: "200002517"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: AVERAGEPRIMARYSELLUNITCOST
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025055
               stepCounter: "200002517"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: AVGRETAILWKLY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025056
               stepCounter: "200002517"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: SALESAVGDOLLARWKLY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025057
               stepCounter: "200002517"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: SALESQTYMRW
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025058
               stepCounter: "200002517"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: SALESQTYMOSTRECENT2NDWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025059
               stepCounter: "200002517"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: SALESQTYMOSTRECENT3RDWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025060
               stepCounter: "200002517"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: SALESQTYMOSTRECENT4THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025061
               stepCounter: "200002517"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: SALESQTY14WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025062
               stepCounter: "200002517"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: SALESQTYMOSTRECENT58WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025063
               stepCounter: "200002517"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: SALESQTYMOSTRECENT912WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025064
               stepCounter: "200002517"
@@ -256,9 +192,6 @@ steps:
             description: ""
             name: AVGSALESQTY4WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025065
               stepCounter: "200002517"
@@ -267,9 +200,6 @@ steps:
             description: ""
             name: AVGSALESQTY12WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025066
               stepCounter: "200002517"
@@ -278,9 +208,6 @@ steps:
             description: ""
             name: SALESQTYYTD
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025067
               stepCounter: "200002517"
@@ -289,9 +216,6 @@ steps:
             description: ""
             name: INVSTOREQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025068
               stepCounter: "200002517"
@@ -300,9 +224,6 @@ steps:
             description: ""
             name: INVDFQTYWEEKENDING
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025069
               stepCounter: "200002517"
@@ -311,9 +232,6 @@ steps:
             description: ""
             name: TOTALONORDERQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025070
               stepCounter: "200002517"
@@ -322,9 +240,6 @@ steps:
             description: ""
             name: TOTALINVENTORYONORDER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025071
               stepCounter: "200002517"
@@ -333,9 +248,6 @@ steps:
             description: ""
             name: WOSBASEDONMRWSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025072
               stepCounter: "200002517"
@@ -344,9 +256,6 @@ steps:
             description: ""
             name: WOSBASEDON4WEEKSSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025073
               stepCounter: "200002517"
@@ -355,9 +264,6 @@ steps:
             description: ""
             name: WOSBASEDON12WEEKSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025074
               stepCounter: "200002517"
@@ -366,9 +272,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT4WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025075
               stepCounter: "200002517"
@@ -377,9 +280,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT5TO8WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025076
               stepCounter: "200002517"
@@ -388,9 +288,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXTWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025077
               stepCounter: "200002517"
@@ -399,9 +296,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT2NDWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025078
               stepCounter: "200002517"
@@ -410,9 +304,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT3RDWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025079
               stepCounter: "200002517"
@@ -421,9 +312,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT4THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025080
               stepCounter: "200002517"
@@ -432,9 +320,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT5THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025081
               stepCounter: "200002517"
@@ -443,9 +328,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYPROMONEXT6THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025082
               stepCounter: "200002517"
@@ -454,9 +336,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT4WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025083
               stepCounter: "200002517"
@@ -465,9 +344,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT5TO8WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025084
               stepCounter: "200002517"
@@ -476,9 +352,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT9TO12WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025085
               stepCounter: "200002517"
@@ -487,9 +360,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT13TO16WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025086
               stepCounter: "200002517"
@@ -498,9 +368,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT17TO20WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025087
               stepCounter: "200002517"
@@ -509,9 +376,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT21TO24WEEKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025088
               stepCounter: "200002517"
@@ -520,9 +384,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXTWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025089
               stepCounter: "200002517"
@@ -531,9 +392,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT2NDWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025090
               stepCounter: "200002517"
@@ -542,9 +400,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT3RDWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025091
               stepCounter: "200002517"
@@ -553,9 +408,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT4THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025092
               stepCounter: "200002517"
@@ -564,9 +416,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT5THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025093
               stepCounter: "200002517"
@@ -575,9 +424,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT6THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025094
               stepCounter: "200002517"
@@ -586,9 +432,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT7THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025095
               stepCounter: "200002517"
@@ -597,9 +440,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT8THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025096
               stepCounter: "200002517"
@@ -608,9 +448,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT9THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025097
               stepCounter: "200002517"
@@ -619,9 +456,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT10THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025098
               stepCounter: "200002517"
@@ -630,9 +464,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT11THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025099
               stepCounter: "200002517"
@@ -641,9 +472,6 @@ steps:
             description: ""
             name: FCSTSTOREQTYREGULARNEXT12THWEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025100
               stepCounter: "200002517"
@@ -652,9 +480,6 @@ steps:
             description: ""
             name: INVSTOREWKSOFSUPPLY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025101
               stepCounter: "200002517"
@@ -663,9 +488,6 @@ steps:
             description: ""
             name: WEEKENDINGDATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025102
               stepCounter: "200002517"
@@ -674,9 +496,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'POS_MEIJER.TOW$'"
           - columnReference:
               columnCounter: 2000025103
               stepCounter: "200002517"
@@ -685,9 +504,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -699,6 +515,6 @@ steps:
             noLinkRefs: []
       name: LOAD_TOW_POS_MEIJER
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002517"

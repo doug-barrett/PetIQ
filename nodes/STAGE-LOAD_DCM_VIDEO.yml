@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000026683
               stepCounter: "200003449"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: ADVERTISER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026684
               stepCounter: "200003449"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: CAMPAIGN_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026685
               stepCounter: "200003449"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: SITE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026686
               stepCounter: "200003449"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: PLACEMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026687
               stepCounter: "200003449"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: AD_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026688
               stepCounter: "200003449"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CREATIVE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026689
               stepCounter: "200003449"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: IMPRESSIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026690
               stepCounter: "200003449"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CLICKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026691
               stepCounter: "200003449"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: VIDEO_PLAYS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026692
               stepCounter: "200003449"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: VIDEO_25P
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026693
               stepCounter: "200003449"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: VIDEO_50P
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026694
               stepCounter: "200003449"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: VIDEO_75P
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026695
               stepCounter: "200003449"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: VIDEO_COMPLETES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026696
               stepCounter: "200003449"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: VIDEO_FULL_SCREENS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026697
               stepCounter: "200003449"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: VIDEO_MUTES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026698
               stepCounter: "200003449"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: VIDEO_PAUSES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026699
               stepCounter: "200003449"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: VIDEO_UNMUTES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026700
               stepCounter: "200003449"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: MEDIA_COST
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000026681
               stepCounter: "200003449"
@@ -234,9 +176,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.DCM_VIDEO'"
           - columnReference:
               columnCounter: 2000026680
               stepCounter: "200003449"
@@ -245,9 +184,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -259,6 +195,6 @@ steps:
             noLinkRefs: []
       name: LOAD_DCM_VIDEO
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003449"

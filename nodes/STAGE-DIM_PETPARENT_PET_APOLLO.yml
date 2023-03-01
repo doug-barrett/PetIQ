@@ -21,7 +21,9 @@ steps:
             name: PETPARENT_PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015419
+                    stepCounter: "200003033"
                 transform: ""
           - columnReference:
               columnCounter: 2000017491
@@ -32,7 +34,9 @@ steps:
             name: PETPARENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033058
+                    stepCounter: "200001556"
                 transform: ""
           - columnReference:
               columnCounter: 2000017496
@@ -43,7 +47,9 @@ steps:
             name: PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033070
+                    stepCounter: "200001557"
                 transform: ""
           - columnReference:
               columnCounter: 2000017493
@@ -54,7 +60,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033060
+                    stepCounter: "200001556"
                 transform: ""
           - columnReference:
               columnCounter: 2000017494
@@ -65,7 +73,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033061
+                    stepCounter: "200001556"
                 transform: ""
           - columnReference:
               columnCounter: 2000017495
@@ -76,13 +86,21 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033062
+                    stepCounter: "200001556"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_OWNER_PET_LROC_INFO_CURRENT
+              - locationName: STAGE
+                nodeName: H_OWNER
+              - locationName: STAGE
+                nodeName: H_PET
             join:
               joinCondition: 'NULL'
             name: DIM_PETPARENT_PET_APOLLO

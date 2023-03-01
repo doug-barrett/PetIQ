@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'COPY OF TRUE_SCIENCE_DATA FY22 WK18 RAW.CSV'"
           - columnReference:
               columnCounter: 2000006914
               stepCounter: "200000272"
@@ -36,9 +32,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -50,6 +43,6 @@ steps:
             noLinkRefs: []
       name: LOAD_COPY_OF_TRUE_SCIENCE_DATA_FY22_WK18_RAW
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200000272"

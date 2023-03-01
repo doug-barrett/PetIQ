@@ -21,7 +21,9 @@ steps:
             name: PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033070
+                    stepCounter: "200001557"
                 transform: ""
           - columnReference:
               columnCounter: 2000018979
@@ -32,7 +34,9 @@ steps:
             name: FECAL_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000018950
+                    stepCounter: "200003797"
                 transform: ""
           - columnReference:
               columnCounter: 2000018980
@@ -43,7 +47,9 @@ steps:
             name: FLEA_TICK_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000018957
+                    stepCounter: "200003798"
                 transform: ""
           - columnReference:
               columnCounter: 2000018981
@@ -54,7 +60,9 @@ steps:
             name: HEARTWORM_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000018964
+                    stepCounter: "200003799"
                 transform: ""
           - columnReference:
               columnCounter: 2000018982
@@ -65,7 +73,9 @@ steps:
             name: RABIES_MOST_RECENT_VISIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000018971
+                    stepCounter: "200003800"
                 transform: ""
           - columnReference:
               columnCounter: 2000018983
@@ -76,13 +86,25 @@ steps:
             name: RABIES_EXPIRATION_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000018972
+                    stepCounter: "200003800"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_PET
+              - locationName: STAGE
+                nodeName: S_PET_FECAL_CURRENT
+              - locationName: STAGE
+                nodeName: S_PET_FLEATICK_CURRENT
+              - locationName: STAGE
+                nodeName: S_PET_HEARTWORM_CURRENT
+              - locationName: STAGE
+                nodeName: S_PET_RABIES_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_PET_RECENTSERVICES

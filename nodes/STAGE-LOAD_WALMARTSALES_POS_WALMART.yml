@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ITEMNBR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025168
               stepCounter: "200002635"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: ITEMFLAGS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025169
               stepCounter: "200002635"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ITEMDESC1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025170
               stepCounter: "200002635"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: UPC
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025171
               stepCounter: "200002635"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: VENDORSTKNBR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025172
               stepCounter: "200002635"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: STORENBR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025173
               stepCounter: "200002635"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: STORETYPEDESCR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025174
               stepCounter: "200002635"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025175
               stepCounter: "200002635"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: STATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025176
               stepCounter: "200002635"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: ZIPCODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025177
               stepCounter: "200002635"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: POSQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025178
               stepCounter: "200002635"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: POSSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025179
               stepCounter: "200002635"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: CURRSTRONHANDQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025180
               stepCounter: "200002635"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: CURRSTRONORDERQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025181
               stepCounter: "200002635"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: CURRSTRINWHSEQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025182
               stepCounter: "200002635"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: WEEKENDINGDATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025183
               stepCounter: "200002635"
@@ -201,9 +152,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_POS_DEV.DBO.WALMART_SALES_STG'"
           - columnReference:
               columnCounter: 2000025184
               stepCounter: "200002635"
@@ -212,9 +160,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -226,6 +171,6 @@ steps:
             noLinkRefs: []
       name: LOAD_WALMARTSALES_POS_WALMART
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002635"

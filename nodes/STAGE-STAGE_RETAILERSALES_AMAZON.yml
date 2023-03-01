@@ -82,7 +82,9 @@ steps:
             name: ASIN
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021023
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021081
@@ -126,7 +128,9 @@ steps:
             name: WEEKENDING
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021037
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021085
@@ -137,7 +141,9 @@ steps:
             name: SHIPPEDREVENUE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021025
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021086
@@ -148,7 +154,9 @@ steps:
             name: SHIPPEDREVENUEPERCENTOFTOTAL
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021026
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021087
@@ -159,7 +167,9 @@ steps:
             name: SHIPPEDREVENUEPRIORPERIOD
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021027
+                    stepCounter: "200001759"
                 transform: REPLACE(LOAD_AMAZON_SALES.SHIPPEDREVENUEPRIORPERIOD,'?','')
           - columnReference:
               columnCounter: 2000021088
@@ -170,7 +180,9 @@ steps:
             name: SHIPPEDREVENUELASTYEAR
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021028
+                    stepCounter: "200001759"
                 transform: REPLACE(LOAD_AMAZON_SALES.SHIPPEDREVENUELASTYEAR,'?','')
           - columnReference:
               columnCounter: 2000021089
@@ -181,7 +193,9 @@ steps:
             name: SHIPPEDUNITS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021029
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021090
@@ -192,7 +206,9 @@ steps:
             name: SHIPPEDUNITSPERCENTOFTOTAL
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021030
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021091
@@ -203,7 +219,9 @@ steps:
             name: SHIPPEDUNITSPRIORPERIOD
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021031
+                    stepCounter: "200001759"
                 transform: REPLACE(LOAD_AMAZON_SALES.SHIPPEDUNITSPRIORPERIOD,'?','')
           - columnReference:
               columnCounter: 2000021092
@@ -214,7 +232,9 @@ steps:
             name: SHIPPEDUNITSLASTYEAR
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021032
+                    stepCounter: "200001759"
                 transform: "REPLACE(LOAD_AMAZON_SALES.SHIPPEDUNITSLASTYEAR,'?','')\
                   \  "
           - columnReference:
@@ -226,7 +246,9 @@ steps:
             name: CUSTOMERRETURNS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021033
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021094
@@ -237,7 +259,9 @@ steps:
             name: FREEREPLACEMENTS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021034
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021095
@@ -248,7 +272,9 @@ steps:
             name: AVERAGESALESPRICE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021035
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021096
@@ -259,7 +285,9 @@ steps:
             name: AVERAGESALESPRICEPRIORPERIOD
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021036
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021097
@@ -308,7 +336,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021038
+                    stepCounter: "200001759"
                 transform: ""
           - columnReference:
               columnCounter: 2000021100
@@ -330,7 +360,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021039
+                    stepCounter: "200001759"
                 transform: ""
         sourceMapping:
           - aliases:

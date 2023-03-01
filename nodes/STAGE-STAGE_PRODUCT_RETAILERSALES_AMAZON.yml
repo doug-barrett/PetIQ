@@ -82,7 +82,9 @@ steps:
             name: RETAILERID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024465
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028315
@@ -93,7 +95,9 @@ steps:
             name: BKCC_RETAILER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024466
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028316
@@ -104,7 +108,9 @@ steps:
             name: PRODUCTID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024057
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028317
@@ -115,7 +121,9 @@ steps:
             name: BKCC_PETIQ
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024058
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028318
@@ -126,7 +134,9 @@ steps:
             name: SALESDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024492
+                    stepCounter: "200001864"
                 transform: ""
           - columnReference:
               columnCounter: 2000028319
@@ -137,7 +147,9 @@ steps:
             name: PRODUCTUNITSALES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024211
+                    stepCounter: "200001771"
                 transform: SUM(S_RETAILERSALES_AMAZON_LROC_WEEKLY.SHIPPEDUNITS)
           - columnReference:
               columnCounter: 2000028320
@@ -164,7 +176,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024493
+                    stepCounter: "200001864"
                 transform: ""
           - columnReference:
               columnCounter: 2000028322
@@ -175,7 +189,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024494
+                    stepCounter: "200001864"
                 transform: ""
           - columnReference:
               columnCounter: 2000028323

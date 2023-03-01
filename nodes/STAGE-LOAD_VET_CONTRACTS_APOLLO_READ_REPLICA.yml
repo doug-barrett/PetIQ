@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028738
               stepCounter: "200003605"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: VET_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028739
               stepCounter: "200003605"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: WORK_ON_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(WORK_ON_DATE, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028740
               stepCounter: "200003605"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: RATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028741
               stepCounter: "200003605"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: STATUS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028742
               stepCounter: "200003605"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: ENGAGEMENT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028743
               stepCounter: "200003605"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028744
               stepCounter: "200003605"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028745
               stepCounter: "200003605"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028746
               stepCounter: "200003605"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028747
               stepCounter: "200003605"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028748
               stepCounter: "200003605"
@@ -146,9 +112,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.VET_CONTRACTS'"
           - columnReference:
               columnCounter: 2000028749
               stepCounter: "200003605"
@@ -157,9 +120,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -171,6 +131,6 @@ steps:
             noLinkRefs: []
       name: LOAD_VET_CONTRACTS_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003605"

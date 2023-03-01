@@ -21,7 +21,9 @@ steps:
             name: RETAILERID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024465
+                    stepCounter: "200001845"
                 transform: COALESCE(H_RETAILER_S.RETAILERID,H_RETAILER_I.RETAILERID)
           - columnReference:
               columnCounter: 2000017184
@@ -32,7 +34,9 @@ steps:
             name: PRODUCTID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024057
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000017186
@@ -43,7 +47,9 @@ steps:
             name: SALESDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031711
+                    stepCounter: "200003071"
                 transform: ""
           - columnReference:
               columnCounter: 2000017187
@@ -54,7 +60,9 @@ steps:
             name: INVENTORYDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031755
+                    stepCounter: "200003200"
                 transform: ""
           - columnReference:
               columnCounter: 2000017188
@@ -65,7 +73,9 @@ steps:
             name: TOTALINVENTORYUNITS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031827
+                    stepCounter: "200003229"
                 transform: ""
           - columnReference:
               columnCounter: 2000017189
@@ -76,7 +86,9 @@ steps:
             name: COSTOFPRODUCTSSOLD
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031698
+                    stepCounter: "200003062"
                 transform: ""
           - columnReference:
               columnCounter: 2000017190
@@ -87,13 +99,27 @@ steps:
             name: PRODUCTUNITSALES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031699
+                    stepCounter: "200003062"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_RETAILER
+              - locationName: STAGE
+                nodeName: H_PRODUCT
+              - locationName: STAGE
+                nodeName: L_PRODUCT_RETAILERSALES
+              - locationName: STAGE
+                nodeName: L_PRODUCT_RETAILERINVENTORY
+              - locationName: STAGE
+                nodeName: S_PRODUCT_RETAILERINVENTORY
+              - locationName: STAGE
+                nodeName: S_PRODUCT_RETAILERSALES_LROC_WEEKLY
             join:
               joinCondition: 'NULL'
             name: VIEW_POS_WEEKLY_INVENTORYSALES

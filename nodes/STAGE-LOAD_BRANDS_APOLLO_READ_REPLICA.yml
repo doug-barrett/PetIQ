@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025920
               stepCounter: "200003190"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025921
               stepCounter: "200003190"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000025922
               stepCounter: "200003190"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000025923
               stepCounter: "200003190"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025924
               stepCounter: "200003190"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025925
               stepCounter: "200003190"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025926
               stepCounter: "200003190"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: IS_ACTIVE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025927
               stepCounter: "200003190"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: PRIMARY_COLOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025928
               stepCounter: "200003190"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: SECONDARY_COLOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025929
               stepCounter: "200003190"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: TERTIARY_COLOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025930
               stepCounter: "200003190"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: FONT_COLOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025931
               stepCounter: "200003190"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: SEND_REMINDERS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025932
               stepCounter: "200003190"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: WEBSITE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025933
               stepCounter: "200003190"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: PRIMARY_PHONE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025934
               stepCounter: "200003190"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: ADDRESS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025935
               stepCounter: "200003190"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025936
               stepCounter: "200003190"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: STATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025937
               stepCounter: "200003190"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: ZIP
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025938
               stepCounter: "200003190"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: FACEBOOK_LINK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025939
               stepCounter: "200003190"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: TWITTER_LINK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025940
               stepCounter: "200003190"
@@ -256,9 +192,6 @@ steps:
             description: ""
             name: GOOGLE_LINK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025941
               stepCounter: "200003190"
@@ -267,9 +200,6 @@ steps:
             description: ""
             name: INSTAGRAM_LINK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025942
               stepCounter: "200003190"
@@ -278,9 +208,6 @@ steps:
             description: ""
             name: PINTEREST_LINK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025943
               stepCounter: "200003190"
@@ -289,9 +216,6 @@ steps:
             description: ""
             name: LOGO_01_FILE_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025944
               stepCounter: "200003190"
@@ -300,9 +224,6 @@ steps:
             description: ""
             name: LOGO_01_CONTENT_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025945
               stepCounter: "200003190"
@@ -311,9 +232,6 @@ steps:
             description: ""
             name: LOGO_01_FILE_SIZE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025946
               stepCounter: "200003190"
@@ -322,9 +240,6 @@ steps:
             description: ""
             name: LOGO_01_UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(LOGO_01_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000025947
               stepCounter: "200003190"
@@ -333,9 +248,6 @@ steps:
             description: ""
             name: DASHBOARD_IMAGE_FILE_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025948
               stepCounter: "200003190"
@@ -344,9 +256,6 @@ steps:
             description: ""
             name: DASHBOARD_IMAGE_CONTENT_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025949
               stepCounter: "200003190"
@@ -355,9 +264,6 @@ steps:
             description: ""
             name: DASHBOARD_IMAGE_FILE_SIZE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025950
               stepCounter: "200003190"
@@ -366,9 +272,6 @@ steps:
             description: ""
             name: DASHBOARD_IMAGE_UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DASHBOARD_IMAGE_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000025951
               stepCounter: "200003190"
@@ -377,9 +280,6 @@ steps:
             description: ""
             name: PRINTER_IMAGE_FILE_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025952
               stepCounter: "200003190"
@@ -388,9 +288,6 @@ steps:
             description: ""
             name: PRINTER_IMAGE_CONTENT_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025953
               stepCounter: "200003190"
@@ -399,9 +296,6 @@ steps:
             description: ""
             name: PRINTER_IMAGE_FILE_SIZE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025954
               stepCounter: "200003190"
@@ -410,9 +304,6 @@ steps:
             description: ""
             name: PRINTER_IMAGE_UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(PRINTER_IMAGE_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000025955
               stepCounter: "200003190"
@@ -421,9 +312,6 @@ steps:
             description: ""
             name: BASE64_DASHBOARD
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: SUBSTR(BASE64_DASHBOARD,1,16777216)
           - columnReference:
               columnCounter: 2000025956
               stepCounter: "200003190"
@@ -432,9 +320,6 @@ steps:
             description: ""
             name: BASE64_PRINTER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: SUBSTR(BASE64_PRINTER,1,16777216)
           - columnReference:
               columnCounter: 2000025957
               stepCounter: "200003190"
@@ -443,9 +328,6 @@ steps:
             description: ""
             name: NO_REPLY_EMAIL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025958
               stepCounter: "200003190"
@@ -454,9 +336,6 @@ steps:
             description: ""
             name: PHONETIC_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025959
               stepCounter: "200003190"
@@ -465,9 +344,6 @@ steps:
             description: ""
             name: PHONETIC_PHONE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025960
               stepCounter: "200003190"
@@ -476,9 +352,6 @@ steps:
             description: ""
             name: FAX_PHONE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025961
               stepCounter: "200003190"
@@ -487,9 +360,6 @@ steps:
             description: ""
             name: CONDITIONAL_PRESCRIPTIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025962
               stepCounter: "200003190"
@@ -498,9 +368,6 @@ steps:
             description: ""
             name: PROMOTIONAL_PRESCRIPTIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025963
               stepCounter: "200003190"
@@ -509,9 +376,6 @@ steps:
             description: ""
             name: VET_ADD_HOC_PRESCRIPTIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025964
               stepCounter: "200003190"
@@ -520,9 +384,6 @@ steps:
             description: ""
             name: EXCLUDE_FROM_GLOBAL_CLINIC_SEARCH
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025965
               stepCounter: "200003190"
@@ -531,9 +392,6 @@ steps:
             description: ""
             name: WEEKLY_FLYER_BACKGROUND_COLOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025966
               stepCounter: "200003190"
@@ -542,9 +400,6 @@ steps:
             description: ""
             name: NON_WEEKLY_FLYER_BACKGROUND_COLOR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025967
               stepCounter: "200003190"
@@ -553,9 +408,6 @@ steps:
             description: ""
             name: SLUG
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000025918
               stepCounter: "200003190"
@@ -564,9 +416,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.BRANDS'"
           - columnReference:
               columnCounter: 2000025917
               stepCounter: "200003190"
@@ -575,9 +424,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -589,6 +435,6 @@ steps:
             noLinkRefs: []
       name: LOAD_BRANDS_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003190"

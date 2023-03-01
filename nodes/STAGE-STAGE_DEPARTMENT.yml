@@ -44,7 +44,9 @@ steps:
             name: DEPARTMENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031754
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032817
@@ -66,7 +68,9 @@ steps:
             name: CODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031764
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032819
@@ -77,7 +81,9 @@ steps:
             name: DESCRIPTION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031755
+                    stepCounter: "200003935"
                 transform: COALESCE(LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN.NAME_LONG_NAME,LOAD_ORGANIZATIONAL_UNIT_CX_SNOWFLAKE_FIVETRAN.NAME_SHORT_NAME)
           - columnReference:
               columnCounter: 2000032820
@@ -88,7 +94,9 @@ steps:
             name: TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031763
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032821
@@ -99,7 +107,9 @@ steps:
             name: TYPE_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031759
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032822
@@ -110,7 +120,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031765
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032823
@@ -145,7 +157,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031766
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032825
@@ -156,7 +170,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031767
+                    stepCounter: "200003935"
                 transform: ""
           - columnReference:
               columnCounter: 2000032826

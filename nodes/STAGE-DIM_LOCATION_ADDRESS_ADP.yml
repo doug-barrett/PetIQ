@@ -21,7 +21,9 @@ steps:
             name: LOCATION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035648
+                    stepCounter: "200003950"
                 transform: ""
           - columnReference:
               columnCounter: 2000020075
@@ -32,7 +34,9 @@ steps:
             name: ADDRESS_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021741
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020076
@@ -43,7 +47,9 @@ steps:
             name: ADDRESS_LINE_ONE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021742
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020077
@@ -54,7 +60,9 @@ steps:
             name: ADDRESS_LINE_TWO
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021743
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020078
@@ -65,7 +73,9 @@ steps:
             name: ADDRESS_CITY_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021744
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020079
@@ -76,7 +86,9 @@ steps:
             name: ADDRESS_STATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021745
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020080
@@ -87,7 +99,9 @@ steps:
             name: ADDRESS_POSTAL_CODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021746
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020081
@@ -98,7 +112,9 @@ steps:
             name: ADDRESS_COUNTY
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021747
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020082
@@ -109,7 +125,9 @@ steps:
             name: ADDRESS_COUNTRY_CODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021748
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020083
@@ -120,7 +138,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021749
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020085
@@ -131,7 +151,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021751
+                    stepCounter: "200004023"
                 transform: ""
           - columnReference:
               columnCounter: 2000020086
@@ -142,13 +164,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021752
+                    stepCounter: "200004023"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_LOCATION
+              - locationName: STAGE
+                nodeName: S_LOCATION_MROC_ADDRESS_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_LOCATION_ADDRESS_ADP

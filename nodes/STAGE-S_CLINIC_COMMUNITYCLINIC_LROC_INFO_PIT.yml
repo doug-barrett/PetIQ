@@ -21,7 +21,9 @@ steps:
             name: HK_H_CLINIC_COMMUNITYCLINIC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033217
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014589
@@ -32,7 +34,9 @@ steps:
             name: ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033218
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014590
@@ -43,7 +47,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033219
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014591
@@ -54,7 +60,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033220
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014592
@@ -65,7 +73,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033221
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014593
@@ -76,7 +86,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033222
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014594
@@ -87,7 +99,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033223
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014595
@@ -98,7 +112,9 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033224
+                    stepCounter: "200003753"
                 transform: ""
           - columnReference:
               columnCounter: 2000014596
@@ -132,7 +148,9 @@ steps:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_CLINIC_COMMUNITYCLINIC_LROC_INFO
             join:
               joinCondition: ''
             name: S_CLINIC_COMMUNITYCLINIC_LROC_INFO_PIT

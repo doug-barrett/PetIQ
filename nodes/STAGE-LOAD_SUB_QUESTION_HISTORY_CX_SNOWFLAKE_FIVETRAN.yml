@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: POSITION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032310
               stepCounter: "200004065"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: QUESTION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032311
               stepCounter: "200004065"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: VISIBLE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032312
               stepCounter: "200004065"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: TEXT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032313
               stepCounter: "200004065"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032314
               stepCounter: "200004065"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: REQUIRED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032315
               stepCounter: "200004065"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032316
               stepCounter: "200004065"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: _FIVETRAN_SYNCED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_SYNCED)
           - columnReference:
               columnCounter: 2000032317
               stepCounter: "200004065"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: _FIVETRAN_START
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_START)
           - columnReference:
               columnCounter: 2000032318
               stepCounter: "200004065"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: _FIVETRAN_END
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_TIMESTAMP_NTZ(_FIVETRAN_END)
           - columnReference:
               columnCounter: 2000032319
               stepCounter: "200004065"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: _FIVETRAN_ACTIVE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000032320
               stepCounter: "200004065"
@@ -146,9 +112,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_SNOWFLAKE_FIVETRAN.SURVEY_MONKEY.SUB_QUESTION_HISTORY'"
           - columnReference:
               columnCounter: 2000032321
               stepCounter: "200004065"
@@ -157,9 +120,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -171,6 +131,6 @@ steps:
             noLinkRefs: []
       name: LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200004065"

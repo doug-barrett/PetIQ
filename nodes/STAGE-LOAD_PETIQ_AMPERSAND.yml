@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: WEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(WEEK, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000027368
               stepCounter: "200003493"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: DELIVERED_IMPRESSIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027369
               stepCounter: "200003493"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: CONTRACTED_IMPRESSIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027370
               stepCounter: "200003493"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: SPEND
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027371
               stepCounter: "200003493"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: DELIVERY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027366
               stepCounter: "200003493"
@@ -80,9 +64,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.PETIQ_AMPERSAND'"
           - columnReference:
               columnCounter: 2000027365
               stepCounter: "200003493"
@@ -91,9 +72,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -105,6 +83,6 @@ steps:
             noLinkRefs: []
       name: LOAD_PETIQ_AMPERSAND
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003493"

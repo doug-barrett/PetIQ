@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028197
               stepCounter: "200002209"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028198
               stepCounter: "200002209"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: CODE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028199
               stepCounter: "200002209"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: EXPIRATION_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(EXPIRATION_DATE, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028200
               stepCounter: "200002209"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CAN_BE_COMBINED
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028201
               stepCounter: "200002209"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: IS_VIRTUAL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028202
               stepCounter: "200002209"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: APPLY_AUTOMATICALLY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028203
               stepCounter: "200002209"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: PAYMENTS_COUNT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028204
               stepCounter: "200002209"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028205
               stepCounter: "200002209"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028206
               stepCounter: "200002209"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028207
               stepCounter: "200002209"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028208
               stepCounter: "200002209"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028209
               stepCounter: "200002209"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: ORDERS_COUNT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028210
               stepCounter: "200002209"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: COUPON_IMAGE_FILE_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028211
               stepCounter: "200002209"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: COUPON_IMAGE_CONTENT_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028212
               stepCounter: "200002209"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: COUPON_IMAGE_FILE_SIZE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028213
               stepCounter: "200002209"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: COUPON_IMAGE_UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(COUPON_IMAGE_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028214
               stepCounter: "200002209"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: COUPON_TYPE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028215
               stepCounter: "200002209"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: CAMPAIGN
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028216
               stepCounter: "200002209"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: START_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(START_DATE, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028217
               stepCounter: "200002209"
@@ -256,9 +192,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.COUPONS'"
           - columnReference:
               columnCounter: 2000028218
               stepCounter: "200002209"
@@ -267,9 +200,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -281,6 +211,6 @@ steps:
             noLinkRefs: []
       name: LOAD_COUPONS_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200002209"

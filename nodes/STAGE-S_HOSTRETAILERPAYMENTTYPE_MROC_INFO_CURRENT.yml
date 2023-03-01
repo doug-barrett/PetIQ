@@ -21,7 +21,9 @@ steps:
             name: HK_H_HOSTRETAILERPAYMENTTYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034622
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019666
@@ -32,7 +34,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034623
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019667
@@ -43,7 +47,9 @@ steps:
             name: STATEMENT_FOOTER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034624
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019668
@@ -54,7 +60,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034625
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019669
@@ -65,7 +73,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034626
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019670
@@ -76,7 +86,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034627
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019671
@@ -87,7 +99,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034628
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019672
@@ -98,7 +112,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034629
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019673
@@ -109,7 +125,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034630
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019674
@@ -120,7 +138,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034631
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019675
@@ -131,7 +151,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034632
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019676
@@ -142,7 +164,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034633
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019677
@@ -153,7 +177,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034634
+                    stepCounter: "200003908"
                 transform: ""
           - columnReference:
               columnCounter: 2000019678
@@ -164,13 +190,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034635
+                    stepCounter: "200003908"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_HOSTRETAILERPAYMENTTYPE_MROC_INFO
             join:
               joinCondition: ''
             name: S_HOSTRETAILERPAYMENTTYPE_MROC_INFO_CURRENT

@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000027242
               stepCounter: "200003483"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: ADVERTISER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027243
               stepCounter: "200003483"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ADVERTISER_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027244
               stepCounter: "200003483"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: CAMPAIGN_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027245
               stepCounter: "200003483"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CAMPAIGN_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027246
               stepCounter: "200003483"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: ADSET_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027247
               stepCounter: "200003483"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: ADSET_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027248
               stepCounter: "200003483"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: AD_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027249
               stepCounter: "200003483"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: AD_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027250
               stepCounter: "200003483"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: OBJECTIVE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027251
               stepCounter: "200003483"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: PUBLISHER_PLATFORM
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027252
               stepCounter: "200003483"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: IMPRESSION_DEVICE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027253
               stepCounter: "200003483"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: PLATFORM_POSITION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027254
               stepCounter: "200003483"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: CONVERSION_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027255
               stepCounter: "200003483"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: CONVERSIONS_CLICK1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027256
               stepCounter: "200003483"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: CONVERSIONS_CLICK7
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027257
               stepCounter: "200003483"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: CONVERSIONS_CLICK28
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027258
               stepCounter: "200003483"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: CONVERSIONS_VIEW1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027259
               stepCounter: "200003483"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: CONVERSIONS_VIEW7
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027260
               stepCounter: "200003483"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: CONVERSIONS_VIEW28
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027261
               stepCounter: "200003483"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: REVENUE_CLICK1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027262
               stepCounter: "200003483"
@@ -256,9 +192,6 @@ steps:
             description: ""
             name: REVENUE_CLICK7
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027263
               stepCounter: "200003483"
@@ -267,9 +200,6 @@ steps:
             description: ""
             name: REVENUE_CLICK28
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027264
               stepCounter: "200003483"
@@ -278,9 +208,6 @@ steps:
             description: ""
             name: REVENUE_VIEW1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027265
               stepCounter: "200003483"
@@ -289,9 +216,6 @@ steps:
             description: ""
             name: REVENUE_VIEW7
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027266
               stepCounter: "200003483"
@@ -300,9 +224,6 @@ steps:
             description: ""
             name: REVENUE_VIEW28
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027240
               stepCounter: "200003483"
@@ -311,9 +232,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.FACEBOOK_CONVERSIONS_BY_PUBLISHER_PLATFORM'"
           - columnReference:
               columnCounter: 2000027239
               stepCounter: "200003483"
@@ -322,9 +240,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -336,6 +251,6 @@ steps:
             noLinkRefs: []
       name: LOAD_FACEBOOK_CONVERSIONS_BY_PUBLISHER_PLATFORM
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003483"

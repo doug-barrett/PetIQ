@@ -32,7 +32,9 @@ steps:
             name: IS_ACTIVE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014480
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011882
@@ -43,7 +45,9 @@ steps:
             name: NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014479
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011884
@@ -54,7 +58,9 @@ steps:
             name: SORT_ORDER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014481
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011885
@@ -65,7 +71,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014482
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011886
@@ -76,7 +84,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014483
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011887
@@ -87,7 +97,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014484
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011888
@@ -98,7 +110,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014485
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011889
@@ -109,7 +123,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014486
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011890
@@ -120,7 +136,9 @@ steps:
             name: NET_SUITE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014487
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011891
@@ -131,7 +149,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014488
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011892
@@ -142,7 +162,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014489
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011893
@@ -153,7 +175,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014490
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011894
@@ -164,7 +188,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014491
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011895
@@ -175,7 +201,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014492
+                    stepCounter: "200003005"
                 transform: ""
           - columnReference:
               columnCounter: 2000011896
@@ -186,13 +214,19 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014493
+                    stepCounter: "200003005"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_APOLLO_PRODUCT_CATEGORIES_REFERENCE
+              - locationName: STAGE
+                nodeName: S_APOLLO_PRODUCT_CATEGORIES_REFERENCE_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_PRODUCT_CATEGORY_APOLLO

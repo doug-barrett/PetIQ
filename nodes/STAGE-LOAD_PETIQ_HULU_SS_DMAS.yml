@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: CAMPAIGN_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027375
               stepCounter: "200003495"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: FLIGHT_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027376
               stepCounter: "200003495"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: DMA
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027377
               stepCounter: "200003495"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PERCENT_BREAKOUT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027378
               stepCounter: "200003495"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: VCR
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027379
               stepCounter: "200003495"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PLACEMENT_PRODUCT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027380
               stepCounter: "200003495"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: FLIGHT_START
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027381
               stepCounter: "200003495"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: FLIGHT_END
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027382
               stepCounter: "200003495"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(DATE, 'YYYY-MM-DD')
           - columnReference:
               columnCounter: 2000027383
               stepCounter: "200003495"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: DELIVERED_IMPRESSION_STARTS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027384
               stepCounter: "200003495"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: DELIVERED_IMPRESSION_COMPLETES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027385
               stepCounter: "200003495"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: CLICKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027386
               stepCounter: "200003495"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: EST_SPEND
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027387
               stepCounter: "200003495"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: IMPRESSIONS_COMPLETES_BREAKOUT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027388
               stepCounter: "200003495"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: IMPRESSIONS_STARTS_BREAKOUT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027389
               stepCounter: "200003495"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: CLICKS_BREAKOUT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027390
               stepCounter: "200003495"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: EST_SPEND_BREAKOUT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027373
               stepCounter: "200003495"
@@ -212,9 +160,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.PETIQ_HULU_SS_DMAS'"
           - columnReference:
               columnCounter: 2000027372
               stepCounter: "200003495"
@@ -223,9 +168,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -237,6 +179,6 @@ steps:
             noLinkRefs: []
       name: LOAD_PETIQ_HULU_SS_DMAS
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003495"

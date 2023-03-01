@@ -21,7 +21,9 @@ steps:
             name: HK_H_CLINIC_WELLNESSCENTER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033364
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014835
@@ -32,7 +34,9 @@ steps:
             name: ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033365
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014836
@@ -43,7 +47,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033366
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014837
@@ -54,7 +60,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033367
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014838
@@ -65,7 +73,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033368
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014839
@@ -76,7 +86,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033369
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014840
@@ -87,7 +99,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033370
+                    stepCounter: "200003756"
                 transform: ""
           - columnReference:
               columnCounter: 2000014841
@@ -98,13 +112,17 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033371
+                    stepCounter: "200003756"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_CLINIC_WELLNESSCENTER_LROC_INFO
             join:
               joinCondition: ''
             name: S_CLINIC_WELLNESSCENTER_LROC_INFO_CURRENT

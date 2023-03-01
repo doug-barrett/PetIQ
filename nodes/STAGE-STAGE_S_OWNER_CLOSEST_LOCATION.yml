@@ -26,7 +26,9 @@ steps:
             name: HK_H_OWNER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000015342
+                    stepCounter: "200003031"
                 transform: ""
           - columnReference:
               columnCounter: 2000030122
@@ -54,7 +56,9 @@ steps:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_OWNER_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: STAGE_S_OWNER_CLOSEST_LOCATION

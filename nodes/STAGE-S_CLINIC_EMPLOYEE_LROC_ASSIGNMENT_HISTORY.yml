@@ -21,7 +21,9 @@ steps:
             name: HK_L_CLINIC_EMPLOYEE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034303
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019359
@@ -32,7 +34,9 @@ steps:
             name: ASSIGNMENT_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034304
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019360
@@ -43,7 +47,9 @@ steps:
             name: TYPE_OF_ASSIGNMENT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034305
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019361
@@ -54,7 +60,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034306
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019362
@@ -65,7 +73,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034307
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019363
@@ -76,7 +86,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034308
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019364
@@ -87,7 +99,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034309
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019365
@@ -98,7 +112,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034310
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019366
@@ -109,7 +125,9 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034311
+                    stepCounter: "200003754"
                 transform: ""
           - columnReference:
               columnCounter: 2000019367
@@ -142,7 +160,9 @@ steps:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT
             join:
               joinCondition: ''
             name: S_CLINIC_EMPLOYEE_LROC_ASSIGNMENT_HISTORY

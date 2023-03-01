@@ -21,7 +21,9 @@ steps:
             name: HK_H_SURVEY_QUESTION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035874
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020691
@@ -32,7 +34,9 @@ steps:
             name: QUESTION_OPTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035875
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020692
@@ -43,7 +47,9 @@ steps:
             name: QUESTION_OPTION_TEXT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035876
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020833
@@ -54,7 +60,9 @@ steps:
             name: QUESTION_OPTION_POSITION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035909
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020834
@@ -65,7 +73,9 @@ steps:
             name: QUESTION_OPTION_VISIBLE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035910
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020693
@@ -76,7 +86,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035877
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020694
@@ -87,7 +99,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035878
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020695
@@ -98,7 +112,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035879
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020696
@@ -109,7 +125,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035880
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020697
@@ -120,7 +138,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035881
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020698
@@ -131,7 +151,9 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035882
+                    stepCounter: "200004080"
                 transform: ""
           - columnReference:
               columnCounter: 2000020699
@@ -164,7 +186,9 @@ steps:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_MA_SURVEY_QUESTION_MROC_OPTION
             join:
               joinCondition: ''
             name: S_MA_SURVEY_QUESTION_MROC_OPTION_HISTORY

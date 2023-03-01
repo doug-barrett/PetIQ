@@ -21,7 +21,9 @@ steps:
             name: PET_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033070
+                    stepCounter: "200001557"
                 transform: ""
           - columnReference:
               columnCounter: 2000018094
@@ -32,7 +34,9 @@ steps:
             name: HK_L_VISIT_VET_OWNER_PET_CLINIC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034288
+                    stepCounter: "200001586"
                 transform: ""
           - columnReference:
               columnCounter: 2000018095
@@ -43,7 +47,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034112
+                    stepCounter: "200002291"
                 transform: ""
           - columnReference:
               columnCounter: 2000018096
@@ -54,7 +60,9 @@ steps:
             name: HK_L_VISIT_CLINICITEM
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034269
+                    stepCounter: "200003390"
                 transform: ""
           - columnReference:
               columnCounter: 2000018097
@@ -65,7 +73,9 @@ steps:
             name: PRODUCT_CATEGORY_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014902
+                    stepCounter: "200003017"
                 transform: ""
           - columnReference:
               columnCounter: 2000018098
@@ -76,13 +86,25 @@ steps:
             name: PRODUCT_TYPE_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000014904
+                    stepCounter: "200003017"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_PET
+              - locationName: STAGE
+                nodeName: L_VISIT_VET_OWNER_PET_CLINIC
+              - locationName: STAGE
+                nodeName: S_VISIT_LROC_INFO
+              - locationName: STAGE
+                nodeName: L_VISIT_CLINICITEM
+              - locationName: STAGE
+                nodeName: S_CLINICITEM_LROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_PET_RECENT_VACCINE

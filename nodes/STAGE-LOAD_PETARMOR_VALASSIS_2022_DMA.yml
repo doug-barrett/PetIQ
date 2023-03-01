@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: DAY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027972
               stepCounter: "200003642"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: DMA_REGION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027973
               stepCounter: "200003642"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: IMPRESSIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027974
               stepCounter: "200003642"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: LINK_CLICKS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027975
               stepCounter: "200003642"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CTR__LINK_CLICK_THROUGH_RATE_
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027976
               stepCounter: "200003642"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: TOTAL_SPEND__USD_
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027977
               stepCounter: "200003642"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CPC__COST_PER_CLICK_
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027970
               stepCounter: "200003642"
@@ -102,9 +80,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.PETARMOR_VALASSIS_2022_DMA'"
           - columnReference:
               columnCounter: 2000027969
               stepCounter: "200003642"
@@ -113,9 +88,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -127,6 +99,6 @@ steps:
             noLinkRefs: []
       name: LOAD_PETARMOR_VALASSIS_2022_DMA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003642"

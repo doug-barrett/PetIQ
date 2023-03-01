@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028811
               stepCounter: "200003792"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: ITEM_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028812
               stepCounter: "200003792"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: ITEM_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028813
               stepCounter: "200003792"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: EVENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028814
               stepCounter: "200003792"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: WHODUNNIT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028815
               stepCounter: "200003792"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: OBJECT_CHANGES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000028816
               stepCounter: "200003792"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000028809
               stepCounter: "200003792"
@@ -102,9 +80,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.CLINIC_LOCATION_VERSIONS'"
           - columnReference:
               columnCounter: 2000028808
               stepCounter: "200003792"
@@ -113,9 +88,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -127,6 +99,6 @@ steps:
             noLinkRefs: []
       name: LOAD_CLINIC_LOCATION_VERSION_HISTORY
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003792"

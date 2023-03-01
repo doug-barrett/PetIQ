@@ -21,7 +21,9 @@ steps:
             name: SURVEY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035787
+                    stepCounter: "200004074"
                 transform: ""
           - columnReference:
               columnCounter: 2000020792
@@ -32,7 +34,9 @@ steps:
             name: SURVEY_TITLE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020576
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020793
@@ -43,7 +47,9 @@ steps:
             name: NICKNAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020577
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020794
@@ -54,7 +60,9 @@ steps:
             name: FOOTER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020578
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020795
@@ -65,7 +73,9 @@ steps:
             name: CATEGORY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020579
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020796
@@ -76,7 +86,9 @@ steps:
             name: CATEGORY_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020580
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020797
@@ -87,7 +99,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020581
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020798
@@ -98,7 +112,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020582
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020799
@@ -109,7 +125,9 @@ steps:
             name: LANGUAGE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020583
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020800
@@ -120,7 +138,9 @@ steps:
             name: SURVEY_PAGE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020584
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020801
@@ -131,7 +151,9 @@ steps:
             name: SURVEY_PAGE_TITLE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020585
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020802
@@ -142,7 +164,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020586
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020805
@@ -153,7 +177,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020589
+                    stepCounter: "200004128"
                 transform: ""
           - columnReference:
               columnCounter: 2000020807
@@ -164,13 +190,19 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020591
+                    stepCounter: "200004128"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_SURVEY
+              - locationName: STAGE
+                nodeName: S_SURVEY_MROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: FACT_SURVEY

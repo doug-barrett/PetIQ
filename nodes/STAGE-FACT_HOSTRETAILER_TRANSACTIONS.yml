@@ -21,7 +21,9 @@ steps:
             name: HOST_RETAILER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034531
+                    stepCounter: "200003844"
                 transform: ""
           - columnReference:
               columnCounter: 2000019724
@@ -32,7 +34,9 @@ steps:
             name: CLINIC_LOCATION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034525
+                    stepCounter: "200003303"
                 transform: ""
           - columnReference:
               columnCounter: 2000019700
@@ -43,7 +47,9 @@ steps:
             name: TRANSACTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019498
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019701
@@ -54,7 +60,9 @@ steps:
             name: TRANSACTION_TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019499
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019702
@@ -65,7 +73,9 @@ steps:
             name: AMOUNT_IN_CENTS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019500
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019703
@@ -76,7 +86,9 @@ steps:
             name: DATE_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019501
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019704
@@ -87,7 +99,9 @@ steps:
             name: NOTES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019502
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019705
@@ -98,7 +112,9 @@ steps:
             name: PET_COUNT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019503
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019706
@@ -109,7 +125,9 @@ steps:
             name: PAYOUT_EXPIRES_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019504
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019707
@@ -120,7 +138,9 @@ steps:
             name: PAID_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019505
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019708
@@ -131,7 +151,9 @@ steps:
             name: PARENT_TRANSACTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019506
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019714
@@ -142,7 +164,9 @@ steps:
             name: DEBIT_TRANSACTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019512
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019709
@@ -153,7 +177,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019507
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019710
@@ -164,7 +190,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019508
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019716
@@ -175,7 +203,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019514
+                    stepCounter: "200003915"
                 transform: ""
           - columnReference:
               columnCounter: 2000019717
@@ -186,13 +216,21 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019515
+                    stepCounter: "200003915"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_HOSTRETAILER
+              - locationName: STAGE
+                nodeName: H_CLINIC_LOCATION
+              - locationName: STAGE
+                nodeName: S_HOSTRETAILER_CLINIC_CLINICLOCATION_MROC_TRANSACTION_CURRENT
             join:
               joinCondition: 'NULL'
             name: FACT_HOSTRETAILER_TRANSACTIONS

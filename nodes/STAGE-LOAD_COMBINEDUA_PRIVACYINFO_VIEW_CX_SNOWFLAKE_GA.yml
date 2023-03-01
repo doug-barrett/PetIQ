@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: TABLEID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027844
               stepCounter: "200003519"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: SITENAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027845
               stepCounter: "200003519"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: VISITID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027846
               stepCounter: "200003519"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: FULLVISITORID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027847
               stepCounter: "200003519"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CLIENTID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027848
               stepCounter: "200003519"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: PRIVACYINFO_ADS_STORAGE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027849
               stepCounter: "200003519"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: PRIVACYINFO_ANALYTICS_STORAGE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027850
               stepCounter: "200003519"
@@ -102,9 +80,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027851
               stepCounter: "200003519"
@@ -113,9 +88,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -127,6 +99,6 @@ steps:
             noLinkRefs: []
       name: LOAD_COMBINEDUA_PRIVACYINFO_VIEW_CX_SNOWFLAKE_GA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003519"

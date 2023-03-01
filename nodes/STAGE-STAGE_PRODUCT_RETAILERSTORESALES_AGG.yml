@@ -26,7 +26,9 @@ steps:
             name: PRODUCTUNITSALES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031718
+                    stepCounter: "200003099"
                 transform: SUM(S_PRODUCT_RETAILERSTORE_SALES.PRODUCTUNITSALES)
           - columnReference:
               columnCounter: 2000028462
@@ -37,7 +39,9 @@ steps:
             name: COSTOFPRODUCTSSOLD
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031719
+                    stepCounter: "200003099"
                 transform: SUM(S_PRODUCT_RETAILERSTORE_SALES.COSTOFPRODUCTSSOLD)
           - columnReference:
               columnCounter: 2000028463
@@ -48,7 +52,9 @@ steps:
             name: SALESDATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000031727
+                    stepCounter: "200003108"
                 transform: ""
           - columnReference:
               columnCounter: 2000028465
@@ -59,7 +65,9 @@ steps:
             name: PRODUCTID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024057
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028466
@@ -70,7 +78,9 @@ steps:
             name: BKCC_PRODUCT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024058
+                    stepCounter: "200001734"
                 transform: ""
           - columnReference:
               columnCounter: 2000028467
@@ -81,7 +91,9 @@ steps:
             name: RETAILERID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024465
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028468
@@ -92,7 +104,9 @@ steps:
             name: BKCC_RETAILER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024466
+                    stepCounter: "200001845"
                 transform: ""
           - columnReference:
               columnCounter: 2000028469

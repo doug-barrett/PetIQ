@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: TABLEID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027900
               stepCounter: "200003522"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: SITENAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027901
               stepCounter: "200003522"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: VISITORID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027902
               stepCounter: "200003522"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: VISITNUMBER
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027903
               stepCounter: "200003522"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: VISITID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027904
               stepCounter: "200003522"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: VISITSTARTTIME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027905
               stepCounter: "200003522"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027906
               stepCounter: "200003522"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: TOTALS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027907
               stepCounter: "200003522"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: TRAFFICSOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027908
               stepCounter: "200003522"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: DEVICE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027909
               stepCounter: "200003522"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: GEONETWORK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027910
               stepCounter: "200003522"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: CUSTOMDIMENSIONS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027911
               stepCounter: "200003522"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: HITS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027912
               stepCounter: "200003522"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: FULLVISITORID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027913
               stepCounter: "200003522"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: USERID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027914
               stepCounter: "200003522"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: CLIENTID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027915
               stepCounter: "200003522"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: CHANNELGROUPING
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027916
               stepCounter: "200003522"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: SOCIALENGAGEMENTTYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027917
               stepCounter: "200003522"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: PRIVACYINFO
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027918
               stepCounter: "200003522"
@@ -234,9 +176,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027919
               stepCounter: "200003522"
@@ -245,9 +184,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -259,6 +195,6 @@ steps:
             noLinkRefs: []
       name: LOAD_COMBINEDUA_VIEW_CX_SNOWFLAKE_GA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003522"

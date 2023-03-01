@@ -21,7 +21,9 @@ steps:
             name: DEPARTMENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035642
+                    stepCounter: "200004007"
                 transform: ""
           - columnReference:
               columnCounter: 2000020091
@@ -32,7 +34,9 @@ steps:
             name: TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021717
+                    stepCounter: "200004021"
                 transform: ""
           - columnReference:
               columnCounter: 2000020092
@@ -43,7 +47,9 @@ steps:
             name: TYPE_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021718
+                    stepCounter: "200004021"
                 transform: ""
           - columnReference:
               columnCounter: 2000020093
@@ -54,7 +60,9 @@ steps:
             name: DESCRIPTION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021716
+                    stepCounter: "200004021"
                 transform: ""
           - columnReference:
               columnCounter: 2000020094
@@ -65,7 +73,9 @@ steps:
             name: CODE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021715
+                    stepCounter: "200004021"
                 transform: ""
           - columnReference:
               columnCounter: 2000020095
@@ -76,7 +86,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021719
+                    stepCounter: "200004021"
                 transform: ""
           - columnReference:
               columnCounter: 2000020097
@@ -87,7 +99,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021721
+                    stepCounter: "200004021"
                 transform: ""
           - columnReference:
               columnCounter: 2000020098
@@ -98,13 +112,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000021722
+                    stepCounter: "200004021"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_DEPARTMENT
+              - locationName: STAGE
+                nodeName: S_DEPARTMENT_MROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_DEPARTMENT_ADP

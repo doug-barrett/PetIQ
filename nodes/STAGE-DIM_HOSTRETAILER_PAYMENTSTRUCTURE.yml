@@ -21,7 +21,9 @@ steps:
             name: HOST_RETAILER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000034531
+                    stepCounter: "200003844"
                 transform: ""
           - columnReference:
               columnCounter: 2000019403
@@ -32,7 +34,9 @@ steps:
             name: HOST_LOCATION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019574
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019409
@@ -43,7 +47,9 @@ steps:
             name: HOST_METRIC_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019580
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019410
@@ -54,7 +60,9 @@ steps:
             name: MINIMUM_PET_COUNT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019581
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019411
@@ -65,7 +73,9 @@ steps:
             name: PAYMENT_TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019582
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019412
@@ -76,7 +86,9 @@ steps:
             name: FIXED_AMOUNT_IN_CENTS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019583
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019413
@@ -87,7 +99,9 @@ steps:
             name: PERCENTAGE_OF_NET
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019584
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019414
@@ -98,7 +112,9 @@ steps:
             name: MINIMUM_VACCERT_TALLY_TOTAL_IN_CENTS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019585
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019404
@@ -109,7 +125,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019575
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019405
@@ -120,7 +138,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019576
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019416
@@ -131,7 +151,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019587
+                    stepCounter: "200003869"
                 transform: ""
           - columnReference:
               columnCounter: 2000019417
@@ -142,13 +164,19 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000019588
+                    stepCounter: "200003869"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_HOSTRETAILER
+              - locationName: STAGE
+                nodeName: S_HOSTRETAILER_CLINICLOCATION_MROC_PAYMENTSTRUCTURE_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_HOSTRETAILER_PAYMENTSTRUCTURE

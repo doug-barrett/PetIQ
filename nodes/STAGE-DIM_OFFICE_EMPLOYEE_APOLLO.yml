@@ -21,7 +21,9 @@ steps:
             name: USER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035984
+                    stepCounter: "200004149"
                 transform: ""
           - columnReference:
               columnCounter: 2000021058
@@ -32,7 +34,9 @@ steps:
             name: OFFICE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000028479
+                    stepCounter: "200002261"
                 transform: ""
           - columnReference:
               columnCounter: 2000021033
@@ -43,7 +47,9 @@ steps:
             name: OFFICE_ROSTER_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020956
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021034
@@ -54,7 +60,9 @@ steps:
             name: OFFICE_SCHEDULE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020957
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021035
@@ -65,7 +73,9 @@ steps:
             name: STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020958
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021036
@@ -76,7 +86,9 @@ steps:
             name: NOTES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020959
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021037
@@ -87,7 +99,9 @@ steps:
             name: ASSIGNMENT_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020960
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021038
@@ -98,7 +112,9 @@ steps:
             name: ASSIGNMENT_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020961
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021039
@@ -109,7 +125,9 @@ steps:
             name: TYPE_OF_ASSIGNMENT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020962
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021040
@@ -120,7 +138,9 @@ steps:
             name: DATE_ON
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020963
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021041
@@ -131,7 +151,9 @@ steps:
             name: START_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020964
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021042
@@ -142,7 +164,9 @@ steps:
             name: END_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020965
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021043
@@ -153,7 +177,9 @@ steps:
             name: CREATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020966
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021044
@@ -164,7 +190,9 @@ steps:
             name: UPDATED_BY_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020967
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021045
@@ -175,7 +203,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020968
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021046
@@ -186,7 +216,9 @@ steps:
             name: UPDATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020969
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021047
@@ -197,7 +229,9 @@ steps:
             name: UNIQUE_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020970
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021049
@@ -208,7 +242,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020972
+                    stepCounter: "200004175"
                 transform: ""
           - columnReference:
               columnCounter: 2000021050
@@ -219,13 +255,21 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000020973
+                    stepCounter: "200004175"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_EMPLOYEE
+              - locationName: STAGE
+                nodeName: H_OFFICE
+              - locationName: STAGE
+                nodeName: S_OFFICE_EMPLOYEE_MROC_INFO_CURRENT
             join:
               joinCondition: 'NULL'
             name: DIM_OFFICE_EMPLOYEE_APOLLO

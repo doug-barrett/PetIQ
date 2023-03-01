@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030778
               stepCounter: "200003836"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030779
               stepCounter: "200003836"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: PARENT_HOST_ACCOUNT_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030780
               stepCounter: "200003836"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: PHONE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030781
               stepCounter: "200003836"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: ADDRESS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030782
               stepCounter: "200003836"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030783
               stepCounter: "200003836"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: STATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030784
               stepCounter: "200003836"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: ZIP
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030785
               stepCounter: "200003836"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: CREATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000030786
               stepCounter: "200003836"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000030787
               stepCounter: "200003836"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: CREATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030788
               stepCounter: "200003836"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: UPDATED_BY_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030789
               stepCounter: "200003836"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: UNIQUE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030790
               stepCounter: "200003836"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: HOST_PAYMENT_TYPE_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030791
               stepCounter: "200003836"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: ATTENTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030792
               stepCounter: "200003836"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: HOST_METRIC_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030793
               stepCounter: "200003836"
@@ -201,9 +152,6 @@ steps:
             description: ""
             name: OWNER_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030794
               stepCounter: "200003836"
@@ -212,9 +160,6 @@ steps:
             description: ""
             name: FLYER_LOGO_FILE_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030795
               stepCounter: "200003836"
@@ -223,9 +168,6 @@ steps:
             description: ""
             name: FLYER_LOGO_CONTENT_TYPE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030796
               stepCounter: "200003836"
@@ -234,9 +176,6 @@ steps:
             description: ""
             name: FLYER_LOGO_FILE_SIZE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030797
               stepCounter: "200003836"
@@ -245,9 +184,6 @@ steps:
             description: ""
             name: FLYER_LOGO_UPDATED_AT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: TO_CHAR(FLYER_LOGO_UPDATED_AT, 'YYYY-MM-DD HH24:MI:SS')
           - columnReference:
               columnCounter: 2000030798
               stepCounter: "200003836"
@@ -256,9 +192,6 @@ steps:
             description: ""
             name: RECIPIENT_EMAILS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000030799
               stepCounter: "200003836"
@@ -267,9 +200,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'APOLLO_READ_REPLICA.PUBLIC.HOST_ACCOUNTS'"
           - columnReference:
               columnCounter: 2000030800
               stepCounter: "200003836"
@@ -278,9 +208,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -292,6 +219,6 @@ steps:
             noLinkRefs: []
       name: LOAD_HOST_ACCOUNTS_APOLLO_READ_REPLICA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003836"

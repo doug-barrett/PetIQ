@@ -21,7 +21,9 @@ steps:
             name: HK_ITEM_SAGE_INNATRACK
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024514
+                    stepCounter: "200001892"
                 transform: ""
           - columnReference:
               columnCounter: 2000018270
@@ -32,7 +34,9 @@ steps:
             name: ITEMID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024515
+                    stepCounter: "200001892"
                 transform: ""
           - columnReference:
               columnCounter: 2000018271
@@ -43,7 +47,9 @@ steps:
             name: BKCC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024516
+                    stepCounter: "200001892"
                 transform: ""
           - columnReference:
               columnCounter: 2000018276
@@ -54,7 +60,9 @@ steps:
             name: PRODPRDSTAT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000028184
+                    stepCounter: "200001901"
                 transform: ""
           - columnReference:
               columnCounter: 2000018277
@@ -65,7 +73,9 @@ steps:
             name: PRODDESC
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000028185
+                    stepCounter: "200001901"
                 transform: ""
           - columnReference:
               columnCounter: 2000018278
@@ -76,7 +86,9 @@ steps:
             name: PRODDESC1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000028186
+                    stepCounter: "200001901"
                 transform: ""
           - columnReference:
               columnCounter: 2000018342
@@ -87,7 +99,9 @@ steps:
             name: TSICOD_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026038
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018343
@@ -98,7 +112,9 @@ steps:
             name: TSICOD_1
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026039
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018344
@@ -109,7 +125,9 @@ steps:
             name: TSICOD_2
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026040
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018345
@@ -120,7 +138,9 @@ steps:
             name: TSICOD_3
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026041
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018346
@@ -131,7 +151,9 @@ steps:
             name: TSICOD_4
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026042
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018390
@@ -142,7 +164,9 @@ steps:
             name: ITMDES1_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026086
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018570
@@ -153,7 +177,9 @@ steps:
             name: ZITMUPC_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026266
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018571
@@ -164,7 +190,9 @@ steps:
             name: ZNDC_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026267
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018572
@@ -175,7 +203,9 @@ steps:
             name: ZOMITM_0
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000026268
+                    stepCounter: "200002019"
                 transform: ""
           - columnReference:
               columnCounter: 2000018274
@@ -186,13 +216,21 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000024519
+                    stepCounter: "200001892"
                 transform: ""
         sourceMapping:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: H_ITEM
+              - locationName: STAGE
+                nodeName: S_ITEM_INNATRACK_LROC_INFO
+              - locationName: STAGE
+                nodeName: S_ITEM_SAGE_LROC_INFO
             join:
               joinCondition: 'NULL'
             name: VIEW_ITEM_SAGE_INNATRACK

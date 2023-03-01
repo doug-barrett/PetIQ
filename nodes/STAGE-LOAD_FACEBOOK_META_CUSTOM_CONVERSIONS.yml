@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ADVERTISER_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027296
               stepCounter: "200003487"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: CONVERSION_ID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027297
               stepCounter: "200003487"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: CONVERSION_NAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027294
               stepCounter: "200003487"
@@ -58,9 +48,6 @@ steps:
             description: Record source.
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'HARMELINREDSHIFT.PUBLIC.FACEBOOK_META_CUSTOM_CONVERSIONS'"
           - columnReference:
               columnCounter: 2000027293
               stepCounter: "200003487"
@@ -69,9 +56,6 @@ steps:
             description: Load date.
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -83,6 +67,6 @@ steps:
             noLinkRefs: []
       name: LOAD_FACEBOOK_META_CUSTOM_CONVERSIONS
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003487"

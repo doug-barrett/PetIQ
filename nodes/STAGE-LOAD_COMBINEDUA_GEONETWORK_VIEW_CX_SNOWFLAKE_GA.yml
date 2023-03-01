@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: TABLEID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027826
               stepCounter: "200003518"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: SITENAME
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027827
               stepCounter: "200003518"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: VISITID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027828
               stepCounter: "200003518"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: FULLVISITORID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027829
               stepCounter: "200003518"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CLIENTID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027830
               stepCounter: "200003518"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: GEONETWORK_CITY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027831
               stepCounter: "200003518"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: GEONETWORK_CITYID
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027832
               stepCounter: "200003518"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: GEONETWORK_CONTINENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027833
               stepCounter: "200003518"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: GEONETWORK_COUNTRY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027834
               stepCounter: "200003518"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: GEONETWORK_LATITUDE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027835
               stepCounter: "200003518"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: GEONETWORK_LONGITUDE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027836
               stepCounter: "200003518"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: GEONETWORK_METRO
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027837
               stepCounter: "200003518"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: GEONETWORK_NETWORKDOMAIN
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027838
               stepCounter: "200003518"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: GEONETWORK_NETWORKLOCATION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027839
               stepCounter: "200003518"
@@ -179,9 +136,6 @@ steps:
             description: ""
             name: GEONETWORK_REGION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027840
               stepCounter: "200003518"
@@ -190,9 +144,6 @@ steps:
             description: ""
             name: GEONETWORK_SUBCONTINENT
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027841
               stepCounter: "200003518"
@@ -201,9 +152,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000027842
               stepCounter: "200003518"
@@ -212,9 +160,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -226,6 +171,6 @@ steps:
             noLinkRefs: []
       name: LOAD_COMBINEDUA_GEONETWORK_VIEW_CX_SNOWFLAKE_GA
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200003518"

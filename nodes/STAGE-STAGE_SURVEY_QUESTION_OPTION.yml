@@ -26,7 +26,9 @@ steps:
             name: QUESTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032264
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033025
@@ -48,7 +50,9 @@ steps:
             name: SUB_QUESTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032313
+                    stepCounter: "200004065"
                 transform: IFNULL(LOAD_SUB_QUESTION_HISTORY_CX_SNOWFLAKE_FIVETRAN.ID,'-2')
           - columnReference:
               columnCounter: 2000033026
@@ -70,7 +74,9 @@ steps:
             name: QUESTION_OPTION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032267
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033028
@@ -81,7 +87,9 @@ steps:
             name: QUESTION_OPTION_TEXT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032266
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033064
@@ -92,7 +100,9 @@ steps:
             name: QUESTION_OPTION_POSITION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032263
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033065
@@ -103,7 +113,9 @@ steps:
             name: QUESTION_OPTION_VISIBLE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032265
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033030
@@ -114,7 +126,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032276
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033031
@@ -125,7 +139,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000032277
+                    stepCounter: "200004062"
                 transform: ""
           - columnReference:
               columnCounter: 2000033032

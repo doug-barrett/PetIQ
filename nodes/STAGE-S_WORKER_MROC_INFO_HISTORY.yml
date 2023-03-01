@@ -21,7 +21,9 @@ steps:
             name: HK_H_WORKER
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035747
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021904
@@ -32,7 +34,9 @@ steps:
             name: ASSOCIATE_OID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035748
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021905
@@ -43,7 +47,9 @@ steps:
             name: ORIGINAL_HIRE_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035749
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021906
@@ -54,7 +60,9 @@ steps:
             name: REHIRE_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035750
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021907
@@ -65,7 +73,9 @@ steps:
             name: ADJUSTED_SERVICE_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035751
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021908
@@ -76,7 +86,9 @@ steps:
             name: TERMINATION_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035752
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021909
@@ -87,7 +99,9 @@ steps:
             name: STATUS
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035753
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021910
@@ -98,7 +112,9 @@ steps:
             name: ARPA_TERMINATION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035754
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021911
@@ -109,7 +125,9 @@ steps:
             name: POSITION_BUDGET
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035755
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021912
@@ -120,7 +138,9 @@ steps:
             name: CUSTOM_ROLE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035756
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021913
@@ -131,7 +151,9 @@ steps:
             name: PLANNER_NAME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035757
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021914
@@ -142,7 +164,9 @@ steps:
             name: _FIVETRAN_SYNCED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035758
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021915
@@ -153,7 +177,9 @@ steps:
             name: _FIVETRAN_DELETED
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035759
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021916
@@ -164,7 +190,9 @@ steps:
             name: DSS_CHANGE_HASH
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035760
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021917
@@ -175,7 +203,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035761
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021918
@@ -186,7 +216,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035762
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021919
@@ -197,7 +229,9 @@ steps:
             name: DSS_START_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035763
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021920
@@ -208,7 +242,9 @@ steps:
             name: DSS_VERSION
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035764
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021921
@@ -219,7 +255,9 @@ steps:
             name: DSS_CREATE_TIME
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000035765
+                    stepCounter: "200004046"
                 transform: ""
           - columnReference:
               columnCounter: 2000021922
@@ -252,7 +290,9 @@ steps:
           - aliases: {}
             customSQL:
               customSQL: ""
-            dependencies: []
+            dependencies:
+              - locationName: STAGE
+                nodeName: S_WORKER_MROC_INFO
             join:
               joinCondition: ''
             name: S_WORKER_MROC_INFO_HISTORY

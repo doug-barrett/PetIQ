@@ -6,7 +6,6 @@ steps:
         preSQL: ""
         postSQL: ""
         testsEnabled: true
-        truncateBefore: true
       database: ""
       dependencies: []
       deployEnabled: false
@@ -25,9 +24,6 @@ steps:
             description: ""
             name: ITEM
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020956
               stepCounter: "200001709"
@@ -36,9 +32,6 @@ steps:
             description: ""
             name: DESCRIPTION
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020957
               stepCounter: "200001709"
@@ -47,9 +40,6 @@ steps:
             description: ""
             name: DESCRIPTION2
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020958
               stepCounter: "200001709"
@@ -58,9 +48,6 @@ steps:
             description: ""
             name: METRICS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020959
               stepCounter: "200001709"
@@ -69,9 +56,6 @@ steps:
             description: ""
             name: CURRENTUNITSONHANDQTY
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020960
               stepCounter: "200001709"
@@ -80,9 +64,6 @@ steps:
             description: ""
             name: COGS
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020961
               stepCounter: "200001709"
@@ -91,9 +72,6 @@ steps:
             description: ""
             name: COGSTOTOTAL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020962
               stepCounter: "200001709"
@@ -102,9 +80,6 @@ steps:
             description: ""
             name: COGSTYLYVARIANCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020963
               stepCounter: "200001709"
@@ -113,9 +88,6 @@ steps:
             description: ""
             name: COGSTYLYVARIANCE1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020964
               stepCounter: "200001709"
@@ -124,9 +96,6 @@ steps:
             description: ""
             name: UNITSALES
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020965
               stepCounter: "200001709"
@@ -135,9 +104,6 @@ steps:
             description: ""
             name: UNITSALESTOTOTAL
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020966
               stepCounter: "200001709"
@@ -146,9 +112,6 @@ steps:
             description: ""
             name: UNITSALESTYLYVARIANCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020967
               stepCounter: "200001709"
@@ -157,9 +120,6 @@ steps:
             description: ""
             name: UNITSALESTYLYVARIANCE1
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020968
               stepCounter: "200001709"
@@ -168,9 +128,6 @@ steps:
             description: ""
             name: WEEK
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: ""
           - columnReference:
               columnCounter: 2000020969
               stepCounter: "200001709"
@@ -179,9 +136,6 @@ steps:
             description: Record source
             name: DSS_RECORD_SOURCE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: "'CX_POS_DEV.DBO.MENARDS_SALES_STG'"
           - columnReference:
               columnCounter: 2000020970
               stepCounter: "200001709"
@@ -190,9 +144,6 @@ steps:
             description: Date and time the row was loaded in the data vault
             name: DSS_LOAD_DATE
             nullable: false
-            sourceColumnReferences:
-              - columnReferences: []
-                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
         sourceMapping:
           - aliases: {}
             customSQL:
@@ -204,6 +155,6 @@ steps:
             noLinkRefs: []
       name: LOAD_SALESINVENTORY_POS_MENARDS
       overrideSQL: false
-      sqlType: Stage
+      sqlType: Source
       type: sql
     stepCounter: "200001709"

@@ -26,7 +26,9 @@ steps:
             name: CLINIC_LOCATION_VERSION_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033117
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033420
@@ -37,7 +39,9 @@ steps:
             name: CREATED_AT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033122
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033424
@@ -59,7 +63,9 @@ steps:
             name: DSS_LOAD_DATE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033115
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033421
@@ -70,7 +76,9 @@ steps:
             name: DSS_RECORD_SOURCE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033116
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033423
@@ -92,7 +100,9 @@ steps:
             name: EVENT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033123
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033416
@@ -103,7 +113,9 @@ steps:
             name: ITEM_ID
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033120
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033415
@@ -114,7 +126,9 @@ steps:
             name: ITEM_TYPE
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033121
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033419
@@ -125,7 +139,9 @@ steps:
             name: OBJECT_CHANGES
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033125
+                    stepCounter: "200004196"
                 transform: ""
           - columnReference:
               columnCounter: 2000033494
@@ -1258,7 +1274,9 @@ steps:
             name: WHODUNNIT
             nullable: false
             sourceColumnReferences:
-              - columnReferences: []
+              - columnReferences:
+                  - columnCounter: 2000033124
+                    stepCounter: "200004196"
                 transform: ""
         sourceMapping:
           - aliases:
@@ -1268,6 +1286,8 @@ steps:
             dependencies:
               - locationName: STAGE
                 nodeName: LOAD_CLINIC_LOCATION_VERSION_HISTORY
+              - locationName: STAGE
+                nodeName: LOAD_CLINIC_LOCATION_VERSIONS_FT
             join:
               joinCondition: "FROM {{ ref('STAGE','LOAD_CLINIC_LOCATION_VERSION_HISTORY')\
                 \ }} LOAD_CLINIC_LOCATION_VERSION_HISTORY  "
